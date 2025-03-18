@@ -53,9 +53,11 @@
   overflow: hidden;
 
   align-items: center;
-  display: flex;
+  display: grid;
   flex-wrap: nowrap;
+  grid-auto-flow: column;
   justify-content: center;
+  place-items: center;
 }
 
 [alignment="centre"] {
