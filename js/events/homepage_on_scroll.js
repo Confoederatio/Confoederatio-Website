@@ -36,12 +36,9 @@ window.onscroll = function (e) {
       });
   }
   if (scroll_position <= parallax_gallery_top)
-    if (parallax_scroll_progress >= 5)
-      if (scroll_direction == "up") {
-        console.log(true);
+    if (parallax_scroll_progress >= 50)
+      if (scroll_direction == "up")
         document.getElementById("project-parallax-anchor").scrollIntoView({
           behavior: "instant"
         });
-        console.log(parallax_scroll_progress)
-      }
 };
