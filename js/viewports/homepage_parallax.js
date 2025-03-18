@@ -469,28 +469,32 @@
     var maximise_btn = document.getElementById(`${arg0_element_id}-maximise-btn`);
 
     //Reset container styling
-    update_content_panel_container_paused = true;
-    content_panel_container.setAttribute("style", `
-      transform-style: preserve-3d;
-      backface-visibility: hidden;
-      position: relative;
-      display: block;
-      left: 0vh;
-      top: 0px;
-      transition: all 2s ease !important;
-    `);
-    content_panel_subcontainer.setAttribute("style",
-      `
+    try {
+      update_content_panel_container_paused = true;
+      content_panel_container.setAttribute("style", `
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        position: relative;
+        display: block;
+        left: 0vh;
+        top: 0px;
         transition: all 2s ease !important;
-      `
-    );
+      `);
+      content_panel_subcontainer.setAttribute("style",
+        `
+          transition: all 2s ease !important;
+        `
+      );
 
-    //Apply maximised class
-    local_element.setAttribute("class",
-      local_element.getAttribute("class") + " maximised"
-    );
-    maximise_btn.setAttribute("onclick", `minimiseContentPanel('${local_id}');`);
-    parallax_scroll_indicator.style.opacity = 0;
+      //Apply maximised class
+      local_element.setAttribute("class",
+        local_element.getAttribute("class") + " maximised"
+      );
+      maximise_btn.setAttribute("onclick", `minimiseContentPanel('${local_id}');`);
+      parallax_scroll_indicator.style.opacity = 0;
+    } catch (e) {
+      console.error(e);
+    }
   }
 
   function minimiseContentPanel (arg0_element_id, arg1_instant) {
@@ -803,11 +807,12 @@
       }
 
       //Reset perspective to default first if needed
-      if (document.querySelector(".parallax-item-content-panel.maximised") && getMaximisedContentPanel() != local_id) update_content_panel_container_paused = false;
-      if (getMaximisedContentPanel()) if (getMaximisedContentPanel() != local_id || !update_content_panel_container_paused) minimiseContentPanel(getMaximisedContentPanel(), true);
-    } catch (e) {
-      console.log(e);
-    }
+      if (document.querySelector(".parallax-item-content-panel.maximised") && getMaximisedContentPanel() != local_id)
+        update_content_panel_container_paused = false;
+      if (getMaximisedContentPanel())
+        if (getMaximisedContentPanel() != local_id || !update_content_panel_container_paused)
+          minimiseContentPanel(getMaximisedContentPanel(), true);
+    } catch (e) {}
   }
 
   function togglePreview (arg0_element_id) {
