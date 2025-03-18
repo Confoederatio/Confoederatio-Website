@@ -37,6 +37,7 @@
   min-width: 100%;
   max-height: 100%;
   max-width: 100%;
+  object-fit: cover;
 
   filter: grayscale(100);
   opacity: 0.15;
@@ -53,11 +54,9 @@
   overflow: hidden;
 
   align-items: center;
-  display: grid;
+  display: flex;
   flex-wrap: nowrap;
-  grid-auto-flow: column;
   justify-content: center;
-  place-items: center;
 }
 
 [alignment="centre"] {
@@ -71,8 +70,6 @@
   width: 60vw;
   max-width: 70vw;
   text-align: left;
-
-  overflow: visible;
 }
 [alignment="right"] {
   justify-content: right;
@@ -81,8 +78,6 @@
   width: 60vw;
   max-width: 70vw;
   text-align: right;
-
-  overflow: visible;
 }
 
 .homepage-banner-main-title[alignment="centre"] {
@@ -133,9 +128,11 @@
 }
 #homepage-caret-wrapper {
   display: inline-block;
+  position: sticky;
 
   align-items: baseline;
   white-space: nowrap;
+  right: 0;
 }
 
 /* -- Homepage banner footer -- */
