@@ -24,13 +24,14 @@
     return (document.querySelectorAll(`.${element_id}-panel.maximised .image-magnifier-glass`).length != 0);
   }
 
-  function magnify (arg0_element_id, arg1_zoom) {
+  function magnify (arg0_element, arg1_zoom) {
     //Convert from parameters
-    var element_id = arg0_element_id;
-    var local_el = document.getElementById(arg0_element_id);
+    var local_el = arg0_element;
     var zoom = arg1_zoom;
 
     //Declare global instance variables
+    var element_id = local_el.id;
+
     window[element_id + "_zoom"] = zoom;
     var local_zoom = window[element_id + "_zoom"];
 
@@ -43,10 +44,10 @@
     local_el.parentElement.insertBefore(local_magnifier, local_el);
 
     //Dynamic movement events - PC
-    local_el.addEventListener("mousemove", (e) => moveMagnifier(e, element_id, local_magnifier));
+    local_el.addEventListener("mousemove", (e) => moveMagnifier(e, local_el, local_magnifier));
 
     //Dynamic movement events - Mobile
-    local_el.addEventListener("touchmove", (e) => moveMagnifier(e, element_id, local_magnifier));
+    local_el.addEventListener("touchmove", (e) => moveMagnifier(e, local_el, local_magnifier));
 
     //Dynamic zoom
     local_el.addEventListener("wheel", (e) => {
@@ -65,16 +66,16 @@
     }, 0);
   }
 
-  function moveMagnifier (e, arg0_element_id, arg1_magnifier, arg2_zoom) {
+  function moveMagnifier (e, arg0_element, arg1_magnifier) {
     //Convert from parameters
-    var element_id = arg0_element_id;
-    var local_el = document.getElementById(arg0_element_id);
+    var local_el = arg0_element;
     var magnifier = arg1_magnifier;
-    var zoom = window[arg0_element_id + "_zoom"];
 
     //Declare local instance variables
+    var element_id = local_el.id;
     var local_bounds = local_el.getBoundingClientRect();
     var position = getCursorPosition(e, local_el);
+    var zoom = window[element_id + "_zoom"];
 
     var pan_x = position.x;
     var pan_y = position.y;
@@ -119,10 +120,13 @@
 
 //Initialise magnifiers for all .art-preview-image elements
 {
-  var all_art_preview_imgs = document.querySelectorAll(".art-preview-image-container");
+  setTimeout(function(){
+    var all_art_preview_imgs = document.querySelectorAll(".art-preview-image-container");
+    console.log(all_art_preview_imgs)
 
-  for (var i = 0; i < all_art_preview_imgs.length; i++) magnify(
-    all_art_preview_imgs[i].querySelector("img").id,
-    3
-  );
+    for (var i = 0; i < all_art_preview_imgs.length; i++) magnify(
+      all_art_preview_imgs[i].querySelector("img"),
+      3
+    );
+  }, 650);
 }
