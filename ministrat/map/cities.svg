@@ -1,0 +1,3135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1024"
+   height="1024"
+   viewBox="0 0 270.93333 270.93334"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="cities.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="182.03504"
+     inkscape:cy="521.27954"
+     inkscape:document-units="mm"
+     inkscape:current-layer="cities-layer"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="3840"
+     inkscape:window-height="2071"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:lockguides="false"
+     showguides="false" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Cities Layer"
+     inkscape:groupmode="layer"
+     id="cities-layer"
+     transform="translate(0,-26.06665)">
+    <image
+       y="124.2989"
+       x="204.35562"
+       id="west-berlin-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <image
+       y="123.91524"
+       x="207.98613"
+       id="ost-berlin-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="198.36411"
+       y="123.02423"
+       id="west-berlin"><tspan
+         sodipodi:role="line"
+         id="label-west-berlin"
+         x="198.36411"
+         y="123.02423"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">WEST-BERLIN</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="202.62985"
+       y="128.66997"
+       id="ost-berlin"><tspan
+         sodipodi:role="line"
+         id="label-ost-berlitext"
+         x="202.62985"
+         y="128.66997"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">OST-BERLIN</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="223.38698"
+       y="131.41406"
+       id="frankfurt-an-der-oder"><tspan
+         sodipodi:role="line"
+         id="label-frankfurt-an-der-oder"
+         x="223.38698"
+         y="131.41406"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">FRANKFURT AN DER ODER</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613724;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="frankfurt-an-der-oder-marker"
+       cx="235.71054"
+       cy="133.03551"
+       r="0.42526475"
+       inkscape:label="#frankfurt-an-der-oder-marker" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="eisenhuettenstadt-marker"
+       cx="239.15025"
+       cy="138.77914"
+       r="0.42526475"
+       inkscape:label="#eisenhuettenstadt-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="229.1754"
+       y="137.18236"
+       id="eisenhuettenstadt"><tspan
+         sodipodi:role="line"
+         id="label-eisenhuettenstadt"
+         x="229.1754"
+         y="137.18236"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">EISENHÜTTENSTADT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="227.32541"
+       y="149.38815"
+       id="cottbus"><tspan
+         sodipodi:role="line"
+         id="label-cottbus"
+         x="227.32541"
+         y="149.38815"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">COTTBUS</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="hoyerswerda-marker"
+       cx="229.69141"
+       cy="158.25911"
+       r="0.42526475" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="goerlitz-marker"
+       cx="248.07994"
+       cy="167.78409"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="222.12753"
+       y="156.57962"
+       id="hoyerswerda"><tspan
+         sodipodi:role="line"
+         id="label-hoyerswerda"
+         x="222.12753"
+         y="156.57962"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">HOYERSWERDA</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="243.87021"
+       y="165.82481"
+       id="goerlitz"><tspan
+         sodipodi:role="line"
+         id="label-goerlitz"
+         x="243.87021"
+         y="165.82481"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">GÖRLITZ</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="riesa-marker"
+       cx="208.32323"
+       cy="162.62355"
+       r="0.42526475"
+       inkscape:label="#riesa-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="205.26964"
+       y="161.0714"
+       id="riesa"><tspan
+         sodipodi:role="line"
+         id="label-riesa"
+         x="205.26964"
+         y="161.0714"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">RIESA</tspan></text>
+    <image
+       y="166.9908"
+       x="219.79984"
+       id="dresden-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="215.87047"
+       y="165.96724"
+       id="dresden"><tspan
+         sodipodi:role="line"
+         id="label-dresden"
+         x="215.87047"
+         y="165.96724"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">DRESDEN</tspan></text>
+    <image
+       y="128.16988"
+       x="198.23788"
+       id="potsdam-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666"
+       inkscape:label="#potsdam-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="194.58864"
+       y="132.58521"
+       id="potsdam"><tspan
+         sodipodi:role="line"
+         id="label-potsdam"
+         x="194.58864"
+         y="132.58521"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">POTSDAM</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="luckenwalde-marker"
+       cx="200.02499"
+       cy="136.59633"
+       r="0.42526475"
+       inkscape:label="#luckenwalde-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="192.56738"
+       y="139.82336"
+       id="luckenwalde"><tspan
+         sodipodi:role="line"
+         id="label-luckenwalde"
+         x="192.56738"
+         y="139.82336"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">LUCKENWALDE</tspan></text>
+    <image
+       y="157.76302"
+       x="185.8698"
+       id="image845-9-2"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="183.13197"
+       y="156.88744"
+       id="leipzig"><tspan
+         sodipodi:role="line"
+         id="label-leipzig"
+         x="183.13197"
+         y="156.88744"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">LEIPZIG</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="freiberg-marker"
+       cx="207.99557"
+       cy="173.60492"
+       r="0.42526475"
+       inkscape:label="#freiberg-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="203.0522"
+       y="171.6774"
+       id="freiberg"><tspan
+         sodipodi:role="line"
+         id="label-freiberg"
+         x="203.0522"
+         y="171.6774"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">FREIBERG</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="187.20093"
+       y="175.22424"
+       id="karl-marx-stadt"><tspan
+         sodipodi:role="line"
+         id="label-karl-marx-stadt"
+         x="187.20093"
+         y="175.22424"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">KARL-MARX-STADT</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="plauen-marker"
+       cx="178.62683"
+       cy="184.48593"
+       r="0.42526475" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="zwickau-marker"
+       cx="187.58958"
+       cy="177.83827"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="183.19235"
+       y="180.95535"
+       id="zwickau"><tspan
+         sodipodi:role="line"
+         id="label-zwickau"
+         x="183.19235"
+         y="180.95535"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">ZWICKAU</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="174.67564"
+       y="182.87259"
+       id="plauen"><tspan
+         sodipodi:role="line"
+         id="plauen-marker"
+         x="174.67564"
+         y="182.87259"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">PLAUEN</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="173.4295"
+       y="158.66179"
+       id="halle"><tspan
+         sodipodi:role="line"
+         id="label-halle"
+         x="173.4295"
+         y="158.66179"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">HALLE</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="gera-marker"
+       cx="177.03932"
+       cy="172.77811"
+       r="0.42526475"
+       inkscape:label="gera-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="174.32245"
+       y="175.84862"
+       id="gera"><tspan
+         sodipodi:role="line"
+         id="label-gera"
+         x="174.32245"
+         y="175.84862"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">GERA</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="jena-marker"
+       cx="166.06458"
+       cy="171.58043"
+       r="0.42526475"
+       inkscape:label="jena-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="156.01379"
+       y="168.13991"
+       id="weimar"><tspan
+         sodipodi:role="line"
+         id="label-weimar"
+         x="156.01379"
+         y="168.13991"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">WEIMAR</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="weimar-marker"
+       cx="159.97369"
+       cy="169.6031"
+       r="0.42526475"
+       inkscape:label="weimar-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="163.744"
+       y="175.2746"
+       id="jena"><tspan
+         sodipodi:role="line"
+         id="tspan907-1-1-3-3-5-1-6-5-7-8-8-9"
+         x="163.744"
+         y="175.2746"
+         style="label-jena">JENA</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="saalfeld-marker"
+       cx="159.72696"
+       cy="178.68977"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="154.50464"
+       y="181.98248"
+       id="saalfeld"><tspan
+         sodipodi:role="line"
+         id="label-saalfeld"
+         x="154.50464"
+         y="181.98248"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">SAALFELD</tspan></text>
+    <image
+       y="168.94165"
+       x="149.91953"
+       id="erfurt-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="147.08081"
+       y="173.51959"
+       id="erfurt"><tspan
+         sodipodi:role="line"
+         id="label-erfurt"
+         x="147.08081"
+         y="173.51959"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">ERFURT</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="suhl-marker"
+       cx="143.00853"
+       cy="176.86247"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="140.35422"
+       y="179.79785"
+       id="suhl"><tspan
+         sodipodi:role="line"
+         id="label-suhl"
+         x="140.35422"
+         y="179.79785"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">SUHL</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="eisenach-marker"
+       cx="134.4232"
+       cy="165.94437"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="129.54832"
+       y="169.1142"
+       id="eisenach"><tspan
+         sodipodi:role="line"
+         id="label-eisenach"
+         x="129.54832"
+         y="169.1142"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">EISENACH</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="nordhausen-marker"
+       cx="144.47922"
+       cy="150.64987"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="137.61249"
+       y="153.89388"
+       id="nordhausen"><tspan
+         sodipodi:role="line"
+         id="label-nordhausen"
+         x="137.61249"
+         y="153.89388"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">NORDHAUSEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="halberstadt-marker"
+       cx="151.87083"
+       cy="140.49895"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="144.68205"
+       y="138.75105"
+       id="halberstadt"><tspan
+         sodipodi:role="line"
+         id="label-harberstadt"
+         x="144.68205"
+         y="138.75105"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">HALBERSTADT</tspan></text>
+    <image
+       y="130.97394"
+       x="164.83539"
+       id="magdeburg-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="wittenberg-marker"
+       cx="189.14665"
+       cy="144.05499"
+       r="0.42526475" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="dessau-rosslau-marker"
+       cx="180.25993"
+       cy="144.94366"
+       r="0.42526475" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="stendal-marker"
+       cx="173.33765"
+       cy="121.1834"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="168.7618"
+       y="119.28991"
+       id="stendal"><tspan
+         sodipodi:role="line"
+         id="label-stendal"
+         x="168.7618"
+         y="119.28991"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">STENDAL</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="159.73216"
+       y="130.28416"
+       id="magdeburg"><tspan
+         sodipodi:role="line"
+         id="label-magdeburg"
+         x="159.73216"
+         y="130.28416"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">MAGDEBURG</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="171.94679"
+       y="148.05321"
+       id="dessau-rosslau"><tspan
+         sodipodi:role="line"
+         id="label-dessau-rosslau"
+         x="171.94679"
+         y="148.05321"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">DESSAU-ROßLAU</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="182.79482"
+       y="142.36311"
+       id="wittenberg"><tspan
+         sodipodi:role="line"
+         id="label-wittenberg"
+         x="182.79482"
+         y="142.36311"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">WITTENBERG</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="brandenburg-an-der-havel-marker"
+       cx="188.3983"
+       cy="129.36853"
+       r="0.42526475"
+       inkscape:label="#brandenburg-an-der-havel-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="188.32028"
+       y="124.80829"
+       id="brandenburg-an-der-havel"><tspan
+         sodipodi:role="line"
+         id="label-brandenburg-an-der-havel-1"
+         x="188.32028"
+         y="124.80829"
+         style="font-size:2.11666656px;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332">BRANDENBURG AN</tspan><tspan
+         sodipodi:role="line"
+         x="188.32028"
+         y="127.45412"
+         style="font-size:2.11666656px;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+         id="label-brandenburg-an-der-havel-2">DER HAVEL</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="neuruppin-marker"
+       cx="192.32716"
+       cy="110.84676"
+       r="0.42526475"
+       inkscape:label="#neuruppin-marker" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="schwedt-marker"
+       cx="228.62234"
+       cy="109.30328"
+       r="0.42526475"
+       inkscape:label="#schwedt-marker" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="eberswalde-marker"
+       cx="217.25673"
+       cy="116.59973"
+       r="0.42526475"
+       inkscape:label="#eberswalde-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="186.54733"
+       y="109.3559"
+       id="neuruppin"><tspan
+         sodipodi:role="line"
+         id="label-neuruppin"
+         x="186.54733"
+         y="109.3559"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">NEURUPPIN</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="223.86671"
+       y="107.71587"
+       id="schwedt"><tspan
+         sodipodi:role="line"
+         id="label-schwedt"
+         x="223.86671"
+         y="107.71587"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">SCHWEDT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="210.45679"
+       y="114.89558"
+       id="eberswalde"><tspan
+         sodipodi:role="line"
+         id="label-eberswalde"
+         x="210.45679"
+         y="114.89558"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">EBERSWALDE</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="schwerin-marker"
+       cx="159.98122"
+       cy="88.971077"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="154.78137"
+       y="92.09388"
+       id="schwerin"><tspan
+         sodipodi:role="line"
+         id="label-schwerin"
+         x="154.78137"
+         y="92.09388"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">SCHWERIN</tspan></text>
+    <image
+       y="141.90152"
+       x="136.79431"
+       id="goslar-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="133.85333"
+       y="141.18417"
+       id="goslar"><tspan
+         sodipodi:role="line"
+         id="label-goslar"
+         x="133.85333"
+         y="141.18417"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">GOSLAR</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="goettingen-marker"
+       cx="126.89288"
+       cy="148.4048"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="121.3617"
+       y="146.75662"
+       id="goettingen"><tspan
+         sodipodi:role="line"
+         id="label-goettingen"
+         x="121.3617"
+         y="146.75662"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">GÖTTINGEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="hameln-marker"
+       cx="112.8448"
+       cy="130.70935"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="108.59819"
+       y="129.20331"
+       id="hammeln"><tspan
+         sodipodi:role="line"
+         id="label-hammeln"
+         x="108.59819"
+         y="129.20331"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">HAMELN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="salzgitter-marker"
+       cx="136.99568"
+       cy="133.78256"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="131.05615"
+       y="132.00824"
+       id="salzgitter"><tspan
+         sodipodi:role="line"
+         id="label-salzgitter"
+         x="131.05615"
+         y="132.00824"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">SALZGITTER</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="hildesheim-marker"
+       cx="126.55674"
+       cy="129.72829"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="120.52702"
+       y="128.18652"
+       id="hildesheim"><tspan
+         sodipodi:role="line"
+         id="label-hildesheim"
+         x="120.52702"
+         y="128.18652"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">HILDESHEIM</tspan></text>
+    <image
+       y="126.67446"
+       x="137.08723"
+       id="braunschweig-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="130.25044"
+       y="125.60683"
+       id="braunschweig"><tspan
+         sodipodi:role="line"
+         id="label-braunschweig"
+         x="130.25044"
+         y="125.60683"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">BRAUNSCHWEIG</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="wolfsburg-marker"
+       cx="145.15703"
+       cy="122.54034"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="139.05688"
+       y="121.00968"
+       id="wolfsburg"><tspan
+         sodipodi:role="line"
+         id="label-wolfsburg"
+         x="139.05688"
+         y="121.00968"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">WOLFSBURG</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="celle-marker"
+       cx="130.91531"
+       cy="116.83358"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="127.71391"
+       y="115.20907"
+       id="celle"><tspan
+         sodipodi:role="line"
+         id="label-celle"
+         x="127.71391"
+         y="115.20907"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">CELLE</tspan></text>
+    <image
+       y="119.96066"
+       x="120.65002"
+       id="hannover-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="103.68995"
+       y="110.84496"
+       id="nienburg"><tspan
+         sodipodi:role="line"
+         id="label-nienburg"
+         x="103.68995"
+         y="110.84496"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">NIENBURG</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="nienburg-marker"
+       cx="108.84297"
+       cy="112.48619"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="116.14188"
+       y="119.40345"
+       id="hannover"><tspan
+         sodipodi:role="line"
+         id="label-hannover"
+         x="116.14188"
+         y="119.40345"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">HANNOVER</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="delmenhorst-marker"
+       cx="96.209114"
+       cy="-103.02734"
+       r="0.42526475"
+       transform="scale(1,-1)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="88.760406"
+       y="106.19303"
+       id="delmenhorst"><tspan
+         sodipodi:role="line"
+         id="label-delmenhorst"
+         x="88.760406"
+         y="106.19303"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">DELMENHORST</tspan></text>
+    <image
+       y="98.595558"
+       x="85.460426"
+       id="oldenburg-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="80.450172"
+       y="97.896423"
+       id="oldenburg"><tspan
+         sodipodi:role="line"
+         id="label-oldenburg"
+         x="80.450172"
+         y="97.896423"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">OLDENBURG</tspan></text>
+    <image
+       y="100.10659"
+       x="99.852615"
+       id="bremen-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="96.640755"
+       y="99.57769"
+       id="bremen"><tspan
+         sodipodi:role="line"
+         id="label-bremen"
+         x="96.640755"
+         y="99.57769"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">BREMEN</tspan></text>
+    <image
+       y="86.659584"
+       x="94.38028"
+       id="bremerhaven-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="87.888977"
+       y="90.855194"
+       id="bremerhaven"><tspan
+         sodipodi:role="line"
+         id="label-bremerhaven"
+         x="87.888977"
+         y="90.855194"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">BREMERHAVEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="lueneburg-marker"
+       cx="136.10703"
+       cy="104.62605"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="122.83483"
+       y="88.566597"
+       id="hamburg"><tspan
+         sodipodi:role="line"
+         id="label-hamburg"
+         x="122.83483"
+         y="88.566597"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">HAMBURG</tspan></text>
+    <image
+       y="154.22421"
+       x="175.7164"
+       id="image845-9-2-3"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <image
+       y="175.98618"
+       x="195.52708"
+       id="karl-marx-stadt-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <image
+       y="150.33989"
+       x="230.79131"
+       id="cottbus-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666"
+       inkscape:label="#cottbus-marker" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="cuxhaven-marker"
+       cx="97.42643"
+       cy="79.579567"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="92.09481"
+       y="82.646675"
+       id="cuxhaven"><tspan
+         sodipodi:role="line"
+         id="label-cuxhaven"
+         x="92.09481"
+         y="82.646675"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">CUXHAVEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="wilhelmshaven-marker"
+       cx="83.841911"
+       cy="86.397636"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="75.341133"
+       y="85.026871"
+       id="wilhelmshaven"><tspan
+         sodipodi:role="line"
+         id="label-wilhelmshaven"
+         x="75.341133"
+         y="85.026871"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">WILHELMSHAVEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="emden-marker"
+       cx="62.534389"
+       cy="89.050926"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="58.955353"
+       y="87.58062"
+       id="emden"><tspan
+         sodipodi:role="line"
+         id="label-emden"
+         x="58.955353"
+         y="87.58062"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">EMDEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="meppen-marker"
+       cx="63.169273"
+       cy="108.12055"
+       r="0.42526475" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="osnabrueck-marker"
+       cx="80.400261"
+       cy="123.43332"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="74.277641"
+       y="121.9192"
+       id="osnabrueck"><tspan
+         sodipodi:role="line"
+         id="label-osnabrueck"
+         x="74.277641"
+         y="121.9192"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">OSNABRÜCK</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="59.086834"
+       y="106.6085"
+       id="meppen"><tspan
+         sodipodi:role="line"
+         id="label-meppen"
+         x="59.086834"
+         y="106.6085"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">MEPPEN</tspan></text>
+    <image
+       y="89.235916"
+       x="126.73542"
+       id="hamburg-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="130.71274"
+       y="103.20223"
+       id="lueneburg"><tspan
+         sodipodi:role="line"
+         id="label-lueneburg"
+         x="130.71274"
+         y="103.20223"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">LÜNEBURG</tspan></text>
+    <image
+       y="79.380196"
+       x="144.56172"
+       id="luebeck-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="141.58214"
+       y="78.73951"
+       id="luebeck"><tspan
+         sodipodi:role="line"
+         id="label-luebeck"
+         x="141.58214"
+         y="78.73951"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">LÜBECK</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="kiel-marker"
+       cx="131.82864"
+       cy="68.135399"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="129.62143"
+       y="71.062691"
+       id="kiel"><tspan
+         sodipodi:role="line"
+         id="label-kiel"
+         x="129.62143"
+         y="71.062691"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">KIEL</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="norderstadt-marker"
+       cx="128.60008"
+       cy="84.818054"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="121.36486"
+       y="83.300972"
+       id="norderstadt"><tspan
+         sodipodi:role="line"
+         id="label-norderstadt"
+         x="121.36486"
+         y="83.300972"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">NORDERSTADT</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="neumuenster-marker"
+       cx="128.45522"
+       cy="76.2052"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="121.54606"
+       y="74.757217"
+       id="neumuenster"><tspan
+         sodipodi:role="line"
+         id="label-neumuenster"
+         x="121.54606"
+         y="74.757217"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">NEUMÜNSTER</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="schleswig-marker"
+       cx="123.15219"
+       cy="62.887058"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="117.37817"
+       y="65.779808"
+       id="schleswig"><tspan
+         sodipodi:role="line"
+         id="label-schleswig"
+         x="117.37817"
+         y="65.779808"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">SCHLESWIG</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="flensburg-marker"
+       cx="114.33308"
+       cy="52.954933"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="108.39007"
+       y="55.884418"
+       id="flensburg"><tspan
+         sodipodi:role="line"
+         id="label-flensburg"
+         x="108.39007"
+         y="55.884418"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">FLENSBURG</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="wismar-marker"
+       cx="161.95807"
+       cy="83.249718"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="157.90459"
+       y="86.448494"
+       id="wismar"><tspan
+         sodipodi:role="line"
+         id="label-wismar"
+         x="157.90459"
+         y="86.448494"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">WISMAR</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="guestrow-marker"
+       cx="179.05678"
+       cy="85.465607"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="174.2426"
+       y="88.81321"
+       id="guestrow"><tspan
+         sodipodi:role="line"
+         id="label-guestrow"
+         x="174.2426"
+         y="88.81321"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">GÜSTROW</tspan></text>
+    <image
+       y="77.065094"
+       x="176.57631"
+       id="rostock-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666"
+       inkscape:label="#rostock-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="173.1667"
+       y="81.266388"
+       id="rostock"><tspan
+         sodipodi:role="line"
+         id="label-rostock"
+         x="173.1667"
+         y="81.266388"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">ROSTOCK</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="waren-marker"
+       cx="189.80545"
+       cy="93.998421"
+       r="0.42526475"
+       inkscape:label="#waren-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="186.24496"
+       y="92.592827"
+       id="waren"><tspan
+         sodipodi:role="line"
+         id="label-waren"
+         x="186.24496"
+         y="92.592827"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">WAREN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="neustrelitz-marker"
+       cx="198.28481"
+       cy="98.252319"
+       r="0.42526475"
+       inkscape:label="#neustrelitz-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="191.61931"
+       y="96.726929"
+       id="neustrelitz"><tspan
+         sodipodi:role="line"
+         id="label-neustrelitz"
+         x="191.61931"
+         y="96.726929"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">NEUSTRELITZ</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="neubrandenburg-marker"
+       cx="203.92761"
+       cy="89.037483"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="194.24757"
+       y="87.432426"
+       id="neubrandenburg"><tspan
+         sodipodi:role="line"
+         id="label-neubrandenburg"
+         x="194.24757"
+         y="87.432426"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">NEUBRANDENBURG</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="greifswald-marker"
+       cx="206.87108"
+       cy="79.810143"
+       r="0.42526475" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="stralsund-marker"
+       cx="197.77603"
+       cy="73.03019"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="200.49319"
+       y="82.727783"
+       id="greifswald"><tspan
+         sodipodi:role="line"
+         id="label-greifswald"
+         x="200.49319"
+         y="82.727783"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">GREIFSWALD</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="191.918"
+       y="76.129745"
+       id="stralsund"><tspan
+         sodipodi:role="line"
+         id="label-stralsund"
+         x="191.918"
+         y="76.129745"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">STRALSUND</tspan></text>
+    <image
+       y="130.94012"
+       x="67.67337"
+       id="muenster-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="63.935173"
+       y="130.2722"
+       id="muenster"><tspan
+         sodipodi:role="line"
+         id="label-muenster"
+         x="63.935173"
+         y="130.2722"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">MÜNSTER</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="bielefeld-marker"
+       cx="89.254021"
+       cy="131.33061"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="83.836731"
+       y="129.95168"
+       id="bielefeld"><tspan
+         sodipodi:role="line"
+         id="label-bielfeld"
+         x="83.836731"
+         y="129.95168"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">BIELEFELD</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="detmold-marker"
+       cx="95.53112"
+       cy="133.37173"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="90.842003"
+       y="131.87416"
+       id="detmold"><tspan
+         sodipodi:role="line"
+         id="label-detmold"
+         x="90.842003"
+         y="131.87416"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">DETMOLD</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="paderborn-marker"
+       cx="93.711075"
+       cy="141.88744"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="87.621529"
+       y="140.44002"
+       id="paderborn"><tspan
+         sodipodi:role="line"
+         id="label-paderborn"
+         x="87.621529"
+         y="140.44002"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">PADERBORN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="siegen-marker"
+       cx="77.152885"
+       cy="164.5995"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="63.107113"
+       y="154.69962"
+       id="luedenscheid"><tspan
+         sodipodi:role="line"
+         id="label-luedenscheid"
+         x="63.107113"
+         y="154.69962"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">LÜDENSCHEID</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="luedenscheid-marker"
+       cx="70.088089"
+       cy="156.12222"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="73.56163"
+       y="163.15878"
+       id="siegen"><tspan
+         sodipodi:role="line"
+         id="label-siegen"
+         x="73.56163"
+         y="163.15878"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">SIEGEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="arnsberg-marker"
+       cx="77.721352"
+       cy="151.46262"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="72.315491"
+       y="150.04738"
+       id="arnsberg"><tspan
+         sodipodi:role="line"
+         id="label-arnsberg"
+         x="72.315491"
+         y="150.04738"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">ARNSBERG</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="hamm-marker"
+       cx="73.87664"
+       cy="138.99451"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="75.16835"
+       y="139.74112"
+       id="hamm"><tspan
+         sodipodi:role="line"
+         id="label-hamm"
+         x="75.16835"
+         y="139.74112"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">HAMM</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="bocholt-marker"
+       cx="44.053127"
+       cy="133.68593"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="39.398376"
+       y="136.7271"
+       id="bocholt"><tspan
+         sodipodi:role="line"
+         id="label-bocholt"
+         x="39.398376"
+         y="136.7271"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">BOCHOLT</tspan></text>
+    <image
+       y="161.23781"
+       x="28.431517"
+       id="aachen-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="25.487848"
+       y="160.65646"
+       id="aachen"><tspan
+         sodipodi:role="line"
+         id="label-aachen"
+         x="25.487848"
+         y="160.65646"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">AACHEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="dueren-marker"
+       cx="38.761459"
+       cy="162.72394"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="35.316708"
+       y="165.97232"
+       id="dueren"><tspan
+         sodipodi:role="line"
+         id="label-dueren"
+         x="35.316708"
+         y="165.97232"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">DÜREN</tspan></text>
+    <image
+       y="167.51038"
+       x="50.201611"
+       id="bonn-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="48.419785"
+       y="166.90869"
+       id="bonn"><tspan
+         sodipodi:role="line"
+         id="label-bonn"
+         x="48.419785"
+         y="166.90869"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">BONN</tspan></text>
+    <image
+       y="157.41573"
+       x="47.11237"
+       id="koeln-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="45.525906"
+       y="161.75552"
+       id="koeln"><tspan
+         sodipodi:role="line"
+         id="label-koeln"
+         x="45.525906"
+         y="161.75552"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">KÖLN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="moenchengladbach-marker"
+       cx="37.703125"
+       cy="151.6445"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="27.401945"
+       y="154.83591"
+       id="moenchengladbach"><tspan
+         sodipodi:role="line"
+         id="label-moenchengladbach"
+         x="27.401945"
+         y="154.83591"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">MÖNCHENGLADBACH</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="leverkusen-marker"
+       cx="49.632767"
+       cy="154.39836"
+       r="0.42526475" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="bergisch-gladbach-marker"
+       cx="51.87487"
+       cy="157.54803"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="43.048126"
+       y="152.77649"
+       id="leverkusen"><tspan
+         sodipodi:role="line"
+         id="label-leverkusen"
+         x="43.048126"
+         y="152.77649"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">LEVERKUSEN</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="53.316185"
+       y="158.27675"
+       id="bergisch-gladbach"><tspan
+         sodipodi:role="line"
+         id="label-bergisch-gladbach-01"
+         x="53.316185"
+         y="158.27675"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">BERGISCH-</tspan><tspan
+         sodipodi:role="line"
+         x="53.316185"
+         y="160.92258"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332"
+         id="label-bergisch-gladbach-02">GLADBACH</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="wuppertal-marker"
+       cx="52.718227"
+       cy="147.44426"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="38.400753"
+       y="145.38443"
+       id="duesseldorf"><tspan
+         sodipodi:role="line"
+         id="label-duesseldorf"
+         x="38.400753"
+         y="145.38443"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">DÜSSELDORF</tspan></text>
+    <image
+       y="145.7906"
+       x="43.937366"
+       id="duesseldorf-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="47.325275"
+       y="150.48697"
+       id="wuppertal"><tspan
+         sodipodi:role="line"
+         id="label-wuppertal"
+         x="47.325275"
+         y="150.48697"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">WUPPERTAL</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="duisburg-marker"
+       cx="44.284637"
+       cy="142.26834"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="39.233261"
+       y="140.73999"
+       id="duisburg"><tspan
+         sodipodi:role="line"
+         id="label-duisburg"
+         x="39.233261"
+         y="140.73999"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">DUISBURG</tspan></text>
+    <image
+       y="141.14915"
+       x="49.151588"
+       id="essen-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="51.749969"
+       y="142.92825"
+       id="essen"><tspan
+         sodipodi:role="line"
+         id="label-essen"
+         x="51.749969"
+         y="142.92825"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">ESSEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="gelsenkirchen-marker"
+       cx="52.162659"
+       cy="140.04428"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="53.574253"
+       y="140.79567"
+       id="gelsenkirchen"><tspan
+         sodipodi:role="line"
+         id="label-gelsenkirchen"
+         x="53.574253"
+         y="140.79567"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">GELSENKIRCHEN</tspan></text>
+    <image
+       y="141.12732"
+       x="64.657555"
+       id="dortmund-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="bochum-marker"
+       cx="53.787991"
+       cy="144.33562"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="54.754486"
+       y="146.99298"
+       id="bochum"><tspan
+         sodipodi:role="line"
+         id="label-bochum"
+         x="54.754486"
+         y="146.99298"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">BOCHUM</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="60.210506"
+       y="145.09869"
+       id="dortmund"><tspan
+         sodipodi:role="line"
+         id="label-dortmund"
+         x="60.210506"
+         y="145.09869"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">DORTMUND</tspan></text>
+    <image
+       y="208.08667"
+       x="47.273518"
+       id="saarbruecken-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="40.925354"
+       y="207.7269"
+       id="saarbruecken"><tspan
+         sodipodi:role="line"
+         id="label-saarbruecken"
+         x="40.925354"
+         y="207.7269"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">SAARBRÜCKEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="neunkirchen-marker"
+       cx="52.770184"
+       cy="204.88264"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="38.174416"
+       y="203.33852"
+       id="neunkirchen"><tspan
+         sodipodi:role="line"
+         id="label-neunkirchen"
+         x="38.174416"
+         y="203.33852"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">NEUNKIRCHEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="koblenz-marker"
+       cx="63.727077"
+       cy="178.73656"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="59.099651"
+       y="177.20682"
+       id="koblenz"><tspan
+         sodipodi:role="line"
+         id="label-koblenz"
+         x="59.099651"
+         y="177.20682"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">KOBLENZ</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="trier-marker"
+       cx="42.300259"
+       cy="194.47394"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="39.561024"
+       y="192.92067"
+       id="trier"><tspan
+         sodipodi:role="line"
+         id="label-trier"
+         x="39.561024"
+         y="192.92067"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">TRIER</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="cochem-marker"
+       cx="51.823559"
+       cy="182.73558"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="47.67968"
+       y="185.68524"
+       id="cochem"><tspan
+         sodipodi:role="line"
+         id="label-cochem"
+         x="47.67968"
+         y="185.68524"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">COCHEM</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="mainz-marker"
+       cx="80.986008"
+       cy="191.20134"
+       r="0.42526475" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="bad-kreuznach-marker"
+       cx="70.088097"
+       cy="194.33507"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="61.722759"
+       y="197.44896"
+       id="bad-kreuznach"><tspan
+         sodipodi:role="line"
+         id="label-bad-kreuznach"
+         x="61.722759"
+         y="197.44896"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">BAD KREUZNACH</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="77.869179"
+       y="194.06313"
+       id="mainz"><tspan
+         sodipodi:role="line"
+         id="label-mainz"
+         x="77.869179"
+         y="194.06313"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">MAINZ</tspan></text>
+    <image
+       y="187.77983"
+       x="79.509766"
+       id="wiesbaden-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="74.730324"
+       y="187.38704"
+       id="wiesbaden"><tspan
+         sodipodi:role="line"
+         id="label-wiesbaden"
+         x="74.730324"
+         y="187.38704"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">WIESBADEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="worms-marker"
+       cx="83.581863"
+       cy="201.84201"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="79.840813"
+       y="200.44186"
+       id="worms"><tspan
+         sodipodi:role="line"
+         id="label-worms"
+         x="79.840813"
+         y="200.44186"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">WORMS</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="frankenthal-marker"
+       cx="84.848572"
+       cy="204.36275"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="86.156502"
+       y="205.13066"
+       id="frankenthal"><tspan
+         sodipodi:role="line"
+         id="label-frankenthal"
+         x="86.156502"
+         y="205.13066"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">FRANKENTHAL</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="speyer-marker"
+       cx="85.311592"
+       cy="211.39075"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="76.880608"
+       y="216.48399"
+       id="landau"><tspan
+         sodipodi:role="line"
+         id="label-landau"
+         x="76.880608"
+         y="216.48399"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">LANDAU</tspan></text>
+    <image
+       y="206.60535"
+       x="87.894516"
+       id="mannheim-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="90.427025"
+       y="208.44041"
+       id="mannheim"><tspan
+         sodipodi:role="line"
+         id="label-mannheim"
+         x="90.427025"
+         y="208.44041"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">MANNHEIM</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="heidelberg-marker"
+       cx="91.611977"
+       cy="209.70404"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="93.013435"
+       y="210.46365"
+       id="heidelberg"><tspan
+         sodipodi:role="line"
+         id="label-heidelberg"
+         x="93.013435"
+         y="210.46365"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">HEIDELBERG</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="neustadt-an-der-weinstrasse-marker"
+       cx="76.936317"
+       cy="209.77042"
+       r="0.42526475" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="landau-marker"
+       cx="75.637756"
+       cy="214.64842"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="76.736641"
+       y="205.56062"
+       id="neustadt-an-der-weinstrasse"><tspan
+         sodipodi:role="line"
+         id="label-neustadt-an-der-weinstrasse-01"
+         x="76.736641"
+         y="205.56062"
+         style="font-size:2.11666656px;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332">NEUSTADT AN</tspan><tspan
+         sodipodi:role="line"
+         x="76.736641"
+         y="208.20645"
+         style="font-size:2.11666656px;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+         id="label-neustadt-an-der-weinstrasse-02">DER WEINSTRAßE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="81.596054"
+       y="214.25879"
+       id="speyer"><tspan
+         sodipodi:role="line"
+         id="label-speyer"
+         x="81.596054"
+         y="214.25879"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">SPEYER</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="zweibruecken-marker"
+       cx="59.517586"
+       cy="210.56502"
+       r="0.42526475" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="pirmasens-marker"
+       cx="64.381889"
+       cy="213.32457"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="60.772064"
+       y="211.34395"
+       id="zweibruecken"><tspan
+         sodipodi:role="line"
+         id="label-zweibruecken"
+         x="60.772064"
+         y="211.34395"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">ZWEIBRÜCKEN</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="58.597973"
+       y="216.28656"
+       id="pirmasens"><tspan
+         sodipodi:role="line"
+         id="label-pirmasens"
+         x="58.597973"
+         y="216.28656"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">PIRMASENS</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="kaiserslautern-marker"
+       cx="67.913185"
+       cy="204.85881"
+       r="0.42526475" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="ludwigshafen-marker"
+       cx="86.254166"
+       cy="209.35675"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="86.829842"
+       y="212.34055"
+       id="ludwigshafen"><tspan
+         sodipodi:role="line"
+         id="label-ludwigshafen"
+         x="86.829842"
+         y="212.34055"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">LUDWIGSHAFEN</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="59.140079"
+       y="203.43243"
+       id="kaiserslautern"><tspan
+         sodipodi:role="line"
+         id="label-kaiserslautern"
+         x="59.140079"
+         y="203.43243"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">KAISERSLAUTERN</tspan></text>
+    <image
+       y="153.96623"
+       x="111.15531"
+       id="kassel-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="108.32"
+       y="153.64645"
+       id="kassel"><tspan
+         sodipodi:role="line"
+         id="label-kassel"
+         x="108.32"
+         y="153.64645"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">KASSEL</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="bad-hersfeld-marker"
+       cx="119.5029"
+       cy="169.17166"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="111.95211"
+       y="172.14847"
+       id="bad-hersfeld"><tspan
+         sodipodi:role="line"
+         id="label-bad-hersfeld"
+         x="111.95211"
+         y="172.14847"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">BAD HERSFELD</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="fulda-marker"
+       cx="119.4263"
+       cy="178.10284"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="116.14278"
+       y="176.75407"
+       id="fulda"><tspan
+         sodipodi:role="line"
+         id="label-fulda"
+         x="116.14278"
+         y="176.75407"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">FULDA</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="hanau-marker"
+       cx="99.549896"
+       cy="188.59402"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="96.066826"
+       y="187.37315"
+       id="hanau"><tspan
+         sodipodi:role="line"
+         id="label-hanau"
+         x="96.066826"
+         y="187.37315"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">HANAU</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="wetzlar-marker"
+       cx="85.584068"
+       cy="174.00992"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="80.974457"
+       y="172.65189"
+       id="wetzlar"><tspan
+         sodipodi:role="line"
+         id="label-wetzlar"
+         x="80.974457"
+         y="172.65189"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">WETZLAR</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="giessen-marker"
+       cx="92.187943"
+       cy="171.93121"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="88.598785"
+       y="170.50819"
+       id="giessen"><tspan
+         sodipodi:role="line"
+         id="label-giessen"
+         x="88.598785"
+         y="170.50819"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">GIEßEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="marburg-marker"
+       cx="94.92411"
+       cy="166.27177"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="89.951744"
+       y="164.95316"
+       id="marburg"><tspan
+         sodipodi:role="line"
+         id="label-marburg"
+         x="89.951744"
+         y="164.95316"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">MARBURG</tspan></text>
+    <image
+       y="186.30493"
+       x="90.024475"
+       id="frankfurt-am-main-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="91.061111"
+       y="182.98059"
+       id="frankfurt-am-main"><tspan
+         sodipodi:role="line"
+         id="label-frankfurt-am-main-01"
+         x="91.061111"
+         y="182.98059"
+         style="font-size:2.11666656px;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332">FRANKFURT AM</tspan><tspan
+         sodipodi:role="line"
+         x="91.061111"
+         y="185.62642"
+         style="font-size:2.11666656px;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332"
+         id="label-frankfurt-am-main-02">MAIN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="offenbach-marker"
+       cx="93.614494"
+       cy="188.51076"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="87.643997"
+       y="191.50124"
+       id="offenbach"><tspan
+         sodipodi:role="line"
+         id="label-offenbach"
+         x="87.643997"
+         y="191.50124"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">OFFENBACH</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="86.615089"
+       y="197.96346"
+       id="darmstadt"><tspan
+         sodipodi:role="line"
+         id="label-darmstadt"
+         x="86.615089"
+         y="197.96346"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">DARMSTADT</tspan></text>
+    <image
+       y="193.81462"
+       x="91.550552"
+       id="darmstadt-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <image
+       y="218.85339"
+       x="84.200317"
+       id="karlsruhe-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="79.25351"
+       y="218.45198"
+       id="karlsruhe"><tspan
+         sodipodi:role="line"
+         id="label-karlsruhe"
+         x="79.25351"
+         y="218.45198"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">KARLSRUHE</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="pforzheim-marker"
+       cx="91.01667"
+       cy="223.54503"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="85.403564"
+       y="226.44614"
+       id="pforzheim"><tspan
+         sodipodi:role="line"
+         id="label-pforzheim"
+         x="85.403564"
+         y="226.44614"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">PFORZHEIM</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="baden-baden-marker"
+       cx="79.226166"
+       cy="231.54868"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="71.875595"
+       y="230.09541"
+       id="baden-baden"><tspan
+         sodipodi:role="line"
+         id="label-baden-baden"
+         x="71.875595"
+         y="230.09541"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">BADEN-BADEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="offenburg-marker"
+       cx="70.579193"
+       cy="237.79811"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="64.598572"
+       y="236.42137"
+       id="offenburg"><tspan
+         sodipodi:role="line"
+         id="label-offenburg"
+         x="64.598572"
+         y="236.42137"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">OFFENBURG</tspan></text>
+    <image
+       y="247.70438"
+       x="65.732323"
+       id="freiburg-im-breisgau-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="55.225574"
+       y="247.1458"
+       id="freiburg-im-breisgau"><tspan
+         sodipodi:role="line"
+         id="label-freiburg-im-breisgau"
+         x="55.225574"
+         y="247.1458"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">FREIBURG IM BREISGAU</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="villingen-schwenningen-marker"
+       cx="84.798965"
+       cy="248.12401"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="71.018867"
+       y="251.02184"
+       id="villingen-schwenningen"><tspan
+         sodipodi:role="line"
+         id="label-villingen-schwenningen"
+         x="71.018867"
+         y="251.02184"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">VILLINGEN-SCHWENNINGEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="konstanz-marker"
+       cx="102.75755"
+       cy="260.65283"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="97.4972"
+       y="259.21207"
+       id="konstanz"><tspan
+         sodipodi:role="line"
+         id="label-konstanz"
+         x="97.4972"
+         y="259.21207"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">KONSTANZ</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="sigmaringen-marker"
+       cx="104.69949"
+       cy="249.12866"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="97.833473"
+       y="247.75192"
+       id="sigmaringen"><tspan
+         sodipodi:role="line"
+         id="label-sigmaringen"
+         x="97.833473"
+         y="247.75192"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">SIGMARINGEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="ulm-marker"
+       cx="123.59545"
+       cy="242.83783"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="121.47612"
+       y="241.50783"
+       id="ulm"><tspan
+         sodipodi:role="line"
+         id="label-ulm"
+         x="121.47612"
+         y="241.50783"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">ULM</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="reutlingen-marker"
+       cx="104.17969"
+       cy="237.96481"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="97.910301"
+       y="240.99825"
+       id="reutlingen"><tspan
+         sodipodi:role="line"
+         id="label-reutlingen"
+         x="97.910301"
+         y="240.99825"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">REUTLINGEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="tuebingen-marker"
+       cx="99.814064"
+       cy="237.76639"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="94.932701"
+       y="236.40936"
+       id="tuebingen"><tspan
+         sodipodi:role="line"
+         id="label-tuebingen"
+         x="94.932701"
+         y="236.40936"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">TÜBINGEN</tspan></text>
+    <image
+       y="226.46161"
+       x="101.79366"
+       id="stuttgart-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="97.297417"
+       y="230.56372"
+       id="stuttgart"><tspan
+         sodipodi:role="line"
+         id="label-stuttgart"
+         x="97.297417"
+         y="230.56372"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">STUTTGART</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="ludwigsburg-marker"
+       cx="103.22618"
+       cy="223.42735"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="95.984993"
+       y="222.09288"
+       id="ludwigsburg"><tspan
+         sodipodi:role="line"
+         id="label-ludwigsburg"
+         x="95.984993"
+         y="222.09288"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">LUDWIGSBURG</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="heilbronn-marker"
+       cx="103.96629"
+       cy="217.9982"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="98.247963"
+       y="216.53149"
+       id="heilbronn"><tspan
+         sodipodi:role="line"
+         id="label-heilbronn"
+         x="98.247963"
+         y="216.53149"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">HEILBRONN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="aalen-marker"
+       cx="126.56549"
+       cy="227.16914"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="123.32859"
+       y="230.00186"
+       id="aalen"><tspan
+         sodipodi:role="line"
+         id="label-aalen"
+         x="123.32859"
+         y="230.00186"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">AALEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="schwaebisch-hall-marker"
+       cx="119.38596"
+       cy="220.78474"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="109.88583"
+       y="219.27617"
+       id="schwaebisch-hall"><tspan
+         sodipodi:role="line"
+         id="label-schwaebisch-hall"
+         x="109.88583"
+         y="219.27617"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">SCHWÄBISCH HALL</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="aschaffenburg-marker"
+       cx="104.47734"
+       cy="192.52264"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="95.921532"
+       y="195.54829"
+       id="aschaffenburg"><tspan
+         sodipodi:role="line"
+         id="label-aschaffenburg"
+         x="95.921532"
+         y="195.54829"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">ASCHAFFENBURG</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="schweinfurt-marker"
+       cx="129.71196"
+       cy="190.86899"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="122.57177"
+       y="193.90434"
+       id="schweinfurt"><tspan
+         sodipodi:role="line"
+         id="label-schweinfurt"
+         x="122.57177"
+         y="193.90434"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">SCHWEINFURT</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="wuerzburg-marker"
+       cx="124.75104"
+       cy="200.16249"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="119.27127"
+       y="198.69797"
+       id="wuerzburg"><tspan
+         sodipodi:role="line"
+         id="label-wuerzburg"
+         x="119.27127"
+         y="198.69797"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">WÜRZBURG</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="coburg-marker"
+       cx="150.79347"
+       cy="188.72241"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="146.74016"
+       y="191.76562"
+       id="coburg"><tspan
+         sodipodi:role="line"
+         id="label-coburg"
+         x="146.74016"
+         y="191.76562"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">COBURG</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="hof-marker"
+       cx="173.86433"
+       cy="187.23097"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="171.79933"
+       y="190.23131"
+       id="hof"><tspan
+         sodipodi:role="line"
+         id="label-hof"
+         x="171.79933"
+         y="190.23131"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">HOF</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="bayeruth-marker"
+       cx="165.1689"
+       cy="198.95137"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="160.01349"
+       y="197.32558"
+       id="bayeruth"><tspan
+         sodipodi:role="line"
+         id="label-bayeruth"
+         x="160.01349"
+         y="197.32558"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">BAYERUTH</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="bamberg-marker"
+       cx="148.36511"
+       cy="199.50104"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="143.50854"
+       y="198.07889"
+       id="bamberg"><tspan
+         sodipodi:role="line"
+         id="label-bamberg"
+         x="143.50854"
+         y="198.07889"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">BAMBERG</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="erlangen-marker"
+       cx="150.87865"
+       cy="206.11562"
+       r="0.42526475"
+       inkscape:label="#erlangen-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="145.43277"
+       y="204.70085"
+       id="erlangen"><tspan
+         sodipodi:role="line"
+         id="label-erlangen"
+         x="145.43277"
+         y="204.70085"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">ERLANGEN</tspan></text>
+    <image
+       y="209.45992"
+       x="152.07373"
+       id="nuernberg-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="154.44321"
+       y="211.34521"
+       id="nuernberg"><tspan
+         sodipodi:role="line"
+         id="label-nuernberg"
+         x="154.44321"
+         y="211.34521"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">NÜRNBERG</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="fuerth-marker"
+       cx="150.5596"
+       cy="209.4191"
+       r="0.42526475"
+       inkscape:label="#fuerth-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="151.89615"
+       y="209.01199"
+       id="fuerth"><tspan
+         sodipodi:role="line"
+         id="label-fuerth"
+         x="151.89615"
+         y="209.01199"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">FÜRTH</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="schwabach-marker"
+       cx="151.93939"
+       cy="214.56404"
+       r="0.42526475"
+       inkscape:label="#schwabach-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="153.43669"
+       y="215.31088"
+       id="schwabach"><tspan
+         sodipodi:role="line"
+         id="label-schwabach"
+         x="153.43669"
+         y="215.31088"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">SCHWABACH</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="ansbach-marker"
+       cx="140.85756"
+       cy="216.12016"
+       r="0.42526475"
+       inkscape:label="#ansbach-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="136.19427"
+       y="219.13419"
+       id="ansbach"><tspan
+         sodipodi:role="line"
+         id="label-ansbach"
+         x="136.19427"
+         y="219.13419"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">ANSBACH</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="weiden-marker"
+       cx="178.26302"
+       cy="209.29062"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="174.42139"
+       y="207.88605"
+       id="weiden"><tspan
+         sodipodi:role="line"
+         id="label-weiden"
+         x="174.42139"
+         y="207.88605"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">WEIDEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="amberg-marker"
+       cx="170.34425"
+       cy="210.72873"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="166.18025"
+       y="213.57941"
+       id="label-amberg"><tspan
+         sodipodi:role="line"
+         id="amberg"
+         x="166.18025"
+         y="213.57941"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">AMBERG</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="cham-marker"
+       cx="195.494"
+       cy="220.60155"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="192.59599"
+       y="223.58534"
+       id="cham"><tspan
+         sodipodi:role="line"
+         id="label-cham"
+         x="192.59599"
+         y="223.58534"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">CHAM</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="regensburg-marker"
+       cx="178.13072"
+       cy="225.19868"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="171.39523"
+       y="223.78378"
+       id="regensburg"><tspan
+         sodipodi:role="line"
+         id="label-regensburg"
+         x="171.39523"
+         y="223.78378"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">REGENSBURG</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="landshut-marker"
+       cx="182.48581"
+       cy="243.79295"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="177.0381"
+       y="242.23279"
+       id="landshut"><tspan
+         sodipodi:role="line"
+         id="label-landshut"
+         x="177.0381"
+         y="242.23279"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">LANDSHUT</tspan></text>
+    <image
+       y="253.84669"
+       x="167.83597"
+       id="muenchen-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="129.0394"
+       y="260.36639"
+       id="kempten"><tspan
+         sodipodi:role="line"
+         id="label-kempten"
+         x="129.0394"
+         y="260.36639"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">KEMPTEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="passau-marker"
+       cx="213.55182"
+       cy="241.27213"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="209.66058"
+       y="239.8076"
+       id="passau"><tspan
+         sodipodi:role="line"
+         id="label-passau"
+         x="209.66058"
+         y="239.8076"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">PASSAU</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="deggendorf-marker"
+       cx="205.14273"
+       cy="233.76678"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="198.38667"
+       y="232.36147"
+       id="deggendorf"><tspan
+         sodipodi:role="line"
+         id="label-deggendorf"
+         x="198.38667"
+         y="232.36147"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">DEGGENDORF</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="straubing-marker"
+       cx="193.13092"
+       cy="233.09276"
+       r="0.42526475" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="187.57759"
+       y="236.08504"
+       id="straubing"><tspan
+         sodipodi:role="line"
+         id="label-straubing"
+         x="187.57759"
+         y="236.08504"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">STRAUBING</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rosenheim-marker"
+       cx="181.29225"
+       cy="262.94629"
+       r="0.42526475"
+       inkscape:label="#rosenheim-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="175.40738"
+       y="261.44763"
+       id="rosenheim"><tspan
+         sodipodi:role="line"
+         id="label-rosenheim"
+         x="175.40738"
+         y="261.44763"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">ROSENHEIM</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="burghausen-marker"
+       cx="198.12691"
+       cy="253.17447"
+       r="0.42526475"
+       inkscape:label="#burghausen-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="191.33594"
+       y="251.77431"
+       id="burghausen"><tspan
+         sodipodi:role="line"
+         id="label-burghausen"
+         x="191.33594"
+         y="251.77431"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">BURGHAUSEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="garmisch-partenkirchen-marker"
+       cx="154.32959"
+       cy="268.5415"
+       r="0.42526475"
+       inkscape:label="#garmisch-partenkirchen-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="140.35008"
+       y="267.13617"
+       id="garmisch-partenkirchen"><tspan
+         sodipodi:role="line"
+         id="label-garmisch-partenkirchen"
+         x="140.35008"
+         y="267.13617"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">GARMISCH-PARTENKIRCHEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="kempten-marker"
+       cx="133.77995"
+       cy="261.81039"
+       r="0.42526475"
+       inkscape:label="#kempten-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="163.83722"
+       y="253.51062"
+       id="muenchen"><tspan
+         sodipodi:role="line"
+         id="label-muenchen"
+         x="163.83722"
+         y="253.51062"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">MÜNCHEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="memmingen-marker"
+       cx="131.56406"
+       cy="253.36026"
+       r="0.42526475"
+       inkscape:label="#memmingen-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="125.33257"
+       y="252.05345"
+       id="memmingen"><tspan
+         sodipodi:role="line"
+         id="label-memmingen"
+         x="125.33257"
+         y="252.05345"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">MEMMINGEN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="neu-ulm-marker"
+       cx="125.95744"
+       cy="243.56277"
+       r="0.42526475"
+       inkscape:label="#neu-ulm-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="121.24356"
+       y="246.38777"
+       id="neu-ulm"><tspan
+         sodipodi:role="line"
+         id="label-neu-ulm"
+         x="121.24356"
+         y="246.38777"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">NEU-ULM</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="kaufbeuren-marker"
+       cx="143.19299"
+       cy="254.67119"
+       r="0.42526475"
+       inkscape:label="kaufbeuren-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="136.49077"
+       y="257.71439"
+       id="kaufbeuren"><tspan
+         sodipodi:role="line"
+         id="label-kaufbeuren"
+         x="136.49077"
+         y="257.71439"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">KAUFBEUREN</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="dachau-marker"
+       cx="165.29283"
+       cy="250.36813"
+       r="0.42526475"
+       inkscape:label="#dachau-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="166.57147"
+       y="251.11589"
+       id="dachau"><tspan
+         sodipodi:role="line"
+         id="label-dachau"
+         x="166.57147"
+         y="251.11589"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">DACHAU</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="freising-marker"
+       cx="172.33205"
+       cy="246.79005"
+       r="0.42526475"
+       inkscape:label="#freising-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="167.716"
+       y="245.4133"
+       id="freising"><tspan
+         sodipodi:role="line"
+         id="label-freising"
+         x="167.716"
+         y="245.4133"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">FREISING</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="ingolstadt-marker"
+       cx="164.89528"
+       cy="232.38994"
+       r="0.42526475"
+       inkscape:label="#ingolstadt-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="158.79697"
+       y="230.95436"
+       id="ingolstadt"><tspan
+         sodipodi:role="line"
+         id="label-ingolstadt"
+         x="158.79697"
+         y="230.95436"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">INGOLSTADT</tspan></text>
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.26613736;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="donauworth-marker"
+       cx="147.02997"
+       cy="232.56795"
+       r="0.42526475"
+       inkscape:label="#donauworth-marker" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="140.09442"
+       y="231.20132"
+       id="donauworth"><tspan
+         sodipodi:role="line"
+         id="label-donauworth"
+         x="140.09442"
+         y="231.20132"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">DONAUWORTH</tspan></text>
+    <image
+       y="241.50363"
+       x="147.30678"
+       id="augsburg-marker"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2.1166666"
+       width="2.1166666" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11666656px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="143.06619"
+       y="240.84941"
+       id="augsburg"><tspan
+         sodipodi:role="line"
+         id="label-augsburg"
+         x="143.06619"
+         y="240.84941"
+         style="font-size:2.11666656px;fill:#ffffff;stroke-width:0.26458332">AUGSBURG</tspan></text>
+  </g>
+</svg>

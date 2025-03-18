@@ -1,0 +1,121 @@
+/* -- Parallax on hover states -- */
+.parallax-item:hover {
+  cursor: pointer;
+  padding-left: 0.5vh;
+  padding-top: 0.5vh;
+  transform: translate(-0.25vh, -0.25vh);
+
+  background-color: rgba(120, 120, 120);
+  opacity: 1;
+  z-index: 3;
+  box-shadow: 0vh 0vh 2vh rgba(0, 0, 0, 0.7);
+}
+.parallax-item:hover > .parallax-item-colour-bg {
+  opacity: 0.5;
+}
+.parallax-item:hover > .parallax-item-bg {
+  opacity: 0.5;
+}
+
+/* -- Parallax Keyframes -- */
+[animation] {
+  transition: transform 0.75s ease, opacity 0.3s ease !important;
+}
+[animation*="-shown"] {
+  opacity: 1;
+  transform: translate(0vh, 0vh);
+}
+[animation]:not([animation*="-shown"]) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+[animation="anno-1800"] {
+  transform: translate(-24vh, 0vh);
+}
+[animation="triumph-and-tragedy-one"] {
+  transform: translate(-28vh, -28vh);
+}
+[animation="universal-bot-framework"] {
+  transform: translate(0vh, -14vh);
+}
+[animation="triumph-and-tragedy-mod-creator"] {
+  transform: translate(0vh, -14vh);
+}
+[animation="triumph-and-tragedy-two"] {
+  transform: translate(-28vh, -4vh);
+}
+[animation="system-dynamics"] {
+  transform: translate(0vh, -16vh);
+}
+[animation="into-modernity"] {
+  transform: translate(0vh, -16vh);
+}
+[animation="proxy-cables"] {
+  transform: translate(-16vh, 0vh);
+}
+[animation="last-man-standing"] {
+  transform: translate(-16vh, 0vh);
+}
+
+[animation="empires-undone"] {
+  transform: translate(-24vh, 0vh);
+}
+[animation="eleven-fiftynine"] {
+  transform: translate(-16vh, 8vh);
+}
+[animation="hoi4-map-renderer"] {
+  transform: translate(-16vh, 4vh);
+}
+
+[animation="project-trinity"] {
+  transform: translate(0vh, -28vh);
+}
+[animation="js-in-4"] {
+  transform: translate(-24vh, 0vh);
+}
+
+[animation="armoured-advance"] {
+  transform: translate(0vh, -16vh);
+}
+[animation="brooklyn-bridge"] {
+  transform: translate(-32vh, -8vh);
+}
+[animation="the-colorado"] {
+  transform: translate(0vh, -18vh);
+}
+[animation="resolute"] {
+  transform: translate(0vh, 16vh);
+}
+[animation="les-halles"] {
+  transform: translate(-32vh, -8vh);
+}
+[animation="boats-on-a-pond"] {
+  transform: translate(-24vh, 0vh);
+}
+
+[animation="clouds-and-sunset"] {
+  transform: translate(0vh, -24vh);
+}
+[animation="sinking-of-a-battleship"] {
+  transform: translate(-24vh, 0vh);
+}
+[animation="journal-sketches"] {
+  transform: translate(-16vh, -16vh);
+}
+[animation="sketch-one"] {
+  transform: translate(0vh, -12vh);
+}
+[animation="past"] {
+  transform: translate(0vh, -12vh);
+}
+[animation="sketch-two"] {
+  transform: translate(-12vh, 0vh);
+}
+[animation="broken-mirror"] {
+  transform: translate(-18vh, 0vh);
+}
+
+[animation="the-adriatic"] {
+  transform: translate(-28vh, 0vh);
+}

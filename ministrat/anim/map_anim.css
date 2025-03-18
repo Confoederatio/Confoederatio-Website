@@ -1,0 +1,112 @@
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-blink {
+  80% {
+    opacity: 1;
+  }
+  83% {
+    opacity: 0;
+  }
+  84% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  91% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 0;
+  }
+  94% {
+    opacity: 1;
+  }
+  96% {
+    opacity: 0;
+  }
+  97% {
+    opacity: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.ministrat-map-btn:not(.expanded) svg {
+  height: 20vw;
+  width: 20vw;
+
+  pointer-events: none;
+}
+.ministrat-map-btn:not(.expanded):hover {
+  cursor: pointer;
+}
+
+.ministrat-container {
+  transition: all 2s ease;
+}
+.ministrat-container.expanded {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 1;
+}
+.ministrat-map-btn.expanded {
+  position: fixed;
+  left: 50%;
+
+  height: 90vh;
+  width: 80vh;
+
+  transition: all 2s ease;
+  z-index: 2;
+}
+.ministrat-map-btn.expanded svg {
+  transform: translate(-50%, 0) rotate(-12.5deg);
+  transition: all 2s ease;
+}
+.ministrat-container.expanded .ministrat-cities-overlay {
+  position: fixed;
+  top: 1%;
+  left: 1%;
+
+  height: 98%;
+  width: 98%;
+}
+
+/* -- Map animation -- */
+#inner-german-border, #west-berlin-border {
+  stroke-dasharray: 1000 !important;
+  stroke-dashoffset: -385;
+}
+#inner-german-border.drawn, #west-berlin-border.drawn {
+  animation: draw 5s linear forwards;
+}
+.east-german-province {
+  stroke-dasharray: 1000 !important;
+  stroke-dashoffset: -300;
+}
+.east-german-province.drawn {
+  animation: draw-blink 6s ease forwards;
+}
+.german-border {
+  transition: all 2s ease;
+}
+.german-border.drawn, #west-berlin-border.drawn {
+  stroke-width: 1px !important;
+}
+.west-german-province {
+  stroke-dasharray: 1000 !important;
+  stroke-dashoffset: -300;
+}
+.west-german-province.drawn {
+  animation: draw-blink 5s ease forwards;
+}

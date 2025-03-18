@@ -1,0 +1,775 @@
+/* -- Parallax positioning and backgrounds -- */
+.project-parallax-container {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: -2vh 0 5vh rgba(0, 0, 0, 0.7),
+              -2vh 0 5vh rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+.project-parallax-container-gradient-bg {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 1.0);
+  background: -webkit-linear-gradient(top left, rgba(38, 54, 76, 1.0), rgba(5, 5, 5, 1.0));
+  background: -moz-linear-gradient(top left, rgba(38, 54, 76, 1.0), rgba(5, 5, 5, 1.0));
+  background: linear-gradient(to bottom right, rgba(38, 54, 76, 1.0), rgba(5, 5, 5, 1.0));
+	filter: brightness(0.7);
+}
+.project-parallax-container-room-bg {
+	position: absolute;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+	background-image: url("../../../gfx/interface/chernobyl_abandoned_room_bg.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	filter: brightness(0.1);
+	opacity: 0.2;
+}
+.project-parallax-scroll-container.slow-scroll, .parallax-panel-scroll-container.slow-scroll {
+  transition: all 1s ease;
+}
+.project-parallax-scroll-container.fast-scroll {
+	transition: all 0.25s ease;
+}
+.parallax-panel-scroll-container {
+	transition: all 0.5s ease;
+}
+
+/* -- Parallax header elements -- */
+.parallax-header {
+	color: white;
+	font-family: "Barlow";
+	font-size: 7vh;
+	font-weight: 100;
+
+	text-transform: uppercase;
+	text-shadow: 0vh 0.2vh 0.2vh rgba(0, 0, 0, 0.7);
+}
+.parallax-subheader {
+	color: white;
+	font-family: "Barlow";
+	font-size: 5vh;
+	font-weight: 700;
+}
+.parallax-subheader-barlow {
+	color: white;
+	font-family: "Barlow";
+	font-size: 4vh;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+.parallax-line {
+	position: absolute;
+	background: transparent;
+	border: 0px solid white;
+	border-bottom: 0.2vh solid white;
+	width: 5vw;
+	left: 0.1vw;
+}
+
+/* -- Parallax header positioning -- */
+.i-do-stuff {
+	position: absolute;
+	top: calc(5vh + var(--parallax-offset-y));
+	left: calc(5vw + var(--parallax-offset-x));
+}
+.technical {
+	position: absolute;
+	top: calc(20vh + var(--parallax-offset-y));
+	left: calc(7vw + var(--parallax-offset-x));
+}
+.artistic {
+	position: absolute;
+	top: calc(20vh + var(--parallax-offset-y));
+	left: calc(23vw + 214vh + var(--parallax-offset-x));
+}
+.cartographic {
+	position: absolute;
+	top: calc(20vh + var(--parallax-offset-y));
+	left: calc(23vw + 430vh + var(--parallax-offset-x));
+}
+.coming-soon {
+	position: absolute;
+	top: calc(28vh + var(--parallax-offset-y));
+	left: calc(23vw + 434vh + var(--parallax-offset-x));
+	width: 40vh;
+}
+
+/* -- Parallax items -- */
+.parallax-item-bg, .parallax-item-colour-bg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+
+  transition: all 0.5s ease;
+}
+.parallax-item {
+  transition: background-color 0.5s ease, padding 0.5s ease, transform 0.5s ease;
+}
+.parallax-item-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+	opacity: 0.2;
+}
+.parallax-item.large-square {
+	height: 32vh;
+	width: 32vh;
+	box-shadow: 0px 0px 4vh rgba(0, 0, 0, 0.7);
+}
+.parallax-item.sublarge-square {
+	height: 28vh;
+	width: 28vh;
+}
+.parallax-item.medium-square {
+	height: 24vh;
+	width: 24vh;
+}
+.parallax-item.submedium-square {
+	height: 18vh;
+	width: 18vh;
+}
+.parallax-item.small-square {
+	height: 16vh;
+	width: 16vh;
+}
+.parallax-item.tiny-square {
+	height: 12vh;
+	width: 12vh;
+}
+.parallax-item .parallax-group-text, .parallax-item-preview .parallax-group-text {
+	color: white;
+	font-family: "Raleway";
+	font-size: 6vh;
+	font-weight: 700;
+	text-align: right;
+
+	position: absolute;
+	margin-left: 4vh;
+	right: 3vh;
+	bottom: 2vh;
+}
+.parallax-item-preview .parallax-group-text {
+  font-size: 4vh;
+}
+.parallax-item .parallax-major-project-text, .parallax-item-preview .parallax-major-project-text {
+	color: white;
+	font-family: "Raleway";
+	font-size: 4vh;
+	font-weight: 100;
+	text-align: right;
+
+	position: absolute;
+	margin-left: 4vh;
+	right: 3vh;
+	bottom: 2vh;
+}
+.parallax-item .parallax-minor-project-text, .parallax-item-preview .parallax-minor-project-text {
+	color: white;
+	font-family: "Raleway";
+	font-size: 2vh;
+	font-weight: 100;
+	text-align: right;
+
+	position: absolute;
+	margin-left: 4vh;
+	right: 2vh;
+	bottom: 2vh;
+}
+
+/* -- Parallax item text positioning -- */
+.parallax-item .centre, .parallax-item-preview .centre {
+	top: 0px;
+	left: 0px;
+	margin: 0px !important;
+	right: auto;
+	bottom: auto;
+	height: 100%;
+	width: 100%;
+
+	display: inline-flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+.parallax-item .top-left, .parallax-item-preview .top-left {
+	top: 2vh;
+	left: 1vw;
+	right: auto;
+	bottom: auto;
+
+	margin-left: 0vw !important;
+	margin-right: 3vw;
+	text-align: left;
+}
+.parallax-item .bottom-left, .parallax-item-preview .bottom-left {
+	top: auto;
+	left: 1vw;
+	right: auto;
+	bottom: 2vh;
+
+	margin-left: 0vw;
+	margin-right: 4vw;
+	text-align: left;
+}
+
+/* -- Parallax colours -- */
+.blue > .parallax-item-colour-bg {
+	background-color: rgba(75, 127, 170, 0.5);
+}
+.blurple > .parallax-item-colour-bg {
+	background-color: rgba(114, 137, 218, 0.8);
+}
+.bright-yellow > .parallax-item-colour-bg {
+	background-color: rgba(240, 219, 80, 0.6);
+}
+.copper > .parallax-item-colour-bg {
+	background-color: rgba(157, 95, 70, 0.8);
+}
+.cream-white > .parallax-item-colour-bg {
+	background-color: rgba(225, 220, 210, 0.8);
+}
+.dark-blurple > .parallax-item-colour-bg {
+	background-color: rgba(78, 93, 148, 0.5);
+}
+.dark-grey > .parallax-item-colour-bg {
+	background-color: rgba(32, 32, 32, 0.5);
+}
+.forest-green > .parallax-item-colour-bg {
+	background-color: rgba(100, 130, 101, 0.8);
+}
+.light-blue > .parallax-item-colour-bg {
+	background-color: rgba(172, 210, 230, 0.5);
+}
+.light-grey > .parallax-item-colour-bg {
+	background-color: rgba(210, 210, 210, 0.5);
+}
+.light-purple > .parallax-item-colour-bg {
+	background-color: rgba(195, 150, 180, 0.6);
+}
+.midnight-blue > .parallax-item-colour-bg {
+	background-color: rgba(42, 66, 113, 0.4);
+}
+.orange > .parallax-item-colour-bg {
+	background-color: rgba(224, 170, 100, 0.4);
+}
+.mauve > .parallax-item-colour-bg {
+	background-color: rgba(125, 83, 111, 0.6);
+}
+.red > .parallax-item-colour-bg {
+	background-color: rgba(160, 45, 40, 0.8);
+}
+.sepia > .parallax-item-colour-bg {
+	background-color: rgba(185, 160, 134, 0.6);
+}
+.salmon > .parallax-item-colour-bg {
+	background-color: rgba(240, 120, 120, 0.7);
+}
+.transparent-sepia > .parallax-item-colour-bg {
+	background-color: rgba(185, 160, 134, 0.5);
+}
+.yellow > .parallax-item-colour-bg {
+	background-color: rgba(220, 210, 145, 0.5);
+}
+
+/* -- Parallax positioning -- */
+.discord-bots {
+	position: absolute;
+	top: calc(36vh + var(--parallax-offset-y));
+	left: calc(23vw + var(--parallax-offset-x));
+}
+.anno-1800 {
+	position: absolute;
+	top: calc(44vh + var(--parallax-offset-y));
+	left: calc(23vw + 32vh + var(--parallax-offset-x));
+}
+.triumph-and-tragedy-mod-creator {
+  position: absolute;
+  top: calc(96vh + var(--parallax-offset-y));
+  left: calc(23vw + 44vh + var(--parallax-offset-x));
+}
+.triumph-and-tragedy-1 {
+	position: absolute;
+	top: calc(68vh + var(--parallax-offset-y));
+	left: calc(23vw + 32vh + var(--parallax-offset-x));
+}
+.triumph-and-tragedy-2 {
+	position: absolute;
+	top: calc(72vh + var(--parallax-offset-y));
+	left: calc(23vw + 60vh + var(--parallax-offset-x));
+}
+.universal-bot-framework {
+	position: absolute;
+	top: calc(68vh + var(--parallax-offset-y));
+	left: calc(23vw + 14vh + var(--parallax-offset-x));
+}
+.system-dynamics {
+	position: absolute;
+	top: calc(104vh + var(--parallax-offset-y));
+	left: calc(23vw + 60vh + var(--parallax-offset-x));
+}
+.into-modernity {
+	position: absolute;
+	top: calc(104vh + var(--parallax-offset-y));
+	left: calc(23vw + 76vh + var(--parallax-offset-x));
+}
+.proxy-cables {
+	position: absolute;
+	top: calc(88vh + var(--parallax-offset-y));
+	left: calc(23vw + 92vh + var(--parallax-offset-x));
+}
+.last-man-standing {
+	position: absolute;
+	top: calc(72vh + var(--parallax-offset-y));
+	left: calc(23vw + 92vh + var(--parallax-offset-x));
+}
+
+.grand-strategy {
+	position: absolute;
+	top: calc(36vh + var(--parallax-offset-y));
+	left: calc(23vw + 60vh + var(--parallax-offset-x));
+}
+.eleven-fiftynine {
+	position: absolute;
+	top: calc(28vh + var(--parallax-offset-y));
+	left: calc(23vw + 92vh + var(--parallax-offset-x));
+}
+.empires-undone {
+	position: absolute;
+	top: calc(44vh + var(--parallax-offset-y));
+	left: calc(23vw + 92vh + var(--parallax-offset-x));
+}
+.hoi4-map-renderer {
+	position: absolute;
+	top: calc(40vh + var(--parallax-offset-y));
+	left: calc(23vw + 116vh + var(--parallax-offset-x));
+}
+
+.other-technical-projects {
+	position: absolute;
+	top: calc(36vh + var(--parallax-offset-y));
+	left: calc(23vw + 138vh + var(--parallax-offset-x));
+}
+.js-in-4 {
+	position: absolute;
+	top: calc(44vh + var(--parallax-offset-y));
+	left: calc(23vw + 170vh + var(--parallax-offset-x));
+}
+.project-trinity {
+	position: absolute;
+	top: calc(68vh + var(--parallax-offset-y));
+	left: calc(23vw + 142vh + var(--parallax-offset-x));
+}
+
+.finished-works {
+	position: absolute;
+	top: calc(36vh + var(--parallax-offset-y));
+	left: calc(23vw + 235vh + var(--parallax-offset-x));
+}
+.resolute {
+	position: absolute;
+	top: calc(28vh + var(--parallax-offset-y));
+	left: calc(23vw + 283vh + var(--parallax-offset-x));
+}
+.armoured-advance {
+	position: absolute;
+	top: calc(68vh + var(--parallax-offset-y));
+	left: calc(23vw + 235vh + var(--parallax-offset-x));
+}
+.brooklyn-bridge {
+	position: absolute;
+	top: calc(44vh + var(--parallax-offset-y));
+	left: calc(23vw + 267vh + var(--parallax-offset-x));
+}
+.the-colorado {
+	position: absolute;
+	top: calc(76vh + var(--parallax-offset-y));
+	left: calc(23vw + 281vh + var(--parallax-offset-x));
+}
+.boats-on-a-pond {
+	position: absolute;
+	top: calc(28vh + var(--parallax-offset-y));
+	left: calc(23vw + 299vh + var(--parallax-offset-x));
+}
+.les-halles {
+	position: absolute;
+	top: calc(52vh + var(--parallax-offset-y));
+	left: calc(23vw + 299vh + var(--parallax-offset-x));
+}
+.other-sketches {
+	position: absolute;
+	top: calc(36vh + var(--parallax-offset-y));
+	left: calc(23vw + 336vh + var(--parallax-offset-x));
+}
+.clouds-and-sunset {
+	position: absolute;
+	top: calc(68vh + var(--parallax-offset-y));
+	left: calc(23vw + 344vh + var(--parallax-offset-x));
+}
+.sinking-of-a-battleship {
+	position: absolute;
+	top: calc(44vh + var(--parallax-offset-y));
+	left: calc(23vw + 368vh + var(--parallax-offset-x));
+}
+.journal-sketches {
+	position: absolute;
+	top: calc(68vh + var(--parallax-offset-y));
+	left: calc(23vw + 368vh + var(--parallax-offset-x));
+}
+.past {
+	position: absolute;
+	top: calc(100vh + var(--parallax-offset-y));
+	left: calc(23vw + 388vh + var(--parallax-offset-x));
+}
+.sketch-1 {
+	position: absolute;
+	top: calc(100vh + var(--parallax-offset-y));
+	left: calc(23vw + 376vh + var(--parallax-offset-x));
+}
+.sketch-2 {
+	position: absolute;
+	top: calc(88vh + var(--parallax-offset-y));
+	left: calc(23vw + 400vh + var(--parallax-offset-x));
+}
+.broken-mirror {
+	position: absolute;
+	top: calc(68vh + var(--parallax-offset-y));
+	left: calc(23vw + 400vh + var(--parallax-offset-x));
+}
+
+.historical-atlas-of-the-modern-world {
+	position: absolute;
+	top: calc(36vh + var(--parallax-offset-y));
+	left: calc(23vw + 466vh + var(--parallax-offset-x));
+}
+.the-adriatic {
+	position: absolute;
+	top: calc(40vh + var(--parallax-offset-y));
+	left: calc(23vw + 498vh + var(--parallax-offset-x));
+}
+
+/* -- Parallax content panel positioning -- */
+.anno-1800-panel {
+  top: calc(42vh + var(--parallax-offset-y) + var(--content-panel-offset-y)); /* -90 offset */
+	left: calc(23vw + 58vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
+}
+.triumph-and-tragedy-one-panel {
+  top: calc(66vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
+  left: calc(23vw + 58vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
+}
+.triumph-and-tragedy-two-panel {
+  top: calc(70vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
+  left: calc(23vw + 98vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
+}
+.universal-bot-framework-panel {
+  top: calc(66vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
+  left: calc(23vw - 20vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
+}
+.eleven-fiftynine-panel {
+  top: calc(28vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
+  left: calc(23vw + 120vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
+}
+.empires-undone-panel {
+  top: calc(44vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
+  left: calc(23vw + 132vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
+}
+.hoi4-map-renderer-panel {
+  top: calc(40vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
+  left: calc(23vw + 150vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
+}
+.js-in-4-panel {
+  top: calc(44vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
+  left: calc(23vw + 220vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
+}
+.project-trinity-panel {
+  top: calc(70vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
+  left: calc(23vw + 192vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
+}
+.historical-atlas-of-the-modern-world-panel {
+  top: calc(38vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
+  left: calc(23vw + 516vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
+}
+.the-adriatic-panel {
+  top: calc(35vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
+  left: calc(23vw + 531vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
+}
+.armoured-advance-panel {
+  top: calc(64vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
+  left: calc(23vw + 205vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
+}
+.brooklyn-bridge-panel {
+  top: calc(68vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
+  left: calc(23vw + 236vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
+}
+.les-halles-panel {
+  top: calc(78vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
+  left: calc(23vw + 266vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
+}
+.the-colorado-panel {
+  top: calc(76vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
+  left: calc(23vw + 246vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
+}
+.resolute-panel {
+  top: calc(30vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
+  left: calc(23vw + 250vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
+}
+.boats-on-a-pond-panel {
+  top: calc(30vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
+  left: calc(23vw + 262vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
+}
+.clouds-and-sunset-panel {
+  top: calc(68vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
+  left: calc(23vw + 310vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
+}
+.sinking-of-a-battleship-panel {
+  top: calc(40vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
+  left: calc(23vw + 396vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
+}
+
+/* -- Parallax content panel styling -- */
+.parallax-panel-container {
+  position: absolute;
+  transition: all 0.25s ease;
+}
+.parallax-item-content-panel {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.95);
+	box-shadow: 0px 0px 4vh rgba(0, 0, 0, 1);
+  opacity: 0;
+  pointer-events: none;
+
+  color: white;
+  font-family: "Fira Sans";
+  font-size: 2vh;
+  font-weight: 300;
+  height: 0vh;
+  width: 32vh;
+
+  transition: all 0.5s ease;
+  z-index: 3;
+}
+.parallax-item-content-panel.shown {
+  height: 40vh;
+  padding-bottom: 0.5vh;
+
+  opacity: 1;
+  pointer-events: all;
+}
+
+.parallax-item-content-panel > .content-wrapper {
+  margin: 1.5vh;
+  margin-right: 0vh;
+  max-height: calc(99% - 3vh);
+  overflow: auto;
+}
+.parallax-item-content-panel > .content-wrapper > .text-wrapper {
+  margin-right: 1.5vh;
+}
+
+/* -- Inside element styling -- */
+.parallax-item-content-panel-title {
+  color: white;
+  font-family: "Barlow";
+  font-size: 3vh;
+  font-weight: 700;
+  margin-right: 1.5vh;
+
+  text-transform: uppercase;
+}
+.parallax-item-content-panel-divider {
+  background-color: white;
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+  margin-right: 85%;
+}
+.parallax-item-content-panel-divider.added-margin {
+  margin-left: 0vh;
+  margin-top: 2vh;
+}
+.parallax-item-development-date {
+  margin-bottom: 0.5vh;
+  margin-left: 0.5vh;
+  font-size: 1.5vh;
+}
+.parallax-item-content-panel-status-indicator.primary {
+  font-weight: 400;
+}
+.parallax-item-content-panel-status-indicator.secondary {
+  font-weight: 300;
+}
+.parallax-item-content-panel-status-indicator.tertiary {
+  font-weight: 200;
+}
+.parallax-item-content-panel-status-indicator.suspended {
+  font-weight: 100;
+}
+.parallax-item-content-panel-body-text {
+  margin-top: 1.5vh;
+
+  font-size: 1.6vh;
+  font-weight: 100;
+}
+
+/* -- Buttons -- */
+.parallax-item-content-panel:not(.maximised) .content-panel-close-btn:hover, .parallax-item-content-panel:not(.maximised) .content-panel-maximise-btn:hover, .parallax-item-content-panel:not(.maximised) .content-panel-preview-btn:hover, .content-panel-preview-btn.active {
+  cursor: pointer;
+  filter: invert(0.95);
+}
+.content-panel-close-btn {
+  position: absolute;
+  top: 0vh;
+  right: -5.5vh;
+  height: 3vh;
+  width: 3vh;
+
+  background-color: rgb(15, 15, 15);
+  box-shadow: 0px 0px 2vh rgba(0, 0, 0, 0.35);
+  padding: 1vh;
+
+  transition: all 0.5s ease;
+}
+.content-panel-maximise-btn {
+  position: absolute;
+  top: 5.5vh;
+  right: -5.5vh;
+  height: 3vh;
+  width: 3vh;
+
+  background-color: rgb(15, 15, 15);
+  box-shadow: 0px 0px 2vh rgba(0, 0, 0, 0.35);
+  padding: 1vh;
+
+  transition: all 0.5s ease;
+}
+.content-panel-preview-btn {
+  position: absolute;
+  top: 11vh;
+  right: -5.5vh;
+  height: 3vh;
+  width: 3vh;
+
+  background-color: rgb(15, 15, 15);
+  box-shadow: 0px 0px 2vh rgba(0, 0, 0, 0.35);
+  padding: 1vh;
+
+  transition: all 0.5s ease;
+}
+
+/* -- Status indicators -- */
+.parallax-item-complete {
+  color: rgb(80, 150, 95);
+}
+.parallax-item-in-planning {
+  color: rgb(220, 220, 145);
+}
+.parallax-item-in-progress {
+  color: rgb(165, 195, 170);
+}
+.parallax-item-suspended {
+  color: rgb(220, 150, 50);
+}
+
+/* -- Bookmark and pin icons -- */
+.parallax-icon {
+  position: absolute;
+  height: 20%;
+  width: 20%;
+  border-radius: 50%;
+
+  top: 3.5%;
+  transition: all 0.5s ease;
+}
+.parallax-item:not(:hover) .parallax-icon {
+  opacity: 0;
+  pointer-events: none;
+}
+.parallax-item:hover .parallax-icon {
+  opacity: 1;
+  pointer-events: auto;
+}
+.parallax-icon:hover {
+  border-radius: 50%;
+
+  background-color: rgba(235, 235, 235, 0.3);
+}
+.parallax-item .bookmark {
+  background-size: 50% 50%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  right: 21%;
+}
+.parallax-item .pin, .parallax-item-preview .close-btn {
+  background-size: 50% 50%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  right: 3.5%;
+}
+.parallax-item .bookmark-empty {
+  background-image: url("../../../gfx/interface/icons/bookmark_icon_empty.png");
+}
+.parallax-item .bookmark-filled {
+  background-image: url("../../../gfx/interface/icons/bookmark_icon_filled.png");
+}
+.parallax-item .pin-empty {
+  background-image: url("../../../gfx/interface/icons/pin_icon_empty.png");
+}
+.parallax-item .pin-filled {
+  background-image: url("../../../gfx/interface/icons/pin_icon_filled.png");
+}
+.parallax-item-preview .close-btn {
+  background-image: url("../../../gfx/interface/icons/close_no_bounds.png");
+}
+.parallax-item-preview:not(.selected) .close-btn {
+  opacity: 0;
+  pointer-events: none;
+}
+.parallax-item-preview:hover:not(.selected) .close-btn {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.project-parallax-scroll-indicator {
+  position: absolute;
+  top: 99.5vh;
+  left: 0px;
+
+  height: 0.5vh;
+  width: 100%;
+  z-index: 1;
+}
+.project-parallax-scroll-fill-indicator {
+  background-color: white;
+  opacity: 0.5;
+
+  height: 100%;
+  width: 0px;
+
+  transition: opacity 1s ease, width 1s ease;
+}
+
+/* -- Temporary, this can be fixed later [WIP] -- */
+a {
+	text-decoration: none;
+	color: white;
+}
+
+#scene {
+	position: relative;
+	overflow: visible;
+	/* Tripartite project division */
+	height: 100%;
+	width: 100%;
+}
