@@ -306,9 +306,12 @@ parallax.scalar(12.5, 35);
 }
 
 //Hide all parallax elements that are dependencies by default
-{
-  var parallax_elements = document.querySelectorAll(".parallax-item");
+function initGallery () {
+  //Declare local instance variables
   var hide_elements = [];
+  var parallax_elements = document.querySelectorAll(".parallax-item");
+
+  //Iterate over all gallery elements
   for (var i = 0; i < parallax_elements.length; i++) {
     var parallax_obj = parallax_settings[parallax_elements[i].id];
 
@@ -316,10 +319,12 @@ parallax.scalar(12.5, 35);
     initParallaxElement(parallax_elements[i].id);
 
     //hide_elements can never contain elements that are pinned
-    if (getParent(parallax_elements[i].id).length > 0 && !parallax_pinned_items.includes(parallax_elements[i].id)) hide_elements.push(parallax_elements[i].id);
+    if (getParent(parallax_elements[i].id).length > 0 && !parallax_pinned_items.includes(parallax_elements[i].id))
+      hide_elements.push(parallax_elements[i].id);
   }
   hide_elements = unique(hide_elements);
 
+  //Iterate over all hidden elements
   for (var i = 0; i < hide_elements.length; i++) {
     var local_el = document.getElementById(hide_elements[i]);
     var local_obj = parallax_settings[local_el.id];
@@ -327,16 +332,19 @@ parallax.scalar(12.5, 35);
     local_el.setAttribute("class",
       local_el.getAttribute("class") + " hidden"
     );
-    if (local_obj.animation) local_el.setAttribute("animation",
-      `${local_obj.animation}`
-    );
+    if (local_obj.animation)
+      local_el.setAttribute("animation",
+        `${local_obj.animation}`
+      );
   }
-}
 
-//Show bookmarks in preview area
-{
-  for (var i = 0; i < parallax_bookmarked_items.length; i++) addBookmarkItem(parallax_bookmarked_items[i], true);
+  //Iterate over all bookmarked items; show bookmarks in preview area
+  for (var i = 0; i < parallax_bookmarked_items.length; i++)
+    addBookmarkItem(parallax_bookmarked_items[i], true);
 }
+setTimeout(function(){
+  initGallery();
+}, 1);
 
 //Parallax gallery logic
 var parallax_gallery_logic = setInterval(function(){

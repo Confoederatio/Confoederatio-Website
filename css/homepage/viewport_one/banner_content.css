@@ -69,6 +69,8 @@
   width: 60vw;
   max-width: 70vw;
   text-align: left;
+
+  overflow: visible;
 }
 [alignment="right"] {
   justify-content: right;
@@ -77,6 +79,8 @@
   width: 60vw;
   max-width: 70vw;
   text-align: right;
+
+  overflow: visible;
 }
 
 .homepage-banner-main-title[alignment="centre"] {
@@ -97,6 +101,7 @@
   font-size: 20vh;
   font-stretch: semi-condensed;
   font-weight: 700;
+  line-height: 1;
 
   color: white;
   text-transform: uppercase;
@@ -125,7 +130,10 @@
   user-select: none;
 }
 #homepage-caret-wrapper {
-  align-items: flex-start;
+  display: inline-block;
+
+  align-items: baseline;
+  white-space: nowrap;
 }
 
 /* -- Homepage banner footer -- */
