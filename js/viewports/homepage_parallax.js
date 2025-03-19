@@ -25,6 +25,7 @@
       default_bookmark: (Boolean) - Whether the panel is bookmarked by default.
       default_pin: (Boolean) - Whether the panel is pinned by default.
       dependencies: (Array<String, ...>) - Optional. The IDs of the tiles that descend from this category tile. Nothing by default.
+      is_base_node: (Boolean) - Whether the tile is a base node. If true, bookmarks/pins are disabled.
 
       background_image: (String) - Optional. The file path to display as the background image for the tile. Undefined by default.
       background_opacity: (Number) - Optional. 0.3 by default if background_image is defined.
@@ -107,6 +108,7 @@
 
       if (options.animation) new_tile_obj.animation = options.animation;
       if (options.dependencies) new_tile_obj.dependencies = options.dependencies;
+      if (options.is_base_node) new_tile_obj.is_base_node = options.is_base_node;
 
       //Set new_tile_obj
       window.parallax_settings[tile_id] = new_tile_obj;
@@ -403,11 +405,13 @@
     var local_el = document.getElementById(local_obj.id);
 
     local_el.setAttribute("animation", local_el.id + "-shown");
-    local_el.setAttribute("onclick", `toggleContentPanel('${local_el.id}'); selectParallaxItem('${local_el.id}');`)
-    if (local_obj.animation) local_el.innerHTML = local_el.innerHTML += `
-      <div class = "parallax-icon pin ${(parallax_pinned_items.includes(local_el.id)) ? "pin-filled" : "pin-empty"}" onclick = "pinItem('${local_el.id}');"></div>
-      <div id = "bookmark-btn-${local_el.id}" class = "parallax-icon bookmark bookmark-empty" onclick = "bookmarkInteraction('${local_el.id}');"></div>
-    `;
+    local_el.setAttribute("onclick", `toggleContentPanel('${local_el.id}'); selectParallaxItem('${local_el.id}');`);
+
+    if (local_obj.animation && !local_obj.is_base_node)
+      local_el.innerHTML = local_el.innerHTML += `
+        <div class = "parallax-icon pin ${(parallax_pinned_items.includes(local_el.id)) ? "pin-filled" : "pin-empty"}" onclick = "pinItem('${local_el.id}');"></div>
+        <div id = "bookmark-btn-${local_el.id}" class = "parallax-icon bookmark bookmark-empty" onclick = "bookmarkInteraction('${local_el.id}');"></div>
+      `;
   }
 
   function isImmediateDescendant (arg0_element_id, arg1_element_id) {
@@ -874,16 +878,18 @@
       visible_elements.push(parallax_selected[i]);
     }
     for (var i = 0; i < all_parallax_elements.length; i++) {
-      if (getParent(all_parallax_elements[i]).length == 0) visible_elements.push(all_parallax_elements[i]);
+      if (getParent(all_parallax_elements[i]).length == 0)
+        visible_elements.push(all_parallax_elements[i]);
       try {
-        if (document.getElementById(`${all_parallax_elements[i]}-content-panel`).getAttribute("class").includes("shown")) visible_elements.push(all_parallax_elements[i]);
+        if (document.getElementById(`${all_parallax_elements[i]}-content-panel`).getAttribute("class").includes("shown"))
+          visible_elements.push(all_parallax_elements[i]);
       } catch {}
     }
 
     visible_elements = unique(visible_elements);
 
     //Iterate through all parallax DOM elements and hide those not in visible_elements
-    for (var i = 0; i < all_parallax_dom_elements.length; i++) {
+    for (var i = 0; i < all_parallax_dom_elements.length; i++)
       try {
         if (!visible_elements.includes(all_parallax_dom_elements[i].id)) {
           if (all_parallax_dom_elements[i].getAttribute("animation")) if (all_parallax_dom_elements[i].getAttribute("animation").includes("-shown")) {
@@ -893,12 +899,12 @@
           }
         }
       } catch (e) {}
-    }
 
     //Sort hidden_elements in ascending order
     hidden_elements.sort((a, b) => a[1]-b[1]);
 
     //Invoke hide_function for all hidden_elements
-    for (var i = 0; i < hidden_elements.length; i++) parallax_settings[hidden_elements[i][0]].hide_function();
+    for (var i = 0; i < hidden_elements.length; i++)
+      parallax_settings[hidden_elements[i][0]].hide_function();
   }
 }

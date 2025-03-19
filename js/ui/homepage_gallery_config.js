@@ -39,6 +39,7 @@
     animation: "discord-bots",
       font_size: 3,
       font_weight: 700,
+    is_base_node: true,
     size: 1,
     x: 0,
     y: 36,

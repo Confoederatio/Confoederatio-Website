@@ -253,45 +253,26 @@
 
     Returns: (Array)
   */
-  window.uniqueArray = function (arg0_input_array) {
+  window.uniqueArray = function (arg0_array) {
     //Convert from parameters
-    var input_array = arg0_input_array;
+    var array = arg0_array;
 
-    //Deep copy just in-case
-    input_array = JSON.parse(JSON.stringify(input_array));
+    var objects = [];
+    var primitives = {
+      boolean: {},
+      number: {},
+      string: {},
+    };
 
-    //Initial filter for non-nested arrays; convert any sub-arrays to strings for comparison
-    var unique_array = input_array.filter((item, index, array) => {
-      //Convert sub-arrays to strings for comparison
-      if (Array.isArray(item)) {
-        item = item.map(sub_item => {
-          if (typeof sub_item == "object")
-            return JSON.stringify(sub_item);
-          return sub_item;
-        }).join(",");
-
-        array[index] = item;
-      }
-
-      //Local filter return statement
-      return array.indexOf(item) == index;
+    return array.filter(function (item) {
+        var type = typeof item;
+        if (type in primitives) {
+          return primitives[type].hasOwnProperty(item) ? false : (primitives[type][item] = true);
+        } else {
+          return objects.indexOf(item) >= 0 ? false : objects.push(item);
+        }
     });
-
-    //Return statement; convert sub-arrays back to arrays
-    return unique_array.map(item => {
-      if (typeof item == "string")
-        return item.split(",").map(sub_item => {
-          try {
-            return JSON.parse(sub_item);
-          } catch {
-            return sub_item;
-          }
-        });
-
-      //Local map return statement
-      return item;
-    });
-  }
+  };
 }
 
 //KEEP AT BOTTOM! Initialise function aliases
