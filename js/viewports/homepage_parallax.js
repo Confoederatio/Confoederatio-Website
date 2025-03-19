@@ -90,7 +90,7 @@
     //Format; set panel_element
     if (options.content) {
       var panel_element = `
-        <div id = "${tile_id}-content-panel" class = "parallax-item-content-panel ${options.animation}-panel">
+        <div id = "${tile_id}-content-panel" class = "parallax-item-content-panel ${options.animation}-panel" style = "top: calc(${options.y}vh + var(--parallax-offset-y) + var(--content-panel-offset-y)); left: calc(23vw*3 - 4vw + ${options.x}vh + var(--parallax-offset-x) + var(--content-panel-offset-x));">
           <div id = "${tile_id}-content-wrapper" class = "content-wrapper">
             <div id = "${tile_id}-text-wrapper" class = "text-wrapper">
               ${options.content}

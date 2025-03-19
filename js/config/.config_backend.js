@@ -5,4 +5,4 @@ config.homepage = {};
 
   //Config parsers
   config.homepage.banner = {};
-  config.homepage.gallery_tiles = {};
+  config.homepage.gallery = {};

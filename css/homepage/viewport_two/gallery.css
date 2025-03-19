@@ -284,11 +284,6 @@
 }
 
 /* -- Parallax positioning -- */
-.discord-bots {
-	position: absolute;
-	top: calc(36vh + var(--parallax-offset-y));
-	left: calc(23vw + var(--parallax-offset-x));
-}
 .anno-1800 {
 	position: absolute;
 	top: calc(44vh + var(--parallax-offset-y));
@@ -298,11 +293,6 @@
   position: absolute;
   top: calc(96vh + var(--parallax-offset-y));
   left: calc(23vw + 44vh + var(--parallax-offset-x));
-}
-.triumph-and-tragedy-1 {
-	position: absolute;
-	top: calc(68vh + var(--parallax-offset-y));
-	left: calc(23vw + 32vh + var(--parallax-offset-x));
 }
 .triumph-and-tragedy-2 {
 	position: absolute;
@@ -463,10 +453,6 @@
 .anno-1800-panel {
   top: calc(42vh + var(--parallax-offset-y) + var(--content-panel-offset-y)); /* -90 offset */
 	left: calc(23vw + 58vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
-}
-.triumph-and-tragedy-one-panel {
-  top: calc(66vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
-  left: calc(23vw + 58vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
 }
 .triumph-and-tragedy-two-panel {
   top: calc(70vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
@@ -765,7 +751,6 @@ a {
 	text-decoration: none;
 	color: white;
 }
-
 #scene {
 	position: relative;
 	overflow: visible;
