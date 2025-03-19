@@ -193,9 +193,9 @@ parallax.scalar(12.5, 35);
   setTimeout(function(){
     var all_content_titles = document.querySelectorAll(".parallax-item-content-panel-title");
     for (var i = 0; i < all_content_titles.length; i++) all_content_titles[i].innerHTML += `
-      <img id = "${all_content_titles[i].id.replace("-panel-title", "")}-close-btn" class = "content-panel-close-btn" src = "../gfx/interface/icons/close_btn.png" draggable = "false" onclick = "closeContentPanel('${all_content_titles[i].id.replace("-panel-title", "")}');">
-      <img id = "${all_content_titles[i].id.replace("-panel-title", "")}-maximise-btn" class = "content-panel-maximise-btn" src = "../gfx/interface/icons/maximise_icon.png" draggable = "false" onclick = "maximiseContentPanel('${all_content_titles[i].id.replace("-panel-title", "")}');">
-      ${(document.getElementById(all_content_titles[i].id.replace("-panel-title", "") + "-preview") ) ? `<img id = "${all_content_titles[i].id.replace("-panel-title", "")}-preview-btn" class = "content-panel-preview-btn active" src = "../gfx/interface/icons/preview_icon.png" draggable = "false" onclick = "togglePreview('${all_content_titles[i].id.replace("-panel-title", "")}');">` : ""}
+      <img id = "${all_content_titles[i].id.replace("-panel-title", "")}-close-btn" class = "content-panel-close-btn" src = "gfx/interface/icons/close_btn.png" draggable = "false" onclick = "closeContentPanel('${all_content_titles[i].id.replace("-panel-title", "")}');">
+      <img id = "${all_content_titles[i].id.replace("-panel-title", "")}-maximise-btn" class = "content-panel-maximise-btn" src = "gfx/interface/icons/maximise_icon.png" draggable = "false" onclick = "maximiseContentPanel('${all_content_titles[i].id.replace("-panel-title", "")}');">
+      ${(document.getElementById(all_content_titles[i].id.replace("-panel-title", "") + "-preview") ) ? `<img id = "${all_content_titles[i].id.replace("-panel-title", "")}-preview-btn" class = "content-panel-preview-btn active" src = "gfx/interface/icons/preview_icon.png" draggable = "false" onclick = "togglePreview('${all_content_titles[i].id.replace("-panel-title", "")}');">` : ""}
     `;
   }, 500);
 }

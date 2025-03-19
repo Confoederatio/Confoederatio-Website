@@ -61,7 +61,7 @@
     default_pin: true,
     dependencies: ["triumph_and_tragedy_mod_creator", "triumph_and_tragedy_two"],
 
-    background_image: `../gfx/interface/triumph_and_tragedy_icon_no_text.png`,
+    background_image: `gfx/interface/triumph_and_tragedy_icon_no_text.png`,
     background_opacity: 0.4,
     colour: "mauve",
     content: `<div id = "triumph_and_tragedy_one-panel-title" class = "parallax-item-content-panel-title">Triumph & Tragedy I</div>

@@ -37,9 +37,9 @@ var settings_window_open = false;
       var local_background = banner_settings.backgrounds[all_backgrounds[i]];
       settings_bg_container.innerHTML += `
         <div id = "change-bg-${all_backgrounds[i]}-container" class = "change-bg-select-option-container" onclick = 'if (current_banner != "${all_backgrounds[i]}") homepageBannerChangeBanner("${all_backgrounds[i]}");'>
-          <div id = "change-bg-${all_backgrounds[i]}" class = "change-bg-select-option" style = 'background-image: url("../gfx/interface/${all_backgrounds[i]}_bg.png");'></div>
+          <div id = "change-bg-${all_backgrounds[i]}" class = "change-bg-select-option" style = 'background-image: url("gfx/interface/${all_backgrounds[i]}_bg.png");'></div>
           <center class = "image-container">
-            <img src = "../gfx/interface/icons/checkmark.png" class = "checkmark" draggable = "false"></img>
+            <img src = "gfx/interface/icons/checkmark.png" class = "checkmark" draggable = "false"></img>
           </center>
           <center class = "text-container">
             <span class = "change-bg-desc">${local_background.name}</span>
@@ -83,11 +83,11 @@ var settings_window_open = false;
       settings_overlay_container.innerHTML += `
         <div id = "change-overlay-${all_colours[i]}-container" class = "change-overlay-select-option-container ${selected}" onclick = 'homepageBannerChangeOverlay("${all_colours[i]}");'>
           <div id = "change-overlay-${all_colours[i]}" class = "change-overlay-select-option">
-            <div id = "change-overlay-${all_colours[i]}-background" class = "background" style = 'background-image: url("../gfx/interface/vector_plexus_overlay_bg.png"); filter: ${local_overlay.filter};'>
+            <div id = "change-overlay-${all_colours[i]}-background" class = "background" style = 'background-image: url("gfx/interface/vector_plexus_overlay_bg.png"); filter: ${local_overlay.filter};'>
             </div>
           </div>
           <center class = "image-container">
-            <img src = "../gfx/interface/icons/checkmark.png" class = "checkmark" draggable = "false"></img>
+            <img src = "gfx/interface/icons/checkmark.png" class = "checkmark" draggable = "false"></img>
           </center>
           <center class = "text-container">
             <span class = "change-overlay-desc">${local_overlay.name}</span>
@@ -98,7 +98,7 @@ var settings_window_open = false;
   }
 
   function initialiseSettingsButton () {
-    settings_btn_container.innerHTML = `<img id = "settings-btn" class = "settings-btn" src = "../gfx/interface/icons/settings_btn.png" draggable = "false">`;
+    settings_btn_container.innerHTML = `<img id = "settings-btn" class = "settings-btn" src = "gfx/interface/icons/settings_btn.png" draggable = "false">`;
 
     //Update DOM tracker variable
     settings_btn = document.getElementById("settings-btn");
