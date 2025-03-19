@@ -1,81 +1,106 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <base href = "../"></base>
     <meta charset = "utf-8">
     <title>CONFOEDERATIO</title>
 
     <!-- REFACTOR CODE -->
-    <link rel = "stylesheet" href = "../css/global/global.css">
-    <link rel = "stylesheet" href = "../css/global/import_fonts.css">
-    <link rel = "stylesheet" href = "../css/global/scrollbar_ui.css">
+    <link rel = "stylesheet" href = "css/global/global.css">
+    <link rel = "stylesheet" href = "css/global/import_fonts.css">
+    <link rel = "stylesheet" href = "css/global/scrollbar_ui.css">
 
     <!-- Import fonts/core stylesheets-->
-    <link rel = "stylesheet" href = "../css/homepage/main.css">
+    <link rel = "stylesheet" href = "css/homepage/main.css">
 
     <!-- Animations -->
-      <link rel = "stylesheet" href = "../css/homepage/animations/viewport_one/banner_animations.css">
-      <link rel = "stylesheet" href = "../css/homepage/animations/viewport_one/banner_lava_lamp.css">
-      <link rel = "stylesheet" href = "../css/homepage/animations/viewport_one/banner_settings.css">
-      <link rel = "stylesheet" href = "../css/homepage/animations/viewport_two/gallery_animations.css">
-      <link rel = "stylesheet" href = "../css/homepage/animations/viewport_two/gallery_bookmark_animations.css">
+      <link rel = "stylesheet" href = "css/homepage/animations/viewport_one/banner_animations.css">
+      <link rel = "stylesheet" href = "css/homepage/animations/viewport_one/banner_lava_lamp.css">
+      <link rel = "stylesheet" href = "css/homepage/animations/viewport_one/banner_settings.css">
+      <link rel = "stylesheet" href = "css/homepage/animations/viewport_two/gallery_animations.css">
+      <link rel = "stylesheet" href = "css/homepage/animations/viewport_two/gallery_bookmark_animations.css">
     <!-- Viewports -->
-      <link rel = "stylesheet" href = "../css/homepage/viewport_one/banner_background.css">
-      <link rel = "stylesheet" href = "../css/homepage/viewport_one/banner_content.css">
-      <link rel = "stylesheet" href = "../css/homepage/viewport_one/banner_settings.css">
+      <link rel = "stylesheet" href = "css/homepage/viewport_one/banner_background.css">
+      <link rel = "stylesheet" href = "css/homepage/viewport_one/banner_content.css">
+      <link rel = "stylesheet" href = "css/homepage/viewport_one/banner_settings.css">
 
-      <link rel = "stylesheet" href = "../css/homepage/viewport_two/gallery.css">
-      <link rel = "stylesheet" href = "../css/homepage/viewport_two/gallery_bookmarks.css">
-      <link rel = "stylesheet" href = "../css/homepage/viewport_two/gallery_panels.css">
+      <link rel = "stylesheet" href = "css/homepage/viewport_two/gallery.css">
+      <link rel = "stylesheet" href = "css/homepage/viewport_two/gallery_bookmarks.css">
+      <link rel = "stylesheet" href = "css/homepage/viewport_two/gallery_panels.css">
 
-      <link rel = "stylesheet" href = "../css/homepage/viewport_three/about.css">
+      <link rel = "stylesheet" href = "css/homepage/viewport_three/about.css">
 
     <!--Import JS libraries-->
-    <link rel = "stylesheet" href = "../js/libraries/fstdropdown.min.css">
-    <script type = "text/javascript" src = "../js/libraries/fstdropdown.min.js"></script>
-    <script type = "text/javascript" src = "../js/libraries/jQuery.min.js"></script>
-    <script type = "text/javascript" src = "../js/libraries/Parallax.min.js"></script>
-    <script type = "text/javascript" src = "../js/libraries/popper.min.js"></script>
-    <link rel = "stylesheet" href = "../js/libraries/SlimSelect.min.css">
-    <script type = "text/javascript" src = "../js/libraries/SlimSelect.min.js"></script>
-    <script type = "text/javascript" src = "../js/libraries/Tippy.min.js"></script>
-    <script type = "text/javascript" src = "../js/libraries/TweenMax.min.js"></script>
+    <link rel = "stylesheet" href = "js/libraries/fstdropdown.min.css">
+    <script type = "text/javascript" src = "js/libraries/fstdropdown.min.js"></script>
+    <script type = "text/javascript" src = "js/libraries/jQuery.min.js"></script>
+    <script type = "text/javascript" src = "js/libraries/Parallax.min.js"></script>
+    <script type = "text/javascript" src = "js/libraries/popper.min.js"></script>
+    <link rel = "stylesheet" href = "js/libraries/SlimSelect.min.css">
+    <script type = "text/javascript" src = "js/libraries/SlimSelect.min.js"></script>
+    <script type = "text/javascript" src = "js/libraries/Tippy.min.js"></script>
+    <script type = "text/javascript" src = "js/libraries/TweenMax.min.js"></script>
 
     <!--Import core framework scripts-->
-    <script type = "text/javascript" src = "../js/framework/animation.js"></script>
-    <script type = "text/javascript" src = "../js/framework/arrays.js"></script>
-    <script type = "text/javascript" src = "../js/framework/other.js"></script>
-    <script type = "text/javascript" src = "../js/framework/numbers.js"></script>
+    <script type = "text/javascript" src = "js/UF/ABRS/ABRS.js"></script>
+    <script type = "text/javascript" src = "js/UF/actions/caching_actions.js"></script>
+    <script type = "text/javascript" src = "js/UF/actions/timelines_actions.js"></script>
+    <script type = "text/javascript" src = "js/UF/ai/basic_ai.js"></script>
+    <script type = "text/javascript" src = "js/UF/animation/basic_animation.js"></script>
+    <script type = "text/javascript" src = "js/UF/arrays/basic_arrays.js"></script>
+    <script type = "text/javascript" src = "js/UF/arrays/conversion_arrays.js"></script>
+    <script type = "text/javascript" src = "js/UF/arrays/dataframes_arrays.js"></script>
+    <script type = "text/javascript" src = "js/UF/arrays/maths_arrays.js"></script>
+    <script type = "text/javascript" src = "js/UF/arrays/search_sort_arrays.js"></script>
+    <script type = "text/javascript" src = "js/UF/BrowserUI/basic_html.js"></script>
+    <script type = "text/javascript" src = "js/UF/BrowserUI/context_menus.js"></script>
+    <script type = "text/javascript" src = "js/UF/BrowserUI/groups_framework.js"></script>
+    <script type = "text/javascript" src = "js/UF/BrowserUI/hierarchy_framework.js"></script>
+    <script type = "text/javascript" src = "js/UF/colours/basic_colours.js"></script>
+    <script type = "text/javascript" src = "js/UF/curl/basic_curl.js"></script>
+    <script type = "text/javascript" src = "js/UF/date/basic_date.js"></script>
+    <script type = "text/javascript" src = "js/UF/date/history_date.js"></script>
+    <script type = "text/javascript" src = "js/UF/log/basic_log.js"></script>
+    <script type = "text/javascript" src = "js/UF/numbers/basic_numbers.js"></script>
+    <script type = "text/javascript" src = "js/UF/numbers/ranges_numbers.js"></script>
+    <script type = "text/javascript" src = "js/UF/objects/basic_objects.js"></script>
+    <script type = "text/javascript" src = "js/UF/objects/maths_objects.js"></script>
+    <script type = "text/javascript" src = "js/UF/objects/smart_search_objects.js"></script>
+    <script type = "text/javascript" src = "js/UF/pathfinding/a_star_pathfinding.js"></script>
+    <script type = "text/javascript" src = "js/UF/strings/basic_strings.js"></script>
+    <script type = "text/javascript" src = "js/UF/strings/cleaning_strings.js"></script>
+    <script type = "text/javascript" src = "js/UF/strings/split_strings.js"></script>
 
     <!-- Import viewport definitions -->
-    <script type = "text/javascript" src = "../js/viewports/homepage_banner.js"></script>
-    <script type = "text/javascript" src = "../js/viewports/homepage_parallax.js"></script>
+    <script type = "text/javascript" src = "js/viewports/homepage_banner.js"></script>
+    <script type = "text/javascript" src = "js/viewports/homepage_parallax.js"></script>
 
     <!--Ministrat-->
-    <link rel = "stylesheet" href = "../ministrat/anim/map_anim.css">
+    <link rel = "stylesheet" href = "ministrat/anim/map_anim.css">
   </head>
   <body>
     <!--Declare main animated homepage banner-->
     <div id = "homepage-banner" class = "homepage-banner">
       <!--Default video animation-->
       <video id = "homepage-banner-video-bg" class = "homepage-banner-video-bg" preload muted>
-        <source src = "../gfx/videos/homepage_banner_bg.mp4" type = "video/mp4">
+        <source src = "gfx/videos/homepage_banner_bg.mp4" type = "video/mp4">
       </video>
       <!--Misty forest background-->
       <video id = "homepage-banner-video-bg-misty-forest" class = "homepage-banner-video-bg-misty-forest hidden" preload muted loop>
-        <source src = "../gfx/videos/misty_forest_bg.mp4" type = "video/mp4">
+        <source src = "gfx/videos/misty_forest_bg.mp4" type = "video/mp4">
       </video>
       <!--Cleveland National Forest background -->
       <div id = "homepage-banner-cleveland-national-forest-bg" class = "homepage-banner-cleveland-national-forest-bg hidden"></div>
       <!--WW1 Parallax background-->
       <div id = "homepage-banner-triumph-and-tragedy-bg" class = "homepage-banner-triumph-and-tragedy-bg hidden">
-        <img src = "../gfx/interface/ww1_bg/layer_01.png" draggable = "false">
-        <img src = "../gfx/interface/ww1_bg/layer_02.png" draggable = "false">
-        <img src = "../gfx/interface/ww1_bg/layer_03.png" draggable = "false">
-        <img src = "../gfx/interface/ww1_bg/layer_04.png" draggable = "false">
-        <img src = "../gfx/interface/ww1_bg/layer_05.png" draggable = "false">
-        <img src = "../gfx/interface/ww1_bg/layer_06.png" draggable = "false">
-        <img src = "../gfx/interface/ww1_bg/layer_07.png" draggable = "false">
-        <img src = "../gfx/interface/ww1_bg/layer_08.png" draggable = "false">
+        <img src = "gfx/interface/ww1_bg/layer_01.png" draggable = "false">
+        <img src = "gfx/interface/ww1_bg/layer_02.png" draggable = "false">
+        <img src = "gfx/interface/ww1_bg/layer_03.png" draggable = "false">
+        <img src = "gfx/interface/ww1_bg/layer_04.png" draggable = "false">
+        <img src = "gfx/interface/ww1_bg/layer_05.png" draggable = "false">
+        <img src = "gfx/interface/ww1_bg/layer_06.png" draggable = "false">
+        <img src = "gfx/interface/ww1_bg/layer_07.png" draggable = "false">
+        <img src = "gfx/interface/ww1_bg/layer_08.png" draggable = "false">
       </div>
       <!--Lava lamp background-->
       <div id = "homepage-banner-lava-lamp-bg" class = "homepage-banner-lava-lamp-bg hidden">
@@ -124,7 +149,7 @@
       </div>
 
       <!--Plexus overlay, keep all this stuff at hte bottom of the homepage banner container-->
-      <img id = "homepage-banner-plexus-overlay-bg" class = "homepage-banner-plexus-overlay-bg" src = "../gfx/interface/vector_plexus_overlay_bg.png" draggable = "false">
+      <img id = "homepage-banner-plexus-overlay-bg" class = "homepage-banner-plexus-overlay-bg" src = "gfx/interface/vector_plexus_overlay_bg.png" draggable = "false">
 
       <div id = "homepage-banner-main-title" class = "homepage-banner-main-title">
         <span id = "homepage-banner-main-title-text" class = "homepage-banner-main-title-text"></span>
@@ -137,12 +162,12 @@
       <!--Homepage banner settings container-->
       <div id = "homepage-banner-footer-container" class = "homepage-banner-footer-container">
         <div id = "settings-btn-container" class = "settings-btn-container stationary">
-          <img id = "settings-btn" class = "settings-btn hidden" src = "../gfx/interface/icons/settings_btn.png" draggable = "false">
+          <img id = "settings-btn" class = "settings-btn hidden" src = "gfx/interface/icons/settings_btn.png" draggable = "false">
         </div>
         <div id = "homepage-banner-dots-container" class = "homepage-banner-dots-container">
         </div>
         <div id = "homepage-banner-chevron-down" class = "homepage-banner-chevron-down hidden">
-          <img id = "homepage-banner-chevron-down-image" class = "homepage-banner-chevron-down-icon" src = "../gfx/interface/icons/chevron.png" draggable = "false">
+          <img id = "homepage-banner-chevron-down-image" class = "homepage-banner-chevron-down-icon" src = "gfx/interface/icons/chevron.png" draggable = "false">
         </div>
       </div>
 
@@ -150,8 +175,8 @@
       <div id = "homepage-banner-settings-container" class = "homepage-banner-settings-container hidden">
         <div id = "homepage-banner-settings-title-container" class = "homepage-banner-settings-title-container">
           <span id = "homepage-banner-settings-title-text" class = "homepage-banner-settings-title-text">Settings</span>
-          <img id = "settings-adjust-size-btn" class = "settings-chevron-btn minimised" src = "../gfx/interface/icons/chevron_down.png" draggable = "false">
-          <img id = "settings-close-btn" class = "settings-close-btn" src = "../gfx/interface/icons/close_btn.png" draggable = "false">
+          <img id = "settings-adjust-size-btn" class = "settings-chevron-btn minimised" src = "gfx/interface/icons/chevron_down.png" draggable = "false">
+          <img id = "settings-close-btn" class = "settings-close-btn" src = "gfx/interface/icons/close_btn.png" draggable = "false">
         </div>
         <div id = "homepage-banner-settings-body-container" class = "homepage-banner-settings-body-container scroll-container">
           <div id = "homepage-banner-settings-change-bg-title" class = "settings-subtitle">Change Background:</div>
@@ -237,7 +262,7 @@
                 <!--Discord Bot projects-->
                 <!--<div id = "triumph_and_tragedy_one" class = "parallax-item triumph-and-tragedy-1 sublarge-square mauve">
                   <div class = "parallax-item-colour-bg"></div>
-                  <div class = "parallax-item-bg" style = "background-image: url('../gfx/interface/triumph_and_tragedy_icon_no_text.png');"></div>
+                  <div class = "parallax-item-bg" style = "background-image: url('gfx/interface/triumph_and_tragedy_icon_no_text.png');"></div>
                   <span class = "parallax-major-project-text centre" style = "font-weight: 500;">Triumph & Tragedy I</span>
                 </div>-->
                 <div id = "anno_1800" class = "parallax-item anno-1800 medium-square sepia">
@@ -272,7 +297,7 @@
                 </div>
                 <div id = "triumph_and_tragedy_two" class = "parallax-item triumph-and-tragedy-2 large-square salmon">
                   <div class = "parallax-item-colour-bg"></div>
-                  <div class = "parallax-item-bg" style = "background-image: url('../gfx/interface/battle_of_the_leyte_gulf.png'); opacity: 0.3;"></div>
+                  <div class = "parallax-item-bg" style = "background-image: url('gfx/interface/battle_of_the_leyte_gulf.png'); opacity: 0.3;"></div>
                   <span class = "parallax-major-project-text bottom-right" style = "font-weight: 700;">Triumph & Tragedy II</span>
                 </div>
                 <div id = "universal_bot_framework" class = "parallax-item universal-bot-framework submedium-square dark-blurple">
@@ -284,11 +309,11 @@
                 <!--Grand Strategy-->
                 <div id = "eleven_fiftynine" class = "parallax-item eleven-fiftynine small-square midnight-blue">
                   <div class = "parallax-item-colour-bg"></div>
-                  <div class = "parallax-item-bg" style = "background-image: url('../gfx/interface/1159_logo.jpg');"></div>
+                  <div class = "parallax-item-bg" style = "background-image: url('gfx/interface/1159_logo.jpg');"></div>
                 </div>
                 <div id = "empires_undone" class = "parallax-item empires-undone medium-square light-purple">
                   <div class = "parallax-item-colour-bg"></div>
-                  <div class = "parallax-item-bg" style = "background-image: url('../gfx/interface/empires_undone.png'); opacity: 0.1;"></div>
+                  <div class = "parallax-item-bg" style = "background-image: url('gfx/interface/empires_undone.png'); opacity: 0.1;"></div>
                   <span class = "parallax-minor-project-text bottom-left">Empires Undone</span>
                 </div>
                 <div id = "hoi4_map_renderer" class = "parallax-item hoi4-map-renderer submedium-square dark-grey">
@@ -308,7 +333,7 @@
                 </div>
                 <div id = "project_trinity" class = "parallax-item project-trinity sublarge-square red">
                   <div class = "parallax-item-colour-bg"></div>
-                  <div class = "parallax-item-bg" style = "background-image: url('../gfx/interface/project_trinity.png');"></div>
+                  <div class = "parallax-item-bg" style = "background-image: url('gfx/interface/project_trinity.png');"></div>
                   <span class = "parallax-major-project-text centre">Project Trinity</span>
                 </div>
                 <div id = "other_technical_projects" class = "parallax-item other-technical-projects large-square forest-green">
@@ -323,17 +348,17 @@
                 </div>
                 <div id = "armoured_advance" class = "parallax-item armoured-advance small-square dark-grey">
                   <div class = "parallax-item-colour-bg"></div>
-                  <div class = "parallax-item-bg" style = "background-image: url('../gfx/interface/armoured_advance_square.png');"></div>
+                  <div class = "parallax-item-bg" style = "background-image: url('gfx/interface/armoured_advance_square.png');"></div>
                   <span class = "parallax-minor-project-text bottom-left">Armoured<br>Advance</span>
                 </div>
                 <div id = "the_colorado" class = "parallax-item the-colorado submedium-square copper">
                   <div class = "parallax-item-colour-bg"></div>
-                  <div class = "parallax-item-bg" style = "background-image: url('../gfx/interface/the_colorado_square.png'); opacity: 0.4;"></div>
+                  <div class = "parallax-item-bg" style = "background-image: url('gfx/interface/the_colorado_square.png'); opacity: 0.4;"></div>
                   <span class = "parallax-minor-project-text">The<br>Colorado</span>
                 </div>
                 <div id = "boats_on_a_pond" class = "parallax-item boats-on-a-pond medium-square blue">
                   <div class = "parallax-item-colour-bg"></div>
-                  <div class = "parallax-item-bg" style = "background-image: url('../gfx/interface/boats_on_a_pond_square.png');"></div>
+                  <div class = "parallax-item-bg" style = "background-image: url('gfx/interface/boats_on_a_pond_square.png');"></div>
                   <span class = "parallax-minor-project-text bottom-left" style = "font-weight: 300;">Boats On A Pond</span>
                 </div>
                 <div id = "resolute" class = "parallax-item resolute small-square light-blue">
@@ -344,12 +369,12 @@
                 <!--Box shadows, keep at bottom-->
                 <div id = "les_halles" class = "parallax-item les-halles large-square dark-grey">
                   <div class = "parallax-item-colour-bg"></div>
-                  <div class = "parallax-item-bg" style = "background-image: url('../gfx/interface/les_halles_square.png');"></div>
+                  <div class = "parallax-item-bg" style = "background-image: url('gfx/interface/les_halles_square.png');"></div>
                   <span class = "parallax-major-project-text" style = "font-weight: 700;">Les Halles</span>
                 </div>
                 <div id = "brooklyn_bridge" class = "parallax-item brooklyn-bridge large-square transparent-sepia">
                   <div class = "parallax-item-colour-bg"></div>
-                  <div class = "parallax-item-bg" style = "background-image: url('../gfx/interface/brooklyn_bridge_square.png'); opacity: 0.7;"></div>
+                  <div class = "parallax-item-bg" style = "background-image: url('gfx/interface/brooklyn_bridge_square.png'); opacity: 0.7;"></div>
                   <span class = "parallax-major-project-text" style = "font-weight: 500;">Brooklyn Bridge</span>
                 </div>
                 <div id = "finished_works" class = "parallax-item finished-works large-square cream-white">
@@ -360,12 +385,12 @@
                 <!--Other sketches-->
                 <div id = "clouds_and_sunset" class = "parallax-item clouds-and-sunset medium-square red">
                   <div class = "parallax-item-colour-bg"></div>
-                  <div class = "parallax-item-bg" style = "background-image: url('../gfx/interface/clouds_and_sunset_square.png'); opacity: 0.4;"></div>
+                  <div class = "parallax-item-bg" style = "background-image: url('gfx/interface/clouds_and_sunset_square.png'); opacity: 0.4;"></div>
                   <span class = "parallax-minor-project-text centre" style = "font-weight: 400;">Clouds and Sunset</span>
                 </div>
                 <div id = "sinking_of_a_battleship" class = "parallax-item sinking-of-a-battleship medium-square light-grey">
                   <div class = "parallax-item-colour-bg"></div>
-                  <div class = "parallax-item-bg" style = "background-image: url('../gfx/interface/sinking_of_a_battleship_square.png');"></div>
+                  <div class = "parallax-item-bg" style = "background-image: url('gfx/interface/sinking_of_a_battleship_square.png');"></div>
                   <span class = "parallax-minor-project-text bottom-left" style = "font-weight: 300; font-size: 3vh;">Sinking of a Battleship</span>
                 </div>
                 <div id = "other_sketches" class = "parallax-item other-sketches large-square mauve">
@@ -380,17 +405,17 @@
                 </div>
                 <div id = "sketch_one" class = "parallax-item sketch-1 tiny-square dark-grey">
                   <div class = "parallax-item-colour-bg"></div>
-                  <div class = "parallax-item-bg" style = "background-image: url('../gfx/interface/sketch_1_square.png');"></div>
+                  <div class = "parallax-item-bg" style = "background-image: url('gfx/interface/sketch_1_square.png');"></div>
                   <span class = "parallax-minor-project-text centre">Sketch #1</span>
                 </div>
                 <div id = "sketch_two" class = "parallax-item sketch-2 tiny-square orange">
                   <div class = "parallax-item-colour-bg"></div>
-                  <div class = "parallax-item-bg" style = "background-image: url('../gfx/interface/sketch_2_square.png');"></div>
+                  <div class = "parallax-item-bg" style = "background-image: url('gfx/interface/sketch_2_square.png');"></div>
                   <span class = "parallax-minor-project-text centre">Sketch #2</span>
                 </div>
                 <div id = "broken_mirror" class = "parallax-item broken-mirror submedium-square midnight-blue" style = "font-weight: 700; font-size: 3vw;">
                   <div class = "parallax-item-colour-bg"></div>
-                  <div class = "parallax-item-bg" style = "background-image: url('../gfx/interface/broken_mirror_square.png');"></div>
+                  <div class = "parallax-item-bg" style = "background-image: url('gfx/interface/broken_mirror_square.png');"></div>
                   <span class = "parallax-minor-project-text bottom-left">Broken Mirror</span>
                 </div>
 
@@ -409,7 +434,7 @@
 
                 <div id = "the_adriatic" class = "parallax-item sublarge-square the-adriatic copper">
                   <div class = "parallax-item-colour-bg"></div>
-                  <div class = "parallax-item-bg" style = "background-image: url('../gfx/interface/adriatic_square.png');"></div>
+                  <div class = "parallax-item-bg" style = "background-image: url('gfx/interface/adriatic_square.png');"></div>
                   <span class = "parallax-major-project-text centre" style = "font-size: 4vh;">The Adriatic</span>
                 </div>
                 <div id = "historical_atlas_of_the_modern_world" class = "parallax-item large-square historical-atlas-of-the-modern-world sepia">
@@ -566,7 +591,7 @@
                   <div id = "armoured_advance-panel-title" class = "parallax-item-content-panel-title">Armored Advance</div>
                   <hr id = "armoured_advance-content-panel-divider" class = "parallax-item-content-panel-divider">
                   <div id = "armoured_advance-preview" class = "art-preview-image-container">
-                    <img src = "../gfx/interface/artworks/armored_advance.png" class = "art-preview-image" id = "armoured-advance" draggable = "false">
+                    <img src = "gfx/interface/artworks/armored_advance.png" class = "art-preview-image" id = "armoured-advance" draggable = "false">
                   </div>
                 </div>
               </div>
@@ -578,7 +603,7 @@
                   <div id = "brooklyn_bridge-panel-title" class = "parallax-item-content-panel-title">Brooklyn Bridge</div>
                   <hr id = "brooklyn_bridge-content-panel-divider" class = "parallax-item-content-panel-divider">
                   <div id = "brooklyn_bridge-preview" class = "art-preview-image-container">
-                    <img src = "../gfx/interface/artworks/brooklyn_bridge.jpg" class = "art-preview-image" id = "brooklyn-bridge" draggable = "false">
+                    <img src = "gfx/interface/artworks/brooklyn_bridge.jpg" class = "art-preview-image" id = "brooklyn-bridge" draggable = "false">
                   </div>
                 </div>
               </div>
@@ -590,7 +615,7 @@
                   <div id = "les_halles-panel-title" class = "parallax-item-content-panel-title">Les Halles</div>
                   <hr id = "les_halles-content-panel-divider" class = "parallax-item-content-panel-divider">
                   <div id = "les_halles-preview" class = "art-preview-image-container">
-                    <img src = "../gfx/interface/artworks/les_halles.jpg" class = "art-preview-image" id = "les-halles" draggable = "false">
+                    <img src = "gfx/interface/artworks/les_halles.jpg" class = "art-preview-image" id = "les-halles" draggable = "false">
                   </div>
                 </div>
               </div>
@@ -602,7 +627,7 @@
                   <div id = "the_colorado-panel-title" class = "parallax-item-content-panel-title">The Colorado</div>
                   <hr id = "the_colorado-content-panel-divider" class = "parallax-item-content-panel-divider">
                   <div id = "the_colorado-preview" class = "art-preview-image-container">
-                    <img src = "../gfx/interface/artworks/the_colorado.jpg" class = "art-preview-image" id = "the-colorado" draggable = "false">
+                    <img src = "gfx/interface/artworks/the_colorado.jpg" class = "art-preview-image" id = "the-colorado" draggable = "false">
                   </div>
                 </div>
               </div>
@@ -614,7 +639,7 @@
                   <div id = "resolute-panel-title" class = "parallax-item-content-panel-title">Resolute</div>
                   <hr id = "resolute-content-panel-divider" class = "parallax-item-content-panel-divider">
                   <div id = "resolute-preview" class = "art-preview-image-container">
-                    <img src = "../gfx/interface/artworks/resolute.png" class = "art-preview-image" id = "resolute" draggable = "false">
+                    <img src = "gfx/interface/artworks/resolute.png" class = "art-preview-image" id = "resolute" draggable = "false">
                   </div>
                 </div>
               </div>
@@ -626,7 +651,7 @@
                   <div id = "boats_on_a_pond-panel-title" class = "parallax-item-content-panel-title">Boats On A Pond</div>
                   <hr id = "boats_on_a_pond-content-panel-divider" class = "parallax-item-content-panel-divider">
                   <div id = "boats_on_a_pond-preview" class = "art-preview-image-container">
-                    <img src = "../gfx/interface/artworks/boats_on_a_pond.jpg" class = "art-preview-image" id = "boats-on-a-pond" draggable = "false">
+                    <img src = "gfx/interface/artworks/boats_on_a_pond.jpg" class = "art-preview-image" id = "boats-on-a-pond" draggable = "false">
                   </div>
                 </div>
               </div>
@@ -638,7 +663,7 @@
                   <div id = "clouds_and_sunset-panel-title" class = "parallax-item-content-panel-title">Clouds And Sunset</div>
                   <hr id = "clouds_and_sunset-content-panel-divider" class = "parallax-item-content-panel-divider">
                   <div id = "clouds_and_sunset-preview" class = "art-preview-image-container">
-                    <img src = "../gfx/interface/artworks/clouds_and_sunset.jpg" class = "art-preview-image" id = "clouds-and-sunset" draggable = "false">
+                    <img src = "gfx/interface/artworks/clouds_and_sunset.jpg" class = "art-preview-image" id = "clouds-and-sunset" draggable = "false">
                   </div>
                 </div>
               </div>
@@ -650,7 +675,7 @@
                   <div id = "sinking_of_a_battleship-panel-title" class = "parallax-item-content-panel-title">Sinking of a Battleship</div>
                   <hr id = "sinking_of_a_battleship-content-panel-divider" class = "parallax-item-content-panel-divider">
                   <div id = "sinking_of_a_battleship-preview" class = "art-preview-image-container">
-                    <img src = "../gfx/interface/artworks/sinking_of_a_battleship.png" class = "art-preview-image" id = "sinking-of-a-battleship" draggable = "false">
+                    <img src = "gfx/interface/artworks/sinking_of_a_battleship.png" class = "art-preview-image" id = "sinking-of-a-battleship" draggable = "false">
                   </div>
                 </div>
               </div>
@@ -731,16 +756,16 @@
         <div id = "project-parallax-bookmark-container" class = "parallax-bookmark-container minimised">
           <div id = "project-parallax-bookmark-labels-container" class = "project-parallax-text-container">
             <div id = "project-parallax-bookmark-label" class = "bookmarks-title">
-              <img id = "project-parallax-bookmark-text-icon" class = "bookmark-text-icon" src = "../gfx/interface/icons/bookmark_icon_filled.png" align = "left" draggable = "false"></img>
+              <img id = "project-parallax-bookmark-text-icon" class = "bookmark-text-icon" src = "gfx/interface/icons/bookmark_icon_filled.png" align = "left" draggable = "false"></img>
               <span id = "project-parallax-bookmark-label-text" class = "project-parallax-bookmark-label-text">Bookmarks</span>
-              <img id = "project-parallax-bookmark-minimise-icon" class = "bookmark-minimise-icon minimised" src = "../gfx/interface/icons/chevron_down.png" align = "right" draggable = "false">
+              <img id = "project-parallax-bookmark-minimise-icon" class = "bookmark-minimise-icon minimised" src = "gfx/interface/icons/chevron_down.png" align = "right" draggable = "false">
             </div>
           </div>
           <div id = "project-parallax-no-bookmark-label" class = "project-parallax-no-bookmark-label-text hidden">
             <center>
               You don't have any bookmarks currently!<br>
               Add some bookmarks to your collection by pressing on the
-              <img id = "project-parallax-no-bookmark-label-image-icon" class = "no-bookmark-label-image-icon" src = "../gfx/interface/icons/bookmark_icon_empty.png" draggable = "false"></img>
+              <img id = "project-parallax-no-bookmark-label-image-icon" class = "no-bookmark-label-image-icon" src = "gfx/interface/icons/bookmark_icon_empty.png" draggable = "false"></img>
               icon.
             </center>
           </div>
@@ -1141,7 +1166,7 @@
                    inkscape:connector-curvature="0" />
               </g>
             </svg>
-            <object class = "ministrat-cities-overlay" type = "image/svg+xml" data = "../ministrat/map/cities.svg">
+            <object class = "ministrat-cities-overlay" type = "image/svg+xml" data = "ministrat/map/cities.svg">
             </object>
           </div>
         </div>
@@ -1152,28 +1177,28 @@
     <div id = "project-parallax-anchor" class = "project-parallax-anchor"></div>
 
     <!--Homepage banner functionality-->
-    <script type = "text/javascript" src = "../js/animations/homepage_about_anim.js"></script>
-    <script type = "text/javascript" src = "../js/animations/homepage_banner_anim.js"></script>
-    <script type = "text/javascript" src = "../js/animations/init_homepage_animations.js"></script>
-    <script type = "text/javascript" src = "../js/animations/triumph_and_tragedy_bg_anim.js"></script>
-    <script type = "text/javascript" src = "../js/animations/lava_lamp_bg_anim.js"></script>
-    <script type = "text/javascript" src = "../js/animations/rain_bg_anim.js"></script>
+    <script type = "text/javascript" src = "js/animations/homepage_about_anim.js"></script>
+    <script type = "text/javascript" src = "js/animations/homepage_banner_anim.js"></script>
+    <script type = "text/javascript" src = "js/animations/init_homepage_animations.js"></script>
+    <script type = "text/javascript" src = "js/animations/triumph_and_tragedy_bg_anim.js"></script>
+    <script type = "text/javascript" src = "js/animations/lava_lamp_bg_anim.js"></script>
+    <script type = "text/javascript" src = "js/animations/rain_bg_anim.js"></script>
 
-    <script type = "text/javascript" src = "../js/events/homepage_on_hover.js"></script>
-    <script type = "text/javascript" src = "../js/events/homepage_on_scroll.js"></script>
-    <script type = "text/javascript" src = "../js/events/homepage_on_resize.js"></script>
+    <script type = "text/javascript" src = "js/events/homepage_on_hover.js"></script>
+    <script type = "text/javascript" src = "js/events/homepage_on_scroll.js"></script>
+    <script type = "text/javascript" src = "js/events/homepage_on_resize.js"></script>
 
-    <script type = "text/javascript" src = "../js/ui/homepage_banner_ui.js"></script>
-    <script type = "text/javascript" src = "../js/ui/homepage_banner_settings_ui.js"></script>
-    <script type = "text/javascript" src = "../js/ui/homepage_fix.js"></script>
-    <script type = "text/javascript" src = "../js/ui/homepage_image_preview.js"></script>
-    <script type = "text/javascript" src = "../js/ui/homepage_parallax_ui.js"></script>
+    <script type = "text/javascript" src = "js/ui/homepage_banner_ui.js"></script>
+    <script type = "text/javascript" src = "js/ui/homepage_banner_settings_ui.js"></script>
+    <script type = "text/javascript" src = "js/ui/homepage_fix.js"></script>
+    <script type = "text/javascript" src = "js/ui/homepage_image_preview.js"></script>
+    <script type = "text/javascript" src = "js/ui/homepage_parallax_ui.js"></script>
 
     <!-- DYNAMIC LOADING -->
-    <script type = "text/javascript" src = "../js/ui/homepage_gallery_config.js"></script>
+    <script type = "text/javascript" src = "js/ui/homepage_gallery_config.js"></script>
 
     <!--Ministrat-->
-    <script type = "text/javascript" src = "../ministrat/core/ministrat_elements.js"></script>
-    <script type = "text/javascript" src = "../ministrat/map/ministrat_map.js"></script>
+    <script type = "text/javascript" src = "ministrat/core/ministrat_elements.js"></script>
+    <script type = "text/javascript" src = "ministrat/map/ministrat_map.js"></script>
   </body>
 </html>
