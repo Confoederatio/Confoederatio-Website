@@ -342,9 +342,6 @@ function initGallery () {
   for (var i = 0; i < parallax_bookmarked_items.length; i++)
     addBookmarkItem(parallax_bookmarked_items[i], true);
 }
-setTimeout(function(){
-  initGallery();
-}, 1);
 
 //Parallax gallery logic
 var parallax_gallery_logic = setInterval(function(){

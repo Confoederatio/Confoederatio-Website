@@ -331,6 +331,66 @@ var typing_speed = 750;
         });
       }, 1000);
     }
+
+    //Begin playing misty_forest.mp4 after
+    var switched_backgrounds = false;
+
+    main_video_bg.onended = function () {
+      //Make sure you can only switch backgrounds once when the page is loaded
+      if (!switched_backgrounds) {
+        switched_backgrounds = true;
+        homepageBannerChangeBanner("misty_forest");
+
+        //Set wait commands for changing the background. Transitions should be 'jarring' as specified
+        setTimeout(function(){
+          homepageBannerChangeBanner("cleveland_fog");
+        }, 4000);
+        setTimeout(function(){
+          homepageBannerChangeBanner("triumph_and_tragedy");
+        }, 8000);
+        setTimeout(function(){
+          homepageBannerChangeBanner("lava_lamp");
+        }, 12000);
+        setTimeout(function(){
+          homepageBannerChangeBanner("rain");
+          homepageBannerDisplayDots();
+          lava_lamp_animation_paused = true;
+
+          //Mark animation as finished
+          title_element.setAttribute("class", title_element.getAttribute("class") + " finished-animation");
+        }, 16000);
+      }
+    };
+
+    //Main loop logic
+    setInterval(function(){
+      //Check if text is selected or not
+      banner_settings.text_selected = (document.activeElement.getAttribute("id") == banner_title_text.getAttribute("id"));
+
+      //Pause all animations if text is selected, and increment time_since_selection
+      if (banner_settings.text_selected) {
+        if (!banner_selected_once) homepageBannerCentreAlign();
+        banner_selected_once = true;
+        banner_settings.paused_animation = true;
+        time_since_selection = 0;
+
+        //Strip formatting from all copy/pasted text
+        if (!content_editable_evt_listeners_added) banner_title_text.addEventListener("paste", function (e) {
+          e.preventDefault();
+          var text = e.clipboardData.getData("text/plain");
+          document.execCommand("insertHTML", false, text);
+        });
+      } else {
+        //Make sure content is always able to be selected
+        if (banner_settings.paused_animation) banner_title_text.innerHTML = (banner_title_text.innerText.replace(/\n/gm, "").length == 0) ? "HELLO;" : banner_title_text.innerHTML;
+        //Increment time since selection so that we can keep track of when the animation should be unpaused again
+        time_since_selection++;
+      }
+
+      //Unpause animation if time_since_selection exceeds animation_threshhold
+      banner_settings.paused_animation =
+        (time_since_selection > banner_settings.animation_threshhold) ? false : banner_settings.paused_animation;
+    }, 100);
   }
 
   function homepageBannerChangeAnimation () {
@@ -397,66 +457,6 @@ var typing_speed = 750;
     }
   }
 }
-
-//Begin playing misty_forest.mp4 after
-var switched_backgrounds = false;
-
-main_video_bg.onended = function () {
-  //Make sure you can only switch backgrounds once when the page is loaded
-  if (!switched_backgrounds) {
-    switched_backgrounds = true;
-    homepageBannerChangeBanner("misty_forest");
-
-    //Set wait commands for changing the background. Transitions should be 'jarring' as specified
-    setTimeout(function(){
-      homepageBannerChangeBanner("cleveland_fog");
-    }, 4000);
-    setTimeout(function(){
-      homepageBannerChangeBanner("triumph_and_tragedy");
-    }, 8000);
-    setTimeout(function(){
-      homepageBannerChangeBanner("lava_lamp");
-    }, 12000);
-    setTimeout(function(){
-      homepageBannerChangeBanner("rain");
-      homepageBannerDisplayDots();
-      lava_lamp_animation_paused = true;
-
-      //Mark animation as finished
-      title_element.setAttribute("class", title_element.getAttribute("class") + " finished-animation");
-    }, 16000);
-  }
-};
-
-//Main loop logic
-setInterval(function(){
-  //Check if text is selected or not
-  banner_settings.text_selected = (document.activeElement.getAttribute("id") == banner_title_text.getAttribute("id"));
-
-  //Pause all animations if text is selected, and increment time_since_selection
-  if (banner_settings.text_selected) {
-    if (!banner_selected_once) homepageBannerCentreAlign();
-    banner_selected_once = true;
-    banner_settings.paused_animation = true;
-    time_since_selection = 0;
-
-    //Strip formatting from all copy/pasted text
-    if (!content_editable_evt_listeners_added) banner_title_text.addEventListener("paste", function (e) {
-      e.preventDefault();
-      var text = e.clipboardData.getData("text/plain");
-      document.execCommand("insertHTML", false, text);
-    });
-  } else {
-    //Make sure content is always able to be selected
-    if (banner_settings.paused_animation) banner_title_text.innerHTML = (banner_title_text.innerText.replace(/\n/gm, "").length == 0) ? "HELLO;" : banner_title_text.innerHTML;
-    //Increment time since selection so that we can keep track of when the animation should be unpaused again
-    time_since_selection++;
-  }
-
-  //Unpause animation if time_since_selection exceeds animation_threshhold
-  banner_settings.paused_animation =
-    (time_since_selection > banner_settings.animation_threshhold) ? false : banner_settings.paused_animation;
-}, 100);
 
 //Parallax effect for label, initialised in scroll scope
 function parallaxLabelOnScroll () {
