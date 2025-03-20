@@ -292,9 +292,10 @@ parallax.scalar(12.5, 35);
       //Fetch current scroll and update translateX
       parallax_scroll_x += parallax_current_scroll_x;
 
-      if (!parallax_container.getAttribute("class").includes("fast-scroll")) parallax_container.setAttribute("class",
-        parallax_container.getAttribute("class").replace(" slow-scroll", "") + " fast-scroll"
-      );
+      if (!parallax_container.getAttribute("class").includes("fast-scroll"))
+        parallax_container.setAttribute("class",
+          parallax_container.getAttribute("class").replace(" slow-scroll", "") + " fast-scroll"
+        );
       parallax_container.style.transform = `translateX(${parallax_scroll_x}vh)`;
 
       e.preventDefault();
