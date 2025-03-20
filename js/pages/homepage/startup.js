@@ -15,3 +15,15 @@ setTimeout(function(){
   initGallery();
   initGalleryTiles();
 }, 1);
+
+setTimeout(function(){
+  //Viewport 2
+  //Initialise magnifiers for all .art-preview-image elements
+  var all_art_preview_imgs = document.querySelectorAll(".art-preview-image-container");
+  console.log(all_art_preview_imgs)
+
+  for (var i = 0; i < all_art_preview_imgs.length; i++) magnify(
+    all_art_preview_imgs[i].querySelector("img"),
+    3
+  );
+}, 650);

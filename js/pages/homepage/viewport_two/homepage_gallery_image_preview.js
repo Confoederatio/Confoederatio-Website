@@ -117,16 +117,3 @@
     `;
   }
 }
-
-//Initialise magnifiers for all .art-preview-image elements
-{
-  setTimeout(function(){
-    var all_art_preview_imgs = document.querySelectorAll(".art-preview-image-container");
-    console.log(all_art_preview_imgs)
-
-    for (var i = 0; i < all_art_preview_imgs.length; i++) magnify(
-      all_art_preview_imgs[i].querySelector("img"),
-      3
-    );
-  }, 650);
-}
