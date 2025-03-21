@@ -1,3 +1,6 @@
+//Initialise main variable
+window.main = {};
+
 //There are two bodies for some reason! Where did that mess come from?
 var all_bodies = document.querySelectorAll("body");
 all_bodies[0].remove();
