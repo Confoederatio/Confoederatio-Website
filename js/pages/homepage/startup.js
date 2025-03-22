@@ -1,5 +1,8 @@
 //Initialise main variable
-window.main = {};
+window.main = {
+  banner: {},
+  gallery: {}
+};
 
 //There are two bodies for some reason! Where did that mess come from?
 var all_bodies = document.querySelectorAll("body");
