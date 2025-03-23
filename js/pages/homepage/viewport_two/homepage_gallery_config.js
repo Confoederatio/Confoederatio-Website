@@ -36,6 +36,7 @@
     //Convert from parameters
     var tile_id = arg0_tile_id;
     var options = (arg1_options) ? arg1_options : {};
+    var gallery_obj = main.gallery;
 
     //Initialise options
     if (!options.font_position) options.font_position = "bottom-right";
@@ -100,8 +101,8 @@
       parallax_panel_container_el.innerHTML += panel_element;
     }
 
-    //Set in window.main.gallery.parallax_settings
-    if (window.main && window.main.gallery) {
+    //Set in main.gallery.parallax_settings
+    if (window.main && main.gallery) {
       var new_tile_obj = {};
 
       if (options.animation) new_tile_obj.animation = options.animation;
@@ -109,16 +110,16 @@
       if (options.is_base_node) new_tile_obj.is_base_node = options.is_base_node;
 
       //Set new_tile_obj
-      window.main.gallery.parallax_settings[tile_id] = new_tile_obj;
+      gallery_obj.parallax_settings[tile_id] = new_tile_obj;
     }
 
     //options.default_bookmark; options.default_pin handler
     if (options.default_bookmark)
-      if (!window.main.gallery.bookmark_items.includes(tile_id))
-        window.main.gallery.bookmark_items.push(tile_id);
+      if (!gallery_obj.bookmark_items.includes(tile_id))
+        gallery_obj.bookmark_items.push(tile_id);
     if (options.default_pin)
-      if (!window.main.gallery.parallax_pinned_items.includes(tile_id))
-        window.main.gallery.parallax_pinned_items.push(tile_id);
+      if (!gallery_obj.parallax_pinned_items.includes(tile_id))
+        gallery_obj.parallax_pinned_items.push(tile_id);
   }
 
   function initGalleryTiles () {

@@ -5,7 +5,7 @@
     var local_element = document.getElementById(arg0_element_id);
     var local_id = arg0_element_id;
     var no_animation = arg1_no_animation;
-    var gallery_obj = window.main.gallery;
+    var gallery_obj = main.gallery;
 
     //Declare local instance variables
     var bookmark_btn = document.getElementById(`bookmark-btn-${local_id}`);
@@ -109,7 +109,7 @@
   function bookmarkInteraction (arg0_element_id) {
     //Convert from parameters
     var local_id = arg0_element_id;
-    var gallery_obj = window.main.gallery;
+    var gallery_obj = main.gallery;
 
     (!gallery_obj.bookmark_items.includes(local_id) && !document.querySelector(`#preview-${local_id}`)) ? addBookmarkItem(local_id) : removeBookmarkItem(local_id);
   }
@@ -126,7 +126,7 @@
   function closeContentPanel (arg0_element_id) {
     //Convert from parameters
     var local_el = document.getElementById(`${arg0_element_id}-content-panel`);
-    var gallery_obj = window.main.gallery;
+    var gallery_obj = main.gallery;
 
     //Replace 'shown' class with nothing
     local_el.setAttribute("class",
@@ -138,7 +138,7 @@
   function getDescendants (arg0_element_id) {
     //Convert from parameters
     var local_element = arg0_element_id;
-    var gallery_obj = window.main.gallery;
+    var gallery_obj = main.gallery;
 
     //Declare local instance variables
     var current_iterations = 0;
@@ -178,7 +178,7 @@
   function getParent (arg0_element_id) {
     //Convert from parameters
     var potential_child_element = arg0_element_id;
-    var gallery_obj = window.main.gallery;
+    var gallery_obj = main.gallery;
 
     //Declare local instance variables
     var all_parallax_elements = Object.keys(gallery_obj.parallax_settings);
@@ -206,7 +206,7 @@
   }
 
   function hideBookmarkUI () {
-    var gallery_obj = window.main.gallery;
+    var gallery_obj = main.gallery;
     gallery_obj.bookmark_minimise_btn.setAttribute("class",
       gallery_obj.bookmark_minimise_btn.getAttribute("class") + " minimised"
     );
@@ -218,7 +218,7 @@
   function initParallaxElement (arg0_element_id) {
     //Convert from parameters
     var local_element = arg0_element_id;
-    var gallery_obj = window.main.gallery;
+    var gallery_obj = main.gallery;
 
     if (!gallery_obj.parallax_settings[local_element]) gallery_obj.parallax_settings[local_element] = {};
     var local_obj = gallery_obj.parallax_settings[local_element];
@@ -299,7 +299,7 @@
     //Convert from parameters
     var parent_element = arg0_element_id;
     var child_element = arg1_element_id;
-    var gallery_obj = window.main.gallery;
+    var gallery_obj = main.gallery;
 
     //Declare local instance variables
     var is_descendant = false;
@@ -315,7 +315,7 @@
     //Convert from parameters
     var parent_element = arg0_element_id;
     var child_element = arg1_element_id;
-    var gallery_obj = window.main.gallery;
+    var gallery_obj = main.gallery;
 
     //Declare local instance variables
     var all_parallax_elements = Object.keys(gallery_obj.parallax_settings);
@@ -354,7 +354,7 @@
     var local_element = document.getElementById(`${arg0_element_id}-content-panel`);
     var local_id = arg0_element_id;
     var maximise_btn = document.getElementById(`${arg0_element_id}-maximise-btn`);
-    var gallery_obj = window.main.gallery;
+    var gallery_obj = main.gallery;
 
     //Reset container styling
     try {
@@ -391,7 +391,7 @@
     var local_id = arg0_element_id;
     var is_instant = arg1_instant;
     var minimise_btn = document.getElementById(`${arg0_element_id}-maximise-btn`);
-    var gallery_obj = window.main.gallery;
+    var gallery_obj = main.gallery;
 
     //Reset container styling to default
     gallery_obj.content_panel_update_paused = false;
@@ -414,8 +414,8 @@
   function onParallaxHover (e) {
     //Declare local instance variables
     var all_parallax_dom_elements = document.querySelectorAll(".parallax-item");
-    var all_parallax_elements = Object.keys(window.main.gallery.parallax_settings);
-    var gallery_obj = window.main.gallery;
+    var all_parallax_elements = Object.keys(main.gallery.parallax_settings);
+    var gallery_obj = main.gallery;
 
     //Fetch ID recursively
     var current_element = e.target;
@@ -490,7 +490,7 @@
     //Convert from parameters
     var local_element = document.getElementById(arg0_element_id);
     var local_id = arg0_element_id;
-    var gallery_obj = window.main.gallery;
+    var gallery_obj = main.gallery;
 
     //Set item as pinned if possible
     try {
@@ -507,7 +507,7 @@
     //Convert from parameters
     var local_element = document.getElementById(arg0_element_id);
     var local_id = arg0_element_id;
-    var gallery_obj = window.main.gallery;
+    var gallery_obj = main.gallery;
 
     //Declare local instance variables
     var bookmark_btn = document.getElementById(`bookmark-btn-${local_id}`);
@@ -584,7 +584,7 @@
     var local_el = document.getElementById(`btn-bookmark-${arg0_element_id}`);
     var local_id = arg0_element_id;
     var no_scroll = arg2_no_scroll;
-    var gallery_obj = window.main.gallery;
+    var gallery_obj = main.gallery;
     var old_bookmark = document.getElementById(`${gallery_obj.bookmark_selected}`);
     var parallax_element = document.getElementById(`${arg0_element_id.replace("preview-", "")}`);
 
@@ -657,14 +657,14 @@
   function selectParallaxItem (arg0_element_id) {
     //Convert from parameters
     var element_id = arg0_element_id;
-    var gallery_obj = window.main.gallery;
+    var gallery_obj = main.gallery;
 
     //Either add ID to parallax_selected or not
     (!gallery_obj.parallax_selected.includes(element_id)) ? gallery_obj.parallax_selected.push(element_id) : removeElement(gallery_obj.parallax_selected, element_id);
   }
 
   function showBookmarkUI () {
-    var gallery_obj = window.main.gallery;
+    var gallery_obj = main.gallery;
     gallery_obj.bookmark_minimise_btn.setAttribute("class",
       gallery_obj.bookmark_minimise_btn.getAttribute("class").replace(" minimised", "")
     );
@@ -677,7 +677,7 @@
     //Convert from parameters
     var local_el = document.getElementById(`${arg0_element_id}-content-panel`);
     var local_id = arg0_element_id;
-    var gallery_obj = window.main.gallery;
+    var gallery_obj = main.gallery;
 
     try {
       //Declare local instance variables
@@ -739,7 +739,7 @@
   function updateContentPanelContainer () {
     //Declare local instance variables
     var main_parallax_scene = document.querySelector(".layer.main");
-    var gallery_obj = window.main.gallery;
+    var gallery_obj = main.gallery;
 
     //Regular error trapping
     try {
@@ -759,10 +759,10 @@
   function updateHiddenElements () {
     //Declare local instance variables
     var all_parallax_dom_elements = document.querySelectorAll(".parallax-item");
-    var all_parallax_elements = Object.keys(window.main.gallery.parallax_settings);
+    var all_parallax_elements = Object.keys(main.gallery.parallax_settings);
     var hidden_elements = [];
     var visible_elements = [];
-    var gallery_obj = window.main.gallery;
+    var gallery_obj = main.gallery;
 
     //Fetch visible elements
     for (var i = 0; i < gallery_obj.parallax_selected.length; i++) {

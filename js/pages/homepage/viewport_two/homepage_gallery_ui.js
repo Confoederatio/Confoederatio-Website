@@ -1,7 +1,7 @@
 //Initialise functions
 {
   function initGalleryUI () {
-    var gallery_obj = window.main.gallery;
+    var gallery_obj = main.gallery;
   
     //Restrict parallax fluidity
     gallery_obj.parallax.scalar(12.5, 35);
@@ -198,7 +198,7 @@
   }
   
   function updateContentPanelContainer () {
-    var gallery_obj = window.main.gallery;
+    var gallery_obj = main.gallery;
     
     //Declare local instance variables
     var main_parallax_scene = document.querySelector(".layer.main");

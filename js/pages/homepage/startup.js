@@ -32,11 +32,11 @@ window.main = {
     parallax_selected: [],
     parallax_pinned_items: ["anno_1800", "triumph_and_tragedy_two", "les_halles", "brooklyn_bridge"],
     
-    // Viewport dimensions
+    //Viewport dimensions
     viewport_height: document.documentElement.clientHeight/100,
     viewport_width: document.documentElement.clientWidth/100,
 
-    // UI Patterns
+    //UI Patterns
     exempt_id_patterns: [
       "body-text",
       "btn",
@@ -67,11 +67,11 @@ window.main = {
       "title"
     ],
 
-    // State variables
+    //State variables
     can_scroll_further: false,
     closing_bookmark: false,
 
-    // Parallax settings configuration
+    //Parallax settings configuration
     parallax_settings: {
       //Technical
       anno_1800: {
