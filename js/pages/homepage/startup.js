@@ -34,7 +34,155 @@ window.main = {
     
     // Viewport dimensions
     viewport_height: document.documentElement.clientHeight/100,
-    viewport_width: document.documentElement.clientWidth/100
+    viewport_width: document.documentElement.clientWidth/100,
+
+    // UI Patterns
+    exempt_id_patterns: [
+      "body-text",
+      "btn",
+      "content-panel", 
+      "development-date",
+      "divider",
+      "indicator",
+      "preview",
+      "project-parallax-bookmark-label",
+      "project-parallax-bookmark-minimise-icon",
+      "project-parallax-bookmark-text-icon",
+      "status",
+      "text-wrapper",
+      "title"
+    ],
+    panel_id_patterns: [
+      "body-text",
+      "content-panel",
+      "development-date", 
+      "divider",
+      "indicator",
+      "preview",
+      "project-parallax-bookmark-label",
+      "project-parallax-bookmark-minimise-icon",
+      "project-parallax-bookmark-text-icon",
+      "status",
+      "text-wrapper",
+      "title"
+    ],
+
+    // State variables
+    can_scroll_further: false,
+    closing_bookmark: false,
+
+    // Parallax settings configuration
+    parallax_settings: {
+      //Technical
+      anno_1800: {
+        animation: "anno-1800"
+      },
+      universal_bot_framework: {
+        animation: "universal-bot-framework"
+      },
+      triumph_and_tragedy_mod_creator: {
+        animation: "triumph-and-tragedy-mod-creator"
+      },
+      triumph_and_tragedy_two: {
+        animation: "triumph-and-tragedy-two",
+        dependencies: ["system_dynamics", "into_modernity", "last_man_standing", "proxy_cables"]
+      },
+      system_dynamics: {
+        animation: "system-dynamics"
+      },
+      into_modernity: {
+        animation: "into-modernity"
+      },
+      proxy_cables: {
+        animation: "proxy-cables"
+      },
+      last_man_standing: {
+        animation: "last-man-standing"
+      },
+      grand_strategy: {
+        dependencies: ["eleven_fiftynine", "empires_undone"]
+      },
+      empires_undone: {
+        animation: "empires-undone",
+        dependencies: ["hoi4_map_renderer"]
+      },
+      eleven_fiftynine: {
+        animation: "eleven-fiftynine"
+      },
+      hoi4_map_renderer: {
+        animation: "hoi4-map-renderer"
+      },
+      other_technical_projects: {
+        dependencies: ["js_in_4", "project_trinity"]
+      },
+      project_trinity: {
+        animation: "project-trinity"
+      },
+      js_in_4: {
+        animation: "js-in-4"
+      },
+
+      //Artistic
+      finished_works: {
+        dependencies: ["armoured_advance", "brooklyn_bridge"]
+      },
+      armoured_advance: {
+        animation: "armoured-advance"
+      },
+      brooklyn_bridge: {
+        animation: "brooklyn-bridge",
+        dependencies: ["the_colorado", "resolute", "les_halles"]
+      },
+      the_colorado: {
+        animation: "the-colorado"
+      },
+      resolute: {
+        animation: "resolute",
+        dependencies: ["boats_on_a_pond"]
+      },
+      les_halles: {
+        animation: "les-halles",
+        dependencies: ["boats_on_a_pond"]
+      },
+      boats_on_a_pond: {
+        animation: "boats-on-a-pond"
+      },
+      other_sketches: {
+        dependencies: ["clouds_and_sunset", "sinking_of_a_battleship"]
+      },
+      clouds_and_sunset: {
+        animation: "clouds-and-sunset",
+        dependencies: ["journal_sketches"]
+      },
+      sinking_of_a_battleship: {
+        animation: "sinking-of-a-battleship",
+        dependencies: ["journal_sketches"]
+      },
+      journal_sketches: {
+        animation: "journal-sketches",
+        dependencies: ["sketch_one", "past", "sketch_two", "broken_mirror"]
+      },
+      sketch_one: {
+        animation: "sketch-one"
+      },
+      past: {
+        animation: "past"
+      },
+      sketch_two: {
+        animation: "sketch-two"
+      },
+      broken_mirror: {
+        animation: "broken-mirror"
+      },
+
+      //Cartographic
+      historical_atlas_of_the_modern_world: {
+        dependencies: ["the_adriatic"]
+      },
+      the_adriatic: {
+        animation: "the-adriatic"
+      }
+    }
   }
 };
 

@@ -100,8 +100,8 @@
       parallax_panel_container_el.innerHTML += panel_element;
     }
 
-    //Set in window.parallax_settings
-    if (window.parallax_settings) {
+    //Set in window.main.gallery.parallax_settings
+    if (window.main && window.main.gallery) {
       var new_tile_obj = {};
 
       if (options.animation) new_tile_obj.animation = options.animation;
@@ -109,16 +109,16 @@
       if (options.is_base_node) new_tile_obj.is_base_node = options.is_base_node;
 
       //Set new_tile_obj
-      window.parallax_settings[tile_id] = new_tile_obj;
+      window.main.gallery.parallax_settings[tile_id] = new_tile_obj;
     }
 
     //options.default_bookmark; options.default_pin handler
     if (options.default_bookmark)
-      if (!window.parallax_bookmarked_items.includes(tile_id))
-        window.parallax_bookmarked_items.push(tile_id);
+      if (!window.main.gallery.bookmark_items.includes(tile_id))
+        window.main.gallery.bookmark_items.push(tile_id);
     if (options.default_pin)
-      if (!window.parallax_pinned_items.includes(tile_id))
-        window.parallax_pinned_items.push(tile_id);
+      if (!window.main.gallery.parallax_pinned_items.includes(tile_id))
+        window.main.gallery.parallax_pinned_items.push(tile_id);
   }
 
   function initGalleryTiles () {
@@ -129,7 +129,11 @@
     for (var i = 0; i < all_tiles_keys.length; i++) {
       var local_tile = config.homepage.gallery.tiles[all_tiles_keys[i]];
 
-      createPanel(all_tiles_keys[i], local_tile);
+      try {
+        createPanel(all_tiles_keys[i], local_tile);
+      } catch (e) {
+        console.error(e);
+      }
     }
   };
 }
