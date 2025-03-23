@@ -2,7 +2,7 @@
 window.main = {
   banner: {},
   gallery: {
-    // Core elements
+    //Core elements
     scene: document.getElementById("scene"),
     parallax: new Parallax(document.getElementById("scene")),
     
@@ -17,12 +17,12 @@ window.main = {
     bookmark_selected: "",
     bookmark_items: ["triumph_and_tragedy_two", "anno_1800", "les_halles"],
     
-    // Content panel system
+    //Content panel system
     content_panel_container: document.getElementById("main-parallax-content-panel-wrapper"),
     content_panel_scroll_container: document.getElementById("main-parallax-content-panel-scroll-wrapper"),
     content_panel_update_paused: false,
     
-    // Parallax system
+    //Parallax system
     parallax_body: document.getElementById("project-parallax-container"),
     parallax_container: document.getElementById("project-parallax-scroll-container"),
     parallax_buttons: document.getElementById("project-parallax-dots-container"),
