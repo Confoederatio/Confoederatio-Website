@@ -5,6 +5,7 @@
     var local_element = document.getElementById(arg0_element_id);
     var local_id = arg0_element_id;
     var no_animation = arg1_no_animation;
+    var gallery_obj = window.main.gallery;
 
     //Declare local instance variables
     var bookmark_btn = document.getElementById(`bookmark-btn-${local_id}`);
@@ -16,8 +17,8 @@
     );
 
     //Add local element to DOM as preview
-    window.main.gallery.bookmark_preview_container.innerHTML += local_element.outerHTML;
-    if (!window.main.gallery.bookmark_items.includes(local_id)) window.main.gallery.bookmark_items.push(local_id);
+    gallery_obj.bookmark_preview_container.innerHTML += local_element.outerHTML;
+    if (!gallery_obj.bookmark_items.includes(local_id)) gallery_obj.bookmark_items.push(local_id);
 
     //Change ID back
     local_element.setAttribute("id", local_id);
@@ -67,7 +68,7 @@
       //Add button for bookmark if it doesn't exist
       if (!bookmark_dot_el) {
         var local_class_name = (!no_animation) ? "parallax-bookmark-dot fade-in" : "parallax-bookmark-dot";
-        window.main.gallery.parallax_buttons.innerHTML += `
+        gallery_obj.parallax_buttons.innerHTML += `
           <div id = "btn-bookmark-${new_bookmarks[i].id}" class = "${local_class_name}" onclick = "selectBookmarkItem('${new_bookmarks[i].id}')"></div>
         `;
 
@@ -85,31 +86,32 @@
     }
 
     //Select bookmark if no other bookmark elements are present
-    if (window.main.gallery.bookmark_items.length == 1) {
-      window.main.gallery.bookmark_selected = local_id;
+    if (gallery_obj.bookmark_items.length == 1) {
+      gallery_obj.bookmark_selected = local_id;
     }
-    window.main.gallery.bookmark_selected = (window.main.gallery.bookmark_selected == "") ? local_id : window.main.gallery.bookmark_selected;
-    window.main.gallery.bookmark_selected = (!window.main.gallery.bookmark_selected.includes("preview-")) ? "preview-" + window.main.gallery.bookmark_selected : window.main.gallery.bookmark_selected;
+    gallery_obj.bookmark_selected = (gallery_obj.bookmark_selected == "") ? local_id : gallery_obj.bookmark_selected;
+    gallery_obj.bookmark_selected = (!gallery_obj.bookmark_selected.includes("preview-")) ? "preview-" + gallery_obj.bookmark_selected : gallery_obj.bookmark_selected;
 
     try {
-      selectBookmarkItem(window.main.gallery.bookmark_selected, true, true);
+      selectBookmarkItem(gallery_obj.bookmark_selected, true, true);
     } catch {}
 
     //Hide no bookmark label since a new bookmark has been added
-    if (!window.main.gallery.bookmark_no_label.getAttribute("class").includes(" hidden")) window.main.gallery.bookmark_no_label.setAttribute("class",
-      window.main.gallery.bookmark_no_label.getAttribute("class") + " hidden"
+    if (!gallery_obj.bookmark_no_label.getAttribute("class").includes(" hidden")) gallery_obj.bookmark_no_label.setAttribute("class",
+      gallery_obj.bookmark_no_label.getAttribute("class") + " hidden"
     );
 
-    window.main.gallery.bookmark_container.setAttribute("class",
-      window.main.gallery.bookmark_container.getAttribute("class").replace(" no-bookmarks", "")
+    gallery_obj.bookmark_container.setAttribute("class",
+      gallery_obj.bookmark_container.getAttribute("class").replace(" no-bookmarks", "")
     );
   }
 
   function bookmarkInteraction (arg0_element_id) {
     //Convert from parameters
     var local_id = arg0_element_id;
+    var gallery_obj = window.main.gallery;
 
-    (!window.main.gallery.bookmark_items.includes(local_id) && !document.querySelector(`#preview-${local_id}`)) ? addBookmarkItem(local_id) : removeBookmarkItem(local_id);
+    (!gallery_obj.bookmark_items.includes(local_id) && !document.querySelector(`#preview-${local_id}`)) ? addBookmarkItem(local_id) : removeBookmarkItem(local_id);
   }
 
   function clearBookmarkDots () {
@@ -124,17 +126,19 @@
   function closeContentPanel (arg0_element_id) {
     //Convert from parameters
     var local_el = document.getElementById(`${arg0_element_id}-content-panel`);
+    var gallery_obj = window.main.gallery;
 
     //Replace 'shown' class with nothing
     local_el.setAttribute("class",
       local_el.getAttribute("class").replace(" shown", "")
     );
-    window.main.gallery.parallax_scroll_indicator.style.opacity = 1;
+    gallery_obj.parallax_scroll_indicator.style.opacity = 1;
   }
 
   function getDescendants (arg0_element_id) {
     //Convert from parameters
     var local_element = arg0_element_id;
+    var gallery_obj = window.main.gallery;
 
     //Declare local instance variables
     var current_iterations = 0;
@@ -143,7 +147,7 @@
     try {
       while (true) {
         for (var i = 0; i < descendants.length; i++) {
-          var local_obj = main.gallery.parallax_settings[descendants[i]];
+          var local_obj = gallery_obj.parallax_settings[descendants[i]];
           if (local_obj.dependencies) for (var x = 0; x < local_obj.dependencies.length; x++) descendants.push(local_obj.dependencies[x]);
 
           //Make sure only unique descendants remain
@@ -174,13 +178,14 @@
   function getParent (arg0_element_id) {
     //Convert from parameters
     var potential_child_element = arg0_element_id;
+    var gallery_obj = window.main.gallery;
 
     //Declare local instance variables
-    var all_parallax_elements = Object.keys(main.gallery.parallax_settings);
+    var all_parallax_elements = Object.keys(gallery_obj.parallax_settings);
     var parent_elements = [];
 
     for (var i = 0; i < all_parallax_elements.length; i++) {
-      var item_obj = main.gallery.parallax_settings[all_parallax_elements[i]];
+      var item_obj = gallery_obj.parallax_settings[all_parallax_elements[i]];
       if (item_obj.dependencies) if (item_obj.dependencies.includes(potential_child_element)) parent_elements.push(all_parallax_elements[i]);
     }
 
@@ -201,20 +206,22 @@
   }
 
   function hideBookmarkUI () {
-    window.main.gallery.bookmark_minimise_btn.setAttribute("class",
-      window.main.gallery.bookmark_minimise_btn.getAttribute("class") + " minimised"
+    var gallery_obj = window.main.gallery;
+    gallery_obj.bookmark_minimise_btn.setAttribute("class",
+      gallery_obj.bookmark_minimise_btn.getAttribute("class") + " minimised"
     );
-    window.main.gallery.bookmark_container.setAttribute("class",
-      window.main.gallery.bookmark_container.getAttribute("class") + " minimised"
+    gallery_obj.bookmark_container.setAttribute("class",
+      gallery_obj.bookmark_container.getAttribute("class") + " minimised"
     );
   }
 
   function initParallaxElement (arg0_element_id) {
     //Convert from parameters
     var local_element = arg0_element_id;
+    var gallery_obj = window.main.gallery;
 
-    if (!main.gallery.parallax_settings[local_element]) main.gallery.parallax_settings[local_element] = {};
-    var local_obj = main.gallery.parallax_settings[local_element];
+    if (!gallery_obj.parallax_settings[local_element]) gallery_obj.parallax_settings[local_element] = {};
+    var local_obj = gallery_obj.parallax_settings[local_element];
 
     //Begin initialising local fields
     local_obj.animation_queue = (!local_obj.animation_queue) ? [] : local_obj.animation_queue;
@@ -244,7 +251,7 @@
       var all_descendants = getDescendants(local_obj.id);
 
       for (var i = 0; i < all_descendants.length; i++) {
-        var descendant_obj = main.gallery.parallax_settings[all_descendants[i]];
+        var descendant_obj = gallery_obj.parallax_settings[all_descendants[i]];
         if (descendant_obj.animation_queue.length > 0) all_children_finished_playing = false;
       }
 
@@ -283,7 +290,7 @@
 
     if (local_obj.animation && !local_obj.is_base_node)
       local_el.innerHTML = local_el.innerHTML += `
-        <div class = "parallax-icon pin ${(main.gallery.parallax_pinned_items.includes(local_el.id)) ? "pin-filled" : "pin-empty"}" onclick = "pinItem('${local_el.id}');"></div>
+        <div class = "parallax-icon pin ${(gallery_obj.parallax_pinned_items.includes(local_el.id)) ? "pin-filled" : "pin-empty"}" onclick = "pinItem('${local_el.id}');"></div>
         <div id = "bookmark-btn-${local_el.id}" class = "parallax-icon bookmark bookmark-empty" onclick = "bookmarkInteraction('${local_el.id}');"></div>
       `;
   }
@@ -292,10 +299,11 @@
     //Convert from parameters
     var parent_element = arg0_element_id;
     var child_element = arg1_element_id;
+    var gallery_obj = window.main.gallery;
 
     //Declare local instance variables
     var is_descendant = false;
-    var item_obj = main.gallery.parallax_settings[parent_element];
+    var item_obj = gallery_obj.parallax_settings[parent_element];
 
     if (item_obj) if (item_obj.dependencies) is_descendant = (item_obj.dependencies.includes(child_element)) ? true : is_descendant;
 
@@ -307,9 +315,10 @@
     //Convert from parameters
     var parent_element = arg0_element_id;
     var child_element = arg1_element_id;
+    var gallery_obj = window.main.gallery;
 
     //Declare local instance variables
-    var all_parallax_elements = Object.keys(main.gallery.parallax_settings);
+    var all_parallax_elements = Object.keys(gallery_obj.parallax_settings);
     var current_ids = [child_element];
     var current_iterations = 0;
     var is_descendant = false;
@@ -345,11 +354,12 @@
     var local_element = document.getElementById(`${arg0_element_id}-content-panel`);
     var local_id = arg0_element_id;
     var maximise_btn = document.getElementById(`${arg0_element_id}-maximise-btn`);
+    var gallery_obj = window.main.gallery;
 
     //Reset container styling
     try {
-      window.main.gallery.content_panel_update_paused = true;
-      window.main.gallery.content_panel_container.setAttribute("style", `
+      gallery_obj.content_panel_update_paused = true;
+      gallery_obj.content_panel_container.setAttribute("style", `
         transform-style: preserve-3d;
         backface-visibility: hidden;
         position: relative;
@@ -358,7 +368,7 @@
         top: 0px;
         transition: all 2s ease !important;
       `);
-      window.main.gallery.content_panel_scroll_container.setAttribute("style",
+      gallery_obj.content_panel_scroll_container.setAttribute("style",
         `
           transition: all 2s ease !important;
         `
@@ -369,7 +379,7 @@
         local_element.getAttribute("class") + " maximised"
       );
       maximise_btn.setAttribute("onclick", `minimiseContentPanel('${local_id}');`);
-      window.main.gallery.parallax_scroll_indicator.style.opacity = 0;
+      gallery_obj.parallax_scroll_indicator.style.opacity = 0;
     } catch (e) {
       console.error(e);
     }
@@ -381,9 +391,10 @@
     var local_id = arg0_element_id;
     var is_instant = arg1_instant;
     var minimise_btn = document.getElementById(`${arg0_element_id}-maximise-btn`);
+    var gallery_obj = window.main.gallery;
 
     //Reset container styling to default
-    window.main.gallery.content_panel_update_paused = false;
+    gallery_obj.content_panel_update_paused = false;
 
     //Hide maximised class
     local_element.setAttribute("class",
@@ -397,13 +408,14 @@
     }, (!is_instant) ? 1000 : 500);
 
     minimise_btn.setAttribute("onclick", `maximiseContentPanel('${local_id}');`);
-    window.main.gallery.parallax_scroll_indicator.style.opacity = 1;
+    gallery_obj.parallax_scroll_indicator.style.opacity = 1;
   }
 
   function onParallaxHover (e) {
     //Declare local instance variables
     var all_parallax_dom_elements = document.querySelectorAll(".parallax-item");
-    var all_parallax_elements = Object.keys(main.gallery.parallax_settings);
+    var all_parallax_elements = Object.keys(window.main.gallery.parallax_settings);
+    var gallery_obj = window.main.gallery;
 
     //Fetch ID recursively
     var current_element = e.target;
@@ -424,7 +436,7 @@
     //Increment hover argument to determine how long the element has been hovered over
     try {
       var invalid_id = false;
-      for (var i = 0; i < main.gallery.exempt_id_patterns.length; i++) invalid_id =  (current_element.id.includes(main.gallery.exempt_id_patterns[i])) ? true : invalid_id;
+      for (var i = 0; i < gallery_obj.exempt_id_patterns.length; i++) invalid_id =  (current_element.id.includes(gallery_obj.exempt_id_patterns[i])) ? true : invalid_id;
       if (!invalid_id) {
         //Set hover time attribute
         var hover_time = (current_element.getAttribute("hover-time")) ? parseInt(current_element.getAttribute("hover-time")) : 0;
@@ -442,14 +454,14 @@
     try {
       if (!current_element.getAttribute("class")) {
         if (parseInt(current_element.getAttribute("hover-time")) >= 5000) {
-          main.gallery.parallax_selected = [];
+          gallery_obj.parallax_selected = [];
           updateHiddenElements();
         }
       } else {
         if (parseInt(current_element.getAttribute("hover-time")) >= 500) {
-          var item_obj = main.gallery.parallax_settings[current_element.id];
-          if (item_obj) main.gallery.parallax_selected.push(current_element.id);
-          main.gallery.parallax_selected = unique(main.gallery.parallax_selected);
+          var item_obj = gallery_obj.parallax_settings[current_element.id];
+          if (item_obj) gallery_obj.parallax_selected.push(current_element.id);
+          gallery_obj.parallax_selected = unique(gallery_obj.parallax_selected);
 
           //Deselect any child elements that are not the immediate child of the hovered element, or its parent
           var deselection_array = [];
@@ -465,7 +477,7 @@
           }
 
           //Deselect everything in deselection_array
-          for (var i = 0; i < deselection_array.length; i++) removeElement(main.gallery.parallax_selected, deselection_array[i]);
+          for (var i = 0; i < deselection_array.length; i++) removeElement(gallery_obj.parallax_selected, deselection_array[i]);
 
           //Update hidden elements
           updateHiddenElements();
@@ -478,14 +490,15 @@
     //Convert from parameters
     var local_element = document.getElementById(arg0_element_id);
     var local_id = arg0_element_id;
+    var gallery_obj = window.main.gallery;
 
     //Set item as pinned if possible
     try {
       var pin_btn = local_element.querySelector(".pin");
 
-      (main.gallery.parallax_pinned_items.includes(local_id)) ? removeElement(main.gallery.parallax_pinned_items, local_id) : main.gallery.parallax_pinned_items.push(local_id);
+      (gallery_obj.parallax_pinned_items.includes(local_id)) ? removeElement(gallery_obj.parallax_pinned_items, local_id) : gallery_obj.parallax_pinned_items.push(local_id);
       pin_btn.setAttribute("class",
-        (main.gallery.parallax_pinned_items.includes(local_id)) ? pin_btn.getAttribute("class").replace("pin-empty", "pin-filled") : pin_btn.getAttribute("class").replace("pin-filled", "pin-empty")
+        (gallery_obj.parallax_pinned_items.includes(local_id)) ? pin_btn.getAttribute("class").replace("pin-empty", "pin-filled") : pin_btn.getAttribute("class").replace("pin-filled", "pin-empty")
       );
     } catch {}
   }
@@ -494,17 +507,18 @@
     //Convert from parameters
     var local_element = document.getElementById(arg0_element_id);
     var local_id = arg0_element_id;
+    var gallery_obj = window.main.gallery;
 
     //Declare local instance variables
     var bookmark_btn = document.getElementById(`bookmark-btn-${local_id}`);
-    var is_last_element = (window.main.gallery.bookmark_items[window.main.gallery.bookmark_items.length-1] == local_id);
-    var local_index = window.main.gallery.bookmark_items.indexOf(local_id.replace("preview-", ""));
+    var is_last_element = (gallery_obj.bookmark_items[gallery_obj.bookmark_items.length-1] == local_id);
+    var local_index = gallery_obj.bookmark_items.indexOf(local_id.replace("preview-", ""));
 
     //Remove bookmark functionally
     bookmark_btn.setAttribute("class",
       bookmark_btn.getAttribute("class").replace("bookmark-filled", "bookmark-empty")
     );
-    removeElement(window.main.gallery.bookmark_items, local_id);
+    removeElement(gallery_obj.bookmark_items, local_id);
     closing_bookmark = true;
     setTimeout(function(){
       closing_bookmark = false;
@@ -520,10 +534,10 @@
     );
 
     //Select a new bookmark since the current selected bookmark is no longer valid
-    var new_selected_bookmark = window.main.gallery.bookmark_selected;
+    var new_selected_bookmark = gallery_obj.bookmark_selected;
 
-    if (!window.main.gallery.bookmark_items.includes(window.main.gallery.bookmark_selected.replace("preview-", ""))) {
-      new_selected_bookmark = (!window.main.gallery.bookmark_items[local_index]) ? window.main.gallery.bookmark_items[local_index-1] : window.main.gallery.bookmark_items[local_index];
+    if (!gallery_obj.bookmark_items.includes(gallery_obj.bookmark_selected.replace("preview-", ""))) {
+      new_selected_bookmark = (!gallery_obj.bookmark_items[local_index]) ? gallery_obj.bookmark_items[local_index-1] : gallery_obj.bookmark_items[local_index];
     }
 
     //Error trapping
@@ -538,12 +552,12 @@
       bookmark_dot_el.remove();
 
       //Show no bookmark label if applicable
-      if (window.main.gallery.bookmark_items.length == 0) {
+      if (gallery_obj.bookmark_items.length == 0) {
         no_bookmark_label.setAttribute("class",
           no_bookmark_label.getAttribute("class").replace(" hidden", "")
         );
-        if (!window.main.gallery.bookmark_container.getAttribute("class").includes("no-bookmarks")) window.main.gallery.bookmark_container.setAttribute("class",
-          window.main.gallery.bookmark_container.getAttribute("class") + " no-bookmarks"
+        if (!gallery_obj.bookmark_container.getAttribute("class").includes("no-bookmarks")) gallery_obj.bookmark_container.setAttribute("class",
+          gallery_obj.bookmark_container.getAttribute("class") + " no-bookmarks"
         );
       }
     }, 500);
@@ -570,14 +584,15 @@
     var local_el = document.getElementById(`btn-bookmark-${arg0_element_id}`);
     var local_id = arg0_element_id;
     var no_scroll = arg2_no_scroll;
-    var old_bookmark = document.getElementById(`${window.main.gallery.bookmark_selected}`);
+    var gallery_obj = window.main.gallery;
+    var old_bookmark = document.getElementById(`${gallery_obj.bookmark_selected}`);
     var parallax_element = document.getElementById(`${arg0_element_id.replace("preview-", "")}`);
 
     //Declare local instance variables
-    var local_index = (window.main.gallery.bookmark_items.includes(local_id.replace("preview-", ""))) ? window.main.gallery.bookmark_items.indexOf(local_id.replace("preview-", "")) : 0;
+    var local_index = (gallery_obj.bookmark_items.includes(local_id.replace("preview-", ""))) ? gallery_obj.bookmark_items.indexOf(local_id.replace("preview-", "")) : 0;
 
     //Make sure that other buttons aren't being pressed
-    if (!window.main.gallery.closing_bookmark || automatic_selection) {
+    if (!gallery_obj.closing_bookmark || automatic_selection) {
       //Clear all dots and set local_el to filled
       clearBookmarkDots();
       local_el.setAttribute("class",
@@ -585,10 +600,10 @@
       );
 
       //Select bookmark and apply DOM classes/styling
-      window.main.gallery.bookmark_selected = local_id;
+      gallery_obj.bookmark_selected = local_id;
 
       //Translate bookmarks_container over so that the selected element is centred
-      window.main.gallery.bookmark_container.style.left = `${local_index*-12}vh`;
+      gallery_obj.bookmark_container.style.left = `${local_index*-12}vh`;
 
       //Reset old_bookmark styling to default
       var all_bookmarks = document.querySelectorAll(`.parallax-item-preview:not([item-state*="hidden"])`);
@@ -622,12 +637,12 @@
         var offset_x = (vw*50)/vh;
         var pan_x = parseInt(getComputedStyle(parallax_element).left.replace("px", ""))/vh;
 
-        window.main.gallery.parallax_scroll_x = (pan_x*-1 + offset_x - local_width/2);
-        if (!window.main.gallery.parallax_container.getAttribute("class").includes("slow-scroll")) window.main.gallery.parallax_container.setAttribute("class",
-          window.main.gallery.parallax_container.getAttribute("class").replace(" fast-scroll", "") + " slow-scroll"
+        gallery_obj.parallax_scroll_x = (pan_x*-1 + offset_x - local_width/2);
+        if (!gallery_obj.parallax_container.getAttribute("class").includes("slow-scroll")) gallery_obj.parallax_container.setAttribute("class",
+          gallery_obj.parallax_container.getAttribute("class").replace(" fast-scroll", "") + " slow-scroll"
         );
-        window.main.gallery.parallax_container.style.transform = `translateX(${window.main.gallery.parallax_scroll_x}vh)`;
-        window.main.gallery.content_wrapper_container.style.left = `${window.main.gallery.parallax_scroll_x*0.15}vh`;
+        gallery_obj.parallax_container.style.transform = `translateX(${gallery_obj.parallax_scroll_x}vh)`;
+        gallery_obj.content_wrapper_container.style.left = `${gallery_obj.parallax_scroll_x*0.15}vh`;
       }
 
       if (!parallax_element.getAttribute("animation").includes("shown")) {
@@ -642,17 +657,19 @@
   function selectParallaxItem (arg0_element_id) {
     //Convert from parameters
     var element_id = arg0_element_id;
+    var gallery_obj = window.main.gallery;
 
     //Either add ID to parallax_selected or not
-    (!window.main.gallery.parallax_selected.includes(element_id)) ? window.main.gallery.parallax_selected.push(element_id) : removeElement(window.main.gallery.parallax_selected, element_id);
+    (!gallery_obj.parallax_selected.includes(element_id)) ? gallery_obj.parallax_selected.push(element_id) : removeElement(gallery_obj.parallax_selected, element_id);
   }
 
   function showBookmarkUI () {
-    window.main.gallery.bookmark_minimise_btn.setAttribute("class",
-      window.main.gallery.bookmark_minimise_btn.getAttribute("class").replace(" minimised", "")
+    var gallery_obj = window.main.gallery;
+    gallery_obj.bookmark_minimise_btn.setAttribute("class",
+      gallery_obj.bookmark_minimise_btn.getAttribute("class").replace(" minimised", "")
     );
-    window.main.gallery.bookmark_container.setAttribute("class",
-      window.main.gallery.bookmark_container.getAttribute("class").replace(" minimised", "")
+    gallery_obj.bookmark_container.setAttribute("class",
+      gallery_obj.bookmark_container.getAttribute("class").replace(" minimised", "")
     );
   }
 
@@ -660,6 +677,7 @@
     //Convert from parameters
     var local_el = document.getElementById(`${arg0_element_id}-content-panel`);
     var local_id = arg0_element_id;
+    var gallery_obj = window.main.gallery;
 
     try {
       //Declare local instance variables
@@ -686,9 +704,9 @@
 
       //Reset perspective to default first if needed
       if (document.querySelector(".parallax-item-content-panel.maximised") && getMaximisedContentPanel() != local_id)
-        window.main.gallery.content_panel_update_paused = false;
+        gallery_obj.content_panel_update_paused = false;
       if (getMaximisedContentPanel())
-        if (getMaximisedContentPanel() != local_id || !window.main.gallery.content_panel_update_paused)
+        if (getMaximisedContentPanel() != local_id || !gallery_obj.content_panel_update_paused)
           minimiseContentPanel(getMaximisedContentPanel(), true);
     } catch (e) {}
   }
@@ -721,18 +739,19 @@
   function updateContentPanelContainer () {
     //Declare local instance variables
     var main_parallax_scene = document.querySelector(".layer.main");
+    var gallery_obj = window.main.gallery;
 
     //Regular error trapping
     try {
-      if (!window.main.gallery.content_panel_update_paused) {
-        window.main.gallery.content_panel_container.setAttribute("style",
+      if (!gallery_obj.content_panel_update_paused) {
+        gallery_obj.content_panel_container.setAttribute("style",
           main_parallax_scene.getAttribute("style")
         );
-        window.main.gallery.content_panel_scroll_container.setAttribute(
+        gallery_obj.content_panel_scroll_container.setAttribute(
           "style",
-          `transform: perspective(40em) rotateX(${parseInt(window.perspective_deg_y.replace("deg", ""))*0.5}deg) translateX(${window.main.gallery.parallax_scroll_x}vh);`
+          `transform: perspective(40em) rotateX(${parseInt(window.perspective_deg_y.replace("deg", ""))*0.5}deg) translateX(${gallery_obj.parallax_scroll_x}vh);`
         );
-        window.main.gallery.content_wrapper_container.style.left = `0vh`;
+        gallery_obj.content_wrapper_container.style.left = `0vh`;
       }
     } catch {}
   }
@@ -740,16 +759,17 @@
   function updateHiddenElements () {
     //Declare local instance variables
     var all_parallax_dom_elements = document.querySelectorAll(".parallax-item");
-    var all_parallax_elements = Object.keys(main.gallery.parallax_settings);
+    var all_parallax_elements = Object.keys(window.main.gallery.parallax_settings);
     var hidden_elements = [];
     var visible_elements = [];
+    var gallery_obj = window.main.gallery;
 
     //Fetch visible elements
-    for (var i = 0; i < main.gallery.parallax_selected.length; i++) {
+    for (var i = 0; i < gallery_obj.parallax_selected.length; i++) {
       try {
-        for (var x = 0; x < main.gallery.parallax_settings[main.gallery.parallax_selected[i]].dependencies.length; x++) visible_elements.push(main.gallery.parallax_settings[main.gallery.parallax_selected[i]].dependencies[x]);
+        for (var x = 0; x < gallery_obj.parallax_settings[gallery_obj.parallax_selected[i]].dependencies.length; x++) visible_elements.push(gallery_obj.parallax_settings[gallery_obj.parallax_selected[i]].dependencies[x]);
       } catch {}
-      visible_elements.push(main.gallery.parallax_selected[i]);
+      visible_elements.push(gallery_obj.parallax_selected[i]);
     }
     for (var i = 0; i < all_parallax_elements.length; i++) {
       if (getParent(all_parallax_elements[i]).length == 0)
@@ -768,8 +788,8 @@
         if (!visible_elements.includes(all_parallax_dom_elements[i].id)) {
           if (all_parallax_dom_elements[i].getAttribute("animation")) if (all_parallax_dom_elements[i].getAttribute("animation").includes("-shown")) {
             //Declare local instance variables
-            var local_obj = main.gallery.parallax_settings[all_parallax_dom_elements[i].id];
-            if (!main.gallery.parallax_pinned_items.includes(local_obj.id)) hidden_elements.push([local_obj.id, getDescendants(local_obj.id).length]);
+            var local_obj = gallery_obj.parallax_settings[all_parallax_dom_elements[i].id];
+            if (!gallery_obj.parallax_pinned_items.includes(local_obj.id)) hidden_elements.push([local_obj.id, getDescendants(local_obj.id).length]);
           }
         }
       } catch (e) {}
@@ -779,6 +799,6 @@
 
     //Invoke hide_function for all hidden_elements
     for (var i = 0; i < hidden_elements.length; i++)
-      main.gallery.parallax_settings[hidden_elements[i][0]].hide_function();
+      gallery_obj.parallax_settings[hidden_elements[i][0]].hide_function();
   }
 }
