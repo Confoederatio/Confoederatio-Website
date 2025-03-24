@@ -375,9 +375,10 @@
       );
 
       //Apply maximised class
-      local_element.setAttribute("class",
-        local_element.getAttribute("class") + " maximised"
-      );
+      if (!local_element.getAttribute("class").includes("maximised"))
+        local_element.setAttribute("class",
+          local_element.getAttribute("class") + " maximised"
+        );
       maximise_btn.setAttribute("onclick", `minimiseContentPanel('${local_id}');`);
       gallery_obj.parallax_scroll_indicator.style.opacity = 0;
     } catch (e) {
@@ -395,6 +396,14 @@
 
     //Reset container styling to default
     gallery_obj.content_panel_update_paused = false;
+
+    //Reset container styles to match the parallax scene
+    var main_parallax_scene = document.querySelector(".layer.main");
+    gallery_obj.content_panel_container.setAttribute("style", main_parallax_scene.getAttribute("style"));
+    gallery_obj.content_panel_scroll_container.setAttribute(
+      "style",
+      `transform: perspective(40em) rotateX(${parseInt(window.perspective_deg_y.replace("deg", ""))*0.5}deg) translateX(${gallery_obj.parallax_scroll_x}vh);`
+    );
 
     //Hide maximised class
     local_element.setAttribute("class",
@@ -684,6 +693,7 @@
       var all_hover_elements = document.querySelectorAll(":hover");
       var is_valid = true;
       var pre_check = local_el.getAttribute("class").includes("shown");
+      var was_maximized = local_el.getAttribute("class").includes("maximised");
 
       //Check to see that no hover elements have an onclick parameter that does not include toggleContentPanel()
       for (var i = 0; i < all_hover_elements.length; i++) try {
@@ -694,9 +704,22 @@
         //Apply shown class if not shown, hide if shown
         hideAllContentPanels();
         if (local_el) if (!pre_check) {
+          //Reset container styles to match the parallax scene
+          var main_parallax_scene = document.querySelector(".layer.main");
+          gallery_obj.content_panel_container.setAttribute("style", main_parallax_scene.getAttribute("style"));
+          gallery_obj.content_panel_scroll_container.setAttribute(
+            "style",
+            `transform: perspective(40em) rotateX(${parseInt(window.perspective_deg_y.replace("deg", ""))*0.5}deg) translateX(${gallery_obj.parallax_scroll_x}vh);`
+          );
+          
           local_el.setAttribute("class",
             local_el.getAttribute("class") + " shown"
           );
+
+          //If panel was previously maximized, restore that state
+          if (was_maximized) {
+            maximiseContentPanel(local_id);
+          }
         } else {
           hideAllContentPanels();
         }
@@ -708,7 +731,9 @@
       if (getMaximisedContentPanel())
         if (getMaximisedContentPanel() != local_id || !gallery_obj.content_panel_update_paused)
           minimiseContentPanel(getMaximisedContentPanel(), true);
-    } catch (e) {}
+    } catch (e) {
+      console.error("Error in toggleContentPanel:", e);
+    }
   }
 
   function togglePreview (arg0_element_id) {
@@ -751,7 +776,6 @@
           "style",
           `transform: perspective(40em) rotateX(${parseInt(window.perspective_deg_y.replace("deg", ""))*0.5}deg) translateX(${gallery_obj.parallax_scroll_x}vh);`
         );
-        gallery_obj.content_wrapper_container.style.left = `0vh`;
       }
     } catch {}
   }

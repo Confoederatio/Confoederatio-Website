@@ -59,6 +59,9 @@
 
   transition: all 2s ease !important;
 }
+.parallax-item-content-panel.maximised:not(.shown) {
+  pointer-events: none;
+}
 .parallax-item-content-panel.maximised:not(.shown) > .content-wrapper {
   margin-top: 50%;
   max-height: 0vh;
