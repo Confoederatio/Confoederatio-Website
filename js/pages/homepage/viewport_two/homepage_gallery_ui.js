@@ -126,7 +126,7 @@
       });
     }
   
-    //Hide all parallax elements that are dependencies by default
+    //initGallery() - Hide all parallax elements that are dependencies by default
     function initGallery () {
       //Declare local instance variables
       var hide_elements = [];
@@ -194,14 +194,13 @@
       updateContentPanelContainer();
     }, 0);
   
-    //Initialize the gallery
+    //Initialise the gallery
     initGallery();
   }
   
   function updateContentPanelContainer () {
-    var gallery_obj = main.gallery;
-    
     //Declare local instance variables
+    var gallery_obj = main.gallery;
     var main_parallax_scene = document.querySelector(".layer.main");
   
     //Regular error trapping
