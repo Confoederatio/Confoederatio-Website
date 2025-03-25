@@ -4,13 +4,10 @@
     //Declare local instance variables
     e = e || window.event;
     var img_bounds = arg0_image.getBoundingClientRect();
-    var pan_x = 0;
-    var pan_y = 0;
-
-    //Calculate pan_x and pan_y coordinates
-
-    pan_x = e.pageX - img_bounds.left;
-    pan_y = e.pageY - img_bounds.top - window.pageYOffset + img_bounds.height/2;
+    
+    //Calculate pan_x and pan_y coordinates relative to image
+    var pan_x = e.clientX - img_bounds.left;
+    var pan_y = e.clientY - img_bounds.top;
 
     //Return object
     return { x : pan_x, y: pan_y };
@@ -80,20 +77,22 @@
     var pan_x = position.x;
     var pan_y = position.y;
 
-    var h = magnifier.offsetHeight/2;
-    var w = magnifier.offsetWidth/2;
+    // Get magnifier dimensions
+    var h = magnifier.offsetHeight;
+    var w = magnifier.offsetWidth;
 
-    var aspect_ratio_change = (window.innerWidth/window.innerHeight - 1.4071)/0.49154;
-    var x_change = 0.575*aspect_ratio_change;
-    var y_change = 0.55*aspect_ratio_change;
-
-    var offset_x = pan_x-w/(1.25 + 0.15*aspect_ratio_change);
-    var offset_y = pan_y-h/0.8;
+    // Calculate magnifier position to center the DIV on cursor
+    var offset_x = pan_x - (w/2);
+    var offset_y = pan_y + (h/2);
 
     //Maximisation adjustments
     if (isMagnifierMaximised(element_id)) {
-      offset_x = pan_x+w*(1.125 + x_change);
-      offset_y = pan_y-h*(1.65 + y_change);
+      // For maximized state, position relative to the image container
+      var container = local_el.parentElement;
+      var container_bounds = container.getBoundingClientRect();
+      
+      offset_x = pan_x - (w/2) + container_bounds.left;
+      offset_y = pan_y + h + local_bounds.top - container_bounds.top;
     }
 
     //Prevent magnifier from going outside of image
@@ -102,14 +101,16 @@
       magnifier.style.top = `${offset_y}px`;
     }
 
+    // Calculate percentage of cursor position within the displayed image
+    var percent_x = pan_x / local_bounds.width;
+    var percent_y = pan_y / local_bounds.height;
+    
+    // Calculate background position using percentage
+    var bg_x = percent_x * (local_el.width * zoom - w);
+    var bg_y = percent_y * (local_el.height * zoom - h);
+
     //Set magnifier display
-    magnifier.style.backgroundPosition = `
-      -${
-        Math.min((pan_x*zoom) - w*(1 + x_change), local_el.width*zoom - w*2)
-      }px -${
-        Math.min((pan_y*zoom) - (local_el.height*zoom)/2 - h*(1 + y_change), local_el.height*zoom - h*2)
-      }px
-    `;
+    magnifier.style.backgroundPosition = `-${bg_x}px -${bg_y}px`;
 
     //Update magnifier zoom
     magnifier.style.backgroundSize = `
