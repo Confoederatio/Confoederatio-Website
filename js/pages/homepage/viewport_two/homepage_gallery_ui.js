@@ -1,6 +1,7 @@
 //Initialise functions
 {
   function initGalleryUI () {
+    //Declare local instance variables
     var gallery_obj = main.gallery;
   
     //Restrict parallax fluidity

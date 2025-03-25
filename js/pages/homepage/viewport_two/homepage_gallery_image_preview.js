@@ -2,7 +2,7 @@
 {
   function getCursorPosition (e, arg0_image) {
     //Declare local instance variables
-    e = e || window.event;
+    e = (e) ? e : window.event;
     var img_bounds = arg0_image.getBoundingClientRect();
     
     //Calculate pan_x and pan_y coordinates relative to image
