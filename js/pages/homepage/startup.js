@@ -1,12 +1,19 @@
 //Initialise main variable
 window.main = {
-  banner: {},
+  banner: {
+    //Element selectors
+    about_me_body_text: document.getElementById("about-me-body-text"),
+    about_me_overlay_title: document.getElementById("about-me-overlay-title"),
+    about_me_overlay_subtitle: document.getElementById("about-me-overlay-subtitle"),
+    biography_body_text: document.getElementById("biography-body-text"),
+    biography_overlay_subtitle: document.getElementById("biography-overlay-subtitle")
+  },
   gallery: {
     //Core elements
     scene: document.getElementById("scene"),
     parallax: new Parallax(document.getElementById("scene")),
     
-    // Bookmark system
+    //Bookmark selectors
     bookmark_container: document.getElementById("project-parallax-bookmark-container"),
     bookmark_label: document.getElementById("project-parallax-bookmark-labels-container"),
     bookmark_minimise_btn: document.getElementById("project-parallax-bookmark-minimise-icon"),
@@ -17,12 +24,12 @@ window.main = {
     bookmark_selected: "",
     bookmark_items: ["triumph_and_tragedy_two", "anno_1800", "les_halles"],
     
-    //Content panel system
+    //Content panel selectors
     content_panel_container: document.getElementById("main-parallax-content-panel-wrapper"),
     content_panel_scroll_container: document.getElementById("main-parallax-content-panel-scroll-wrapper"),
     content_panel_update_paused: false,
     
-    //Parallax system
+    //Parallax selectors
     parallax_body: document.getElementById("project-parallax-container"),
     parallax_container: document.getElementById("project-parallax-scroll-container"),
     parallax_buttons: document.getElementById("project-parallax-dots-container"),
