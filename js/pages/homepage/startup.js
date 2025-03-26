@@ -1,44 +1,9 @@
 //Initialise main variable
 window.main = {
   banner: {
-    //Element selectors
-    about_me_body_text: document.getElementById("about-me-body-text"),
-    about_me_overlay_title: document.getElementById("about-me-overlay-title"),
-    about_me_overlay_subtitle: document.getElementById("about-me-overlay-subtitle"),
-    biography_body_text: document.getElementById("biography-body-text"),
-    biography_overlay_subtitle: document.getElementById("biography-overlay-subtitle")
+    
   },
   gallery: {
-    //Core elements
-    scene: document.getElementById("scene"),
-    parallax: new Parallax(document.getElementById("scene")),
-    
-    //Bookmark selectors
-    bookmark_container: document.getElementById("project-parallax-bookmark-container"),
-    bookmark_label: document.getElementById("project-parallax-bookmark-labels-container"),
-    bookmark_minimise_btn: document.getElementById("project-parallax-bookmark-minimise-icon"),
-    bookmark_scroll_x: 0,
-    bookmark_preview_container: document.getElementById("project-parallax-preview-container"),
-    bookmark_no_label: document.getElementById("project-parallax-no-bookmark-label"),
-    bookmark_old_index: 1,
-    bookmark_selected: "",
-    bookmark_items: ["triumph_and_tragedy_two", "anno_1800", "les_halles"],
-    
-    //Content panel selectors
-    content_panel_container: document.getElementById("main-parallax-content-panel-wrapper"),
-    content_panel_scroll_container: document.getElementById("main-parallax-content-panel-scroll-wrapper"),
-    content_panel_update_paused: false,
-    
-    //Parallax selectors
-    parallax_body: document.getElementById("project-parallax-container"),
-    parallax_container: document.getElementById("project-parallax-scroll-container"),
-    parallax_buttons: document.getElementById("project-parallax-dots-container"),
-    parallax_scroll_indicator: document.getElementById("project-parallax-scroll-fill-indicator"),
-    parallax_current_scroll_x: 0,
-    parallax_scroll_x: 0,
-    parallax_selected: [],
-    parallax_pinned_items: ["anno_1800", "triumph_and_tragedy_two", "les_halles", "brooklyn_bridge"],
-    
     //Viewport dimensions
     viewport_height: document.documentElement.clientHeight/100,
     viewport_width: document.documentElement.clientWidth/100,
@@ -79,6 +44,7 @@ window.main = {
     closing_bookmark: false,
 
     //Parallax settings configuration
+    parallax: new Parallax(document.getElementById("scene")),
     parallax_settings: {
       //Technical
       anno_1800: {
@@ -192,6 +158,20 @@ window.main = {
     }
   }
 };
+
+//Initialise main
+var common_selectors = config.homepage.defines.common.selectors;
+
+//Add common_selectors to main
+var all_viewport_one_selectors = Object.keys(common_selectors.viewport_one);
+var all_viewport_two_selectors = Object.keys(common_selectors.viewport_two);
+
+//Iterate over all viewport one selectors
+for (var i = 0; i < all_viewport_one_selectors.length; i++)
+  main.banner[all_viewport_one_selectors[i]] = common_selectors.viewport_one[all_viewport_one_selectors[i]];
+//Iterate over all viewport two selectors
+for (var i = 0; i < all_viewport_two_selectors.length; i++)
+  main.gallery[all_viewport_two_selectors[i]] = common_selectors.viewport_two[all_viewport_two_selectors[i]];
 
 //There are two bodies for some reason! Where did that mess come from?
 var all_bodies = document.querySelectorAll("body");
