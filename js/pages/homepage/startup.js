@@ -1,8 +1,6 @@
 //Initialise main variable
 window.main = {
-  banner: {
-    
-  },
+  banner: {},
   gallery: {
     //Viewport dimensions
     viewport_height: document.documentElement.clientHeight/100,
