@@ -185,8 +185,8 @@ setTimeout(function(){
 
   //Viewport 2
   //Gallery
-  initGalleryUI();
   initGalleryTiles();
+  initGalleryUI();
 }, 1);
 
 setTimeout(function(){
