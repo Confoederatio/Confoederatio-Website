@@ -280,7 +280,7 @@
           } catch {}
         }
       }
-    }, 750-dependency_amount);
+    }, 750 - dependency_amount);
 
     //Initialise DOM elements
     var local_el = document.getElementById(local_obj.id);
