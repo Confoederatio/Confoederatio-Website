@@ -366,13 +366,11 @@
         display: block;
         left: 0vh;
         top: 0px;
-        transition: all 2s ease !important;
+        transition: all 2s ease;
       `);
-      gallery_obj.content_panel_scroll_container.setAttribute("style",
-        `
-          transition: all 2s ease !important;
-        `
-      );
+      gallery_obj.content_panel_scroll_container.setAttribute("style", `
+        transition: all 2s ease;
+      `);
 
       //Apply maximised class
       if (!local_element.getAttribute("class").includes("maximised"))

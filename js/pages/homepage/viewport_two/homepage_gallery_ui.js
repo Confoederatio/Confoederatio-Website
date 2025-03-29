@@ -100,43 +100,32 @@
       gallery_obj.parallax_body.addEventListener("wheel", (e) => {
         //Declare local instance variables
         var scroll_enabled = true;
-  
+        var is_over_panel_container = false;
+        for (var i = 0; i < gallery_obj.panel_id_patterns.length; i++) {
+          is_over_panel_container = (e.target.id.includes(gallery_obj.panel_id_patterns[i])) ? true : is_over_panel_container;
+        }
+
+        //If over a panel container, allow scrolling
+        if (is_over_panel_container) {
+          return;
+        }
+
         //Prevent default scroll behaviour from occurring so far as the scroll bounds have not been reached (conditional)
         gallery_obj.parallax_current_scroll_x = e.deltaY/gallery_obj.viewport_width/1.5;
-  
+
         //Leftwards scroll bound
         scroll_enabled = (gallery_obj.parallax_current_scroll_x < 0 && gallery_obj.parallax_scroll_x > 0) ? false : scroll_enabled;
-  
+
         //Rightwards scroll bound
         scroll_enabled = (gallery_obj.parallax_current_scroll_x > 0 && gallery_obj.parallax_scroll_x*-1 > 440) ? false : scroll_enabled;
-  
+
         //Make sure main banner is entirely off screen
         scroll_enabled = isElementAtTop(gallery_obj.parallax_body) ? scroll_enabled : false;
-  
+
         //Scrolling is disabled if any content panels are maximised and shown
         if (document.querySelectorAll(".maximised.shown").length != 0 || document.querySelectorAll(".art-preview-image:hover").length != 0) {
           scroll_enabled = false;
           e.preventDefault();
-        }
-  
-        //Enable scrolling for content panels, disable if scrolled to top or bottom and user is trying to scroll in that direction
-        var is_over_panel_container = false;
-        for (var i = 0; i < gallery_obj.panel_id_patterns.length; i++) is_over_panel_container = (e.target.id.includes(gallery_obj.panel_id_patterns[i])) ? true : scroll_enabled;
-  
-        if (is_over_panel_container && !gallery_obj.content_panel_update_paused) {
-          var hovered_element;
-          var all_hover_elements = document.querySelectorAll(":hover");
-  
-          for (var i = 0; i < all_hover_elements.length; i++) try {
-            hovered_element =  (all_hover_elements[i].getAttribute("class").includes("content-wrapper")) ? all_hover_elements[i] : hovered_element;
-          } catch {}
-  
-          if (hovered_element) {
-            var container_height = hovered_element.querySelector(".text-wrapper").offsetHeight - hovered_element.offsetHeight;
-            var current_scroll = Math.ceil(hovered_element.scrollTop);
-  
-            scroll_enabled = ((e.deltaY < 0 && current_scroll == 0) || (e.deltaY > 0 && current_scroll >= container_height - 1));
-          }
         }
   
         if (scroll_enabled && window.scrollY <= window.innerHeight*2) {

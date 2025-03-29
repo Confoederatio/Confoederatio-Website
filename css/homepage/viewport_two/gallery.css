@@ -559,6 +559,9 @@
   max-height: calc(99% - 3vh);
   overflow: auto;
 }
+.parallax-item-content-panel.maximised > .content-wrapper {
+  max-height: calc(100% - 20vh - 8px);
+}
 .parallax-item-content-panel > .content-wrapper > .text-wrapper {
   margin-right: 1.5vh;
 }
