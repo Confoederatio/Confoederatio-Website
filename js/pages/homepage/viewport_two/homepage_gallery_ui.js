@@ -105,8 +105,26 @@
           is_over_panel_container = (e.target.id.includes(gallery_obj.panel_id_patterns[i])) ? true : is_over_panel_container;
         }
 
-        //If over a panel container, allow scrolling
+        //If over a panel container, handle content panel scrolling
         if (is_over_panel_container) {
+          var hovered_element;
+          var all_hover_elements = document.querySelectorAll(":hover");
+          for (var i = 0; i < all_hover_elements.length; i++) {
+            try {
+              hovered_element = (all_hover_elements[i].getAttribute("class").includes("content-wrapper")) ? all_hover_elements[i] : hovered_element;
+            } catch {}
+          }
+
+          if (hovered_element) {
+            var container_height = hovered_element.querySelector(".text-wrapper").offsetHeight - hovered_element.offsetHeight;
+            var current_scroll = Math.ceil(hovered_element.scrollTop);
+
+            //Prevent scrolling if at bounds
+            if ((e.deltaY < 0 && current_scroll == 0) || (e.deltaY > 0 && current_scroll >= container_height - 1)) {
+              e.preventDefault();
+              return;
+            }
+          }
           return;
         }
 
