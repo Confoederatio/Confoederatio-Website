@@ -52,5 +52,16 @@ config.homepage.gallery.tiles = {
       <b>Modding Compatibility.</b>
       With an in-depth backend JSON-based modding API allowing for the customisation of buildings, units, governments, laws, events, and technologies, building what may seem like an entirely new game is never more than a few lines of text away.
     </div>`
+  },
+  triumph_and_tragedy_mod_creator: {
+    name: "Triumph & Tragedy Mod Creator",
+    animation: "triumph-and-tragedy-mod-creator",
+      font_position: "bottom-right",
+      font_size: 1,
+      font_weight: 300,
+    size: 5,
+    x: 44,
+    y: 96,
+    colour: "light-purple"
   }
 };

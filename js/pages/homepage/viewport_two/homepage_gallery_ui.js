@@ -141,7 +141,7 @@
         scroll_enabled = isElementAtTop(gallery_obj.parallax_body) ? scroll_enabled : false;
 
         //Scrolling is disabled if any content panels are maximised and shown
-        if (document.querySelectorAll(".maximised.shown").length != 0 || document.querySelectorAll(".art-preview-image:hover").length != 0) {
+        if (document.querySelectorAll(".maximised.shown").length != 0 || document.querySelectorAll(".preview-image:hover").length != 0) {
           scroll_enabled = false;
           e.preventDefault();
         }

@@ -13,17 +13,17 @@
 }
 
 /* -- Artistic image styling -- */
-.art-preview-image-container {
+.preview-image-container {
   overflow: hidden;
 }
-.art-preview-image {
+.preview-image {
   margin-top: 5%;
   margin-bottom: 5%;
   width: 100%;
 
   transition: all 2s ease;
 }
-.art-preview-image:not(.cursor-shown) {
+.preview-image:not(.cursor-shown) {
   cursor: none;
 }
 .image-magnifier-glass {

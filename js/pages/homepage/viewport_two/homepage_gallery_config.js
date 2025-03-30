@@ -14,7 +14,7 @@
 
         size: (Number) - The size of the tile (1-6). Valid square sizes are:
           1 - .large-square. 32vh
-          2 - .sublarge-square. 24vh
+          2 - .sublarge-square. 28vh
           3 - .medium-square. 24vh
           4 - .submedium-square. 18vh
           5 - .small-square. 16vh
