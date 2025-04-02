@@ -25,6 +25,7 @@ config.homepage.defines.common = {
       bookmark_old_index: 1,
       bookmark_selected: "",
       bookmark_items: [],
+      no_bookmark_label: document.getElementById("project-parallax-no-bookmark-label"),
 
       //Content panel selectors
       content_panel_container: document.getElementById("main-parallax-content-panel-wrapper"),

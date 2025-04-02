@@ -526,6 +526,7 @@
     var bookmark_btn = document.getElementById(`bookmark-btn-${local_id}`);
     var is_last_element = (gallery_obj.bookmark_items[gallery_obj.bookmark_items.length-1] == local_id);
     var local_index = gallery_obj.bookmark_items.indexOf(local_id.replace("preview-", ""));
+    var no_bookmark_label = gallery_obj.no_bookmark_label;
 
     //Remove bookmark functionally
     bookmark_btn.setAttribute("class",
@@ -655,7 +656,7 @@
           gallery_obj.parallax_container.getAttribute("class").replace(" fast-scroll", "") + " slow-scroll"
         );
         gallery_obj.parallax_container.style.transform = `translateX(${gallery_obj.parallax_scroll_x}vh)`;
-        gallery_obj.content_wrapper_container.style.left = `${gallery_obj.parallax_scroll_x*0.15}vh`;
+        gallery_obj.content_panel_container.style.left = `${gallery_obj.parallax_scroll_x*0.15}vh`;
       }
 
       if (!parallax_element.getAttribute("animation").includes("shown")) {
