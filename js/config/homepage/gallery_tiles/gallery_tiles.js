@@ -9,7 +9,7 @@ config.homepage.gallery.tiles = {
     x: 0,
     y: 36,
 
-    dependencies: ["anno_1800", "universal_bot_framework", "triumph_and_tragedy_one"],
+    dependencies: ["triumph_and_tragedy_one"],
     colour: "blurple"
   },
   triumph_and_tragedy_one: {

@@ -24,7 +24,7 @@ config.homepage.defines.common = {
       bookmark_no_label: document.getElementById("project-parallax-no-bookmark-label"),
       bookmark_old_index: 1,
       bookmark_selected: "",
-      bookmark_items: ["triumph_and_tragedy_two", "anno_1800", "les_halles"],
+      bookmark_items: [],
 
       //Content panel selectors
       content_panel_container: document.getElementById("main-parallax-content-panel-wrapper"),

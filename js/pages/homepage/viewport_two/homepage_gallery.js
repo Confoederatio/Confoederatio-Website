@@ -6,6 +6,9 @@
     var local_id = arg0_element_id;
     var no_animation = arg1_no_animation;
     var gallery_obj = main.gallery;
+    
+    //Make sure local_element exists
+    if (!local_element) return;
 
     //Declare local instance variables
     var bookmark_btn = document.getElementById(`bookmark-btn-${local_id}`);
@@ -252,7 +255,10 @@
 
       for (var i = 0; i < all_descendants.length; i++) {
         var descendant_obj = gallery_obj.parallax_settings[all_descendants[i]];
-        if (descendant_obj.animation_queue.length > 0) all_children_finished_playing = false;
+
+        if (descendant_obj)
+          if (descendant_obj.animation_queue.length > 0) 
+            all_children_finished_playing = false;
       }
 
       //If all descendants have finished, begin processing animation_queue

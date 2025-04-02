@@ -182,14 +182,19 @@
           if (item_obj.dependencies) {
             for (var x = 0; x < item_obj.dependencies.length; x++) {
               var child_element = document.getElementById(item_obj.dependencies[x]);
-              var child_obj = gallery_obj.parallax_settings[child_element.id];
-              if (child_element.getAttribute("class").includes(" hidden")) {
-                child_element.setAttribute("class", child_element.getAttribute("class").replace(" hidden", ""));
-                if (gallery_obj.parallax_settings[child_element.id].animation) {
-                  var local_obj = gallery_obj.parallax_settings[child_element.id];
-                  //Invoke show_function
-                  local_obj.show_function();
-                }
+
+              if (child_element.id) {
+                var child_obj = gallery_obj.parallax_settings[child_element.id];
+
+                if (child_obj)
+                  if (child_element.getAttribute("class").includes(" hidden")) {
+                    child_element.setAttribute("class", child_element.getAttribute("class").replace(" hidden", ""));
+                    if (gallery_obj.parallax_settings[child_element.id].animation) {
+                      var local_obj = gallery_obj.parallax_settings[child_element.id];
+                      //Invoke show_function
+                      local_obj.show_function();
+                    }
+                  }
               }
             }
           }
