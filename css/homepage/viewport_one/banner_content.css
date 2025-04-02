@@ -65,19 +65,17 @@
 }
 [alignment="left"] {
   position: absolute;
+
+  justify-content: left;
   left: 2.5vw;
-  min-width: 50vw;
-  width: 60vw;
-  max-width: 70vw;
   text-align: left;
+  width: 95vw;
 }
 [alignment="right"] {
   justify-content: right;
   right: 2.5vw;
-  min-width: 50vw;
-  width: 60vw;
-  max-width: 70vw;
   text-align: right;
+  width: 95vw;
 }
 
 .homepage-banner-main-title[alignment="centre"] {
