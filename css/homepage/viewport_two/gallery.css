@@ -181,8 +181,8 @@
 	right: auto;
 	bottom: auto;
 
-	margin-left: 0vw !important;
-	margin-right: 3vw;
+	margin-left: 0vh !important;
+	margin-right: 2vh;
 	text-align: left;
 }
 .parallax-item .bottom-left, .parallax-item-preview .bottom-left {
@@ -191,8 +191,8 @@
 	right: auto;
 	bottom: 2vh;
 
-	margin-left: 0vw;
-	margin-right: 4vw;
+	margin-left: 0vh;
+	margin-right: 2vh;
 	text-align: left;
 }
 

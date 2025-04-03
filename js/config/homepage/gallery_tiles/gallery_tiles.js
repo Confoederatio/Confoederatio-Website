@@ -90,7 +90,7 @@ config.homepage.gallery.tiles = {
     colour: "dark-grey"
   },
   proxy_cables: {
-    name: "Proxy Cables",
+    name: "Proxy<br>Cables",
     animation: "proxy-cables",
       font_position: "top-left",
       font_size: 1,
@@ -320,7 +320,7 @@ config.homepage.gallery.tiles = {
     animation: "naissance",
       font_position: "centre",
       font_size: 2,
-      font_weight: 700,
+      font_weight: 500,
     default_bookmark: true,
     default_pin: true,
     size: 2,
@@ -383,6 +383,7 @@ config.homepage.gallery.tiles = {
   },
 
   //Artistic (CAD)
+
 
   //Preservés (PRS)
 
