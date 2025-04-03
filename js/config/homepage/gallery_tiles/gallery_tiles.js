@@ -14,7 +14,7 @@ config.homepage.gallery.tiles = {
   empires_undone: {
     name: "Empires Undone",
     animation: "empires-undone",
-      font_position: "centre-right",
+      font_position: "bottom-left",
       font_size: 2,
       font_weight: 100,
     default_pin: true,
@@ -23,7 +23,7 @@ config.homepage.gallery.tiles = {
     y: 40,
 
     background_image: `gfx/interface/empires_undone.png`,
-    background_opacity: 0.45,
+    background_opacity: 0.2,
     colour: "light-purple"
   },
   triumph_and_tragedy_one: {
