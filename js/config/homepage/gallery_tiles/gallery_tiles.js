@@ -259,7 +259,6 @@ config.homepage.gallery.tiles = {
       font_position: "centre",
       font_size: 2,
       font_weight: 300,
-    default_pin: true,
     size: 2,
     x: 192,
     y: 64,
