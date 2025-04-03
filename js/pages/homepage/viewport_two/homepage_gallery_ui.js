@@ -135,7 +135,7 @@
         scroll_enabled = (gallery_obj.parallax_current_scroll_x < 0 && gallery_obj.parallax_scroll_x > 0) ? false : scroll_enabled;
 
         //Rightwards scroll bound
-        scroll_enabled = (gallery_obj.parallax_current_scroll_x > 0 && gallery_obj.parallax_scroll_x*-1 > 440) ? false : scroll_enabled;
+        scroll_enabled = (gallery_obj.parallax_current_scroll_x > 0 && gallery_obj.parallax_scroll_x*-1 > gallery_obj.gallery_width) ? false : scroll_enabled;
 
         //Make sure main banner is entirely off screen
         scroll_enabled = isElementAtTop(gallery_obj.parallax_body) ? scroll_enabled : false;
@@ -167,8 +167,8 @@
           e.preventDefault();
         }
   
-        window.parallax_scroll_progress = Math.abs(gallery_obj.parallax_scroll_x*(100/440));
-        gallery_obj.parallax_scroll_indicator.style.width = `${gallery_obj.parallax_scroll_x*(100/440)*-1}vw`;
+        window.parallax_scroll_progress = Math.abs(gallery_obj.parallax_scroll_x*(100/gallery_obj.gallery_width));
+        gallery_obj.parallax_scroll_indicator.style.width = `${gallery_obj.parallax_scroll_x*(100/gallery_obj.gallery_width)*-1}vw`;
       });
     }
   
