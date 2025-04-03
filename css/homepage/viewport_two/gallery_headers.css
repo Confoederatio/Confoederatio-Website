@@ -8,16 +8,19 @@
 	position: absolute;
 	top: calc(20vh + var(--parallax-offset-y));
 	left: calc(7vw + var(--parallax-offset-x));
+  width: max-content;
 }
 .crd-header {
 	position: absolute;
 	top: calc(20vh + var(--parallax-offset-y));
 	left: calc(23vw + 188vh + var(--parallax-offset-x));
+  width: max-content;
 }
 .cad-header {
 	position: absolute;
 	top: calc(20vh + var(--parallax-offset-y));
 	left: calc(23vw + 336vh + var(--parallax-offset-x));
+  width: max-content;
 }
 .preserves-header {
 	position: absolute;

@@ -1,4 +1,5 @@
 config.homepage.gallery.tiles = {
+  //Technical (CTD)
   ampersand_mod_creator: {
     name: "Ampersand Mod Creator",
     animation: "ampersand-mod-creator",
@@ -236,5 +237,154 @@ config.homepage.gallery.tiles = {
 
     dependencies: ["scriptly", "universal_framework"],
     colour: "forest-green"
-  }
+  },
+
+  //Research (CRD)
+  eoscala: {
+    name: "Eoscala",
+    animation: "eoscala",
+      font_position: "bottom-right",
+      font_size: 2,
+      font_weight: 500,
+    default_pin: true,
+    size: 2,
+    x: 220,
+    y: 36,
+
+    colour: "bright-yellow"
+  },
+  velkscala: {
+    name: "Velkscala",
+    animation: "velkscala",
+      font_position: "centre",
+      font_size: 2,
+      font_weight: 300,
+    default_pin: true,
+    size: 2,
+    x: 192,
+    y: 64,
+
+    colour: "salmon"
+  },
+
+  gazetteer: {
+    name: "<span style = 'font-size: 1vh;'>Gazetteer of Demographic, Economic, and Geographic Datasets</span>",
+    animation: "gazetteer",
+      font_position: "bottom-left",
+      font_size: 1,
+      font_weight: 500,
+    size: 5,
+    x: 220,
+    y: 96,
+
+    colour: "midnight-blue"
+  },
+  geographic_economic_papers: {
+    name: "Geographic/Economic Papers",
+    animation: "geographic-economic-papers",
+      font_position: "bottom-right",
+      font_size: 1,
+      font_weight: 300,
+    size: 5,
+    x: 236,
+    y: 96,
+
+    colour: "salmon"
+  },
+  military_papers: {
+    name: "Military Papers",
+    animation: "military-papers",
+      font_position: "bottom-right",
+      font_size: 1,
+      font_weight: 300,
+    size: 5,
+    x: 252,
+    y: 80,
+
+    colour: "red"
+  },
+  political_diplomatic_papers: {
+    name: "Political/Diplomatic Papers",
+    animation: "political-diplomatic-papers",
+      font_position: "centre",
+      font_size: 1,
+      font_weight: 300,
+    size: 5,
+    x: 252,
+    y: 64,
+
+    colour: "forest-green"
+  },
+  
+  naissance: {
+    name: "Naissance",
+    animation: "naissance",
+      font_position: "centre",
+      font_size: 2,
+      font_weight: 700,
+    default_bookmark: true,
+    default_pin: true,
+    size: 2,
+    x: 272,
+    y: 64,
+
+    colour: "bright-yellow"
+  },
+  project_humanity: {
+    name: "Project Humanity",
+    animation: "project-humanity",
+      font_position: "bottom-left",
+      font_size: 1,
+      font_weight: 300,
+    size: 4,
+    x: 300,
+    y: 46,
+
+    colour: "light-grey"
+  },
+  
+  datasets: {
+    name: "Datasets",
+    animation: "datasets",
+      font_size: 3,
+      font_weight: 700,
+    is_base_node: true,
+    size: 1,
+    x: 188,
+    y: 32,
+
+    dependencies: ["eoscala", "velkscala"],
+    colour: "light-grey"
+  },
+  grey_literature_and_taxonomials: {
+    name: "Grey Literature & Taxonomials",
+    animation: "grey-literature-and-taxonomials",
+      font_size: 2,
+      font_weight: 700,
+    is_base_node: true,
+    size: 1,
+    x: 220,
+    y: 64,
+
+    dependencies: ["gazetteer", "geographic_economic_papers", "military_papers", "political_diplomatic_papers"],
+    colour: "cream-white"
+  },
+  software_and_tooling: {
+    name: "Software & Tooling",
+    animation: "software-and-tooling",
+      font_size: 2,
+      font_weight: 700,
+    is_base_node: true,
+    size: 1,
+    x: 268,
+    y: 32,
+
+    dependencies: ["naissance", "project_humanity"],
+    colour: "copper"
+  },
+
+  //Artistic (CAD)
+
+  //Preservés (PRS)
+
 };
