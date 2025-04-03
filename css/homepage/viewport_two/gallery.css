@@ -195,6 +195,12 @@
 	margin-right: 2vh;
 	text-align: left;
 }
+.parallax-item .bottom-right, .parallax-item-preview .bottom-right {
+	bottom: 2.5vh;
+	left: auto;
+	right: 2.5vh;
+	top: auto;
+}
 
 /* -- Parallax colours -- */
 .blue > .parallax-item-colour-bg {

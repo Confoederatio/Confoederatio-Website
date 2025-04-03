@@ -387,7 +387,53 @@ config.homepage.gallery.tiles = {
   },
 
   //Artistic (CAD)
+  landscape_and_cities: {
+    name: "Landscapes & Cities",
+    animation: "landscape-and-cities",
+      font_position: "bottom-right",
+      font_size: 2,
+      font_weight: 500,
+    default_pin: true,
+    size: 2,
+    x: 368,
+    y: 52,
 
+    colour: "mauve"
+  },
+  les_halles: {
+    name: "Les Halles",
+    animation: "les-halles",
+      font_position: "bottom-right",
+      font_size: 2,
+      font_weight: 700,
+    default_pin: true,
+    size: 2,
+    x: 376,
+    y: 80,
+
+    background_image: `gfx/interface/tiles/les_halles_square.png`,
+    background_opacity: 0.85,
+    colour: "dark-grey",
+    dependencies: ["the_colorado", "london", "brooklyn_bridge", "boats_on_a_pond", "armoured_advance"]
+  },
+  
+  art_projects: {
+    name: "Art Projects",
+    animation: "art-projects",
+      font_position: "bottom-right",
+      font_size: 3,
+      font_weight: 700,
+    default_pin: true,
+    is_base_node: true,
+    size: 1,
+    x: 336,
+    y: 32,
+
+    background_image: `gfx/interface/tiles/adriatic_square.png`,
+    background_opacity: 0.6,
+    colour: "cream-white",
+    dependencies: ["branding_logos", "anno", "landscape_and_cities"]
+  },
 
   //Preservés (PRS)
 

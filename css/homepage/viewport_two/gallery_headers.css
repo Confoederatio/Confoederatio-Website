@@ -25,7 +25,7 @@
 .preserves-header {
 	position: absolute;
 	top: calc(20vh + var(--parallax-offset-y));
-	left: calc(47vw + 468vh + var(--parallax-offset-x));
+	left: calc(23vw + 468vh + var(--parallax-offset-x));
   width: max-content;
 }
 .parallax-header.small {
