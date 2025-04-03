@@ -155,7 +155,7 @@ config.homepage.gallery.tiles = {
     colour: "midnight-blue"
   },
   universal_framework: {
-    name: "(UF)<br><br><br><div style = 'text-align: right;'>Universal Framework</div>",
+    name: "<div style = 'font-weight: 700;'>UF</div><br><br><div style = 'text-align: right;'>Universal Framework</div>",
     animation: "universal-framework",
       font_position: "top-left",
       font_size: 2,

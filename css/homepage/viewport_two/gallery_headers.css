@@ -12,10 +12,10 @@
 .crd-header {
 	position: absolute;
 	top: calc(20vh + var(--parallax-offset-y));
-	left: calc(23vw + 214vh + var(--parallax-offset-x));
+	left: calc(23vw + 188vh + var(--parallax-offset-x));
 }
 .cad-header {
 	position: absolute;
 	top: calc(20vh + var(--parallax-offset-y));
-	left: calc(23vw + 430vh + var(--parallax-offset-x));
+	left: calc(23vw + 336vh + var(--parallax-offset-x));
 }
