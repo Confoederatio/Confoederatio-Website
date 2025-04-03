@@ -22,7 +22,7 @@ config.homepage.gallery.tiles = {
     x: 32,
     y: 40,
 
-    background_image: `gfx/interface/empires_undone.png`,
+    background_image: `gfx/interface/tiles/empires_undone.png`,
     background_opacity: 0.2,
     colour: "light-purple"
   },
@@ -40,7 +40,7 @@ config.homepage.gallery.tiles = {
     default_pin: true,
     dependencies: ["ampersand_mod_creator", "triumph_and_tragedy_two"],
 
-    background_image: `gfx/interface/triumph_and_tragedy_icon_no_text.png`,
+    background_image: `gfx/interface/tiles/triumph_and_tragedy_icon_no_text.png`,
     background_opacity: 0.4,
     colour: "mauve",
     content: `<div id = "triumph_and_tragedy_one-panel-title" class = "parallax-item-content-panel-title">Triumph & Tragedy I</div>
@@ -121,7 +121,7 @@ config.homepage.gallery.tiles = {
     x: 92,
     y: 18,
 
-    background_image: `gfx/interface/project_trinity.png`,
+    background_image: `gfx/interface/tiles/project_trinity.png`,
     background_opacity: 0.35,
     colour: "red"
   },
@@ -137,7 +137,7 @@ config.homepage.gallery.tiles = {
     y: 36,
 
     dependencies: ["eleven_fiftynine_aoc_three"],
-    background_image: `gfx/interface/analytical_engine_tile.png`,
+    background_image: `gfx/interface/tiles/analytical_engine_tile.png`,
     background_opacity: 0.15,
     colour: "transparent-sepia"
   },
@@ -151,7 +151,7 @@ config.homepage.gallery.tiles = {
     x: 120,
     y: 32,
 
-    background_image: `gfx/interface/1159_logo.jpg`,
+    background_image: `gfx/interface/tiles/1159_logo.jpg`,
     background_opacity: 0.4,
     colour: "midnight-blue"
   },
@@ -208,7 +208,7 @@ config.homepage.gallery.tiles = {
     y: 68,
 
     dependencies: ["system_dynamics", "into_modernity", "last_man_standing", "proxy_cables"],
-    background_image: `gfx/interface/battle_of_the_leyte_gulf.png`,
+    background_image: `gfx/interface/tiles/battle_of_the_leyte_gulf.png`,
     background_opacity: 0.4,
     colour: "salmon"
   },
@@ -251,7 +251,9 @@ config.homepage.gallery.tiles = {
     x: 220,
     y: 36,
 
-    colour: "bright-yellow"
+    background_image: `gfx/interface/tiles/eoscala.png`,
+    background_opacity: 1,
+    colour: "dark-grey"
   },
   velkscala: {
     name: "Velkscala",
@@ -327,6 +329,8 @@ config.homepage.gallery.tiles = {
     x: 272,
     y: 64,
 
+    background_image: `gfx/interface/tiles/naissance.png`,
+    background_opacity: 0.175,
     colour: "bright-yellow"
   },
   project_humanity: {
