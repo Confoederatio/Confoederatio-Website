@@ -155,9 +155,9 @@ config.homepage.gallery.tiles = {
     colour: "midnight-blue"
   },
   universal_framework: {
-    name: "Universal Framework",
+    name: "(UF)<br><br><br><div style = 'text-align: right;'>Universal Framework</div>",
     animation: "universal-framework",
-      font_position: "centre",
+      font_position: "top-left",
       font_size: 2,
       font_weight: 400,
     default_pin: true,
@@ -180,7 +180,7 @@ config.homepage.gallery.tiles = {
 
     colour: "bright-yellow"
   },
-  // Size 1 categories moved to bottom
+
   discord_bots: {
     name: "Grand Strategy",
     animation: "grand-strategy",

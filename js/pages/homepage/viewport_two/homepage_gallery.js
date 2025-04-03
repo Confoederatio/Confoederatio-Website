@@ -617,7 +617,7 @@
       gallery_obj.bookmark_selected = local_id;
 
       //Translate bookmarks_container over so that the selected element is centred
-      gallery_obj.bookmark_container.style.left = `${local_index*-12}vh`;
+      gallery_obj.bookmark_preview_container.style.left = `${local_index*-12}vh`;
 
       //Reset old_bookmark styling to default
       var all_bookmarks = document.querySelectorAll(`.parallax-item-preview:not([item-state*="hidden"])`);
