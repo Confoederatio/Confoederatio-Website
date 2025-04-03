@@ -77,34 +77,6 @@
 	left: 0.1vw;
 }
 
-/* -- Parallax header positioning -- */
-.i-do-stuff {
-	position: absolute;
-	top: calc(5vh + var(--parallax-offset-y));
-	left: calc(5vw + var(--parallax-offset-x));
-}
-.technical {
-	position: absolute;
-	top: calc(20vh + var(--parallax-offset-y));
-	left: calc(7vw + var(--parallax-offset-x));
-}
-.artistic {
-	position: absolute;
-	top: calc(20vh + var(--parallax-offset-y));
-	left: calc(23vw + 214vh + var(--parallax-offset-x));
-}
-.cartographic {
-	position: absolute;
-	top: calc(20vh + var(--parallax-offset-y));
-	left: calc(23vw + 430vh + var(--parallax-offset-x));
-}
-.coming-soon {
-	position: absolute;
-	top: calc(28vh + var(--parallax-offset-y));
-	left: calc(23vw + 434vh + var(--parallax-offset-x));
-	width: 40vh;
-}
-
 /* -- Parallax items -- */
 .parallax-item-bg, .parallax-item-colour-bg {
 	position: absolute;
@@ -205,7 +177,7 @@
 }
 .parallax-item .top-left, .parallax-item-preview .top-left {
 	top: 2vh;
-	left: 1vw;
+	left: 2vh;
 	right: auto;
 	bottom: auto;
 
@@ -215,7 +187,7 @@
 }
 .parallax-item .bottom-left, .parallax-item-preview .bottom-left {
 	top: auto;
-	left: 1vw;
+	left: 2vh;
 	right: auto;
 	bottom: 2vh;
 
@@ -281,246 +253,6 @@
 }
 .yellow > .parallax-item-colour-bg {
 	background-color: rgba(220, 210, 145, 0.5);
-}
-
-/* -- Parallax positioning -- */
-.anno-1800 {
-	position: absolute;
-	top: calc(44vh + var(--parallax-offset-y));
-	left: calc(23vw + 32vh + var(--parallax-offset-x));
-}
-.triumph-and-tragedy-mod-creator {
-  position: absolute;
-  top: calc(96vh + var(--parallax-offset-y));
-  left: calc(23vw + 44vh + var(--parallax-offset-x));
-}
-.triumph-and-tragedy-2 {
-	position: absolute;
-	top: calc(72vh + var(--parallax-offset-y));
-	left: calc(23vw + 60vh + var(--parallax-offset-x));
-}
-.universal-bot-framework {
-	position: absolute;
-	top: calc(68vh + var(--parallax-offset-y));
-	left: calc(23vw + 14vh + var(--parallax-offset-x));
-}
-.system-dynamics {
-	position: absolute;
-	top: calc(104vh + var(--parallax-offset-y));
-	left: calc(23vw + 60vh + var(--parallax-offset-x));
-}
-.into-modernity {
-	position: absolute;
-	top: calc(104vh + var(--parallax-offset-y));
-	left: calc(23vw + 76vh + var(--parallax-offset-x));
-}
-.proxy-cables {
-	position: absolute;
-	top: calc(88vh + var(--parallax-offset-y));
-	left: calc(23vw + 92vh + var(--parallax-offset-x));
-}
-.last-man-standing {
-	position: absolute;
-	top: calc(72vh + var(--parallax-offset-y));
-	left: calc(23vw + 92vh + var(--parallax-offset-x));
-}
-
-.grand-strategy {
-	position: absolute;
-	top: calc(36vh + var(--parallax-offset-y));
-	left: calc(23vw + 60vh + var(--parallax-offset-x));
-}
-.eleven-fiftynine {
-	position: absolute;
-	top: calc(28vh + var(--parallax-offset-y));
-	left: calc(23vw + 92vh + var(--parallax-offset-x));
-}
-.empires-undone {
-	position: absolute;
-	top: calc(44vh + var(--parallax-offset-y));
-	left: calc(23vw + 92vh + var(--parallax-offset-x));
-}
-.hoi4-map-renderer {
-	position: absolute;
-	top: calc(40vh + var(--parallax-offset-y));
-	left: calc(23vw + 116vh + var(--parallax-offset-x));
-}
-
-.other-technical-projects {
-	position: absolute;
-	top: calc(36vh + var(--parallax-offset-y));
-	left: calc(23vw + 138vh + var(--parallax-offset-x));
-}
-.js-in-4 {
-	position: absolute;
-	top: calc(44vh + var(--parallax-offset-y));
-	left: calc(23vw + 170vh + var(--parallax-offset-x));
-}
-.project-trinity {
-	position: absolute;
-	top: calc(68vh + var(--parallax-offset-y));
-	left: calc(23vw + 142vh + var(--parallax-offset-x));
-}
-
-.finished-works {
-	position: absolute;
-	top: calc(36vh + var(--parallax-offset-y));
-	left: calc(23vw + 235vh + var(--parallax-offset-x));
-}
-.resolute {
-	position: absolute;
-	top: calc(28vh + var(--parallax-offset-y));
-	left: calc(23vw + 283vh + var(--parallax-offset-x));
-}
-.armoured-advance {
-	position: absolute;
-	top: calc(68vh + var(--parallax-offset-y));
-	left: calc(23vw + 235vh + var(--parallax-offset-x));
-}
-.brooklyn-bridge {
-	position: absolute;
-	top: calc(44vh + var(--parallax-offset-y));
-	left: calc(23vw + 267vh + var(--parallax-offset-x));
-}
-.the-colorado {
-	position: absolute;
-	top: calc(76vh + var(--parallax-offset-y));
-	left: calc(23vw + 281vh + var(--parallax-offset-x));
-}
-.boats-on-a-pond {
-	position: absolute;
-	top: calc(28vh + var(--parallax-offset-y));
-	left: calc(23vw + 299vh + var(--parallax-offset-x));
-}
-.les-halles {
-	position: absolute;
-	top: calc(52vh + var(--parallax-offset-y));
-	left: calc(23vw + 299vh + var(--parallax-offset-x));
-}
-.other-sketches {
-	position: absolute;
-	top: calc(36vh + var(--parallax-offset-y));
-	left: calc(23vw + 336vh + var(--parallax-offset-x));
-}
-.clouds-and-sunset {
-	position: absolute;
-	top: calc(68vh + var(--parallax-offset-y));
-	left: calc(23vw + 344vh + var(--parallax-offset-x));
-}
-.sinking-of-a-battleship {
-	position: absolute;
-	top: calc(44vh + var(--parallax-offset-y));
-	left: calc(23vw + 368vh + var(--parallax-offset-x));
-}
-.journal-sketches {
-	position: absolute;
-	top: calc(68vh + var(--parallax-offset-y));
-	left: calc(23vw + 368vh + var(--parallax-offset-x));
-}
-.past {
-	position: absolute;
-	top: calc(100vh + var(--parallax-offset-y));
-	left: calc(23vw + 388vh + var(--parallax-offset-x));
-}
-.sketch-1 {
-	position: absolute;
-	top: calc(100vh + var(--parallax-offset-y));
-	left: calc(23vw + 376vh + var(--parallax-offset-x));
-}
-.sketch-2 {
-	position: absolute;
-	top: calc(88vh + var(--parallax-offset-y));
-	left: calc(23vw + 400vh + var(--parallax-offset-x));
-}
-.broken-mirror {
-	position: absolute;
-	top: calc(68vh + var(--parallax-offset-y));
-	left: calc(23vw + 400vh + var(--parallax-offset-x));
-}
-
-.historical-atlas-of-the-modern-world {
-	position: absolute;
-	top: calc(36vh + var(--parallax-offset-y));
-	left: calc(23vw + 466vh + var(--parallax-offset-x));
-}
-.the-adriatic {
-	position: absolute;
-	top: calc(40vh + var(--parallax-offset-y));
-	left: calc(23vw + 498vh + var(--parallax-offset-x));
-}
-
-/* -- Parallax content panel positioning -- */
-.anno-1800-panel {
-  top: calc(42vh + var(--parallax-offset-y) + var(--content-panel-offset-y)); /* -90 offset */
-	left: calc(23vw + 58vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
-}
-.triumph-and-tragedy-two-panel {
-  top: calc(70vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
-  left: calc(23vw + 98vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
-}
-.universal-bot-framework-panel {
-  top: calc(66vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
-  left: calc(23vw - 20vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
-}
-.eleven-fiftynine-panel {
-  top: calc(28vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
-  left: calc(23vw + 120vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
-}
-.empires-undone-panel {
-  top: calc(44vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
-  left: calc(23vw + 132vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
-}
-.hoi4-map-renderer-panel {
-  top: calc(40vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
-  left: calc(23vw + 150vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
-}
-.js-in-4-panel {
-  top: calc(44vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
-  left: calc(23vw + 220vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
-}
-.project-trinity-panel {
-  top: calc(70vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
-  left: calc(23vw + 192vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
-}
-.historical-atlas-of-the-modern-world-panel {
-  top: calc(38vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
-  left: calc(23vw + 516vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
-}
-.the-adriatic-panel {
-  top: calc(35vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
-  left: calc(23vw + 531vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
-}
-.armoured-advance-panel {
-  top: calc(64vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
-  left: calc(23vw + 205vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
-}
-.brooklyn-bridge-panel {
-  top: calc(68vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
-  left: calc(23vw + 236vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
-}
-.les-halles-panel {
-  top: calc(78vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
-  left: calc(23vw + 266vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
-}
-.the-colorado-panel {
-  top: calc(76vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
-  left: calc(23vw + 246vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
-}
-.resolute-panel {
-  top: calc(30vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
-  left: calc(23vw + 250vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
-}
-.boats-on-a-pond-panel {
-  top: calc(30vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
-  left: calc(23vw + 262vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
-}
-.clouds-and-sunset-panel {
-  top: calc(68vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
-  left: calc(23vw + 310vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
-}
-.sinking-of-a-battleship-panel {
-  top: calc(40vh + var(--parallax-offset-y) + var(--content-panel-offset-y));
-  left: calc(23vw + 396vh + var(--parallax-offset-x) + var(--content-panel-offset-x));
 }
 
 /* -- Parallax content panel styling -- */
@@ -657,15 +389,18 @@
 
 /* -- Status indicators -- */
 .parallax-item-complete {
+  color: rgb(60, 110, 70);
+}
+.parallax-item-complete-ongoing {
   color: rgb(80, 150, 95);
 }
-.parallax-item-in-planning {
-  color: rgb(220, 220, 145);
-}
-.parallax-item-in-progress {
+.parallax-item-beta-ongoing {
   color: rgb(165, 195, 170);
 }
-.parallax-item-suspended {
+.parallax-item-alpha-ongoing {
+  color: rgb(220, 220, 145);
+}
+.parallax-item-in-planning {
   color: rgb(220, 150, 50);
 }
 

@@ -1,16 +1,29 @@
 config.homepage.gallery.tiles = {
-  discord_bots: {
-    name: "Discord Bots",
-    animation: "discord-bots",
-      font_size: 3,
-      font_weight: 700,
-    is_base_node: true,
-    size: 1,
-    x: 0,
-    y: 36,
+  ampersand_mod_creator: {
+    name: "Ampersand Mod Creator",
+    animation: "ampersand-mod-creator",
+      font_position: "bottom-left",
+      font_size: 1,
+      font_weight: 300,
+    size: 5,
+    x: 44,
+    y: 92,
+    colour: "dark-blurple"
+  },
+  empires_undone: {
+    name: "Empires Undone",
+    animation: "empires-undone",
+      font_position: "centre-right",
+      font_size: 2,
+      font_weight: 100,
+    default_pin: true,
+    size: 3,
+    x: 32,
+    y: 40,
 
-    dependencies: ["triumph_and_tragedy_one"],
-    colour: "blurple"
+    background_image: `gfx/interface/empires_undone.png`,
+    background_opacity: 0.45,
+    colour: "light-purple"
   },
   triumph_and_tragedy_one: {
     name: "Triumph & Tragedy I",
@@ -20,11 +33,11 @@ config.homepage.gallery.tiles = {
       font_weight: 500,
     size: 2,
     x: 32,
-    y: 68,
+    y: 64,
 
     default_bookmark: true,
     default_pin: true,
-    dependencies: ["triumph_and_tragedy_mod_creator", "triumph_and_tragedy_two"],
+    dependencies: ["ampersand_mod_creator", "triumph_and_tragedy_two"],
 
     background_image: `gfx/interface/triumph_and_tragedy_icon_no_text.png`,
     background_opacity: 0.4,
@@ -53,15 +66,175 @@ config.homepage.gallery.tiles = {
       With an in-depth backend JSON-based modding API allowing for the customisation of buildings, units, governments, laws, events, and technologies, building what may seem like an entirely new game is never more than a few lines of text away.
     </div>`
   },
-  triumph_and_tragedy_mod_creator: {
-    name: "Triumph & Tragedy Mod Creator",
-    animation: "triumph-and-tragedy-mod-creator",
+  into_modernity: {
+    name: "Into Modernity",
+    animation: "into-modernity",
+      font_position: "centre",
+      font_size: 1,
+      font_weight: 300,
+    size: 5,
+    x: 76,
+    y: 100,
+    colour: "orange"
+  },
+  last_man_standing: {
+    name: "Last Man Standing",
+    animation: "last-man-standing",
       font_position: "bottom-right",
       font_size: 1,
       font_weight: 300,
     size: 5,
-    x: 44,
+    x: 92,
+    y: 68,
+    colour: "dark-grey"
+  },
+  proxy_cables: {
+    name: "Proxy Cables",
+    animation: "proxy-cables",
+      font_position: "top-left",
+      font_size: 1,
+      font_weight: 300,
+    size: 5,
+    x: 92,
+    y: 84,
+    colour: "blue"
+  },
+  system_dynamics: {
+    name: "System Dynamics",
+    animation: "system-dynamics",
+      font_position: "bottom-right",
+      font_size: 1,
+      font_weight: 300,
+    size: 5,
+    x: 60,
+    y: 100,
+    colour: "yellow",
+  },
+  eleven_fiftynine_aoc_two: {
+    name: "11:59 (AOC2)",
+    animation: "eleven-fifty-nine-aoc-two",
+      font_position: "centre",
+      font_size: 1,
+      font_weight: 300,
+    size: 4,
+    x: 92,
+    y: 18,
+
+    background_image: `gfx/interface/project_trinity.png`,
+    background_opacity: 0.35,
+    colour: "red"
+  },
+  analytical_engine: {
+    name: "Analytical Engine",
+    animation: "analytical-engine",
+      font_position: "bottom-left",
+      font_size: 2,
+      font_weight: 500,
+    default_pin: true,
+    size: 2,
+    x: 92,
+    y: 36,
+
+    dependencies: ["eleven_fiftynine_aoc_three"],
+    background_image: `gfx/interface/analytical_engine_tile.png`,
+    background_opacity: 0.15,
+    colour: "transparent-sepia"
+  },
+  eleven_fiftynine_aoc_three: {
+    name: "",
+    animation: "eleven-fifty-nine-aoc-three",
+      font_position: "centre",
+      font_size: 1,
+      font_weight: 300,
+    size: 4,
+    x: 120,
+    y: 32,
+
+    background_image: `gfx/interface/1159_logo.jpg`,
+    background_opacity: 0.4,
+    colour: "midnight-blue"
+  },
+  universal_framework: {
+    name: "Universal Framework",
+    animation: "universal-framework",
+      font_position: "centre",
+      font_size: 2,
+      font_weight: 400,
+    default_pin: true,
+    size: 2,
+    x: 144,
+    y: 68,
+
+    colour: "orange",
+    background_opacity: 1
+  },
+  scriptly: {
+    name: "Scriptly",
+    animation: "scriptly",
+      font_position: "bottom-left",
+      font_size: 1,
+      font_weight: 300,
+    size: 4,
+    x: 144,
     y: 96,
-    colour: "light-purple"
+
+    colour: "bright-yellow"
+  },
+  // Size 1 categories moved to bottom
+  discord_bots: {
+    name: "Grand Strategy",
+    animation: "grand-strategy",
+      font_size: 3,
+      font_weight: 700,
+    is_base_node: true,
+    size: 1,
+    x: 0,
+    y: 32,
+
+    dependencies: ["empires_undone", "triumph_and_tragedy_one"],
+    colour: "copper"
+  },
+  triumph_and_tragedy_two: {
+    name: "Triumph & Tragedy II",
+    animation: "triumph-and-tragedy-two",
+      font_position: "bottom-right",
+      font_size: 2,
+      font_weight: 700,
+    default_bookmark: true,
+    default_pin: true,
+    size: 1,
+    x: 60,
+    y: 68,
+
+    dependencies: ["system_dynamics", "into_modernity", "last_man_standing", "proxy_cables"],
+    background_image: `gfx/interface/battle_of_the_leyte_gulf.png`,
+    background_opacity: 0.4,
+    colour: "salmon"
+  },
+  grand_strategy_mods: {
+    name: "Mods & Tools",
+    animation: "grand-strategy-mods",
+      font_size: 3,
+      font_weight: 700,
+    is_base_node: true,
+    size: 1,
+    x: 60,
+    y: 32,
+
+    dependencies: ["eleven_fiftynine_aoc_two", "analytical_engine"],
+    colour: "blurple"
+  },
+  other: {
+    name: "Other",
+    animation: "other",
+      font_size: 3,
+      font_weight: 700,
+    is_base_node: true,
+    size: 1,
+    x: 112,
+    y: 68,
+
+    dependencies: ["scriptly", "universal_framework"],
+    colour: "forest-green"
   }
 };

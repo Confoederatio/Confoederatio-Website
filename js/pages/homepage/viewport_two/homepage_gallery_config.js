@@ -79,7 +79,7 @@
       <div id = "${tile_id}" class = "parallax-item ${size_dict[options.size]} ${options.colour}" style = "position: absolute; top: calc(${options.y}vh + var(--parallax-offset-y)); left: calc(${default_x_offset} + ${options.x}vh + var(--parallax-offset-x));" onclick = "toggleContentPanel('${tile_id}'); selectParallaxItem('${tile_id}');">
         <div class = "parallax-item-colour-bg"></div>
         <div class = "parallax-item-bg"${background_style}></div>
-        <span class = "${font_size_dict[options.font_size]} ${options.font_position}" style = "font-weight: ${options.font_weight}">${options.name}</span>
+        <span class = "${font_size_dict[options.font_size]} ${options.font_position}" style = "font-weight: ${options.font_weight}" >${options.name}</span>
       </div>
     `;
 
