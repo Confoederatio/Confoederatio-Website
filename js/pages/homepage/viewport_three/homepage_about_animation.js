@@ -1,7 +1,7 @@
 //Initialise banner namespace
 {
   //Event handler function
-  function homepageAboutOnScroll () {
+  function homepageAboutOnScroll () { //[WIP] - Move this to a general parallax framework
     try {
       //Declare local instance variables
       var scroll_vh = window.scrollY/vh;
