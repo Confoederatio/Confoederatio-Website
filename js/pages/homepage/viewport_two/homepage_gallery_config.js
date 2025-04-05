@@ -66,6 +66,14 @@
       5: "small-square",
       6: "tiny-square"
     };
+    var size_vh_dict = {
+      1: 32,
+      2: 28,
+      3: 24,
+      4: 18,
+      5: 16,
+      6: 12
+    };
 
     var parallax_tile_container_el = document.getElementById("main-parallax-content-wrapper");
     var parallax_panel_container_el = document.getElementById("main-parallax-content-panel-scroll-wrapper");
@@ -89,7 +97,7 @@
     //Format; set panel_element
     if (options.content) {
       var panel_element = `
-        <div id = "${tile_id}-content-panel" class = "parallax-item-content-panel ${options.animation}-panel" style = "top: calc(${options.y}vh + var(--parallax-offset-y) + var(--content-panel-offset-y)); left: calc(23vw*3 - 4vw + ${options.x}vh + var(--parallax-offset-x) + var(--content-panel-offset-x));">
+        <div id = "${tile_id}-content-panel" class = "parallax-item-content-panel ${options.animation}-panel" style = "top: calc(${options.y}vh + var(--parallax-offset-y) + var(--content-panel-offset-y)); left: calc(23vw + ${options.x}vh + ${size_vh_dict[options.size]}vh + 8vh + var(--parallax-offset-x) + var(--content-panel-offset-x));">
           <div id = "${tile_id}-content-wrapper" class = "content-wrapper">
             <div id = "${tile_id}-text-wrapper" class = "text-wrapper">
               ${options.content}

@@ -123,7 +123,23 @@ config.homepage.gallery.tiles = {
 
     background_image: `gfx/interface/tiles/project_trinity.png`,
     background_opacity: 0.35,
-    colour: "red"
+    colour: "red",
+    content: `<div id = "eleven_fiftynine_aoc_two-panel-title" class = "parallax-item-content-panel-title">11:59 (AOC2)</div>
+    <hr id = "eleven_fiftynine_aoc_two-content-panel-divider" class = "parallax-item-content-panel-divider">
+    <b>Development:</b> <span id = "eleven_fiftynine_aoc_two-development-indicator" class = "parallax-item-complete">Complete</span>,<br>
+    <span id = "eleven_fiftynine_aoc_two-development-date" class = "parallax-item-development-date">22 November 2018 - 17 March 2020</span><br>
+    <b>Status:</b> <span id = "eleven_fiftynine_aoc_two-status" class = "parallax-item-content-panel-status-indicator tertiary">Tertiary Project</span>
+    <div id = "eleven_fiftynine_aoc_two-body-text" class = "parallax-item-content-panel-body-text">
+      Formerly developed for the mobile grand-strategy game Age of Civilisations II, 11:59 seeks to bring the pivotal events of the Cold War to the game using a Paradox modding paradigm. Due to game limitations, and the eventual abandonment of AOC2 itself, development was suspended in 2020.
+      <br><br>
+      All 11:59 mod work has since been moved to AOC3/AnalyticalEngine to better support 11:59 in the future.
+      <br><br>
+      <b>Links:</b> <a href = "http://www.ageofcivilizationsgame.com/topic/5090-1159-a-cold-war-mod/">Forums</a> | <a href = "https://www.moddb.com/mods/1159-a-cold-war-mod">ModDB</a>
+      <b>Releases:</b>
+      <ul>
+        <li>0.92.1b | <a href = "https://www.moddb.com/downloads/start/193646?referer=https%3A%2F%2Fwww.moddb.com%2Fmods%2F1159-a-cold-war-mod">Download</a></li>
+      </ul>
+    </div>`
   },
   analytical_engine: {
     name: "Analytical Engine",
