@@ -480,7 +480,7 @@ config.homepage.gallery.tiles = {
   },
   confoederatio_website: {
     name: "<span style = 'font-size: 1.25vh; margin-right: 4vh;'>Confoederatio<br>Website</span>",
-    animation: "confoederatio",
+    animation: "confoederatio-website",
       font_position: "top-left",
       font_size: 1,
       font_weight: 500,
