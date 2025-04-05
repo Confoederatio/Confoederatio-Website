@@ -387,10 +387,138 @@ config.homepage.gallery.tiles = {
   },
 
   //Artistic (CAD)
+  anno: {
+    name: "Anno",
+    animation: "anno",
+      font_position: "centre",
+      font_size: 2,
+      font_weight: 500,
+    size: 3,
+    x: 368,
+    y: 28,
+
+    colour: "sepia"
+  },
+  armoured_advance: {
+    name: "<span style = 'font-size: 1.2vh;'>Armoured Advance</span>",
+    animation: "armoured-advance",
+      font_position: "bottom-left",
+      font_size: 1,
+      font_weight: 300,
+    size: 6,
+    x: 372,
+    y: 112,
+
+    background_image: `gfx/interface/tiles/armoured_advance_square.png`,
+    background_opacity: 0.1,
+    colour: "blue"
+  },
+  art_triumph_and_tragedy: {
+    name: "<span style = 'font-size: 1.8vh;'>Triumph & Tragedy</span>",
+    animation: "art-triumph-and-tragedy",
+      font_position: "centre",
+      font_size: 1,
+      font_weight: 300,
+    size: 6,
+    x: 440,
+    y: 36,
+
+    background_opacity: 0.4,
+    colour: "blurple"
+  },
+  branding_logos: {
+    name: "Branding Logos",
+    animation: "branding-logos",
+      font_position: "bottom-left",
+      font_size: 2,
+      font_weight: 200,
+    size: 3,
+    x: 344,
+    y: 64,
+
+    colour: "light-blue",
+    dependencies: ["confoederatio", "confoederatio_website"]
+  },
+  boats_on_a_pond: {
+    name: "<span style = 'font-size: 1.2vh;'>Boats on a Pond</span>",
+    animation: "boats-on-a-pond",
+      font_position: "top-left",
+      font_size: 1,
+      font_weight: 500,
+    size: 6,
+    x: 384,
+    y: 112,
+
+    background_image: `gfx/interface/tiles/boats_on_a_pond_square.png`,
+    background_opacity: 0.4,
+    colour: "blue"
+  },
+  brooklyn_bridge: {
+    name: "<span style = 'font-size: 1.2vh;'>Brooklyn Bridge</span>",
+    animation: "brooklyn-bridge",
+      font_position: "centre",
+      font_size: 1,
+      font_weight: 300,
+    size: 6,
+    x: 396,
+    y: 112,
+
+    background_image: `gfx/interface/tiles/brooklyn_bridge_square.png`,
+    background_opacity: 0.5,
+    colour: "sepia-transparent"
+  },
+  confoederatio: {
+    name: "<span style = 'font-size: 1.8vh; margin-left: 0.5vh;'>Confoederatio</span>",
+    animation: "confoederatio",
+      font_position: "bottom-right",
+      font_size: 2,
+      font_weight: 300,
+    size: 5,
+    x: 344,
+    y: 88,
+    colour: "midnight-blue"
+  },
+  confoederatio_website: {
+    name: "<span style = 'font-size: 1.25vh; margin-right: 4vh;'>Confoederatio<br>Website</span>",
+    animation: "confoederatio",
+      font_position: "top-left",
+      font_size: 1,
+      font_weight: 500,
+    size: 6,
+    x: 360,
+    y: 88,
+    colour: "blue"
+  },
+  graphic_design: {
+    name: "Graphic Design",
+    animation: "graphic-design",
+      font_position: "bottom-right",
+      font_size: 2,
+      font_weight: 700,
+    is_base_node: true,
+    size: 3,
+    x: 396,
+    y: 28,
+
+    colour: "copper",
+    dependencies: ["icons"]
+  },
+  icons: {
+    name: "<span style = 'font-size: 3vh;'>Icons</span>",
+    animation: "icons",
+      font_position: "bottom-right",
+      font_size: 1,
+      font_weight: 300,
+    size: 4,
+    x: 396,
+    y: 52,
+
+    colour: "salmon"
+  },
   landscape_and_cities: {
     name: "Landscapes & Cities",
     animation: "landscape-and-cities",
-      font_position: "bottom-right",
+      font_position: "bottom-left",
       font_size: 2,
       font_weight: 500,
     default_pin: true,
@@ -398,23 +526,77 @@ config.homepage.gallery.tiles = {
     x: 368,
     y: 52,
 
-    colour: "mauve"
+    colour: "mauve",
+    dependencies: ["les_halles"]
   },
-  les_halles: {
-    name: "Les Halles",
-    animation: "les-halles",
+  london: {
+    name: "<span style = 'font-size: 1.5vh;'>London</span>",
+    animation: "london",
       font_position: "bottom-right",
       font_size: 2,
       font_weight: 700,
-    default_pin: true,
-    size: 2,
-    x: 376,
-    y: 80,
+    size: 6,
+    x: 408,
+    y: 100,
 
-    background_image: `gfx/interface/tiles/les_halles_square.png`,
-    background_opacity: 0.85,
-    colour: "dark-grey",
-    dependencies: ["the_colorado", "london", "brooklyn_bridge", "boats_on_a_pond", "armoured_advance"]
+    background_image: `gfx/interface/tiles/london_square.png`,
+    background_opacity: 0.25,
+    colour: "light-grey"
+  },
+  maps: {
+    name: "Maps",
+    animation: "maps",
+      font_position: "bottom-left",
+      font_size: 1,
+      font_weight: 500,
+    size: 4,
+    x: 420,
+    y: 76,
+
+    colour: "yellow"
+  },
+  re_verenfedern: {
+    name: "Ré Verenfedern",
+    animation: "re-verenfedern",
+      font_position: "bottom-left",
+      font_size: 1,
+      font_weight: 300,
+    size: 5,
+    x: 424,
+    y: 32,
+
+    background_image: `gfx/interface/tiles/re_verenfedern_square.png`,
+    background_opacity: 0.4,
+    colour: "light-blue",
+    dependencies: ["art_triumph_and_tragedy"]
+  },
+  the_colorado: {
+    name: "<span style = 'font-size: 1.25vh; margin-right: 4vh;'>The<br>Colorado</span>",
+    animation: "the-colorado",
+      font_position: "top-left",
+      font_size: 1,
+      font_weight: 300,
+    size: 6,
+    x: 408,
+    y: 88,
+
+    background_image: `gfx/interface/tiles/the_colorado_square.png`,
+    background_opacity: 0.8,
+    colour: "copper"
+  },
+  yosemite: {
+    name: "<span style = 'font-size: 1.5vh;'>Yosemite</span>",
+    animation: "yosemite",
+      font_position: "centre",
+      font_size: 1,
+      font_weight: 700,
+    size: 6,
+    x: 408,
+    y: 76,
+
+    background_image: `gfx/interface/tiles/yosemite_square.png`,
+    background_opacity: 0.4,
+    colour: "forest-green"
   },
   
   art_projects: {
@@ -434,7 +616,113 @@ config.homepage.gallery.tiles = {
     colour: "cream-white",
     dependencies: ["branding_logos", "anno", "landscape_and_cities"]
   },
+  legacy_work: {
+    name: "Legacy Work",
+    animation: "legacy-work",
+      font_position: "bottom-right",
+      font_size: 2,
+      font_weight: 700,
+    is_base_node: true,
+    size: 3,
+    x: 420,
+    y: 52,
+
+    colour: "orange",
+    dependencies: ["maps"]
+  },
+  les_halles: {
+    name: "Les Halles",
+    animation: "les-halles",
+      font_position: "bottom-right",
+      font_size: 2,
+      font_weight: 700,
+    default_pin: true,
+    size: 1,
+    x: 376,
+    y: 80,
+
+    background_image: `gfx/interface/tiles/les_halles_square.png`,
+    background_opacity: 0.85,
+    colour: "dark-grey",
+    dependencies: ["the_colorado", "london", "brooklyn_bridge", "boats_on_a_pond", "armoured_advance", "yosemite"]
+  },
 
   //Preservés (PRS)
+  digital_preserves_atlases: {
+    name: "Atlases",
+    animation: "digital-preserves-atlases",
+      font_position: "centre",
+      font_size: 1,
+      font_weight: 500,
+    size: 4,
+    x: 468,
+    y: 68,
 
+    colour: "salmon"
+  },
+  digital_preserves_maps: {
+    name: "<span style = 'font-size: 1.75vh;'>Maps</span>",
+    animation: "digital-preserves-maps",
+      font_position: "top-left",
+      font_size: 1,
+      font_weight: 300,
+    size: 6,
+    x: 486,
+    y: 68,
+
+    colour: "midnight-blue"
+  },
+  physical_holdings_atlases: {
+    name: "Atlases",
+    animation: "physical-holdings-atlases",
+      font_position: "centre",
+      font_size: 1,
+      font_weight: 500,
+    size: 4,
+    x: 502,
+    y: 50,
+
+    colour: "yellow"
+  },
+  physical_holdings_other_documents: {
+    name: "<span style = 'font-size: 1.25vh;'>Other Documents</span>",
+    animation: "physical-holdings-other-documents",
+      font_position: "top-left",
+      font_size: 1,
+      font_weight: 300,
+    size: 6,
+    x: 520,
+    y: 56,
+
+    colour: "bright-yellow"
+  },
+
+  digital_preserves: {
+    name: "Digital Preservés",
+    animation: "digital-preserves",
+      font_position: "bottom-right",
+      font_size: 2,
+      font_weight: 700,
+    is_base_node: true,
+    size: 1,
+    x: 468,
+    y: 36,
+
+    colour: "sepia",
+    dependencies: ["digital_preserves_atlases", "digital_preserves_maps"]
+  },
+  physical_holdings: {
+    name: "Physical Holdings",
+    animation: "physical-holdings",
+      font_position: "bottom-right",
+      font_size: 2,
+      font_weight: 700,
+    is_base_node: true,
+    size: 1,
+    x: 500,
+    y: 68,
+
+    colour: "gold",
+    dependencies: ["physical_holdings_atlases", "physical_holdings_other_documents"]
+  }
 };

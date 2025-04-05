@@ -196,7 +196,7 @@
 	text-align: left;
 }
 .parallax-item .bottom-right, .parallax-item-preview .bottom-right {
-	bottom: 2.5vh;
+	bottom: 1.5vh;
 	left: auto;
 	right: 2.5vh;
 	top: auto;
@@ -226,6 +226,9 @@
 }
 .forest-green > .parallax-item-colour-bg {
 	background-color: rgba(100, 130, 101, 0.8);
+}
+.gold > .parallax-item-colour-bg {
+	background-color: rgba(206, 155, 35, 0.6);
 }
 .light-blue > .parallax-item-colour-bg {
 	background-color: rgba(172, 210, 230, 0.5);

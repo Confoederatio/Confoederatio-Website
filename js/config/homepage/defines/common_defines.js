@@ -41,7 +41,7 @@ config.homepage.defines.common = {
       parallax_current_scroll_x: 0,
       parallax_scroll_x: 0,
       parallax_selected: [],
-      parallax_pinned_items: ["anno_1800", "triumph_and_tragedy_two", "les_halles", "brooklyn_bridge"]
+      parallax_pinned_items: []
     },
 
     //Viewport 3
