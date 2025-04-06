@@ -9,7 +9,21 @@ config.homepage.gallery.tiles = {
     size: 5,
     x: 44,
     y: 92,
-    colour: "dark-blurple"
+    colour: "dark-blurple",
+    content: `<div id = "ampersand_mod_creator-panel-title" class = "parallax-item-content-panel-title">Ampersand Mod Creator</div>
+    <hr class = "parallax-item-content-panel-divider">
+    <b>Development:</b> <span id = "ampersand_mod_creator-development-indicator" class = "parallax-item-complete">Complete</span>,<br>
+    <span id = "ampersand_mod_creator-development-date" class = "parallax-item-development-date">18 March 2024 - 11 March 2025</span><br>
+    <b>Status:</b> <span id = "ampersand_mod_creator-status" class = "parallax-item-content-panel-status-indicator legacy">Legacy Project</span>
+    <div id = "ampersand_mod_creator-body-text" class = "parallax-item-content-panel-body-text">Gamechanger editor for map modding T&T2 after importing SVG maps from Inkscape. Used to define adjacencies, regions, terrain, and other custom data fields for T&T2. Note that this project is subject to expansion as Triumph & Tragedy II gradually improves. For a full look at its internal workings, available documentation and source code are available online.
+    <hr class = "parallax-item-content-panel-divider">
+      <b>Documentation:</b> <a href = "https://confoederatiodocs.info/CTD/Ampersand_Mod_Creator">Confoederatio Docs</a>
+      <b>Releases:</b>
+      <ul>
+        <li>1.0r Legacy | <a href = "https://github.com/Confoederatio/Ampersand-Mod-Creator/archive/refs/tags/1.0r-legacy.zip">Download</a> | <a href = "https://github.com/Confoederatio/Ampersand-Mod-Creator/releases/tag/1.0r-legacy">GitHub</a></li>
+      </ul>
+    </div>
+    `
   },
   empires_undone: {
     name: "Empires Undone",
@@ -44,13 +58,13 @@ config.homepage.gallery.tiles = {
     background_opacity: 0.4,
     colour: "mauve",
     content: `<div id = "triumph_and_tragedy_one-panel-title" class = "parallax-item-content-panel-title">Triumph & Tragedy I</div>
-    <hr id = "triumph_and_tragedy_one-content-panel-divider" class = "parallax-item-content-panel-divider">
+    <hr class = "parallax-item-content-panel-divider">
     <b>Development:</b> <span id = "triumph_and_tragedy_one-development-indicator" class = "parallax-item-complete">Complete</span>,<br>
     <span id = "triumph_and_tragedy_one-development-date" class = "parallax-item-development-date">22 April 2020 - 1 September 2021</span><br>
     <b>Status:</b> <span id = "triumph_and_tragedy_one-status" class = "parallax-item-content-panel-status-indicator secondary">Secondary Project</span>
     <div id = "triumph_and_tragedy_one-body-text" class = "parallax-item-content-panel-body-text">
       Politics, diplomacy, combat, and economics come to life in one of the most complex bots ever created. Move armies around on massive world maps to wage war and build a nation, found cities only to see them rise and fall; in Triumph & Tragedy I, the world is your oyster.
-      <hr id = "triumph_and_tragedy_one-content-panel-divider" class = "parallax-item-content-panel-divider">
+      <hr class = "parallax-item-content-panel-divider">
       <b>AI.</b>
       Reach new levels of interaction and immersion as you fight to keep your nation afloat between dozens of other countries, both AI and human. Each AI has unique characteristics, so plan out your strategy wisely ..
       <br><br>
@@ -125,7 +139,7 @@ config.homepage.gallery.tiles = {
     background_opacity: 0.35,
     colour: "red",
     content: `<div id = "eleven_fiftynine_aoc_two-panel-title" class = "parallax-item-content-panel-title">11:59 (AOC2)</div>
-    <hr id = "eleven_fiftynine_aoc_two-content-panel-divider" class = "parallax-item-content-panel-divider">
+    <hr class = "parallax-item-content-panel-divider">
     <b>Development:</b> <span id = "eleven_fiftynine_aoc_two-development-indicator" class = "parallax-item-complete">Complete</span>,<br>
     <span id = "eleven_fiftynine_aoc_two-development-date" class = "parallax-item-development-date">22 November 2018 - 17 March 2020</span><br>
     <b>Status:</b> <span id = "eleven_fiftynine_aoc_two-status" class = "parallax-item-content-panel-status-indicator tertiary">Tertiary Project</span>
@@ -133,7 +147,7 @@ config.homepage.gallery.tiles = {
       Formerly developed for the mobile grand-strategy game Age of Civilisations II, 11:59 seeks to bring the pivotal events of the Cold War to the game using a Paradox modding paradigm. Due to game limitations, and the eventual abandonment of AOC2 itself, development was suspended in 2020.
       <br><br>
       All 11:59 mod work has since been moved to AOC3/AnalyticalEngine to better support 11:59 in the future.
-      <br><br>
+      <hr class = "parallax-item-content-panel-divider">
       <b>Links:</b> <a href = "http://www.ageofcivilizationsgame.com/topic/5090-1159-a-cold-war-mod/">Forums</a> | <a href = "https://www.moddb.com/mods/1159-a-cold-war-mod">ModDB</a>
       <b>Releases:</b>
       <ul>
@@ -155,7 +169,28 @@ config.homepage.gallery.tiles = {
     dependencies: ["eleven_fiftynine_aoc_three"],
     background_image: `gfx/interface/tiles/analytical_engine_tile.png`,
     background_opacity: 0.15,
-    colour: "transparent-sepia"
+    colour: "transparent-sepia",
+    content: `<div id = "analytical_engine-panel-title" class = "parallax-item-content-panel-title">AnalyticalEngine</div>
+    <hr class = "parallax-item-content-panel-divider">
+    <b>Development:</b> <span id = "analytical_engine-development-indicator" class = "parallax-item-beta-ongoing">Beta (Ongoing)</span>,<br>
+    <span id = "analytical_engine-development-date" class = "parallax-item-development-date">27 October 2024 -</span><br>
+    <b>Status:</b> <span id = "analytical_engine-status" class = "parallax-item-content-panel-status-indicator primary">Primary Project</span>
+    <div id = "analytical_engine-body-text" class = "parallax-item-content-panel-body-text">
+      AnalyticalEngine (also known as <b>Project Orion</b>) is a development effort to open-source the entire core binary code of AOC3 and improve moddability by allowing for a custom NashornJS scripts in mods by providing an API for Event Conditions, Effects, Game Scopes, Modded Multiplayer (MP) support, as well as Custom Mapmodes and Custom UIs.
+      <hr class = "parallax-item-content-panel-divider">
+      <b>Documentation:</b> <a href = "https://confoederatiodocs.info/CTD/AnalyticalEngine">Confoederatio Docs</a>
+      <b>Links:</b> <a href = "http://www.ageofcivilizationsgame.com/topic/252006-analyticalengine-custom-uis-mapmodes-event-scripting-modded-multiplayer-and-tooltips/">Forums</a> | <a href = "https://github.com/Confoederatio/AnalyticalEngine">GitHub</a> | <a href = "https://steamcommunity.com/sharedfiles/filedetails/?id=3429582135&searchtext=analyticalengine">Steam</a>
+      <b>Releases:</b>
+      <ul>
+        <li>0.6b Centurion | <a href = "https://github.com/Confoederatio/AnalyticalEngine/archive/refs/tags/beta-0.6.0-centurion.zip">Download</a> | <a href = "https://github.com/Confoederatio/AnalyticalEngine/releases/tag/beta-0.6.0-centurion">GitHub</a></li>
+        <li>0.5b Rhine | <a href = "https://github.com/Confoederatio/AnalyticalEngine/archive/refs/tags/beta-0.5.0-rhine.zip">Download</a> | <a href = "https://github.com/Confoederatio/AnalyticalEngine/releases/tag/beta-0.5.0-rhine">GitHub</a></li>
+        <li>0.4b Perimeter | <a href = "https://github.com/Confoederatio/AnalyticalEngine/archive/refs/tags/beta-0.4.0-perimeter.zip">Download</a> | <a href = "https://github.com/Confoederatio/AnalyticalEngine/releases/tag/beta-0.4.0-perimeter">GitHub</a></li>
+        <li>0.3.2b Chrome Dome | <a href = "https://github.com/Confoederatio/AnalyticalEngine/archive/refs/tags/beta-0.3.2-chrome-dome.zip">Download</a> | <a href = "https://github.com/Confoederatio/AnalyticalEngine/releases/tag/beta-0.3.2-chrome-dome">GitHub</a></li>
+        <li>0.3.1b Broken Arrow | <a href = "https://github.com/Confoederatio/AnalyticalEngine/archive/refs/tags/beta-0.3.1-broken-arrow.zip">Download</a> | <a href = "https://github.com/Confoederatio/AnalyticalEngine/releases/tag/beta-0.3.1-broken-arrow">GitHub</a></li>
+        <li>0.3b Empty Quiver | <a href = https://github.com/Confoederatio/AnalyticalEngine/archive/refs/tags/beta-0.3.0-empty-quiver.zip"">Download</a> | <a href = "https://github.com/Confoederatio/AnalyticalEngine/releases/tag/beta-0.3.0-empty-quiver">GitHub</a></li>
+        <li>0.2b Cogwheel | <a href = "https://github.com/Confoederatio/AnalyticalEngine/archive/refs/tags/beta-0.2.0-cogwheel.zip">Download</a> | <a href = "https://github.com/Confoederatio/AnalyticalEngine/releases/tag/beta-0.2.0-cogwheel">GitHub</a></li>
+      </ul>
+    </div>`
   },
   eleven_fiftynine_aoc_three: {
     name: "",
@@ -169,7 +204,18 @@ config.homepage.gallery.tiles = {
 
     background_image: `gfx/interface/tiles/1159_logo.jpg`,
     background_opacity: 0.4,
-    colour: "midnight-blue"
+    colour: "midnight-blue",
+    content: `<div id = "eleven_fiftynine_aoc_three-panel-title" class = "parallax-item-content-panel-title">11:59 (AOC3)</div>
+    <hr class = "parallax-item-content-panel-divider">
+    <b>Development:</b> <span id = "eleven_fiftynine_aoc_three-development-indicator" class = "parallax-item-alpha-ongoing">Alpha (Ongoing) </span>,<br>
+    <span id = "eleven_fiftynine_aoc_three-development-date" class = "parallax-item-development-date">27 October 2024 -</span><br>
+    <b>Status:</b> <span id = "eleven_fiftynine_aoc_three-status" class = "parallax-item-content-panel-status-indicator secondary">Secondary Project</span>
+    <div id = "eleven_fiftynine_aoc_three-body-text" class = "parallax-item-content-panel-body-text">
+      Built on top of a new open-source injection engine (AnalyticalEngine) for Age of Civilisations III, 11:59 brings the economic and political intrigue of the First and Second Cold Wars to AOC3 between 1946-2092. Development of the mod has been handed over to Confoederatio Technical Division, and it is also used as an example for other game mods developed using AnalyticalEngine.
+      <hr class = "parallax-item-content-panel-divider">
+      <b>Links:</b> <a href = "https://github.com/Confoederatio/AnalyticalEngine/tree/main/src/mods/11.59">GitHub</a>
+    </div>
+    `
   },
   universal_framework: {
     name: "<div style = 'font-weight: 700;'>UF</div><br><br><div style = 'text-align: right;'>Universal Framework</div>",
@@ -183,7 +229,45 @@ config.homepage.gallery.tiles = {
     y: 68,
 
     colour: "orange",
-    background_opacity: 1
+    background_opacity: 1,
+    content: `<div id = "universal_framework-panel-title" class = "parallax-item-content-panel-title">Universal Framework</div>
+    <hr class = "parallax-item-content-panel-divider">
+    <b>Development:</b> <span id = "universal_framework-development-indicator" class = "parallax-item-complete">Complete, Ongoing</span>,<br>
+    <span id = "universal_framework-development-date" class = "parallax-item-development-date">15 March 2024 -</span><br>
+    <b>Status:</b> <span id = "universal_framework-status" class = "parallax-item-content-panel-status-indicator secondary">Secondary  Project</span>
+    <div id = "universal_framework-body-text" class = "parallax-item-content-panel-body-text">
+      The bedrock of future Confoederatio development, Universal Framework is designed as a modular JS library and software engine for developer quality-of-life and ease of use, with a particular focus towards UI, maths, and statistics. These modules are split up as follows:
+      <ul>
+        <li>ABRS (Automated Backup and Recovery System)</li>
+        <li>Actions (Undo/Redo Trees and Delta Actions Logging System [DALS])</li>
+        <li>AI (Puppeteer scraping hooks for web AI clients and social media, as well as message queueing)</li>
+        <li>Animation</li>
+        <li>Arrays (Dataframes, Matrices)</li>
+        <li>BrowserUI (Context Menus, Frontend Web Design, and WYSIWYG Inputs)</li>
+        <li>Colours</li>
+        <li>CURL</li>
+        <li>Date</li>
+        <li>Log</li>
+        <li>Numbers</li>
+        <li>Objects (Structured Dataframes)</li>
+        <li>Pathfinding</li>
+        <li>Strings (NLP, Markdown Formatting)</li>
+      </ul>
+      <hr class = "parallax-item-content-panel-divider">
+      <b>Links:</b> <a href = "https://github.com/Confoederatio/UniversalFramework/tree/main/Browser%20UF">GitHub (Browser)</a> | <a href = "https://github.com/Confoederatio/UniversalFramework/tree/main/Electron%20UF">GitHub (Electron)</a> | <a href = "https://github.com/Confoederatio/UniversalFramework/tree/main/Nashorn%20UF">GitHub (Nashorn)</a> | <a href = "https://github.com/Confoederatio/UniversalFramework/tree/main/Node%20UF">GitHub (Node)</a>
+      <b>Releases:</b>
+      <ul>
+        <li>1.0 UF | <a href = "https://github.com/Confoederatio/UniversalFramework">GitHub</a>
+          <ul>
+            <li>1.0 UF (Browser) | <a href = "https://github.com/Confoederatio/UniversalFramework/archive/refs/tags/1.0-isopropylene.zip">Download</a> | <a href = https://github.com/Confoederatio/UniversalFramework/tree/main/Browser%20UF">GitHub</a></li>
+            <li>1.0 UF (Electron) | <a href = "https://github.com/Confoederatio/UniversalFramework/archive/refs/tags/1.0-isopropylene.zip">Download</a> | <a href = https://github.com/Confoederatio/UniversalFramework/tree/main/Electron%20UF">GitHub</a></li>
+            <li>1.0 UF (NashornJS) | <a href = "https://github.com/Confoederatio/UniversalFramework/archive/refs/tags/1.0-isopropylene.zip">Download</a> | <a href = "https://github.com/Confoederatio/UniversalFramework/tree/main/Nashorn%20UF">GitHub</a></li>
+            <li>1.0 UF (Node) | <a href = "https://github.com/Confoederatio/UniversalFramework/archive/refs/tags/1.0-isopropylene.zip">Download</a> | <a href = "https://github.com/Confoederatio/UniversalFramework/tree/main/Node%20UF">GitHub</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    `
   },
   scriptly: {
     name: "Scriptly",
