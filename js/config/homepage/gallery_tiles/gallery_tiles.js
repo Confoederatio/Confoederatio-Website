@@ -254,7 +254,7 @@ config.homepage.gallery.tiles = {
         <li>Strings (NLP, Markdown Formatting)</li>
       </ul>
       <hr class = "parallax-item-content-panel-divider">
-      <b>Links:</b> <a href = "https://github.com/Confoederatio/UniversalFramework/tree/main/Browser%20UF">GitHub (Browser)</a> | <a href = "https://github.com/Confoederatio/UniversalFramework/tree/main/Electron%20UF">GitHub (Electron)</a> | <a href = "https://github.com/Confoederatio/UniversalFramework/tree/main/Nashorn%20UF">GitHub (Nashorn)</a> | <a href = "https://github.com/Confoederatio/UniversalFramework/tree/main/Node%20UF">GitHub (Node)</a>
+      <b>Links:</b> <a href = "https://github.com/Confoederatio/UniversalFramework/tree/main/Browser%20UF">GitHub (Browser)</a> | <a href = "https://github.com/Confoederatio/UniversalFramework/tree/main/Electron%20UF">GitHub (Electron)</a> | <a href = "https://github.com/Confoederatio/UniversalFramework/tree/main/Nashorn%20UF">GitHub (Nashorn)</a> | <a href = "https://github.com/Confoederatio/UniversalFramework/tree/main/Node%20UF">GitHub (Node)</a><br>
       <b>Releases:</b>
       <ul>
         <li>1.0 UF | <a href = "https://github.com/Confoederatio/UniversalFramework">GitHub</a>
@@ -279,7 +279,31 @@ config.homepage.gallery.tiles = {
     x: 144,
     y: 96,
 
-    colour: "bright-yellow"
+    colour: "bright-yellow",
+    content: `<div id = "scriptly-panel-title" class = "parallax-item-content-panel-title">Scriptly</div>
+    <hr class = "parallax-item-content-panel-divider">
+    <b>Development:</b> <span id = "scriptly-development-indicator" class = "parallax-item-complete">Complete (Ongoing)</span>,<br>
+    <span id = "scriptly-development-date" class = "parallax-item-development-date">5 November 2024</span><br>
+    <b>Status:</b> <span id = "scriptly-status" class = "parallax-item-content-panel-status-indicator secondary">Secondary Project</span>
+    <div id = "scriptly-body-text" class = "parallax-item-content-panel-body-text">
+      Scriptly provides both CLI/GUI-application templates that utilise Universal Framework to be built on top of, functioning as a bootstrap software engine for rapid iteration. Used for everything from raster/research-level modelling to quick I/O tasks, Scriptly’s main use-case is to serve as a stopgap for more complex programmes that may still be in the development pipeline.
+      <hr class = "parallax-item-content-panel-divider">
+      <b>Releases:</b>
+      <ul>
+        <li>1.0 Scriptly | <a href = "https://github.com/Confoederatio/Scriptly">GitHub</a>
+          <ul>
+            <li>
+              1.0 Scriptly (CLI)/0.5 Scriptly (GUI)
+              <ul>
+                <li>1.0 Scriptly (CLI) | <a href = "https://github.com/Confoederatio/Scriptly/archive/refs/tags/1.0-cli-0.5-gui-red.zip">Download</a> | <a href = "https://github.com/Confoederatio/Scriptly/releases/tag/1.0-cli-0.5-gui-red">GitHub</a></li>
+                <li>0.5 Scriptly (GUI) | <a href = "https://github.com/Confoederatio/Scriptly/archive/refs/tags/1.0-cli-0.5-gui-red.zip">Download</a> | <a href = "https://github.com/Confoederatio/Scriptly/releases/tag/0.5-cli-0.5-gui-red">GitHub</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    `
   },
 
   discord_bots: {
