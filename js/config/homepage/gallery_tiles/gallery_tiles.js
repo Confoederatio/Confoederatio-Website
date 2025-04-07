@@ -38,7 +38,18 @@ config.homepage.gallery.tiles = {
 
     background_image: `gfx/interface/tiles/empires_undone.png`,
     background_opacity: 0.2,
-    colour: "light-purple"
+    colour: "light-purple",
+    content: `<div id = "empires_undone-panel-title" class = "parallax-item-content-panel-title">Empires Undone</div>
+    <hr class = "parallax-item-content-panel-divider">
+    <b>Development:</b> <span id = "empires_undone-development-indicator" class = "parallax-item-alpha-ongoing">Alpha (Suspended)</span>,<br>
+    <span id = "empires_undone-development-date" class = "parallax-item-development-date">22 April 2020 - 1 September 2021</span><br>
+    <b>Status:</b> <span id = "empires_undone-status" class = "parallax-item-content-panel-status-indicator secondary">Suspended Project</span>
+    <div id = "empires_undone-body-text" class = "parallax-item-content-panel-body-text">
+      Majestic cities, real-time battles, and a hundred years of Victorian history were meant to come to life in an ambitious grand-strategy game whose development is currently paused in favour of Triumph & Tragedy and AnalyticalEngine. With the majority of history and mapwork currently complete however, it is currently under consideration to either have its development resumed, or to be released as an open-source engine.
+      <br><br>
+      We support Project Alice in the meantime as an unaffiliated viable alternative covering the same timeframe.
+    </div>
+    `
   },
   triumph_and_tragedy_one: {
     name: "Triumph & Tragedy I",
@@ -63,22 +74,28 @@ config.homepage.gallery.tiles = {
     <span id = "triumph_and_tragedy_one-development-date" class = "parallax-item-development-date">22 April 2020 - 1 September 2021</span><br>
     <b>Status:</b> <span id = "triumph_and_tragedy_one-status" class = "parallax-item-content-panel-status-indicator secondary">Secondary Project</span>
     <div id = "triumph_and_tragedy_one-body-text" class = "parallax-item-content-panel-body-text">
-      Politics, diplomacy, combat, and economics come to life in one of the most complex bots ever created. Move armies around on massive world maps to wage war and build a nation, found cities only to see them rise and fall; in Triumph & Tragedy I, the world is your oyster.
+      <b>'Civilisation in a Bot'.</b> A full desktop experience disguised as a Discord bot, Triumph & Tragedy I offers you the chance to found your very own nation and take it through the ages: expand sprawling urban settlements - experience the tumult of the Industrial Revolution - and stand by the sidelines or duke it out in massive world wars. How you lead your nation is up to you.
+      <br><br>
+      <b>From Research and Economies to Combat.</b> Through the Renaissance to the Digital Age, Triumph & Tragedy I is an all-encompassing game with everything from submarine warfare to the housing and infrastructure of your cities. Explore hundreds of technologies, units, and buildings, and unlock new mechanics to play with in an ever-changing world - all underneath a single Discord bot.
+      <br><br>
+      <b>Huge World Maps.</b> Armies, cities, goods, and colonists are no longer tied to numerical abstractions, but actual objects on a map that spans the globe and over 14.000 provinces. From the Siberian Wastes to the depths of the Amazon to fictional planets, each new map is guaranteed to bring with it new memories and scenarios.
+      <br><br>
+      <b>Modding Compatibility.</b> With an in-depth backend JSON-based modding API allowing for the customisation of buildings, units, governments, laws, events and technologies, building what may seem like an entirely new game is never more than a few lines of text away.
       <hr class = "parallax-item-content-panel-divider">
-      <b>AI.</b>
-      Reach new levels of interaction and immersion as you fight to keep your nation afloat between dozens of other countries, both AI and human. Each AI has unique characteristics, so plan out your strategy wisely ..
-      <br><br>
-      <b>'Civilisation in a Bot'.</b>
-      A full desktop experience disguised as a Discord bot, Triumph & Tragedy I offers you the chance to found your very own nation and take it through the ages: build cities up from nothing and watch them grow - experience the tumult of the Industrial Revolution - stand by the sidelines or duke it out in massive world wars. How you lead your nation is up to you.
-      <br><br>
-      <b>From Research and Economies to Combat.</b>
-      Through the Renaissance to the Digital Age, Triumph & Tragedy I is an all-encompassing game with everything from submarine warfare to the housing and infrastructure of your cities. Explore hundreds of technologies, units, and buildings, and unlock new mechanics to play with in an ever-changing world - all underneath a single Discord bot.
-      <br><br>
-      <b>Huge World Maps.</b>
-      Armies, cities, goods, and colonists are no longer tied to numerical abstractions, but actual objects on a map that spans the globe and over 14,000 provinces. From the Siberian Wastes to the depths of the Amazon to fictional planets, each new map is guaranteed to bring with it new memories and scenarios.
-      <br><br>
-      <b>Modding Compatibility.</b>
-      With an in-depth backend JSON-based modding API allowing for the customisation of buildings, units, governments, laws, events, and technologies, building what may seem like an entirely new game is never more than a few lines of text away.
+      <b>Releases:</b>
+      <ul>
+        <li>RP5.2 | <a href = "">Download</a> | <a href = "">GitHub</a></li>
+        <li>RP5.1 | <a href = "">Download</a> | <a href = "">GitHub</a></li>
+        <li>RP5 | <a href = "">Download</a> | <a href = "">GitHub</a></li>
+        <li>RP4 | <a href = "">Download</a> | <a href = "">GitHub</a></li>
+        <li>RP3 | <a href = "">Download</a> | <a href = "">GitHub</a>
+          <ul>
+            <li>RP3 Battle Calculator | <a href = "">Download</a> | <a href = "">GitHub</a></li>
+          </ul>
+        </li>
+        <li>RP2 | <a href = "">Download</a> | <a href = "">GitHub</a></li>
+        <li>RP1 | <a href = "">Download</a> | <a href = "">GitHub</a></li>
+      </ul>
     </div>`
   },
   into_modernity: {
@@ -90,7 +107,7 @@ config.homepage.gallery.tiles = {
     size: 5,
     x: 76,
     y: 100,
-    colour: "orange"
+    colour: "orange",
   },
   last_man_standing: {
     name: "Last Man Standing",
@@ -334,7 +351,13 @@ config.homepage.gallery.tiles = {
     dependencies: ["system_dynamics", "into_modernity", "last_man_standing", "proxy_cables"],
     background_image: `gfx/interface/tiles/battle_of_the_leyte_gulf.png`,
     background_opacity: 0.4,
-    colour: "salmon"
+    colour: "salmon",
+    content: `<div id = "triumph_and_tragedy_two-panel-title" class = "parallax-item-content-panel-title">Triumph & Tragedy II</div>
+    <hr class = "parallax-item-content-panel-divider">
+    <b>Development:</b> <span id = "triumph_and_tragedy_two-development-indicator" class = "parallax-item-complete">Complete (Ongoing)</span>,<br>
+    <span id = "triumph_and_tragedy_two-development-date" class = "parallax-item-development-date">22 April 2021 -</span><br>
+    <b>Status:</b> <span id = "triumph_and_tragedy_two-status" class = "parallax-item-content-panel-status-indicator primary">Primary Project</span>
+    `
   },
   grand_strategy_mods: {
     name: "Mods & Tools",
