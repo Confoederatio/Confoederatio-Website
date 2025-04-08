@@ -84,17 +84,17 @@ config.homepage.gallery.tiles = {
       <hr class = "parallax-item-content-panel-divider">
       <b>Releases:</b>
       <ul>
-        <li>RP5.2 | <a href = "">Download</a> | <a href = "">GitHub</a></li>
-        <li>RP5.1 | <a href = "">Download</a> | <a href = "">GitHub</a></li>
-        <li>RP5 | <a href = "">Download</a> | <a href = "">GitHub</a></li>
-        <li>RP4 | <a href = "">Download</a> | <a href = "">GitHub</a></li>
-        <li>RP3 | <a href = "">Download</a> | <a href = "">GitHub</a>
+        <li>RP5.2 | <a href = "https://github.com/Confoederatio/RP5.2/releases">Download</a> | <a href = "https://github.com/Confoederatio/RP5.2">GitHub</a></li>
+        <li>RP5.1 | <a href = "https://github.com/Confoederatio/RP5.1/releases">Download</a> | <a href = "https://github.com/Confoederatio/RP5.2">GitHub</a></li>
+        <li>RP5 | <a href = "https://github.com/Confoederatio/RP5/releases">Download</a> | <a href = "https://github.com/Confoederatio/RP5">GitHub</a></li>
+        <li>RP4 | <a href = "https://github.com/Confoederatio/RP4/releases">Download</a> | <a href = "https://github.com/Confoederatio/RP4">GitHub</a></li>
+        <li>RP3 | <a href = "https://github.com/Confoederatio/RP3/releases">Download</a> | <a href = "https://github.com/Confoederatio/RP3">GitHub</a>
           <ul>
-            <li>RP3 Battle Calculator | <a href = "">Download</a> | <a href = "">GitHub</a></li>
+            <li>RP3 Battle Calculator | <a href = "">Download</a> | <a href = "https://github.com/Confoederatio/RP3/blob/main/combat_calculator.html">GitHub</a></li>
           </ul>
         </li>
-        <li>RP2 | <a href = "">Download</a> | <a href = "">GitHub</a></li>
-        <li>RP1 | <a href = "">Download</a> | <a href = "">GitHub</a></li>
+        <li>RP2 | <a href = "https://github.com/Confoederatio/RP2/releases">Download</a> | <a href = "https://github.com/Confoederatio/RP2">GitHub</a></li>
+        <li>RP1 | <a href = "https://github.com/Confoederatio/RP1/releases">Download</a> | <a href = "https://github.com/Confoederatio/RP1">GitHub</a></li>
       </ul>
     </div>`
   },
@@ -107,7 +107,23 @@ config.homepage.gallery.tiles = {
     size: 5,
     x: 76,
     y: 100,
+
     colour: "orange",
+    content: `<div id = "into_modernity-panel-title" class = "parallax-item-content-panel-title">Into Modernity</div>
+    <b>Development:</b> <span id = "into_modernity-development-indicator" class = "parallax-item-complete">Complete (Ongoing)</span>,<br>
+    <span id = "into_modernity-development-date" class = "parallax-item-development-date">28 April 2023 -</span><br>
+    <b>Status:</b> <span id = "into_modernity-status" class = "parallax-item-content-panel-status-indicator secondary">Secondary Project</span>
+    <div id = "into_modernity-body-text" class = "parallax-item-content-panel-body-text">
+      A complete overhaul of T&T II's economy, labour markets, consumer psychology, spending, and global value and production chains are rendered in stoichiometric and terrain-specific detail. Specialise in goods and resources, manage trade routes, and build amenities for your citizenry.
+      <hr class = "parallax-item-content-panel-divider">
+      <b>Detailed Demography.</b> Into Modernity scraps previous population figures by replacing them with a detailed Leslie Matrix/Migration Gravity Model system of demography with full age, gender, and TFR modelling. Pops are split up into Wealth Pools which hold the same job in the same building, from which their wages, wealth, savings/investment, and spending are calculated.
+      <br><br>
+      <b>Full Military Logistics.</b> Provide full-spectrum logistics to your units and their necessary production chains or lose the war. Into Modernity provides total ORBAT and backline/frontline modelling for combat in addition to introducing more granular air warfare and movement speeds.
+      <br><br>
+      <b>Realistic Production Chains.</b> Over 600+ production chains from the Mediaeval to the Modern Era with accompanying routing times are necessary to your citizens' well-being. Start with subsistence industries and raw resource extraction, and gradually industrialise over centuries. Customise and subsidise production facilities and factories and draft detailed tax codes.
+      <br><br>
+      <b>Simulated Local Economics.</b> Local job markets, resources, and migration ensure that economies stay local. Build hubs of industry, mining towns, or agricultural breadbaskets to feed your people with the goods they need.
+    </div>`
   },
   last_man_standing: {
     name: "Last Man Standing",
@@ -118,7 +134,16 @@ config.homepage.gallery.tiles = {
     size: 5,
     x: 92,
     y: 68,
-    colour: "dark-grey"
+
+    colour: "dark-grey",
+    content: `<div id = "last_man_standing-panel-title" class = "parallax-item-content-panel-title">Last Man Standing</div>
+    <b>Development:</b> <span id = "last_man_standing-development-indicator" class = "parallax-item-in-planning">In Planning</span>,<br>
+    <b>Status:</b> <span id = "last_man_standing-status" class = "parallax-item-content-panel-status-indicator tertiary">Tertiary Project</span>
+    <div id = "last_man_standing-body-text" class = "parallax-item-content-panel-body-text">
+      The final redefinition of warfare in all its logistical intricacy, Last Man Standing attempts to offer maximum flexibility whilst stripping away micromanagement through the use of new battleplans, officer corps, and other mechanics whilst allowing for fine adjustments at the most granular levels of detail. Combat will move along a Levies > Set-Piece Battles > Rapid Manoeuvre > Frontline > Contemporary Warfare System, whilst unit customisation, equipment designers, and military production chains will be added alongside special abilities for units and modder-friendly APIs.
+      <br><br>
+      AIs will now control other nations as part of Last Man Standing, and the mod-creator will be flushed out to full WYSIWYG capability to reflect the final update and release of Triumph & Tragedy II alongside Singleplayer (SP) campaigns.
+    </div>`
   },
   proxy_cables: {
     name: "Proxy<br>Cables",
@@ -129,7 +154,14 @@ config.homepage.gallery.tiles = {
     size: 5,
     x: 92,
     y: 84,
-    colour: "blue"
+
+    colour: "blue",
+    content: `<div id = "proxy_cables-panel-title" class = "parallax-item-content-panel-title">Proxy Cables</div>
+    <b>Development:</b> <span id = "proxy_cables-development-indicator" class = "parallax-item-in-planning">In Planning</span>,<br>
+    <b>Status:</b> <span id = "proxy_cables-status" class = "parallax-item-content-panel-status-indicator tertiary">Tertiary Project</span>
+    <div id = "proxy_cables-body-text" class = "parallax-item-content-panel-body-text">
+      Storytelling has always been a critical element to Triumph & Tragedy II, and we aim to enrich that experience through the introduction of Proxy Cables. Decisions, modular governments, more events, and dynamic political parties and scenes will help bring your governance to life alongside overhauled diplomatic UIs, a new espionage mechanic, influence, and modern era mechanics, with a particular focus on the Cold War.
+    </div>`
   },
   system_dynamics: {
     name: "System Dynamics",
@@ -140,7 +172,17 @@ config.homepage.gallery.tiles = {
     size: 5,
     x: 60,
     y: 100,
+
     colour: "yellow",
+    content: `<div id = "system_dynamics-panel-title" class = "parallax-item-content-panel-title">System Dynamics</div>
+    <b>Development:</b> <span id = "system_dynamics-development-indicator" class = "parallax-item-complete">Complete</span>,<br>
+    <span id = "system_dynamics-development-date" class = "parallax-item-development-date">10 June 2021 - 28 April 2023</span><br>
+    <b>Status:</b> <span id = "system_dynamics-status" class = "parallax-item-content-panel-status-indicator secondary">Secondary Project</span>
+    <div id = "system_dynamics-body-text" class = "parallax-item-content-panel-body-text">
+      System Dynamics is a ground-up refactor and reconstruction of Triumph & Tragedy I on a new modular grand-strategy engine, Gamechanger, to lead T&T II development into the future. Interact with your nation in private game channels, set up custom game scenarios, install Triumph & Tragedy II for your own server, and modify it as you wish. 
+      <br><br>
+      System Dynamics is designed for customisability and long-term support.
+    </div>`
   },
   eleven_fiftynine_aoc_two: {
     name: "11:59 (AOC2)",
@@ -303,7 +345,7 @@ config.homepage.gallery.tiles = {
     <span id = "scriptly-development-date" class = "parallax-item-development-date">5 November 2024</span><br>
     <b>Status:</b> <span id = "scriptly-status" class = "parallax-item-content-panel-status-indicator secondary">Secondary Project</span>
     <div id = "scriptly-body-text" class = "parallax-item-content-panel-body-text">
-      Scriptly provides both CLI/GUI-application templates that utilise Universal Framework to be built on top of, functioning as a bootstrap software engine for rapid iteration. Used for everything from raster/research-level modelling to quick I/O tasks, Scriptly’s main use-case is to serve as a stopgap for more complex programmes that may still be in the development pipeline.
+      Scriptly provides both CLI/GUI-application templates that utilise Universal Framework to be built on top of, functioning as a bootstrap software engine for rapid iteration. Used for everything from raster/research-level modelling to quick I/O tasks, Scriptly's main use-case is to serve as a stopgap for more complex programmes that may still be in the development pipeline.
       <hr class = "parallax-item-content-panel-divider">
       <b>Releases:</b>
       <ul>
@@ -357,6 +399,31 @@ config.homepage.gallery.tiles = {
     <b>Development:</b> <span id = "triumph_and_tragedy_two-development-indicator" class = "parallax-item-complete">Complete (Ongoing)</span>,<br>
     <span id = "triumph_and_tragedy_two-development-date" class = "parallax-item-development-date">22 April 2021 -</span><br>
     <b>Status:</b> <span id = "triumph_and_tragedy_two-status" class = "parallax-item-content-panel-status-indicator primary">Primary Project</span>
+    <div id = "triumph_and_tragedy_two-body-text" class = "parallax-item-content-panel-body-text">
+      An ambitious sequel to the original game, T&T II simulates hundreds of millions of people on the individual-level from the bottom up to create complex economic chains and societal mechanics capable of driving entire nations. From world-spanning supply chains to the military logistics of a single company, to the biodiversity of a province and everything in between, Triumph & Tragedy II will be a game that holds no bars.
+      <hr class = "parallax-item-content-panel-divider">
+      <b>AI.</b> Treated as part of the core game, managing and creating your own AI bureaucrats in order to oversee mechanics for you in this vast simulation is absolutely essential to the continued survival of your nation-state. But watch out! You might not be the only one able to set mandates for your 'governors' and 'ministers' ..
+      <br><br>
+      <b>Creative Freedom.</b> Adjust the uniforms of your army to perfection, construct monuments that stand the test of time, or choose the staple crops of your people: Triumph & Tragedy II will offer unparalleled freedom in a sandbox-like environment. Choose what mechanics you want to play with, and leave the rest to your AI bureaucracy.
+      <br><br>
+      <b>Gamechanger.</b> From the Seven Years' War to the Rise of Rome, Triumph & Tragedy II will offer the ability to recreate historical, alt-history, and even entirely fictional scenarios without having to edit a single file. Create mos from the comfort of Discord with a built-in editor and preview your work in real time. We give the tools for you to create.
+      <br><br>
+      <b>Simulate Everything.</b> From the biodiversity of the Great Plains during the High Renaissance all the way to the highest echelons of government, it doesn't matter in Triumph & Tragedy II - everything is simulated at the most granular level possible to provide depth and engineer an experience unlike any other.
+      <hr class = "parallax-item-content-panel-divider">
+      <b>Releases:</b>
+      <ul>
+        <li>1.3.3 Lazytrisk | <a href = "#">Download</a> | <a href = "#">GitHub</a></li>
+        <li>1.3.2 Tech Tube | <a href = "#">Download</a> | <a href = "#">GitHub</a></li>
+        <li>1.3.1 Dove Stable | <a href = "#">Download</a> | <a href = "#">GitHub</a></li>
+        <li>1.3 Dove | <a href = "#">Download</a> | <a href = "#">GitHub</a></li>
+        <li>1.2.1 Bayonet Stable | <a href = "#">Download</a> | <a href = "#">GitHub</a></li>
+        <li>1.2 Bayonet | <a href = "#">Download</a> | <a href = "#">GitHub</a></li>
+        <li>1.1.2 Yarn | <a href = "#">Download</a> | <a href = "#">GitHub</a></li>
+        <li>1.1 Fresh Air | <a href = "#">Download</a> | <a href = "#">GitHub</a></li>
+        <li>1.0.1 Fine-Tuner | <a href = "#">Download</a> | <a href = "#">GitHub</a></li>
+        <li>1.0 Iron | <a href = "#">Download</a> | <a href = "#">GitHub</a></li>
+      </ul>
+    </div>
     `
   },
   grand_strategy_mods: {
@@ -400,7 +467,23 @@ config.homepage.gallery.tiles = {
 
     background_image: `gfx/interface/tiles/eoscala.png`,
     background_opacity: 1,
-    colour: "dark-grey"
+    colour: "dark-grey",
+    content: `<div id = "eoscala-panel-title" class = "parallax-item-content-panel-title">Eoscala</div>
+    <hr class = "parallax-item-content-panel-divider">
+    <b>Development:</b> <span id = "eoscala-development-indicator" class = "parallax-item-complete">Complete (Ongoing)</span>,<br>
+    <span id = "eoscala-development-date" class = "parallax-item-development-date">1 March 2025 -</span><br>
+    <b>Status:</b> <span id = "eoscala-status" class = "parallax-item-content-panel-status-indicator primary">Primary Project</span>
+    <div id = "eoscala-body-text" class = "parallax-item-content-panel-body-text">
+      Gridded economic statistics from 10000BC to the present. Time intervals are provided at 1000-year intervals from 10000BC to 1AD, at 100-year intervals from 1AD to 1700AD, at 10-year intervals from 1700AD to 1950AD, and at 1-year intervals from 1950AD onwards. All data is provided at 5-arcminute resolution on WGS84 Equirectangular.
+      <br><br>
+      Eoscala is currently operable, with future routine updates to improve model and data accuracy alongside ease of reproducibility. Base Eoscala data are used to support the expansion of economic data and fidelity into the deep past. Since 2024, Eoscala has been managed by CRD.
+      <hr class = "parallax-item-content-panel-divider">
+      <b>Releases:</b>
+      <ul>
+        <li>Eoscala 1.0 | <a href = "https://github.com/Confoederatio/Eoscala-Velkscala/archive/refs/tags/eoscala-1.0-velkscala-0.5.zip">Download</a> | <a href = "https://github.com/Confoederatio/Eoscala-Velkscala/tree/main">GitHub</a></li>
+      </ul>
+    </div>
+    `
   },
   velkscala: {
     name: "Velkscala",
@@ -412,7 +495,23 @@ config.homepage.gallery.tiles = {
     x: 192,
     y: 64,
 
-    colour: "salmon"
+    colour: "salmon",
+    content: `<div id = "velkscala-panel-title" class = "parallax-item-content-panel-title">Velkscala</div>
+    <hr class = "parallax-item-content-panel-divider">
+    <b>Development:</b> <span id = "velkscala-development-indicator" class = "parallax-item-beta">Beta (Ongoing)</span>,<br>
+    <span id = "velkscala-development-date" class = "parallax-item-development-date">1 March 2025 -</span><br>
+    <b>Status:</b> <span id = "velkscala-status" class = "parallax-item-content-panel-status-indicator primary">Primary Project</span>
+    <div id = "velkscala-body-text" class = "parallax-item-content-panel-body-text">
+      Gridded population and demographic statistics from 10000BC to the present. Time intervals are provided at 1000-year intervals from 10000BC to 1AD, at 100-year intervals from 1AD to 1700AD, at 10-year intervals from 1700AD to 1950AD, and at 1-year intervals from 1950AD onwards. All data is provided at 5-arcminute resolution on WGS84 Equirectangular.
+      <br><br>
+      Velkscala should be approached with caution in its current state. Its data is inherently scalable, but there may exist datapoint anomalies, especially regarding past urban settlements. We intend to resolve these issues following a general-purpose refactor and revamped methodology. Since 2024, Velkscala has been managed by CRD. Velkscala currently relies on hybridised HYDE3.3/McEvedy data.
+      <hr class = "parallax-item-content-panel-divider">
+      <b>Releases:</b>
+      <ul>
+        <li>Velkscala 0.5 | <a href = "https://github.com/Confoederatio/Eoscala-Velkscala/archive/refs/tags/eoscala-1.0-velkscala-0.5.zip">Download</a> | <a href = "https://github.com/Confoederatio/Eoscala-Velkscala/tree/main">GitHub</a></li>
+      </ul>
+    </div>
+    `
   },
 
   gazetteer: {
