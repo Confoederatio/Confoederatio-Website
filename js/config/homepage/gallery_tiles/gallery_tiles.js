@@ -524,7 +524,15 @@ config.homepage.gallery.tiles = {
     x: 220,
     y: 96,
 
-    colour: "midnight-blue"
+    colour: "midnight-blue",
+    content: `<div id = "gazetteer-panel-title" class = "parallax-item-content-panel-title">Gazetteer of Demographic, Economic, and Geographic Datasets</div>
+    <hr class = "parallax-item-content-panel-divider">
+    <div id = "gazetteer-body-text" class = "parallax-item-content-panel-body-text">
+      The Gazetteer provides a list of scientific tools and software that may be useful for data wrangling related tasks, split by tooling and associated databases. Some tools are unaffiliated, whilst others are under the jurisdiction of CRD. We provide third-party disclaimers where appropriate.
+      <br><br>
+      You can visit the present Gazetteer on Confoederatio Docs. 
+    </div>
+    `
   },
   geographic_economic_papers: {
     name: "Geographic/Economic Papers",
@@ -536,7 +544,13 @@ config.homepage.gallery.tiles = {
     x: 236,
     y: 96,
 
-    colour: "salmon"
+    colour: "salmon",
+    content: `<div id = "geographic_economic_papers-panel-title" class = "parallax-item-content-panel-title">Geographic/Economic Papers</div>
+    <hr class = "parallax-item-content-panel-divider">
+    <div id = "geographic_economic_papers-body-text" class = "parallax-item-content-panel-body-text">
+      Geographic and economic white papers, grey literature, and technical drafts written by CRD are available in their full form on Confoederatio Docs. Most of these documents are applied research.
+    </div>
+    `
   },
   military_papers: {
     name: "Military Papers",
@@ -548,7 +562,13 @@ config.homepage.gallery.tiles = {
     x: 252,
     y: 80,
 
-    colour: "red"
+    colour: "red",
+    content: `<div id = "military_papers-panel-title" class = "parallax-item-content-panel-title">Military Papers</div>
+    <hr class = "parallax-item-content-panel-divider">
+    <div id = "military_papers-body-text" class = "parallax-item-content-panel-body-text">
+      Military papers, grey literature, and technical drafts written by CRD are available in their full form on Confoederatio Docs. Most of these consist of raw data points gathered under Project Satsecrér, with a focus on applied research. If you specialise in military hardware, OSINT, and geolocation, please get in touch. 
+    </div>
+    `
   },
   political_diplomatic_papers: {
     name: "Political/Diplomatic Papers",
@@ -560,7 +580,13 @@ config.homepage.gallery.tiles = {
     x: 252,
     y: 64,
 
-    colour: "forest-green"
+    colour: "forest-green",
+    content: `<div id = "political_diplomatic_papers-panel-title" class = "parallax-item-content-panel-title">Political/Diplomatic Papers</div>
+    <hr class = "parallax-item-content-panel-divider">
+    <div id = "political_diplomatic_papers-body-text" class = "parallax-item-content-panel-body-text">
+      Repository of CRD papers related to political science and IR. Any papers published in this category are available in their full form on Confoederatio Docs. Most of these documents focus purely on applied research.
+    </div>
+    `
   },
   
   naissance: {
@@ -577,7 +603,25 @@ config.homepage.gallery.tiles = {
 
     background_image: `gfx/interface/tiles/naissance.png`,
     background_opacity: 0.175,
-    colour: "bright-yellow"
+    colour: "bright-yellow",
+    content: `<div id = "naissance-panel-title" class = "parallax-item-content-panel-title">Naissance GIS</div>
+    <hr class = "parallax-item-content-panel-divider">
+    <b>Development:</b> <span id = "naissance-development-indicator" class = "parallax-item-beta">Beta (Ongoing)</span>,<br>
+    <span id = "naissance-development-date" class = "parallax-item-development-date">6 April 2023 -</span><br>
+    <b>Status:</b> <span id = "naissance-status" class = "parallax-item-content-panel-status-indicator primary">Primary Project</span>
+    <div id = "naissance-body-text" class = "parallax-item-content-panel-body-text">
+      Naissance is an open-source historical 3D GIS built for proxy modelling, raster input and wrangling, simulation and statistical analysis with undo/redo trees and version control with user-first UI design. We aim to eventually enable modernised data visualisation and mapmaking to create interactive atlases, different mapmodes, and 3/video export options, alongside full-spectrum gridmap editing.
+      <br><br>
+      All generated files by Naissance are currently stored in JSON, with GeoJSON beeing supported for import. Saved Naissance files may be found in ./saves/. A default initialisation file, ./saves/autosave.js, is loaded for compatibility testing in non-release versions.
+      <hr class = "parallax-item-content-panel-divider">
+      <b>Links:</b> <a href = "https://github.com/Confoederatio/Naissance/archive/refs/heads/master.zip">Download</a></li> | <a href = "https://github.com/Confoederatio/Naissance">GitHub</a></li>
+      <b>Releases:</b>
+      <ul>
+        <li>1.0b Caspian | <a href = "https://github.com/Confoederatio/Naissance/archive/refs/tags/1.0b-caspian.zip">Download</a> | <a href = "https://github.com/Confoederatio/Naissance/releases/tag/1.0b-caspian">GitHub</a></li>
+        <li>1.0pa Beginnes | <a href = "https://github.com/Confoederatio/Naissance/archive/refs/tags/1.0pa-beginnes.zip">Download</a> | <a href = "https://github.com/Confoederatio/Naissance/releases/tag/1.0pa-beginnes">GitHub</a></li>
+      </ul>
+    </div>
+    `
   },
   project_humanity: {
     name: "Project Humanity",
@@ -589,7 +633,28 @@ config.homepage.gallery.tiles = {
     x: 300,
     y: 46,
 
-    colour: "light-grey"
+    colour: "light-grey",
+    content: `<div id = "project-humanity-panel-title" class = "parallax-item-content-panel-title">Project Humanity</div>
+    <hr class = "parallax-item-content-panel-divider">
+    <b>Development:</b> <span id = "project-humanity-development-indicator" class = "parallax-item-alpha">Alpha (Suspended)</span>,<br>
+    <span id = "project-humanity-development-date" class = "parallax-item-development-date">1 March 2025 -</span><br>
+    <b>Status:</b> <span id = "project-humanity-status" class = "parallax-item-content-panel-status-indicator primary">Primary Project</span>
+    <div id = "project-humanity-body-text" class = "parallax-item-content-panel-body-text">
+      Project Humanity is a project focused on general human cognition, particularly in long-term personality retention and worldview enculturation which can be hybridised with other short-term cognitive architectures such as SOAR or ACT-R. In particular, we focus on the development of long-term models of human nature and behaviour for use in mesosocial simulations.
+      <br><br>
+      Prototypes related to Project Humanity are provided as Vensim (.mdl) files.
+      <hr class = "parallax-item-content-panel-divider">
+      <b>Links:</b> <a href = "https://github.com/Confoederatio/Naissance/archive/refs/heads/master.zip">Discord</a></li> | <a href = "https://docs.google.com/document/d/1pmYnD0pVYnxatR96WDLCmsKMFMa_4ROOBp_nt2eg8hY/edit?usp=sharing">Paper (Working Technical Draft)</a>
+      <b>Releases:</b>
+      <ul>
+        <li>0.3a Head</li>
+        <li>0.3a Tail</li>
+        <li>0.2a Head</li>
+        <li>0.1a Head</li>
+        <li>0.1a Tail</li>
+      </ul>
+    </div>
+    `
   },
   
   datasets: {
@@ -616,7 +681,13 @@ config.homepage.gallery.tiles = {
     y: 64,
 
     dependencies: ["gazetteer", "geographic_economic_papers", "military_papers", "political_diplomatic_papers"],
-    colour: "cream-white"
+    colour: "cream-white",
+    content: `<div id = "grey-literature-and-taxonomials-panel-title" class = "parallax-item-content-panel-title">Grey Literature & Taxonomials</div>
+    <hr class = "parallax-item-content-panel-divider">
+    <div id = "grey-literature-and-taxonomials-body-text" class = "parallax-item-content-panel-body-text">
+      Unaffiliated grey literature and taxonomials that have not yet been sorted, most of them available on various Gdrives and other vaults. Please submit a private inquiry for any information at <a href = "mailto:vf.confoederatio@gmail.com">vf.confoederatio@gmail.com</a> prior to publication. We are working on making these classification systems available to the general public.
+    </div>
+    `
   },
   software_and_tooling: {
     name: "Software & Tooling",
