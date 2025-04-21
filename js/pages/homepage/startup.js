@@ -44,6 +44,9 @@ window.main = {
     //Parallax settings configuration
     parallax: new Parallax(document.getElementById("scene")),
     parallax_settings: {}
+  },
+  about: {
+    y: 200 //scrollY in vh
   }
 };
 
