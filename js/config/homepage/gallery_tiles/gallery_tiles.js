@@ -1048,7 +1048,7 @@ config.homepage.gallery.tiles = {
         <li>Tübinger Atlas des Vorderen Orients - Middle East, 1994 [3000BC-1994AD] - Q-HIGH. German/English | Preservés | Discord | Gdrive</li>
         <li>Tübinger Atlas des Vorderen Orients - Middle East - Demographics, 1994 [1994AD] - Q-MEDIUM. German/English | Preservés | Discord | Gdrive</li>
       </ul>
-      <br><br>
+      <br>
       <b>Maps.</b> A collection of loose-leaf maps held by the Digital Preservés for use in applied sovereignty and geostatistical research.
       <br><br>
       <b>Maps by Continent:</b><br>
@@ -1075,6 +1075,63 @@ config.homepage.gallery.tiles = {
     y: 68,
 
     colour: "gold",
-    dependencies: ["physical_holdings_atlases", "physical_holdings_other_documents"]
+    dependencies: ["physical_holdings_atlases", "physical_holdings_other_documents"],
+    content: `
+    <div id = "physical-holdings-panel-title" class = "parallax-item-content-panel-title">Physical Holdings</div>
+    <hr class = "parallax-item-content-panel-divider">
+    <div id = "physical-holdings-body-text" class = "parallax-item-content-panel-body-text">
+      The Physical Holdings of the Preservés are held in physical edition by the Preservés des Confoederatio. They are available by private inquiry if needed, with current digitisation and translation efforts working on bringing these collections to the Digital Preservés.
+      <hr class = "parallax-item-content-panel-divider">
+      <b>World Atlases:</b> Sorted by <u>[Period Covered] - Name, Year of Publication - Quality. Language.</u>
+      <ul>
+        <li>Westermann 1972 - [590000BC-1972AD] - Westermann Großer Atlas zur Weltgeschichte, 1972 - Q-HIGH. German. | Preservés | Discord | Gdrive</li>
+        <li>Westermann 1995 - [590000BC-1995AD] - Westermann Großer Atlas zur Weltgeschichte, 1995 - Q-HIGH. German. | Preservés | Discord | Gdrive</li>
+        <li>Gran Atlas Aguílar [1815AD-1954AD], Gran Atlas Aguílar - Q-HIGH. Spanish. | Preservés | Discord | Gdrive</li>
+        <li>Atlas Larousse Illustré [1900AD] - Atlas Larousse Illustré, 1900 - Q-MEDIUM. French. | Preservés | Discord | Gdrive</li>
+        <li>Stielers Hand-Atlas [1901AD] - Stielers Hand-Atlas, 1901 - Q-HIGH. German. | Preservés | Discord | Gdrive</li>
+        <li>The Historical Atlas of World War II [1937AD-1945AD] - The Historical Atlas of World War I, 2007  - Q-MEDIUM. English. | Preservés | Discord | Gdrive</li>
+        <li>The Times Atlas of the World Mid Century Edition (Vol. I-V) - [1956-1959AD] - The Times Atlas of the World Mid Century Edition, 1959 - Q-HIGH. English. | Preservés | Discord | Gdrive</li>
+        <li>Geographica - [2001AD] - Geographica, 2001 - Q-MEDIUM. English. | Preservés | Discord | Gdrive</li>
+        <li>DK Atlas 2016 - [2016AD] - DK Atlas, 2016 - Q-MEDIUM. English. | Preservés | Discord | Gdrive</li>
+        <li>DK Student World Atlas 2013 - [2013 AD] - DK Student World Atlas, 2013 - Q-MEDIUM. English. | Preservés | Discord | Gdrive</li>
+      </ul>
+      <br><br>
+      <b>Regional Atlases:</b><br>
+      <ul>
+        <li>Tübinger Atlas des Vorderen Orients (Full Set, Loose Leaf) - Middle East, 1994 [1994AD] - Q-MEDIUM. German/English</li>
+      </ul>
+      <br><br>
+      <b>Quantitative Sciences.</b><br>
+      AI/Computer Science.<br>
+      <ul>
+        <li>Big Java: Early Objects, 7th Edition. English</li>
+        <li>Focus on Fundamentals of Programming with C. English</li>
+        <li>Problem Solving and Program Design in C. English</li>
+      </ul>
+      Demography/Stats.<br>
+      <ul>
+        <li>Historical Atlas of the Eight Billion [3000BC-2020AD], Historical Atlas of the Eight Billion, 2018 - Q-LOW. English. | Preservés | Discord | Gdrive</li>
+        <li>Atlas of World Population History [2000BC-1975AD], Atlas of World Population History, 1975 - Q-MEDIUM. English. | Preservés | Discord | Gdrive</li>
+        <li>Statistics for Psychology, Sixth Edition (Aron) 2017 - Q-HIGH. English. | Preservés | Discord | Gdrive</li>
+      </ul>
+      Mathematics.<br>
+      <ul>
+        <li>Calculus 4 (Single Variable): James Stewart. English</li>
+        <li>Calculus 4 (Single Variable): James Stewart (Solutions). English</li>
+        <li>Calculus: Early Transcendental Functions 6e. English</li>
+        <li>Calculus of a Single Variable: Early Transcendental Functions 6e. English</li>
+        <li>Discrete Mathematics and its Applications, Seventh Edition. English</li>
+      </ul>
+      <br>
+      <b>Qualitative Sciences.</b> Anthropology.<br>
+      <ul>
+        <li>Cultural Anthropology (Miller) 2017. English</li>
+        <li>Dictionnaire des Peuples (Larousse) 1998. French</li>
+        <li>Globalization (Lechner) 2009. English</li>
+        <li>Essentials of Biological Anthropology, 4th Edition (Larsen) 2015. English</li>
+        <li>Medical Anthropology, 3rd Edition (Oxford University Press) 2017. English</li>
+      </ul>
+    </div>
+    `
   }
 };

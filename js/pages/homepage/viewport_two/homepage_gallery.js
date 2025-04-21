@@ -130,6 +130,7 @@
     //Convert from parameters
     var local_el = document.getElementById(`${arg0_element_id}-content-panel`);
     var gallery_obj = main.gallery;
+    console.log(arg0_element_id);
 
     //Replace 'shown' class with nothing
     local_el.setAttribute("class",

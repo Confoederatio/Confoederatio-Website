@@ -3,8 +3,11 @@
   //Event handler function
   function homepageAboutOnScroll () { //[WIP] - Move this to a general parallax framework
     try {
+      //Set main.vh
+      main.vh = window.innerHeight/100;
+
       //Declare local instance variables
-      var scroll_vh = window.scrollY/vh;
+      var scroll_vh = window.scrollY/main.vh;
       var banner_obj = main.banner;
 
       //16vh offset

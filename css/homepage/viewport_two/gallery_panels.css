@@ -73,10 +73,14 @@
 /* -- Maximisation formatting -- */
 .parallax-item-content-panel.maximised > .content-wrapper {
   height: calc(100vh - 20vh);
-  width: 50%;
-  margin-left: calc(25% + 1.5vh);
+  width: 70%;
+  margin-left: calc(15% + 1.5vh);
   margin-right: 25%;
   margin-top: 10vh;
+
+  .parallax-item-content-panel-body-text {
+    margin-right: 11.5vh;
+  }
 }
 .parallax-item-content-panel.maximised > .content-wrapper, .parallax-item-content-panel.being-minimised > .content-wrapper {
   transition: all 2s ease;
@@ -85,21 +89,21 @@
 /* -- Maximised buttons -- */
 .parallax-item-content-panel.shown.maximised .content-panel-close-btn {
   top: 9.5vh;
-  right: 25vw;
+  right: 15vw;
 
   border-radius: 50%;
   transform: rotateZ(180deg) scaleX(-1);
 }
 .parallax-item-content-panel.shown.maximised .content-panel-maximise-btn {
   top: 9.5vh;
-  right: calc(25vw + 5.5vh);
+  right: calc(15vw + 5.5vh);
 
   border-radius: 50%;
   transform: rotateZ(180deg) scaleX(-1);
 }
 .parallax-item-content-panel.shown.maximised .content-panel-preview-btn {
   top: 9.5vh;
-  right: calc(25vw + 11vh);
+  right: calc(15vw + 11vh);
 
   border-radius: 50%;
   transform: rotateZ(360deg) scaleX(-1);

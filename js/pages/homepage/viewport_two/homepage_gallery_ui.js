@@ -57,11 +57,21 @@
     {
       setTimeout(function(){
         var all_content_titles = document.querySelectorAll(".parallax-item-content-panel-title");
-        for (var i = 0; i < all_content_titles.length; i++) all_content_titles[i].innerHTML += `
-          <img id = "${all_content_titles[i].id.replace("-panel-title", "")}-close-btn" class = "content-panel-close-btn" src = "gfx/interface/icons/close_btn.png" draggable = "false" onclick = "closeContentPanel('${all_content_titles[i].id.replace("-panel-title", "")}');">
-          <img id = "${all_content_titles[i].id.replace("-panel-title", "")}-maximise-btn" class = "content-panel-maximise-btn" src = "gfx/interface/icons/maximise_icon.png" draggable = "false" onclick = "maximiseContentPanel('${all_content_titles[i].id.replace("-panel-title", "")}');">
-          ${(document.getElementById(all_content_titles[i].id.replace("-panel-title", "") + "-preview") ) ? `<img id = "${all_content_titles[i].id.replace("-panel-title", "")}-preview-btn" class = "content-panel-preview-btn active" src = "gfx/interface/icons/preview_icon.png" draggable = "false" onclick = "togglePreview('${all_content_titles[i].id.replace("-panel-title", "")}');">` : ""}
-        `;
+        var all_content_panels = document.querySelectorAll(`#main-parallax-content-panel-wrapper .content-wrapper`);
+
+        //Iterate over all_content_panels
+        for (var i = 0; i < all_content_panels.length; i++) {
+          var local_content_title = all_content_panels[i].querySelector(`div.parallax-item-content-panel-title`);
+          var local_id = all_content_panels[i].id
+            .replace("-content-panel", "")
+            .replace("-content-wrapper", "");
+
+          local_content_title.innerHTML += `
+            <img id = "${local_id}-close-btn" class = "content-panel-close-btn" src = "gfx/interface/icons/close_btn.png" draggable = "false" onclick = "closeContentPanel('${local_id}');">
+            <img id = "${local_id}-maximise-btn" class = "content-panel-maximise-btn" src = "gfx/interface/icons/maximise_icon.png" draggable = "false" onclick = "maximiseContentPanel('${local_id}');">
+            ${(document.getElementById(local_id + "-preview") ) ? `<img id = "${local_id}-preview-btn" class = "content-panel-preview-btn active" src = "gfx/interface/icons/preview_icon.png" draggable = "false" onclick = "togglePreview('${local_id}');">` : ""}
+          `;
+        }
       }, 500);
     }
   
