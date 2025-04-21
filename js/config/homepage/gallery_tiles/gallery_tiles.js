@@ -885,7 +885,16 @@ config.homepage.gallery.tiles = {
 
     background_image: `gfx/interface/tiles/london_square.png`,
     background_opacity: 0.25,
-    colour: "light-grey"
+    colour: "light-grey",
+    content: `<div id = "london-content-wrapper" class = "content-wrapper">
+      <div id = "london-text-wrapper" class = "text-wrapper">
+        <div id = "london-panel-title" class = "parallax-item-content-panel-title">London</div>
+        <hr id = "london-content-panel-divider" class = "parallax-item-content-panel-divider">
+        <div id = "london-preview" class = "preview-image-container">
+          <img src = "gfx/interface/artworks/london.png" class = "preview-image" id = "london" draggable = "false">
+        </div>
+      </div>
+    </div>`
   },
   maps: {
     name: "Maps",
@@ -926,7 +935,16 @@ config.homepage.gallery.tiles = {
 
     background_image: `gfx/interface/tiles/the_colorado_square.png`,
     background_opacity: 0.8,
-    colour: "copper"
+    colour: "copper",
+    content: `<div id = "the_colorado-content-wrapper" class = "content-wrapper">
+      <div id = "the_colorado-text-wrapper" class = "text-wrapper">
+        <div id = "the_colorado-panel-title" class = "parallax-item-content-panel-title">The Colorado</div>
+        <hr id = "the_colorado-content-panel-divider" class = "parallax-item-content-panel-divider">
+        <div id = "the_colorado-preview" class = "preview-image-container">
+          <img src = "gfx/interface/artworks/the_colorado.jpg" class = "preview-image" id = "the-colorado" draggable = "false">
+        </div>
+      </div>
+    </div>`
   },
   yosemite: {
     name: "<span style = 'font-size: 1.5vh;'>Yosemite</span>",
@@ -940,7 +958,16 @@ config.homepage.gallery.tiles = {
 
     background_image: `gfx/interface/tiles/yosemite_square.png`,
     background_opacity: 0.4,
-    colour: "forest-green"
+    colour: "forest-green",
+    content: `<div id = "yosemite-content-wrapper" class = "content-wrapper">
+      <div id = "yosemite-text-wrapper" class = "text-wrapper">
+        <div id = "yosemite-panel-title" class = "parallax-item-content-panel-title">Yosemite</div>
+        <hr id = "yosemite-content-panel-divider" class = "parallax-item-content-panel-divider">
+        <div id = "yosemite-preview" class = "preview-image-container">
+          <img src = "gfx/interface/artworks/yosemite.png" class = "preview-image" id = "yosemite" draggable = "false">
+        </div>
+      </div>
+    </div>`
   },
   
   art_projects: {
