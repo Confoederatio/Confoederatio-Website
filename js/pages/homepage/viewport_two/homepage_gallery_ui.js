@@ -91,8 +91,8 @@
           mouse_y = mouse_y/32;
         }
   
-        var maximum_x_degrees = 1;
-        var maximum_y_degrees = 1;
+        var maximum_x_degrees = 1.25;
+        var maximum_y_degrees = 1.25;
   
         //Calculate current degrees
         window.perspective_deg_x = ((mouse_y/half_height)*maximum_x_degrees*-1)+(maximum_x_degrees/2) + "deg";

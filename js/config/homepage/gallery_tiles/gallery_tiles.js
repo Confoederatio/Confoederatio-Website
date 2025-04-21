@@ -728,7 +728,16 @@ config.homepage.gallery.tiles = {
 
     background_image: `gfx/interface/tiles/armoured_advance_square.png`,
     background_opacity: 0.1,
-    colour: "blue"
+    colour: "blue",
+    content: `<div id = "armoured_advance-content-wrapper" class = "content-wrapper">
+      <div id = "armoured_advance-text-wrapper" class = "text-wrapper">
+        <div id = "armoured_advance-panel-title" class = "parallax-item-content-panel-title">Armoured Advance</div>
+        <hr id = "armoured_advance-content-panel-divider" class = "parallax-item-content-panel-divider">
+        <div id = "armoured_advance-preview" class = "preview-image-container">
+          <img src = "gfx/interface/artworks/armored_advance.png" class = "preview-image" id = "armoured-advance" draggable = "false">
+        </div>
+      </div>
+    </div>`
   },
   art_triumph_and_tragedy: {
     name: "<span style = 'font-size: 1.8vh;'>Triumph & Tragedy</span>",
@@ -768,7 +777,16 @@ config.homepage.gallery.tiles = {
 
     background_image: `gfx/interface/tiles/boats_on_a_pond_square.png`,
     background_opacity: 0.4,
-    colour: "blue"
+    colour: "blue",
+    content: `<div id = "boats_on_a_pond-content-wrapper" class = "content-wrapper">
+      <div id = "boats_on_a_pond-text-wrapper" class = "text-wrapper">
+        <div id = "boats_on_a_pond-panel-title" class = "parallax-item-content-panel-title">Boats on a Pond</div>
+        <hr id = "boats_on_a_pond-content-panel-divider" class = "parallax-item-content-panel-divider">
+        <div id = "boats_on_a_pond-preview" class = "preview-image-container">
+          <img src = "gfx/interface/artworks/boats_on_a_pond.jpg" class = "preview-image" id = "boats-on-a-pond" draggable = "false">
+        </div>
+      </div>
+    </div>`
   },
   brooklyn_bridge: {
     name: "<span style = 'font-size: 1.2vh;'>Brooklyn Bridge</span>",
@@ -782,7 +800,16 @@ config.homepage.gallery.tiles = {
 
     background_image: `gfx/interface/tiles/brooklyn_bridge_square.png`,
     background_opacity: 0.5,
-    colour: "sepia-transparent"
+    colour: "sepia-transparent",
+    content: `<div id = "brooklyn_bridge-content-wrapper" class = "content-wrapper">
+      <div id = "brooklyn_bridge-text-wrapper" class = "text-wrapper">
+        <div id = "brooklyn_bridge-panel-title" class = "parallax-item-content-panel-title">Brooklyn Bridge</div>
+        <hr id = "brooklyn_bridge-content-panel-divider" class = "parallax-item-content-panel-divider">
+        <div id = "brooklyn_bridge-preview" class = "preview-image-container">
+          <img src = "gfx/interface/artworks/brooklyn_bridge.jpg" class = "preview-image" id = "brooklyn-bridge" draggable = "false">
+        </div>
+      </div>
+    </div>`
   },
   confoederatio: {
     name: "<span style = 'font-size: 1.8vh; margin-left: 0.5vh;'>Confoederatio</span>",

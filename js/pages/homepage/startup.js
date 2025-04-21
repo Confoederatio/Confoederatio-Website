@@ -47,6 +47,12 @@ window.main = {
   }
 };
 
+//Reset main.gallery.parallax
+setTimeout(function(){
+  main.gallery.parallax = new Parallax(document.getElementById("scene"));
+  console.log(main.gallery.parallax.scalarX, main.gallery.parallax.scalarY);
+}, 1000);
+
 //Initialise main
 var common_selectors = config.homepage.defines.common.selectors;
 

@@ -44,6 +44,9 @@
 .parallax-panel-scroll-container {
 	transition: all 0.5s ease;
 }
+.parallax-content-container {
+  transform: translateY(-25vh);
+}
 
 /* -- Parallax header elements -- */
 .parallax-header {
