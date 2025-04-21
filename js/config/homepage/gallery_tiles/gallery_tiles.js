@@ -1026,7 +1026,42 @@ config.homepage.gallery.tiles = {
     y: 36,
 
     colour: "sepia",
-    dependencies: ["digital_preserves_atlases", "digital_preserves_maps"]
+    dependencies: ["digital_preserves_atlases", "digital_preserves_maps"],
+    content: `
+    <div id = "digital-preserves-panel-title" class = "parallax-item-content-panel-title">Digital Preservés</div>
+    <hr class = "parallax-item-content-panel-divider">
+    <div id = "digital-preserves-body-text" class = "parallax-item-content-panel-body-text">
+      The Digital Preservés refer to the digital holdings of the Preservés des Confoederatio, typically backed up on multiple mirrors and fully available for download and viewing. You can access the Digital Preservés either through Confoederatio Docs, on Discord, or on Gdrive as backup mirrors.
+      <br><br>
+      <b>World Atlases:</b> Sorted by <u>[Period Covered] - Name, Year of Publication - Quality. Language.</u>
+      <ul>
+        <li>Westermann 1972 - [590000BC-1972AD] - Westermann Großer Atlas zur Weltgeschichte, 1972 - Q-HIGH. German. | Preservés | Discord | Gdrive</li>
+        </li>Stielers Handatlas 1891 - [1891AD] - Hand-Atlas über alle Theile der Erde und über das Weltgebäude, 1891 - Q-HIGH. German. | Preservés | Discord | Gdrive</li>
+        <li>Larousse 1900 - [1900AD] - Atlas Larousse Illustré, 1900 - Q-MEDIUM. French. | Preservés | Discord | Gdrive</li>
+        <li>Times Survey Atlas of the World - [1920AD] - The Times Survey Atlas of the World, 1920-1922 - Q-HIGH. English. | Preservés | Discord | Gdrive</li>
+        <li>Meyers Kleiner Handatlas 1921 - [1921AD] - Meyers Kleiner Handatlas, 1921 - Q-MEDIUM. German. | Preservés | Discord | Gdrive</li>
+        <li>De Grote Bosatlas 2001 - [1960AD-2003AD] - De Grote Bosatlas, 2001 - Q-MEDIUM. Dutch. | Preservés | Discord | Gdrive</li>
+        <li>DK Atlas 2016 - [2016AD] - Complete Atlas of the World, 2016 - Q-MEDIUM. English. | Preservés | Discord | Gdrive</li>
+      </ul><br>
+      <b>Regional Atlases:</b><br>
+      <ul>
+        <li>Tübinger Atlas des Vorderen Orients - Middle East, 1994 [3000BC-1994AD] - Q-HIGH. German/English | Preservés | Discord | Gdrive</li>
+        <li>Tübinger Atlas des Vorderen Orients - Middle East - Demographics, 1994 [1994AD] - Q-MEDIUM. German/English | Preservés | Discord | Gdrive</li>
+      </ul>
+      <br><br>
+      <b>Maps.</b> A collection of loose-leaf maps held by the Digital Preservés for use in applied sovereignty and geostatistical research.
+      <br><br>
+      <b>Maps by Continent:</b><br>
+      <ul>
+        <li>Index of African Maps | Preservés | Discord</li>
+        <li>Index of Asian Maps | Preservés | Discord</li>
+        <li>Index of European Maps | Preservés | Discord</li>
+        <li>Index of North American Maps | Preservés | Discord</li>
+        <li>Index of Oceanian Maps | Preservés | Discord</li>
+        <li>Index of South American Maps | Preservés | Discord</li>
+      </ul>
+    </div>
+    `
   },
   physical_holdings: {
     name: "Physical Holdings",

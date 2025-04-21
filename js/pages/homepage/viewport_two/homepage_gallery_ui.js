@@ -101,17 +101,25 @@
         //Declare local instance variables
         var scroll_enabled = true;
         var is_over_panel_container = false;
+        var is_over_content_panel = false;
+        
+        //Check if we're over a panel container or content panel
         for (var i = 0; i < gallery_obj.panel_id_patterns.length; i++) {
           is_over_panel_container = (e.target.id.includes(gallery_obj.panel_id_patterns[i])) ? true : is_over_panel_container;
         }
+        is_over_content_panel = e.target.closest('.parallax-item-content-panel') !== null;
 
-        //If over a panel container, handle content panel scrolling
-        if (is_over_panel_container) {
+        //If over a panel container or content panel, handle content panel scrolling
+        if (is_over_panel_container || is_over_content_panel) {
           var hovered_element;
           var all_hover_elements = document.querySelectorAll(":hover");
           for (var i = 0; i < all_hover_elements.length; i++) {
             try {
-              hovered_element = (all_hover_elements[i].getAttribute("class").includes("content-wrapper")) ? all_hover_elements[i] : hovered_element;
+              if (all_hover_elements[i].getAttribute("class") && 
+                  all_hover_elements[i].getAttribute("class").includes("content-wrapper")) {
+                hovered_element = all_hover_elements[i];
+                break;
+              }
             } catch {}
           }
 
@@ -124,8 +132,10 @@
               e.preventDefault();
               return;
             }
+            
+            //Allow content panel scrolling
+            return;
           }
-          return;
         }
 
         //Prevent default scroll behaviour from occurring so far as the scroll bounds have not been reached (conditional)
@@ -137,8 +147,11 @@
         //Rightwards scroll bound
         scroll_enabled = (gallery_obj.parallax_current_scroll_x > 0 && gallery_obj.parallax_scroll_x*-1 > gallery_obj.gallery_width) ? false : scroll_enabled;
 
-        //Make sure main banner is entirely off screen
-        scroll_enabled = isElementAtTop(gallery_obj.parallax_body) ? scroll_enabled : false;
+        //Only prevent scrolling back to viewport 1 if we're not at the beginning of the gallery
+        if (!isElementAtTop(gallery_obj.parallax_body) && e.deltaY < 0 && Math.abs(gallery_obj.parallax_scroll_x) >= 5) {
+          e.preventDefault();
+          return;
+        }
 
         //Scrolling is disabled if any content panels are maximised and shown
         if (document.querySelectorAll(".maximised.shown").length != 0 || document.querySelectorAll(".preview-image:hover").length != 0) {
