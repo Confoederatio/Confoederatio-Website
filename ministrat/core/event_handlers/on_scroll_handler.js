@@ -35,7 +35,7 @@
     var screen_x = e.clientX;
     var screen_y = e.clientY;
     const zoom_before = ministrat.main.map.zoom;
-    
+
     var map_x = (screen_x - ministrat.main.map.x)/zoom_before;
     var map_y = (screen_y - ministrat.main.map.y)/zoom_before;
 

@@ -102,7 +102,7 @@
   }
   #main-map div, #main-map object, #main-map svg {
     left: calc(-50% + (100% - 92vh/2));
-    transform-origin: calc(-92vh/2) 0;
+    transform-origin: calc(-50% + (100% - 92vh/2)) 0;
     will-change: transform;
   }
 }
