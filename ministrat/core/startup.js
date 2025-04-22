@@ -22,6 +22,7 @@
 
   //Load Ministrat
   loadMapElements();
+  loadMinistratScrollHandler();
 
   ministrat.main.map_elements.main_map_el.onclick = function (e) {
     ministratMapClickHandler(e);
