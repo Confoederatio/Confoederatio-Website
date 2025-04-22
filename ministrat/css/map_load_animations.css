@@ -102,6 +102,8 @@
   }
   #main-map div, #main-map object, #main-map svg {
     left: calc(-50% + (100% - 92vh/2));
+    transform-origin: calc(-92vh/2) 0;
+    will-change: transform;
   }
 }
   /* -- Ministrat Map - Base -- */
@@ -110,7 +112,7 @@
   
     height: 92vh;
     width: 92vh;
-    transition: all 2s ease;
+    transition: all 2s ease, transform 0.025s ease;
   }
     /* -- Ministrat Map - Base: Animation -- */
     #inner-german-border, #west-berlin-border {
@@ -152,7 +154,7 @@
     width: 92vh;
 
     animation: cities-fade-in 10s ease 5s forwards;
-    transition: all 2s ease;
+    transition: all 2s ease, transform 0.025s ease;
   }
   /* -- Ministrat Map - Overlay -- */
   .ministrat-container .ministrat-map-overlay {

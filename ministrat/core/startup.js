@@ -2,9 +2,13 @@
 {
   window.ministrat = {
     game_open: false,
+    ignore_scroll: false,
+    is_dragging: false,
 
     config: {
       map_elements: {
+        map_elements_selector: `#main-map > *`,
+
         berlin_border_el: `#west-berlin-border`,
         east_german_border_els: `.east-german-province`,
         german_border_els: `.german-border`,
@@ -16,12 +20,21 @@
     },
     gamestate: {},
     main: {
+      map: {
+        start_x: 0,
+        start_y: 0,
+        
+        x: 0,
+        y: 0,
+        zoom: 1,
+      },
       map_elements: {}
     }
   };
 
   //Load Ministrat
   loadMapElements();
+  loadMinistratPanHandler();
   loadMinistratScrollHandler();
 
   ministrat.main.map_elements.main_map_el.onclick = function (e) {
