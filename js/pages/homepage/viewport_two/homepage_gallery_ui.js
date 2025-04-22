@@ -171,9 +171,10 @@
   
         if (scroll_enabled && window.scrollY <= window.innerHeight*2) {
           //Make sure 100% of the screen is occupied
-          document.getElementById("project-parallax-anchor").scrollIntoView({
-            behavior: "instant"
-          });
+          if (parallax_scroll_progress > 5)
+            document.getElementById("project-parallax-anchor").scrollIntoView({
+              behavior: "instant"
+            });
   
           //Flip it around to maintain intuitive direction
           gallery_obj.parallax_current_scroll_x = gallery_obj.parallax_current_scroll_x*-1;
