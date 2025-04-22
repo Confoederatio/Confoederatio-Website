@@ -107,27 +107,3 @@
   margin-top: 2vh;
   margin-bottom: 2vh;
 }
-
-/* -- Ministrat passive button styling -- */
-.ministrat-map-btn {
-  position: relative;
-  top: 5vh;
-  left: 62.5vw;
-}
-.ministrat-map-btn .ministrat-cities-overlay {
-  opacity: 0;
-}
-.ministrat-map-btn:not(.expanded) .ministrat-cities-overlay {
-  pointer-events: none;
-  height: 20vw;
-  width: 20vw;
-
-  transform: translateY(-20vw);
-}
-.ministrat-map-btn.expanded .ministrat-cities-overlay {
-  height: 98vh;
-  width: 100%;
-
-  transform: translateY(2.5vh);
-  animation: cities-fade-in 10s ease 5s forwards;
-}

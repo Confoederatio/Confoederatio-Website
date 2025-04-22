@@ -1,3 +1,4 @@
+/* -- Define animations -- */
 @keyframes cities-fade-in {
   0% {
     opacity: 0;
@@ -71,9 +72,6 @@
 .ministrat-map-btn:not(.expanded):hover {
   cursor: pointer;
 }
-.ministrat-map-btn.expanded svg {
-  height: 92vh;
-}
 
 .ministrat-container {
   transition: all 2s ease;
@@ -98,8 +96,16 @@
   transition: all 2s ease;
   z-index: 2;
 }
+.ministrat-map-btn:not(.expanded) svg {
+  transform: rotate(12.5deg);
+}
 .ministrat-map-btn.expanded svg {
-  transform: translate(-50%, 0) rotate(-12.5deg);
+  position: fixed;
+  top: 1%;
+  left: 1%;
+
+  height: 92vh;
+  width: 92vh;
   transition: all 2s ease;
 }
 .ministrat-container.expanded .ministrat-cities-overlay {
@@ -107,8 +113,8 @@
   top: 1%;
   left: 1%;
 
-  height: 98%;
-  width: 98%;
+  height: 92vh;
+  width: 92vh;
 }
 
 /* -- Map animation -- */
@@ -138,4 +144,17 @@
 }
 .west-german-province.drawn {
   animation: draw-blink 5s ease forwards;
+}
+
+/* -- Ministrat passive button styling -- */
+.ministrat-map-btn {
+  position: relative;
+  top: 5vh;
+  left: 62.5vw;
+}
+.ministrat-map-btn .ministrat-cities-overlay {
+  opacity: 0;
+}
+.ministrat-map-btn.expanded .ministrat-cities-overlay {
+  animation: cities-fade-in 10s ease 5s forwards;
 }
