@@ -152,6 +152,7 @@
     width: 92vh;
 
     animation: cities-fade-in 10s ease 5s forwards;
+    transition: all 2s ease;
   }
   /* -- Ministrat Map - Overlay -- */
   .ministrat-container .ministrat-map-overlay {
