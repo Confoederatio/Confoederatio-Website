@@ -15,15 +15,15 @@
 
       //24vh offset
       banner_obj.about_me_overlay_subtitle.style.opacity = (1/80)*(scroll_vh - 80);
-      banner_obj.about_me_overlay_subtitle.style.transform = `translateY(${(48/200)*scroll_vh}vh)`;
+      banner_obj.about_me_overlay_subtitle.style.transform = `translateY(${(44.5/200)*scroll_vh}vh)`;
       banner_obj.biography_overlay_subtitle.style.opacity = (1/80)*(scroll_vh - 80);
-      banner_obj.biography_overlay_subtitle.style.transform = `translateY(${(48/200)*scroll_vh}vh)`;
+      banner_obj.biography_overlay_subtitle.style.transform = `translateY(${(44.5/200)*scroll_vh}vh)`;
 
       //20vh offset
       banner_obj.about_me_body_text.style.opacity = (1/80)*(scroll_vh - 80);
-      banner_obj.about_me_body_text.style.transform = `translateY(${(64/200)*scroll_vh}vh)`;
+      banner_obj.about_me_body_text.style.transform = `translateY(${(56/200)*scroll_vh}vh)`;
       banner_obj.biography_body_text.style.opacity = (1/80)*(scroll_vh - 80);
-      banner_obj.biography_body_text.style.transform = `translateY(${(64/200)*scroll_vh}vh)`;
+      banner_obj.biography_body_text.style.transform = `translateY(${(56/200)*scroll_vh}vh)`;
     } catch (e) {
       console.log(e);
     }
