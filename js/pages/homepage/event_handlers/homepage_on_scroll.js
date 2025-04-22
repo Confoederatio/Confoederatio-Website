@@ -15,6 +15,7 @@ window.onscroll = function (e) {
 
   //Parallax scrolling for other labels
   homepageAboutOnScroll();
+  if (ministratMapScrollHandler(e)) return;
 
   //Initialise parallax_scroll_progress if not defined
   if (!window.parallax_scroll_progress) window.parallax_scroll_progress = 0;

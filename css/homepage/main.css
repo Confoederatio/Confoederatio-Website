@@ -18,6 +18,11 @@ body {
   top: 100vh;
   left: 0px;
 }
+.ministrat-anchor {
+  position: absolute;
+  top: 200vh;
+  left: 0px;
+}
 
 :root {
   --parallax-offset-x: 0vh;

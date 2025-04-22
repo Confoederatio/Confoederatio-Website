@@ -1,0 +1,7 @@
+/* -- Pointer events behaviour -- */
+.ministrat-map-overlay {
+  pointer-events: none;
+}
+.ministrat-map-overlay * {
+  pointer-events: auto;
+}

@@ -1,41 +1,56 @@
-window.ministrat_open = false;
-
 //Initialise functions
 {
   //Map expansion/minimisation functionality
   function expandMap () {
-    for (var i = 0; i < german_borders.length; i++)
-      german_borders[i].setAttribute("class", german_borders[i].getAttribute("class") + " drawn");
+    //Declare local instanc evariables
+    var map_elements_obj = ministrat.main.map_elements;
 
-    berlin_border.setAttribute("class", "drawn");
-    main_map.setAttribute("class", main_map.getAttribute("class") + " expanded");
-    ministrat_container.setAttribute("class", ministrat_container.getAttribute("class") + " expanded");
-    inner_german_border.setAttribute("class", "drawn");
+    for (var i = 0; i < map_elements_obj.german_border_els.length; i++)
+      map_elements_obj.german_border_els[i].setAttribute("class", map_elements_obj.german_border_els[i].getAttribute("class") + " drawn");
+
+    map_elements_obj.berlin_border_el.setAttribute("class", "drawn");
+    map_elements_obj.main_map_el.setAttribute("class", map_elements_obj.main_map_el.getAttribute("class") + " expanded");
+    map_elements_obj.ministrat_container_el.setAttribute("class", map_elements_obj.ministrat_container_el.getAttribute("class") + " expanded");
+    map_elements_obj.inner_german_border_el.setAttribute("class", "drawn");
 
     //Draw internal province borders after two seconds
     setTimeout(function(){
-      for (var i = 0; i < west_german_borders.length; i++)
-        west_german_borders[i].setAttribute("class", west_german_borders[i].getAttribute("class") + " drawn");
+      for (var i = 0; i < map_elements_obj.west_german_border_els.length; i++)
+        map_elements_obj.west_german_border_els[i].setAttribute("class", map_elements_obj.west_german_border_els[i].getAttribute("class") + " drawn");
     }, 2000);
     setTimeout(function(){
-      for (var i = 0; i < east_german_borders.length; i++)
-        east_german_borders[i].setAttribute("class", east_german_borders[i].getAttribute("class") + " drawn");
+      for (var i = 0; i < map_elements_obj.east_german_border_els.length; i++)
+        map_elements_obj.east_german_border_els[i].setAttribute("class", map_elements_obj.east_german_border_els[i].getAttribute("class") + " drawn");
     }, 4000);
 
-    ministrat_open = true;
+    ministrat.game_open = true;
+  }
+
+  function loadMapElements () {
+    //Declare local reference variables
+    var map_elements_obj = ministrat.main.map_elements;
+
+    map_elements_obj.berlin_border_el = document.querySelector(ministrat.config.map_elements.berlin_border_el);
+    map_elements_obj.east_german_border_els = document.querySelectorAll(ministrat.config.map_elements.east_german_border_els);
+    map_elements_obj.german_border_els = document.querySelectorAll(ministrat.config.map_elements.german_border_els);
+    map_elements_obj.inner_german_border_el = document.querySelector(ministrat.config.map_elements.inner_german_border_el);
+    map_elements_obj.main_map_el = document.querySelector(ministrat.config.map_elements.main_map_el);
+    map_elements_obj.ministrat_container_el = document.querySelector(ministrat.config.map_elements.ministrat_container_el);
+    map_elements_obj.west_german_border_els = document.querySelectorAll(ministrat.config.map_elements.west_german_border_els);
   }
 
   function minimiseMap () {
-    for (var i = 0; i < german_borders.length; i++)
-      german_borders[i].setAttribute("class", german_borders[i].getAttribute("class").replace(" drawn", ""));
+    //Declare local reference variables
+    var map_elements_obj = ministrat.main.map_elements;
 
-    berlin_border.setAttribute("class", "");
-    main_map.setAttribute("class", main_map.getAttribute("class").replace(" expanded", ""));
-    ministrat_container.setAttribute("class", ministrat_container.getAttribute("class").replace(" expanded", ""));
+    //Iterate over all german border elements
+    for (var i = 0; i < map_elements_obj.german_border_els.length; i++)
+      map_elements_obj.german_border_els[i].setAttribute("class", map_elements_obj.german_border_els[i].getAttribute("class").replace(" drawn", ""));
+
+    map_elements_obj.berlin_border_el.setAttribute("class", "");
+    map_elements_obj.main_map_el.setAttribute("class", map_elements_obj.main_map_el.getAttribute("class").replace(" expanded", ""));
+    map_elements_obj.ministrat_container_el.setAttribute("class", map_elements_obj.ministrat_container_el.getAttribute("class").replace(" expanded", ""));
+
+    ministrat.game_open = false;
   }
-
-  main_map.onclick = function () {
-    if (!main_map.getAttribute("class").includes("expanded"))
-      expandMap();
-  };
 }
