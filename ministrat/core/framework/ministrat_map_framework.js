@@ -35,10 +35,7 @@ window.ministrat_open = false;
   }
 
   main_map.onclick = function () {
-    if (!main_map.getAttribute("class").includes("expanded")) {
+    if (!main_map.getAttribute("class").includes("expanded"))
       expandMap();
-    } else {
-      minimiseMap();
-    }
   };
 }

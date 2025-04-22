@@ -91,13 +91,15 @@
 
   background-color: rgba(0, 0, 0, 0.95);
   z-index: 1;
+
+  #main-map div, #main-map object, #main-map svg {
+    left: calc(-50% + (100% - 92vh/2));
+  }
 }
 .ministrat-map-btn.expanded {
   position: fixed;
-  left: 50%;
-
-  height: 90vh;
-  width: 80vh;
+  height: 100vh;
+  width: 100vw;
 
   transition: all 2s ease;
   z-index: 2;
@@ -106,8 +108,6 @@
   /* -- Ministrat Map - Base -- */
   .ministrat-map-btn.expanded svg {
     position: fixed;
-    top: 1%;
-    left: 1%;
   
     height: 92vh;
     width: 92vh;
@@ -149,10 +149,19 @@
   .ministrat-container.expanded .ministrat-cities-overlay {
     display: block;
     height: 92vh;
-    left: 1%;
     position: fixed;
-    top: 1%;
     width: 92vh;
 
     animation: cities-fade-in 10s ease 5s forwards;
+  }
+  /* -- Ministrat Map - Overlay -- */
+  .ministrat-container .ministrat-map-overlay {
+    display: none;
+    opacity: 0;
+  }
+  .ministrat-container.expanded .ministrat-map-overlay {
+    display: block;
+    height: 92vh;
+    position: fixed;
+    width: 92vh;
   }
