@@ -10,6 +10,8 @@ class Ministrat_City {
       options.controller : "neutral";
     this.owner = (options.owner) ? 
       options.owner : "neutral";
+    this.is_capital = (options.is_capital) ? 
+      options.is_capital : false;
     this.label_selector = options.label_selector;
     this.marker_selector = options.marker_selector;
     this.size = returnSafeNumber(options.size, 1);
@@ -261,11 +263,123 @@ class Ministrat_City {
     });
 
     //Minor West German Cities
+    //Niedersachsen
+    cities_obj.celle = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#celle",
+      marker_selector: "#celle-marker"
+    });
+    cities_obj.cuxhaven = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#cuxhaven",
+      marker_selector: "#cuxhaven-marker"
+    });
+    cities_obj.delmenhorst = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#delmenhorst",
+      marker_selector: "#delmenhorst-marker"
+    });
+    cities_obj.emden = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#emden",
+      marker_selector: "#emden-marker"
+    });
     cities_obj.goettingen = new Ministrat_City({
       controller: "brd",
       owner: "brd",
       label_selector: "#goettingen",
-      marker_selector: "#goettingen-marker",
+      marker_selector: "#goettingen-marker"
+    });
+    cities_obj.hameln = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#hammeln",
+      marker_selector: "#hameln-marker"
+    });
+    cities_obj.hildesheim = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#hildesheim",
+      marker_selector: "#hildesheim-marker"
+    });
+    cities_obj.meppen = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#meppen",
+      marker_selector: "#meppen-marker"
+    });
+    cities_obj.lueneburg = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#lueneburg",
+      marker_selector: "#lueneburg-marker"
+    });
+    cities_obj.nienburg = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#nienburg",
+      marker_selector: "#nienburg-marker"
+    });
+    cities_obj.osnabrueck = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#osnabrueck",
+      marker_selector: "#osnabrueck-marker"
+    });
+    cities_obj.salzgitter = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#salzgitter",
+      marker_selector: "#salzgitter-marker"
+    });
+    
+    cities_obj.wilhelmshaven = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#wilhelmshaven",
+      marker_selector: "#wilhelmshaven-marker"
+    });
+    cities_obj.wolfsburg = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#wolfsburg",
+      marker_selector: "#wolfsburg-marker"
+    });
+
+    //Schleswig-Holstein
+    cities_obj.flensburg = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#flensburg",
+      marker_selector: "#flensburg-marker"
+    });
+    cities_obj.kiel = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#kiel",
+      marker_selector: "#kiel-marker"
+    });
+    cities_obj.neumuenster = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#neumuenster",
+      marker_selector: "#neumuenster-marker"
+    });
+    cities_obj.norderstadt = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#norderstadt",
+      marker_selector: "#norderstadt-marker"
+    });
+    cities_obj.schleswig = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#schleswig",
+      marker_selector: "#schleswig-marker"
     });
   }
 }
