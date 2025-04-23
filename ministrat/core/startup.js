@@ -16,6 +16,12 @@
         main_map_el: `#main-map`,
         ministrat_container_el: `#main-map-blackout-container`,
         west_german_border_els: `.west-german-province`,
+      },
+      topbar_elements: {
+        clock_canvas_selector: `#ministrat-clock`,
+      },
+      ui: {
+        ministrat_primary_ui_colour: `rgba(40, 255, 226, 0.8)`
       }
     },
     gamestate: {},
@@ -36,6 +42,7 @@
   loadMapElements();
   loadMinistratPanHandler();
   loadMinistratScrollHandler();
+  loadMinistratTopbar();
 
   ministrat.main.map_elements.main_map_el.onclick = function (e) {
     ministratMapClickHandler(e);

@@ -6,6 +6,8 @@
 
     //Computer support
     map_el.addEventListener("mousedown", function (e) {
+      if (!ministrat.game_open) return;
+
       ministrat.is_dragging = true;
       ministrat.main.map.start_x = e.clientX;
       ministrat.main.map.start_y = e.clientY;
@@ -15,6 +17,7 @@
     });
 
     map_el.addEventListener("mousemove", function (e) {
+      if (!ministrat.game_open) return;
       if (!ministrat.is_dragging) return;
 
       var delta_x = e.clientX - ministrat.main.map.start_x;
@@ -30,12 +33,14 @@
     
     ["mouseup", "mouseleave"].forEach((e) => {
       map_el.addEventListener(e, () => {
+        if (!ministrat.game_open) return;
         ministrat.is_dragging = false;
       })
     });
 
     //Mobile support
     map_el.addEventListener("touchstart", function (e) {
+      if (!ministrat.game_open) return;
       if (e.touches.length != 1) return;
 
       ministrat.is_dragging = true;
@@ -44,6 +49,7 @@
     });
 
     map_el.addEventListener("touchmove", function (e) {
+      if (!ministrat.game_open) return;
       if (!ministrat.is_dragging || e.touches.length != 1) return;
       
       var touch = e.touches[0];
@@ -61,6 +67,7 @@
     }, { passive: false });
 
     map_el.addEventListener("touchend", function (e) {
+      if (!ministrat.game_open) return;
       ministrat.is_dragging = false;
     });
   }

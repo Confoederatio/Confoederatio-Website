@@ -78,6 +78,7 @@
 
     <!--Ministrat-->
     <link rel = "stylesheet" href = "ministrat/anim/map_anim.css">
+    <link rel = "stylesheet" href = "ministrat/css/map_ui.css">
   </head>
   <body>
     <!--Declare main animated homepage banner-->
@@ -751,8 +752,22 @@
             </svg>
             <object class = "ministrat-cities-overlay" type = "image/svg+xml" data = "ministrat/map/ministrat_cities.svg">
             </object>
-            <div class = "ministrat-map-overlay">
-
+            <div class = "ministrat-map-overlay"></div>
+          </div>
+          <div id = "ministrat-topbar-container">
+            <div id = "ministrat-topbar-time-controls">
+              <div id = "date-container">
+                9. November 1983, 00:00
+              </div>
+              <div id = "time-controls-container">
+                <img class = "time-icon active" src = "./ministrat/gfx/ui_icons/pause_btn.png" draggable = "false">
+                <img class = "time-icon" src = "./ministrat/gfx/ui_icons/forwards_one_btn.png" draggable = "false">
+                <img class = "time-icon" src = "./ministrat/gfx/ui_icons/forwards_two_btn.png" draggable = "false">
+                <img class = "time-icon" src = "./ministrat/gfx/ui_icons/forwards_three_btn.png" draggable = "false">
+              </div>
+            </div>
+            <div id = "ministrat-clock-container">
+              <canvas id = "ministrat-clock" height = "64" width = "64"></canvas>
             </div>
           </div>
         </div>
@@ -798,6 +813,7 @@
     <script type = "text/javascript" src = "ministrat/core/event_handlers/on_scroll_handler.js"></script>
     <script type = "text/javascript" src = "ministrat/core/framework/ministrat_elements_framework.js"></script>
     <script type = "text/javascript" src = "ministrat/core/framework/ministrat_map_framework.js"></script>
+    <script type = "text/javascript" src = "ministrat/core/ui/ministrat_topbar.js"></script>
 
     <script type = "text/javascript" src = "ministrat/core/startup.js"></script>
   </body>

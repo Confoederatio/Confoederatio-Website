@@ -7,6 +7,12 @@
   font-weight: 300 900;
   font-stretch: condensed normal;
 }
+@font-face {
+  font-family: "Engschrift";
+  src: url("../../gfx/fonts/engschrift.ttf") format("truetype");
+  font-weight: 400;
+  font-stretch: condensed normal;
+}
 
 /* -- Barlow -- */
 @font-face {
