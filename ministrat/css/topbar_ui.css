@@ -1,0 +1,55 @@
+/* -- Topbar layout -- */
+.ministrat-container #ministrat-topbar-container {
+  position: absolute;
+
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 3;
+
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 0.5rem;
+  pointer-events: none;
+
+  /* -- Clock CSS -- */
+  #ministrat-clock {
+    float: right;
+  }
+
+  /* -- Time control icons -- */
+  #time-controls-container {
+    float: right;
+  }
+  .time-icon {
+    height: 1.75rem;
+    width: 1.75rem;
+
+    transition: all 0.5s ease;
+  }
+  .time-icon:not(.active) {
+    filter: opacity(0.2);
+  }
+  .time-icon:not(.active):hover {
+    filter: opacity(0.7);
+  }
+  .time-icon:hover {
+    cursor: pointer;
+  }
+
+  /* -- Time display styling -- */
+  #date-container {
+    font-family: "Engschrift";
+    font-size: 1.5rem;
+    color: rgba(40, 255, 226, 1);
+    text-transform: uppercase;
+
+    margin-bottom: 0.5rem;
+  }
+}
+.ministrat-container #ministrat-topbar-container
+  #time-controls-container {
+    pointer-events: auto;
+  }

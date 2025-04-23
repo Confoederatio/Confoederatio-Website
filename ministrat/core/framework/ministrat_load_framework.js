@@ -1,0 +1,30 @@
+//Initialise functions
+{
+  function hideMinistrat () {
+    //Declare local instance variables
+    var non_ministrat_els = document.querySelectorAll(ministrat.config.non_ministrat_selector);
+
+    for (var i = 0; i < non_ministrat_els.length; i++)
+      non_ministrat_els[i].classList.remove("display-none");
+
+    //Minimise map
+    minimiseMap();
+
+    //Remove class from about me section
+    document.querySelector(".about-me-section-container").classList.remove("ministrat-open");
+  }
+
+  function loadMinistrat () {
+    //Declare local instance variables
+    var non_ministrat_els = document.querySelectorAll(ministrat.config.non_ministrat_selector);
+
+    for (var i = 0; i < non_ministrat_els.length; i++)
+      non_ministrat_els[i].classList.add("display-none");
+
+    //Expand map
+    expandMap();
+
+    //Add class to about me section
+    document.querySelector(".about-me-section-container").classList.add("ministrat-open");
+  }
+}

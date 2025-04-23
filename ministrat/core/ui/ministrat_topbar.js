@@ -2,7 +2,7 @@
 {
   function drawClock (arg0_hour) {
     //Convert from parameters
-    var hour = parseInt(arg0_hour);
+    var hour = parseFloat(arg0_hour);
 
     //Declare local instance variables
     var canvas = document.querySelector(ministrat.config.topbar_elements.clock_canvas_selector);
@@ -50,7 +50,8 @@
 
   function drawMinistratDate () {
     //Declare local instance variables
-    var hour_string = ministrat.gamestate.date.hour.toString().padStart(2, "0");
+    var hour_string = Math.floor(ministrat.gamestate.date.hour)
+      .toString().padStart(2, "0");
     var ministrat_date_el = document.querySelector(ministrat.config.topbar_elements.date_canvas_selector);
     var month_string = months[ministrat.gamestate.date.month - 1];
 
@@ -66,44 +67,86 @@
     drawClock(ministrat.gamestate.date.hour);
 
     ministrat.date_handler_loop = setInterval(function () {
-      ministrat.gamestate.time_since_tick++;
-      
       var current_days_in_month = days_in_months[ministrat.gamestate.date.month - 1];
-      var has_tick = (ministrat.gamestate.time_since_tick % ministrat.main.game_speed == 0);
 
-      //Handle time logic
-      if (has_tick) {
-        //Leap year handling
-        if (ministrat.gamestate.date.month == 2)
-          if (isLeapYear(ministrat.gamestate.date.year))
-            current_days_in_month = 29;
+      //Leap year handling
+      if (ministrat.gamestate.date.month == 2)
+        if (isLeapYear(ministrat.gamestate.date.year))
+          current_days_in_month = 29;
 
-        //Increment hour
-        ministrat.gamestate.date.hour++;
+      //Increment hour
+      ministrat.gamestate.date.hour += 0.1*0.16*ministrat.main.game_speed;
 
-        if (ministrat.gamestate.date.hour >= 24) {
-          ministrat.gamestate.date.hour = 0;
-          ministrat.gamestate.date.day++;
-        }
-        if (ministrat.gamestate.date.day > current_days_in_month) {
-          ministrat.gamestate.date.day = 1;
-          ministrat.gamestate.date.month++;
-        }
-        if (ministrat.gamestate.date.month > 12) {
-          ministrat.gamestate.date.month = 1;
-          ministrat.gamestate.date.year++;
-        }
-
-        //Draw clock
-        drawClock(ministrat.gamestate.date.hour);
-        drawMinistratDate();
-
-        ministrat.gamestate.time_since_tick = 0;
+      if (ministrat.gamestate.date.hour >= 24) {
+        ministrat.gamestate.date.hour = 0;
+        ministrat.gamestate.date.day++;
       }
-    }, 1000/3);
+      if (ministrat.gamestate.date.day > current_days_in_month) {
+        ministrat.gamestate.date.day = 1;
+        ministrat.gamestate.date.month++;
+      }
+      if (ministrat.gamestate.date.month > 12) {
+        ministrat.gamestate.date.month = 1;
+        ministrat.gamestate.date.year++;
+      }
+
+      //Draw clock
+      drawClock(ministrat.gamestate.date.hour);
+      drawMinistratDate();
+    }, 16); //60FPS
   }
 
   function loadMinistratTopbar () {
+    //Declare local instance variables
+    var topbar_container_el = document.querySelector(ministrat.config.topbar_elements.topbar_container_selector);
+
     initialiseMinistratDate();
+
+    //Time control button listeners
+    var pause_button_el = topbar_container_el.querySelector(ministrat.config.topbar_elements.pause_button_selector);
+    var speed_one_button_el = topbar_container_el.querySelector(ministrat.config.topbar_elements.speed_one_button_selector);
+    var speed_two_button_el = topbar_container_el.querySelector(ministrat.config.topbar_elements.speed_two_button_selector);
+    var speed_three_button_el = topbar_container_el.querySelector(ministrat.config.topbar_elements.speed_three_button_selector);
+
+    pause_button_el.onclick = function (e) {
+      resetAllTimeControlButtons();
+      pause_button_el.classList.add("active");
+
+      ministrat.main.game_speed = 0;
+    };
+
+    speed_one_button_el.onclick = function (e) {
+      resetAllTimeControlButtons();
+      speed_one_button_el.classList.add("active");
+
+      ministrat.main.game_speed = 1;
+    };
+
+    speed_two_button_el.onclick = function (e) {
+      resetAllTimeControlButtons();
+      speed_two_button_el.classList.add("active");
+
+      ministrat.main.game_speed = 3;
+    };
+
+    speed_three_button_el.onclick = function (e) {
+      resetAllTimeControlButtons();
+      speed_three_button_el.classList.add("active");
+
+      ministrat.main.game_speed = 5;
+    };
+  }
+
+  function resetAllTimeControlButtons () {
+    //Declare local instance variables
+    var topbar_container_el = document.querySelector(ministrat.config.topbar_elements.topbar_container_selector);
+    
+    var time_controls_el = topbar_container_el.querySelector(ministrat.config.topbar_elements.time_controls_selector);
+
+    //Iterate over all_time_control_buttons
+    var all_time_control_buttons = time_controls_el.querySelectorAll(".time-icon");
+
+    for (var i = 0; i < all_time_control_buttons.length; i++)
+      all_time_control_buttons[i].classList.remove("active");
   }
 }

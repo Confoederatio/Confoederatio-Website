@@ -3,6 +3,8 @@
   //Event handler function
   function homepageAboutOnScroll () { //[WIP] - Move this to a general parallax framework
     try {
+      if (ministrat.game_open) return; //Disable parallax when Ministrat is open
+      
       //Set main.vh
       main.vh = window.innerHeight/100;
 

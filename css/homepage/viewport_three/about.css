@@ -13,6 +13,9 @@
 
   z-index: 1;
 }
+.about-me-section-container.ministrat-open {
+  top: 0px;
+}
 .about-me-content-container {
   position: absolute;
   top: 0px;

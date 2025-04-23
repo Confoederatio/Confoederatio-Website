@@ -86,6 +86,8 @@ setTimeout(function(){
   //Gallery
   initGalleryTiles();
   initGalleryUI();
+  
+  homepageAboutOnScroll();
 }, 1);
 
 setTimeout(function(){

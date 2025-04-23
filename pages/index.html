@@ -79,6 +79,7 @@
     <!--Ministrat-->
     <link rel = "stylesheet" href = "ministrat/anim/map_anim.css">
     <link rel = "stylesheet" href = "ministrat/css/map_ui.css">
+    <link rel = "stylesheet" href = "ministrat/css/topbar_ui.css">
   </head>
   <body>
     <!--Declare main animated homepage banner-->
@@ -760,10 +761,10 @@
                 9. November 1983, 00:00
               </div>
               <div id = "time-controls-container">
-                <img class = "time-icon active" src = "./ministrat/gfx/ui_icons/pause_btn.png" draggable = "false">
-                <img class = "time-icon" src = "./ministrat/gfx/ui_icons/forwards_one_btn.png" draggable = "false">
-                <img class = "time-icon" src = "./ministrat/gfx/ui_icons/forwards_two_btn.png" draggable = "false">
-                <img class = "time-icon" src = "./ministrat/gfx/ui_icons/forwards_three_btn.png" draggable = "false">
+                <img id = "pause-button" class = "time-icon active" src = "./ministrat/gfx/ui_icons/pause_btn.png" draggable = "false">
+                <img id = "speed-one-button" class = "time-icon" src = "./ministrat/gfx/ui_icons/forwards_one_btn.png" draggable = "false">
+                <img id = "speed-two-button" class = "time-icon" src = "./ministrat/gfx/ui_icons/forwards_two_btn.png" draggable = "false">
+                <img id = "speed-three-button" class = "time-icon" src = "./ministrat/gfx/ui_icons/forwards_three_btn.png" draggable = "false">
               </div>
             </div>
             <div id = "ministrat-clock-container">
@@ -811,7 +812,9 @@
     <script type = "text/javascript" src = "ministrat/core/event_handlers/on_click_handler.js"></script>
     <script type = "text/javascript" src = "ministrat/core/event_handlers/on_drag_handler.js"></script>
     <script type = "text/javascript" src = "ministrat/core/event_handlers/on_scroll_handler.js"></script>
+    <script type = "text/javascript" src = "ministrat/core/framework/ministrat_city_framework.js"></script>
     <script type = "text/javascript" src = "ministrat/core/framework/ministrat_elements_framework.js"></script>
+    <script type = "text/javascript" src = "ministrat/core/framework/ministrat_load_framework.js"></script>
     <script type = "text/javascript" src = "ministrat/core/framework/ministrat_map_framework.js"></script>
     <script type = "text/javascript" src = "ministrat/core/ui/ministrat_topbar.js"></script>
 

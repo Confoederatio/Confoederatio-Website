@@ -6,6 +6,7 @@
     is_dragging: false,
 
     config: {
+      non_ministrat_selector: `#homepage-banner, #gallery-section`,
       map_elements: {
         map_elements_selector: `#main-map > *`,
 
@@ -20,6 +21,14 @@
       topbar_elements: {
         clock_canvas_selector: `#ministrat-clock`,
         date_canvas_selector: `.ministrat-container #date-container`,
+        topbar_container_selector: `#ministrat-topbar-container`,
+
+        //Time controls
+        pause_button_selector: `#pause-button`,
+        speed_one_button_selector: `#speed-one-button`,
+        speed_two_button_selector: `#speed-two-button`,
+        speed_three_button_selector: `#speed-three-button`,
+        time_controls_selector: `#time-controls-container`
       },
       ui: {
         ministrat_primary_ui_colour: `rgba(40, 255, 226, 0.8)`
@@ -31,11 +40,10 @@
         month: 11,
         year: 1983,
         hour: 0 //24-hour time
-      },
-      time_since_tick: 0
+      }
     },
     main: {
-      game_speed: 0, //1 = 3x, 2 = 2x, 3 = 1x, 0 = Paused
+      game_speed: 0, //Game speeds are 0, 1, 3, 5
       map: {
         start_x: 0,
         start_y: 0,

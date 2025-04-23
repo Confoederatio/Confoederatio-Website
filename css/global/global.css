@@ -10,6 +10,13 @@ html, head, body {
   visibility: hidden;
 }
 
+/* -- Global classes -- */
+.display-none {
+  display: none !important;
+  height: 0px !important;
+  width: 0px !important;
+}
+
 /* -- Images -- */
 img {
   user-select: none;
