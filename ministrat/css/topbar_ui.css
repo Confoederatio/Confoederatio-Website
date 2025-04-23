@@ -32,6 +32,7 @@
     height: 1.75rem;
     width: 1.75rem;
 
+    padding-left: 0.1rem;
     transition: all 0.5s ease;
   }
   .time-icon:not(.active) {

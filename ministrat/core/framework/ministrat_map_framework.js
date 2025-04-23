@@ -29,8 +29,14 @@
   function loadMapElements () {
     //Declare local reference variables
     var map_elements_obj = ministrat.main.map_elements;
+    var map_cities_svg = document.querySelector(ministrat.config.map_elements.map_cities_selector);
 
     map_elements_obj.all_map_elements = document.querySelectorAll(ministrat.config.map_elements.map_elements_selector);
+    map_cities_svg.addEventListener("load", function () {
+      map_elements_obj.cities_dom = map_cities_svg.contentDocument;
+      console.log(map_cities_svg);
+      console.log(map_elements_obj.cities_dom);
+    });
 
     map_elements_obj.berlin_border_el = document.querySelector(ministrat.config.map_elements.berlin_border_el);
     map_elements_obj.east_german_border_els = document.querySelectorAll(ministrat.config.map_elements.east_german_border_els);
@@ -38,6 +44,7 @@
     map_elements_obj.inner_german_border_el = document.querySelector(ministrat.config.map_elements.inner_german_border_el);
     map_elements_obj.main_map_el = document.querySelector(ministrat.config.map_elements.main_map_el);
     map_elements_obj.ministrat_container_el = document.querySelector(ministrat.config.map_elements.ministrat_container_el);
+    map_elements_obj.ministrat_svg_map_el = document.querySelector(ministrat.config.map_elements.ministrat_svg_map_el);
     map_elements_obj.west_german_border_els = document.querySelectorAll(ministrat.config.map_elements.west_german_border_els);
   }
 

@@ -8,6 +8,7 @@
     config: {
       non_ministrat_selector: `#homepage-banner, #gallery-section`,
       map_elements: {
+        map_cities_selector: `#main-map .ministrat-cities-overlay`,
         map_elements_selector: `#main-map > *`,
 
         berlin_border_el: `#west-berlin-border`,
@@ -15,6 +16,7 @@
         german_border_els: `.german-border`,
         inner_german_border_el: `#inner-german-border`,
         main_map_el: `#main-map`,
+        ministrat_svg_map_el: `#ministrat-svg-map`,
         ministrat_container_el: `#main-map-blackout-container`,
         west_german_border_els: `.west-german-province`,
       },
@@ -66,7 +68,8 @@
   loadMinistratScrollHandler();
   loadMinistratTopbar();
 
-  ministrat.main.map_elements.main_map_el.onclick = function (e) {
+  ministrat.main.map_elements.ministrat_svg_map_el.onclick = function (e) {
+    console.log(e);
     ministratMapClickHandler(e);
   };
 }

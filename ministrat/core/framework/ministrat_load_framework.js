@@ -14,7 +14,7 @@
     document.querySelector(".about-me-section-container").classList.remove("ministrat-open");
 
     //Pause game
-    ministrat.main.game_speed = 0;
+    setMinistratGameSpeed(0);
   }
 
   function loadMinistrat () {
@@ -32,7 +32,7 @@
 
     //Start game after time animation
     setTimeout(function () {
-      ministrat.main.game_speed = 1;
+      setMinistratGameSpeed(1);
     }, 10000);
   }
 }

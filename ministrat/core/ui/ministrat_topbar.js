@@ -118,31 +118,19 @@
     var speed_three_button_el = topbar_container_el.querySelector(ministrat.config.topbar_elements.speed_three_button_selector);
 
     pause_button_el.onclick = function (e) {
-      resetAllTimeControlButtons();
-      pause_button_el.classList.add("active");
-
-      ministrat.main.game_speed = 0;
+      setMinistratGameSpeed(0);
     };
 
     speed_one_button_el.onclick = function (e) {
-      resetAllTimeControlButtons();
-      speed_one_button_el.classList.add("active");
-
-      ministrat.main.game_speed = 1;
+      setMinistratGameSpeed(1);
     };
 
     speed_two_button_el.onclick = function (e) {
-      resetAllTimeControlButtons();
-      speed_two_button_el.classList.add("active");
-
-      ministrat.main.game_speed = 3;
+      setMinistratGameSpeed(2);
     };
 
     speed_three_button_el.onclick = function (e) {
-      resetAllTimeControlButtons();
-      speed_three_button_el.classList.add("active");
-
-      ministrat.main.game_speed = 5;
+      setMinistratGameSpeed(3);
     };
   }
 
@@ -157,5 +145,34 @@
 
     for (var i = 0; i < all_time_control_buttons.length; i++)
       all_time_control_buttons[i].classList.remove("active");
+  }
+
+  function setMinistratGameSpeed (arg0_speed) {
+    //Convert from parameters
+    var speed = parseInt(arg0_speed);
+
+    //Declare local instance variables
+    var topbar_container_el = document.querySelector(ministrat.config.topbar_elements.topbar_container_selector);
+    
+    var pause_button_el = topbar_container_el.querySelector(ministrat.config.topbar_elements.pause_button_selector);
+    var speed_one_button_el = topbar_container_el.querySelector(ministrat.config.topbar_elements.speed_one_button_selector);
+    var speed_two_button_el = topbar_container_el.querySelector(ministrat.config.topbar_elements.speed_two_button_selector);
+    var speed_three_button_el = topbar_container_el.querySelector(ministrat.config.topbar_elements.speed_three_button_selector);
+
+    //Set game speed
+    resetAllTimeControlButtons();
+    if (speed == 0) {
+      pause_button_el.classList.add("active");
+      ministrat.main.game_speed = 0;
+    } else if (speed == 1) {
+      speed_one_button_el.classList.add("active");
+      ministrat.main.game_speed = 1;
+    } else if (speed == 2) {
+      speed_two_button_el.classList.add("active");
+      ministrat.main.game_speed = 3;
+    } else if (speed == 3) {
+      speed_three_button_el.classList.add("active");
+      ministrat.main.game_speed = 5;
+    }
   }
 }

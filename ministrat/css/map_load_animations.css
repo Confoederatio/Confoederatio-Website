@@ -72,9 +72,9 @@
   transform: rotate(12.5deg);
   width: 20vw;
 
-  pointer-events: none;
+  pointer-events: auto;
 }
-.ministrat-map-btn:not(.expanded):hover {
+.ministrat-map-btn:not(.expanded) svg:hover {
   cursor: pointer;
 }
 
