@@ -40,7 +40,11 @@
         month: 11,
         year: 1983,
         hour: 0 //24-hour time
-      }
+      },
+
+      cities: {},
+      countries: {},
+      units: {}
     },
     main: {
       game_speed: 0, //Game speeds are 0, 1, 3, 5

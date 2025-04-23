@@ -60,6 +60,9 @@
   }
 
   function initialiseMinistratDate () {
+    //Declare local instance variables
+    var ministrat_date_el = document.querySelector(ministrat.config.topbar_elements.date_canvas_selector);
+
     //Initialise date framework first
     initDateFramework();
 
@@ -93,6 +96,12 @@
       //Draw clock
       drawClock(ministrat.gamestate.date.hour);
       drawMinistratDate();
+
+      //Pause animation handling
+      if (ministrat.game_open)
+        (ministrat.main.game_speed == 0) ? 
+          ministrat_date_el.classList.add("paused") : 
+          ministrat_date_el.classList.remove("paused");
     }, 16); //60FPS
   }
 

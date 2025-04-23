@@ -12,6 +12,9 @@
 
     //Remove class from about me section
     document.querySelector(".about-me-section-container").classList.remove("ministrat-open");
+
+    //Pause game
+    ministrat.main.game_speed = 0;
   }
 
   function loadMinistrat () {
@@ -26,5 +29,10 @@
 
     //Add class to about me section
     document.querySelector(".about-me-section-container").classList.add("ministrat-open");
+
+    //Start game after time animation
+    setTimeout(function () {
+      ministrat.main.game_speed = 1;
+    }, 10000);
   }
 }
