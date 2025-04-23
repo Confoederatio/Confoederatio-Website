@@ -62,6 +62,13 @@
     stroke-dashoffset: 0;
   }
 }
+@keyframes map-rotate-animation {
+  0% {
+    transform: rotate(12.5deg);
+  }
+  100% {
+  }
+}
 
 /* -- Ministrat Button -- */
 .ministrat-map-btn:not(.expanded) svg {
@@ -113,6 +120,7 @@
     height: 92vh;
     width: 92vh;
     transition: all 2s ease, transform 0.025s ease;
+    animation: map-rotate-animation 2s forwards;
   }
     /* -- Ministrat Map - Base: Animation -- */
     #inner-german-border, #west-berlin-border {

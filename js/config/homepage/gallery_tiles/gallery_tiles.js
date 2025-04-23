@@ -1015,7 +1015,16 @@ config.homepage.gallery.tiles = {
     background_image: `gfx/interface/tiles/les_halles_square.png`,
     background_opacity: 0.85,
     colour: "dark-grey",
-    dependencies: ["the_colorado", "london", "brooklyn_bridge", "boats_on_a_pond", "armoured_advance", "yosemite"]
+    dependencies: ["the_colorado", "london", "brooklyn_bridge", "boats_on_a_pond", "armoured_advance", "yosemite"],
+    content: `<div id = "les_halles-content-wrapper" class = "content-wrapper">
+      <div id = "les_halles-text-wrapper" class = "text-wrapper">
+        <div id = "les_halles-panel-title" class = "parallax-item-content-panel-title">Les Halles</div>
+        <hr id = "les_halles-content-panel-divider" class = "parallax-item-content-panel-divider">
+        <div id = "les_halles-preview" class = "preview-image-container">
+          <img src = "gfx/interface/artworks/les_halles.jpg" class = "preview-image" id = "les-halles" draggable = "false">
+        </div>
+      </div>
+    </div>`
   },
 
   //Preservés (PRS)

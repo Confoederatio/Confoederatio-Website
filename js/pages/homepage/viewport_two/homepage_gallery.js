@@ -358,10 +358,16 @@
 
   function maximiseContentPanel (arg0_element_id) {
     //Declare local instance variables
-    var local_element = document.getElementById(`${arg0_element_id}-content-panel`);
     var local_id = arg0_element_id;
+
+    var local_element = document.getElementById(`${arg0_element_id}-content-panel`);
     var maximise_btn = document.getElementById(`${arg0_element_id}-maximise-btn`);
     var gallery_obj = main.gallery;
+
+    if (local_element.getAttribute("class").includes("maximised")) {
+      minimiseContentPanel(local_id);
+      return;
+    }
 
     //Reset container styling
     try {
@@ -384,6 +390,7 @@
         local_element.setAttribute("class",
           local_element.getAttribute("class") + " maximised"
         );
+
       maximise_btn.setAttribute("onclick", `minimiseContentPanel('${local_id}');`);
       gallery_obj.parallax_scroll_indicator.style.opacity = 0;
     } catch (e) {
@@ -723,9 +730,8 @@
           );
 
           //If panel was previously maximized, restore that state
-          if (was_maximized) {
+          if (was_maximized)
             maximiseContentPanel(local_id);
-          }
         } else {
           hideAllContentPanels();
         }

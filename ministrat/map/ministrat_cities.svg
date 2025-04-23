@@ -24,9 +24,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="1.1433196"
-     inkscape:cx="374.78584"
-     inkscape:cy="491.11377"
+     inkscape:zoom="18.293114"
+     inkscape:cx="751.56697"
+     inkscape:cy="368.47199"
      inkscape:window-width="3840"
      inkscape:window-height="2054"
      inkscape:window-x="-11"
@@ -47,21 +47,25 @@
       <image
          y="395.44586"
          x="1285.0499"
-         id="west-berlin-marker"
-         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
-         style="image-rendering:optimizeSpeed"
-         preserveAspectRatio="none"
-         height="8"
-         width="8" />
-      <image
-         y="395.04758"
-         x="1263.0284"
          id="ost-berlin-marker"
          xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
          style="image-rendering:optimizeSpeed"
          preserveAspectRatio="none"
          height="8"
-         width="8" />
+         width="8"
+         inkscape:label="ost-berlin-marker"
+         inkscape:svg-dpi="96" />
+      <image
+         y="395.04758"
+         x="1263.0284"
+         id="west-berlin-marker"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAB1JREFU OI1j/P///38GCgATJZpHDRg1YNSAwWQAAGvKBByn4XVTAAAAAElFTkSuQmCC "
+         style="image-rendering:optimizeSpeed"
+         preserveAspectRatio="none"
+         height="8"
+         width="8"
+         inkscape:label="west-berlin-marker"
+         inkscape:svg-dpi="96" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.00001px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.999999"

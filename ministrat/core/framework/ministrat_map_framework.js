@@ -34,8 +34,10 @@
     map_elements_obj.all_map_elements = document.querySelectorAll(ministrat.config.map_elements.map_elements_selector);
     map_cities_svg.addEventListener("load", function () {
       map_elements_obj.cities_dom = map_cities_svg.contentDocument;
-      console.log(map_cities_svg);
-      console.log(map_elements_obj.cities_dom);
+
+      setTimeout(function(){
+        loadMinistratCities();
+      }, 1000);
     });
 
     map_elements_obj.berlin_border_el = document.querySelector(ministrat.config.map_elements.berlin_border_el);
@@ -67,7 +69,7 @@
     //Declare local reference variables
     var map_elements_obj = ministrat.main.map_elements;
 
-    for (var i = 0; i < map_elements_obj.all_map_elements.length; i++)
+    for (let i = 0; i < map_elements_obj.all_map_elements.length; i++)
       map_elements_obj.all_map_elements[i].style.transform = `translate(${ministrat.main.map.x}px, ${ministrat.main.map.y}px) scale(${ministrat.main.map.zoom})`;
   }
 }

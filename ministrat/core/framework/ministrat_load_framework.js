@@ -30,6 +30,8 @@
     //Add class to about me section
     document.querySelector(".about-me-section-container").classList.add("ministrat-open");
 
+    loadMinistratCountries();
+
     //Start game after time animation
     setTimeout(function () {
       setMinistratGameSpeed(1);

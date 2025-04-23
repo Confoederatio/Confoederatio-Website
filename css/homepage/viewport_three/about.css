@@ -81,6 +81,7 @@
 
   width: 40%;
   max-height: 67.5%;
+  overflow-x: hidden;
   overflow-y: scroll;
 }
 .biography-body-text {
