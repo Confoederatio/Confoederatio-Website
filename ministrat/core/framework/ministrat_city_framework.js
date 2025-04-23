@@ -70,6 +70,20 @@ class Ministrat_City {
     var cities_obj = ministrat.gamestate.cities;
 
     //Major West German Cities
+    cities_obj.aachen = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#aachen",
+      marker_selector: "#aachen-marker",
+      size: 2
+    });
+    cities_obj.augsburg = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#augsburg",
+      marker_selector: "#augsburg-marker",
+      size: 2
+    });
     cities_obj.braunschweig = new Ministrat_City({
       controller: "brd",
       owner: "brd",
@@ -98,11 +112,39 @@ class Ministrat_City {
       marker_selector: "#darmstadt-marker",
       size: 2
     });
+    cities_obj.dortmund = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#dortmund",
+      marker_selector: "#dortmund-marker",
+      size: 2
+    });
+    cities_obj.duesseldorf = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#duesseldorf",
+      marker_selector: "#duesseldorf-marker",
+      size: 2
+    });
+    cities_obj.essen = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#essen",
+      marker_selector: "#essen-marker",
+      size: 2
+    });
     cities_obj.frankfurt_am_main = new Ministrat_City({
       controller: "brd",
       owner: "brd",
       label_selector: "#frankfurt-am-main",
       marker_selector: "#frankfurt-am-main-marker",
+      size: 2
+    });
+    cities_obj.freiburg_im_breisgau = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#freiburg-im-breisgau",
+      marker_selector: "#freiburg-im-breisgau-marker",
       size: 2
     });
     cities_obj.goslar = new Ministrat_City({
@@ -126,11 +168,25 @@ class Ministrat_City {
       marker_selector: "#hannover-marker",
       size: 2
     });
+    cities_obj.karlsruhe = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#karlsruhe",
+      marker_selector: "#karlsruhe-marker",
+      size: 2
+    });
     cities_obj.kassel = new Ministrat_City({
       controller: "brd",
       owner: "brd",
       label_selector: "#kassel",
       marker_selector: "#kassel-marker",
+      size: 2
+    });
+    cities_obj.koeln = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#koeln",
+      marker_selector: "#koeln-marker",
       size: 2
     });
     cities_obj.luebeck = new Ministrat_City({
@@ -140,11 +196,53 @@ class Ministrat_City {
       marker_selector: "#luebeck-marker",
       size: 2
     });
+    cities_obj.mannheim = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#mannheim",
+      marker_selector: "#mannheim-marker",
+      size: 2
+    });
+    cities_obj.muenster = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#muenster",
+      marker_selector: "#muenster-marker",
+      size: 2
+    });
     cities_obj.oldenburg = new Ministrat_City({
       controller: "brd",
       owner: "brd",
       label_selector: "#oldenburg",
       marker_selector: "#oldenburg-marker",
+      size: 2
+    });
+    cities_obj.muenchen = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#muenchen",
+      marker_selector: "#muenchen-marker",
+      size: 2
+    });
+    cities_obj.nuernberg = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#nuernberg",
+      marker_selector: "#nuernberg-marker",
+      size: 2
+    });
+    cities_obj.saarbruecken = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#saarbruecken",
+      marker_selector: "#saarbruecken-marker",
+      size: 2
+    });
+    cities_obj.stuttgart = new Ministrat_City({
+      controller: "brd",
+      owner: "brd",
+      label_selector: "#stuttgart",
+      marker_selector: "#stuttgart-marker",
       size: 2
     });
     cities_obj.west_berlin = new Ministrat_City({
