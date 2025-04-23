@@ -68,8 +68,10 @@
   loadMinistratScrollHandler();
   loadMinistratTopbar();
 
-  ministrat.main.map_elements.ministrat_svg_map_el.onclick = function (e) {
-    console.log(e);
+  ministrat.main.map_elements.main_map_el.onclick = function (e) {
     ministratMapClickHandler(e);
+  };
+  ministrat.main.map_elements.ministrat_svg_map_el.onclick = function (e) {
+    ministratMainMapClickHandler(e);
   };
 }
