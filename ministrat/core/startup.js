@@ -19,13 +19,23 @@
       },
       topbar_elements: {
         clock_canvas_selector: `#ministrat-clock`,
+        date_canvas_selector: `.ministrat-container #date-container`,
       },
       ui: {
         ministrat_primary_ui_colour: `rgba(40, 255, 226, 0.8)`
       }
     },
-    gamestate: {},
+    gamestate: {
+      date: {
+        day: 9,
+        month: 11,
+        year: 1983,
+        hour: 0 //24-hour time
+      },
+      time_since_tick: 0
+    },
     main: {
+      game_speed: 0, //1 = 3x, 2 = 2x, 3 = 1x, 0 = Paused
       map: {
         start_x: 0,
         start_y: 0,
