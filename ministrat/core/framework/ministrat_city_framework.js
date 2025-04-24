@@ -617,6 +617,12 @@ class Ministrat_City {
         label_selector: "#sigmaringen",
         marker_selector: "#sigmaringen-marker"
       });
+      cities_obj.pforzheim = new Ministrat_City({
+        controller: "brd",
+        owner: "brd",
+        label_selector: "#pforzheim",
+        marker_selector: "#pforzheim-marker"
+      });
       cities_obj.reutlingen = new Ministrat_City({
         controller: "brd",
         owner: "brd",
