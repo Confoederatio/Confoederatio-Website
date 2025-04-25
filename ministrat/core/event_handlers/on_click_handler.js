@@ -9,6 +9,16 @@
   }
 
   function ministratMapClickHandler (e) {
-    
+    //Declare local instance variables
+    var map_svg = ministrat.main.map_elements.ministrat_svg_map_el;
+
+    var click_point = map_svg.createSVGPoint();
+    click_point.x = e.clientX;
+    click_point.y = e.clientY;
+
+    var click_point_in_map_coords = click_point.matrixTransform(map_svg.getScreenCTM().inverse());
+
+    console.log(`SVG x: ${click_point_in_map_coords.x}, SVG y: ${click_point_in_map_coords.y}`);
+    ministratDebugGeolocatorClickHandler(e);
   }
 }

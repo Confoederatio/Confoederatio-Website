@@ -47,5 +47,17 @@ class Ministrat_Country {
       team: "wto",
       money: 100
     });
+    countries_obj.nato = new Ministrat_Country({
+      id: "nato",
+      name: "NATO",
+      colour: [60, 60, 240],
+      team: "nato",
+    });
+    countries_obj.wto = new Ministrat_Country({
+      id: "wto",
+      name: "WTO",
+      colour: [114, 40, 40],
+      team: "wto",
+    });
   }
 }

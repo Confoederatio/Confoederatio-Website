@@ -165,7 +165,7 @@
     transition: all 2s ease, transform 0.025s ease;
   }
   /* -- Ministrat Map - Overlay -- */
-  .ministrat-container .ministrat-map-overlay {
+  .ministrat-container:not(.expanded) .ministrat-map-overlay {
     display: none;
     opacity: 0;
   }

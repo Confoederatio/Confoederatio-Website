@@ -1,0 +1,390 @@
+103rd Reconnaissance Battalion "Huzaren van Boreel": Seedorf
+41 Pantserbrigade: Seedorf
+41st Pantser Battalion "Regiment Huzaren Prins Alexander": Bergen-Hohne
+43rd Pantser Battalion "Regiment Huzaren van Sytzama": Langemannshof
+42nd Pantserinfanterie Battalion "Regiment Limburgse Jagers": Seedorf
+41st Field Artillery Battalion: Seedorf
+41st Armored Engineer Company: Seedorf
+41st Brigade Supply Company: Seedorf
+41st Brigade Maintenance Company: Seedorf
+41st Brigade Medical Company: Seedorf
+
+I British Corps: Bielefeld
+1st (BR) Corps HQ Defence Company: Bielefeld
+Screening Force
+1st The Queen's Dragoon Guards: Wolfenbüttel
+16th/5th Queen's Royal Lancers: Herford
+664 Squadron AAC: Minden
+
+Commander Royal Artillery 1 (BR) Corps: Bielefeld
+1st Artillery Brigade: Dortmund
+5th Heavy Regiment, Royal Artillery: Dortmund
+32nd Heavy Regiment, Royal Artillery: Dortmund
+Corps Support Group: Bielefeld
+39th Heavy Regiment, Royal Artillery: Sennelager
+50 Missile Regiment Royal Artillery: Menden
+Air Defence Group: Dortmund
+12th Air Defence Regiment, Royal Artillery: Dortmund
+22nd Air Defence Regiment, Royal Artillery: Dortmund
+8th Transport Regiment, Royal Corps of Transport: Münster
+
+Commander Royal Engineers 1 (BR) Corps: Bielefeld
+23rd Engineer Regiment, Royal Engineers: Osnabrück
+25th Engineer Regiment, Royal Engineers: Osnabrück
+28th Amphibious Engineer Regiment, Royal Engineers: Hameln
+32nd Armoured Engineer Regiment, Royal Engineers: Munsterlager
+43rd Plant Squadron, Royal Engineers: Osnabrück
+65th Corps Support Squadron, Royal Engineers: Hameln
+211th Mobile Civilian Artisan Group, Royal Engineers: Schloss Neuhaus
+256th Mobile Civilian Plant Group, Royal Engineers: Hannover
+1st Postal & Courier Regiment, Royal Engineers: Hannover
+
+Commander Aviation BAOR and 1 (BR) Corps: Bielefeld
+1 Regiment AAC: Hildesheim
+3 Regiment AAC: Soest
+4 Regiment AAC: Detmold
+
+Commander Communications 1 (BR) Corps: Bielefeld
+7th Signal Regiment, Royal Signals: Herford
+14th Signal Regiment, Royal Signals: Celle
+22nd Signal Regiment, Royal Signals: Lippstadt
+
+Commander Transport 1 (BR) Corps: Bielefeld
+7th Tank Transporter Regiment, Royal Corps of Transport: Sennelager
+10th Corps Transport Regiment, Royal Corps of Transport: Bielefeld
+24th Transport & Movement Regiment, Royal Corps of Transport: Hanover
+25th Transport & Movement Regiment, Royal Corps of Transport: Bielefeld
+14th Corps Support Squadron, Royal Corps of Transport: Bielefeld
+
+Commander Medical 1 (BR) Corps: Bielefeld
+21st Field Hospital, Royal Army Medical Corps: Rinteln
+32nd Field Hospital, Royal Army Medical Corps: Hannover
+83rd Field Medical Equipment Depot, Royal Army Medical Corps: Hannover
+
+Commander Supply 1 (BR) Corps: Bielefeld
+5th Ordnance Battalion, Royal Army Ordnance Corps: Paderborn
+6th Ordnance Battalion, Royal Army Ordnance Corps: Bielefeld
+2nd Aircraft Support Unit, Royal Army Ordnance Corps: Detmold
+
+Commander Maintenance 1 (BR) Corps: Bielefeld
+1st (BR) Corps Troops Workshop, Royal Electrical and Mechanical Engineers: Bielefeld
+20th Electronics Workshop, Royal Electrical and Mechanical Engineers: Minden
+71st Aircraft Workshop, Royal Electrical and Mechanical Engineers: Detmold
+
+Provost Marshal 1 (BR) Corps: Bielefeld
+110th Provost Company, Royal Military Police: Sennelager
+115th Provost Company, Royal Military Police: Osnabrück
+
+1st Armoured Division: Verden
+HQ 1st Armoured Division & Signal Regiment, Royal Signals: Verden
+7th Armoured Brigade: Soltau
+Royal Scots Dragoon Guards: Fallingbostel
+2nd Royal Tank Regiment: Fallingbostel
+1st Btn, Staffordshire Regiment: Fallingbostel
+12th Armoured Brigade: Osnabrück
+4th Royal Tank Regiment: Osnabrück
+1st Btn, Royal Irish Rangers: Osnabrück
+1st Btn, Royal Green Jackets: Osnabrück
+22nd Armoured Brigade: Bergen-Hohne
+Queen's Own Hussars: Bergen-Hohne
+1st Royal Tank Regiment: Hildesheim
+1st Btn, Scots Guards: Bergen-Hohne
+2nd Btn, Royal Anglian Regiment: Celle
+1st Field Regiment, Royal Horse Artillery: Bergen-Hohne
+4th Field Regiment, Royal Artillery: Osnabrück
+40th Field Regiment, Royal Artillery: Bergen-Hohne
+21st Engineer Regiment, Royal Engineers: Nienburg
+1st Armoured Division Transport Regiment, Royal Corps of Transport: Bunde
+1st Ordnance Battalion, Royal Army Ordnance Corps: Verden
+7th Armoured Workshop, Royal Electrical and Mechanical Engineers: Fallingbostel
+12th Armoured Workshop, Royal Electrical and Mechanical Engineers: Osnabrück
+1st Armoured Field Ambulance, Royal Army Medical Corps: Bergen-Hohne
+2nd Armoured Field Ambulance, Royal Army Medical Corps: Osnabrück
+111th Provost Company, Royal Military Police: Bergen-Hohne
+
+3rd Armoured Division: Soest
+HQ 3rd Armoured Division & Signal Regiment, Royal Signals: Soest
+4th Armoured Brigade: Münster
+14th/20th King's Hussars: Münster
+17th/21st Lancers: Münster
+1st Btn, Grenadier Guards: Münster
+6th Armoured Brigade: Soest
+3rd Royal Tank Regiment: Hemer
+1st Btn, Royal Scots: Werl
+3rd Btn, Royal Regiment of Fusiliers: Hemer
+33rd Armoured Brigade: Paderborn
+Blues and Royals: Sennelager
+1st Btn, Queen's Own Highlanders: Münster
+1st Btn, Queen's Lancashire Regiment: Paderborn
+2nd Field Regiment, Royal Artillery: Münster
+3rd Field Regiment, Royal Horse Artillery: Paderborn
+49th Field Regiment, Royal Artillery: Lippstadt
+26th Engineer Regiment, Royal Engineers: Iserlohn
+3rd Armoured Division Transport Regiment, Royal Corps of Transport: Duisburg
+3rd Ordnance Battalion, Royal Army Ordnance Corps: Soest
+5th Armoured Workshop, Royal Electrical and Mechanical Engineers: Soest
+6th Armoured Workshop, Royal Electrical and Mechanical Engineers: Münster
+11th Armoured Workshop, Royal Electrical and Mechanical Engineers: Soest
+3rd Armoured Field Ambulance, Royal Army Medical Corps: Sennelager
+5th Armoured Field Ambulance, Royal Army Medical Corps: Münster
+113th Provost Company, Royal Military Police: Werl
+
+4th Armoured Division: Herford
+HQ 4th Armoured Division & Signal Regiment, Royal Signals: Herford
+11th Armoured Brigade: Minden
+5th Royal Inniskilling Dragoon Guards: Paderborn
+1st Btn, Argyll and Sutherland highlanders: Minden
+2nd Btn, Queen's Regiment: Minden
+20th Armoured Brigade: Detmold
+4th/7th Royal Dragoon Guards: Detmold
+15th/19th King's Royal Hussars: Detmold
+2nd Btn, Royal Irish Rangers: Lemgo
+19th Field Regiment, Royal Artillery: Dortmund
+26th Field Regiment, Royal Artillery: Gütersloh
+35th Engineer Regiment, Royal Engineers: Hamlen
+4th Armoured Division Transport Regiment, Royal Corps of Transport: Minden
+4th Ordnance Battalion, Royal Army Ordnance Corps: Herford
+4th Armoured Workshop, Royal Electrical and Mechanical Engineers: Detmold
+4th Armoured Field Ambulance, Royal Army Medical Corps: Minden
+114th Provost Company, Royal Military Police: Detmold
+
+Corps Reconnaissance Command: Arolsen
+1ste Jagers te Paard: Arolsen
+2de Jagers te Paard: Lüdenscheid
+4e Chasseurs à Cheval: Arnsberg
+1er Compagnie d'Equipes Spéciales de Reconnaissance: Troisdorf
+210th Logistic Company: Arolsen
+
+Corps Artillery Command: Cologne
+3rd Artillery Regiment: Werl
+13th Artillery Regiment: Büren
+14th Anti-Air Artillery Battalion: Spich
+17th Horse Artillery Regiment: Altenrath
+18th Artillery Regiment: Brasschaat
+20th Artillery Regiment: Werl
+35th Anti-Air Artillery Battalion: Spich
+73rd Special Ammunition Battery: Soest
+80th Observation and Surveillance Battery: Cologne
+95th Hawk and Lance Maintenance Battery: Werl
+
+1st Light Aviation Group: Cologne
+16th Light Aviation Squadron: Cologne
+17th Light Aviation Squadron: Werl
+18th Light Aviation Squadron: Merzbrück
+
+1st Engineer Group: Cologne
+1st Engineer Regiment: Cologne
+3rd Bridge Engineer Regiment: Cologne
+6th Engineer Regiment: Cologne
+10th Field Engineer Regiment: Amay
+17th Field Engineer Regiment: Zwijndrecht
+Topography and Geography Company: Cologne
+
+1st Signal Group: Cologne
+4th Signal Battalion: Cologne
+6th Signal Battalion: Lüdenscheid
+13th Signal Company: Krefeld
+17th Signal Company: Cologne
+20th Signal Company: Cologne
+
+4th Logistic Battalion: Cologne
+18th Logistic Battalion: Lüdenscheid
+20th Logistic Battalion: Cologne
+29th Logistic Battalion: Eschweiler
+51st Logistic Battalion: Aachen
+2nd Military Police Company: Arnsberg
+6th Military Police Company: Cologne
+7th Military Police Company: Liège
+1st Ambulance Company: Soest
+2nd Ambulance Company: Cologne
+3rd Ambulance Company: Cologne
+
+16de Pantserdivisie: Neheim-Hüsten
+4de Pantserinfanteriebrigade: Soest
+4de Regiment Lansiers: Soest
+1ste Regiment Grenadiers: Soest
+5de Linieregiment: Soest
+6de Regiment Artillerie: Soest
+17ème Brigade Blindée: Siegen
+1er Régiment des Guides: Siegen
+2e Regiment Gidsen: Altenrath
+1ste Regiment Karabiniers Wielrijders: Spich
+2ème Régiment de Carabiniers-cyclistes: Siegen
+19e Régiment d'Artillerie à Cheval: Siegen
+
+5th Personnel Group: Frankfurt
+5th Finance Group: Frankfurt
+4th Battalion, 2nd Air Defense Artillery: Giessen
+12th Aviation Brigade: Wiesbaden
+5th Squadron, 6th Cavalry: (location not specified)
+5th Battalion, 158th Aviation: Frankfurt-Bonames
+6th Battalion, 229th Aviation: (location not specified)
+130th Engineer Brigade: Hanau
+54th Engineer Battalion: (location not specified)
+317th Engineer Battalion: (location not specified)
+547th Engineer Battalion: (location not specified)
+559th Engineer Battalion: (location not specified)
+18th Military Police Brigade: Frankfurt
+93rd Military Police Battalion: Frankfurt
+709th Military Police Battalion: Frankfurt
+22nd Signal Brigade: Frankfurt
+17th Signal Battalion: Frankfurt
+32nd Signal Battalion: Frankfurt
+44th Signal Battalion: Darmstadt
+205th Military Intelligence Brigade: Frankfurt
+1st Military Intelligence Battalion: Wiesbaden
+165th Military Intelligence Battalion: Darmstadt
+302nd Military Intelligence Battalion: Frankfurt
+
+3rd Armored Division: Frankfurt
+1st Brigade: Kirch-Göns
+2nd Battalion, 32nd Armor: Kirch-Göns
+4th Battalion, 32nd Armor: Kirch-Göns
+3rd Squadron, 5th Cavalry: Kirch-Göns
+5th Squadron, 5th Cavalry: Kirch-Göns
+2nd Brigade: Gelnhausen
+3rd Squadron, 8th Cavalry: Gelnhausen
+4th Squadron, 8th Cavalry: Gelnhausen
+4th Battalion, 18th Infantry: Gelnhausen
+3rd Brigade: Friedberg
+2nd Battalion, 67th Armor: Friedberg
+4th Battalion, 67th Armor: Friedberg
+5th Battalion, 18th Infantry: Friedberg
+4th Brigade (Aviation): Hanau
+4th Squadron, 7th Cavalry: Büdingen
+2nd Battalion, 227th Aviation: (location not specified)
+3rd Battalion, 227th Aviation: (location not specified)
+3rd Armored Division Artillery: Hanau
+2nd Battalion, 3rd Field Artillery: Kirch-Göns
+2nd Battalion, 82nd Field Artillery: Friedberg
+4th Battalion, 82nd Field Artillery: Hanau
+3rd Armored Division Support Command: Frankfurt
+45th Support Battalion: Gelnhausen
+54th Support Battalion: Friedberg
+122nd Support Battalion: Hanau
+503rd Support Battalion: Kirchgoens
+3rd Battalion, 5th Air Defense Artillery: Büdingen
+23rd Engineer Battalion: Hanau
+143rd Signal Battalion: Frankfurt
+533rd Military Intelligence Battalion: Frankfurt
+
+8th Infantry Division (Mechanized): Bad Kreuznach
+1st Brigade: Gonsenheim
+2nd Brigade: Baumholder
+3rd Brigade: Mannheim
+4th Brigade (Aviation): Mainz-Finthen
+8th Infantry Division Artillery: Baumholder
+8th Infantry Division Support Command: Bad Kreuznach
+118th Support Battalion: Mainz
+202nd Support Battalion: Mannheim
+208th Support Battalion: Baumholder
+708th Support Battalion: Bad Kreuznach
+5th Battalion, 3rd Air Defense Artillery: Wackernheim
+12th Engineer Battalion: Dexheim
+8th Signal Battalion: Bad Kreuznach
+108th Military Intelligence Battalion: Bad Kreuznach
+
+7th Personnel Group: Nellingen auf den Fildern
+7th Finance Group: Stuttgart
+84th Army Band: Stuttgart
+5th Battalion, 2nd Air Defense Artillery: Crailsheim
+11th Aviation Brigade: Illesheim
+2nd Squadron, 6th Cavalry: Illesheim
+4th Battalion, 159th Aviation: Stuttgart
+4th Battalion, 229th Aviation: Illesheim
+7th Engineer Brigade: Kornwestheim
+9th Engineer Battalion: Aschaffenburg
+78th Engineer Battalion: Ettlingen
+82nd Engineer Battalion: Bamberg
+237th Engineer Battalion: Heilbronn
+565th Engineer Battalion: Karlsruhe
+14th Military Police Brigade: Kornwestheim
+385th Military Police Battalion: Kornwestheim
+793rd Military Police Battalion: Fürth
+93rd Signal Brigade: Ludwigsburg
+26th Signal Battalion: Heilbronn
+34th Signal Battalion: Ludwigsburg
+51st Signal Battalion: Ludwigsburg
+207th Military Intelligence Brigade: Ludwigsburg
+2nd Military Intelligence Battalion: Stuttgart
+307th Military Intelligence Battalion: Ludwigsburg
+511th Military Intelligence Battalion: Ludwigsburg
+
+1st Armored Division: Ansbach
+1st Brigade: Vilseck
+2nd Brigade: Erlangen
+3rd Brigade: Bamberg
+4th Brigade (Aviation): Katterbach
+1st Armored Division Artillery: Zirndorf
+1st Armored Division Support Command: Fürth
+47th Support Battalion: Erlangen
+123rd Support Battalion: Fürth
+125th Support Battalion: Bamberg
+501st Support Battalion: Vilseck
+6th Battalion, 3rd Air Defense Artillery: Schwabach
+16th Engineer Battalion: Fürth
+141st Signal Battalion: Ansbach
+501st Military Intelligence Battalion: Ansbach
+
+1st Infantry Division (Mechanized): Fort Riley, KS
+1st Infantry Division (Forward): Göppingen
+3rd Battalion, 34th Armor: Böblingen
+1st Battalion, 16th Infantry: Böblingen
+4th Battalion, 16th Infantry: Göppingen
+2nd Battalion, 5th Field Artillery: Neu-Ulm
+299th Support Battalion: Göppingen
+
+3rd Infantry Division (Mechanized): Würzburg
+1st Brigade: Schweinfurt
+2nd Brigade: Kitzingen
+3rd Brigade: Aschaffenburg
+4th Brigade (Aviation): Giebelstadt
+3rd Infantry Division Artillery: Würzburg
+3rd Infantry Division Support Command: Würzburg
+3rd Support Battalion: Schweinfurt
+26th Support Battalion: Aschaffenburg
+203rd Support Battalion: Kitzingen
+703rd Support Battalion: Würzburg
+4th Battalion, 3rd Air Defense Artillery: Kitzingen
+10th Engineer Battalion: Kitzingen
+123rd Signal Battalion: Würzburg
+103rd Military Intelligence Battalion: Würzburg
+
+2nd Armored Cavalry: Nuremberg
+1-2nd Armored Cavalry Squadron: Bindlach
+2-2nd Armored Cavalry Squadron: Bamberg
+3-2nd Armored Cavalry Squadron: Amberg
+4-2nd Air Cavalry Squadron: Feucht
+
+VII Corps Artillery: Augsburg
+17th Field Artillery Brigade: Augsburg
+4th Battalion, 12th Field Artillery: Crailsheim
+1st Battalion, 18th Field Artillery: Augsburg
+1st Battalion, 36th Field Artillery: Augsburg
+2nd Battalion, 77th Field Artillery: Augsburg
+72nd Field Artillery Brigade: Wertheim
+3rd Battalion, 12th Field Artillery: Aschaffenburg
+2nd Battalion, 14th Field Artillery: Bamberg
+4th Battalion, 14th Field Artillery: Bamberg
+4th Battalion, 27th Field Artillery: Wertheim
+3rd Battalion, 35th Field Artillery: Wertheim
+210th Field Artillery Brigade: Herzogenaurach
+3rd Battalion, 5th Field Artillery: Nuremberg
+2nd Battalion, 12th Field Artillery: Herzogenaurach
+3rd Battalion, 17th Field Artillery: Ansbach
+5th Battalion, 17th Field Artillery: Herzogenaurach
+
+2nd Corps Support Command: Nellingen auf den Fildern
+Special Troops Battalion: Nellingen auf den Fildern
+4th Transportation Battalion: Ludwigsburg
+7th Battalion, 159th Aviation: Nellingen auf den Fildern
+101st Ordnance Battalion: Heilbronn
+7th Corps Support Group: Crailsheim
+13th Supply and Service Battalion: Ludwigsburg
+1st Maintenance Battalion: Böblingen
+71st Maintenance Battalion: Fürth
+87th Maintenance Battalion: Wertheim
+30th Medical Group: Ludwigsburg
+31st Combat Support Hospital: Nellingen auf den Fildern
+67th Evacuation Hospital: Würzburg
+128th Combat Support Hospital: Nellingen auf den Fildern

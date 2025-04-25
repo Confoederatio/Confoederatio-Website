@@ -1,11 +1,16 @@
 //Initialise startup process
 {
   window.ministrat = {
+    debug_geolocator: false,
+    drag_mode: undefined, //Either 'undefined', 'panning', or 'selection'
     game_open: false,
     ignore_scroll: false,
     is_dragging: false,
+    pan_threshold: 8,
 
     config: {
+      all_locations: [],
+      locations: {},
       non_ministrat_selector: `#homepage-banner, #gallery-section`,
       map_elements: {
         map_cities_selector: `#main-map .ministrat-cities-overlay`,
@@ -15,11 +20,13 @@
         east_german_border_els: `.east-german-province`,
         german_border_els: `.german-border`,
         inner_german_border_el: `#inner-german-border`,
+        map_overlay_el: `#ministrat-map-overlay`,
         main_map_el: `#main-map`,
         ministrat_svg_map_el: `#ministrat-svg-map`,
         ministrat_container_el: `#main-map-blackout-container`,
         west_german_border_els: `.west-german-province`,
       },
+      rotate_animation_time: 5000,
       topbar_elements: {
         clock_canvas_selector: `#ministrat-clock`,
         date_canvas_selector: `.ministrat-container #date-container`,
@@ -34,7 +41,8 @@
       },
       ui: {
         ministrat_primary_ui_colour: `rgba(40, 255, 226, 0.8)`
-      }
+      },
+      unique_locations: {}
     },
     gamestate: {
       date: {
@@ -58,7 +66,8 @@
         y: 0,
         zoom: 1,
       },
-      map_elements: {}
+      map_elements: {},
+      unique_locations: {}
     }
   };
 

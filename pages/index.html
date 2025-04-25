@@ -747,7 +747,7 @@
             </svg>
             <object class = "ministrat-cities-overlay" type = "image/svg+xml" data = "ministrat/map/ministrat_cities.svg">
             </object>
-            <div class = "ministrat-map-overlay"></div>
+            <div id = "ministrat-map-overlay" class = "ministrat-map-overlay"></div>
           </div>
           <div id = "ministrat-topbar-container">
             <div id = "ministrat-topbar-time-controls">
@@ -765,6 +765,11 @@
               <canvas id = "ministrat-clock" height = "64" width = "64"></canvas>
             </div>
           </div>
+          <div id = "ministrat-leftbar-container">
+          </div>
+          <div id = "ministrat-rightbar-container">
+          </div>
+          <div id = "ministrat-bottombar-container"></div>
         </div>
       </div>
     </div>
@@ -803,15 +808,26 @@
     <script type = "text/javascript" src = "js/pages/homepage/startup.js"></script>
 
     <!--Ministrat-->
+    <script type = "text/javascript" src = "ministrat/common/brd_army_orbat.js"></script>
+    <script type = "text/javascript" src = "ministrat/common/nato_army_orbat.js"></script>
+    <script type = "text/javascript" src = "ministrat/common/ddr_army_orbat.js"></script>
+    <script type = "text/javascript" src = "ministrat/common/wto_army_orbat.js"></script>
+    <script type = "text/javascript" src = "ministrat/common/unit_locations.js"></script>
+    
+    <script type = "text/javascript" src = "ministrat/common/cities.js"></script>
+
     <script type = "text/javascript" src = "ministrat/core/event_handlers/on_click_handler.js"></script>
     <script type = "text/javascript" src = "ministrat/core/event_handlers/on_drag_handler.js"></script>
     <script type = "text/javascript" src = "ministrat/core/event_handlers/on_scroll_handler.js"></script>
+
     <script type = "text/javascript" src = "ministrat/core/framework/ministrat_city_framework.js"></script>
     <script type = "text/javascript" src = "ministrat/core/framework/ministrat_country_framework.js"></script>
+    <script type = "text/javascript" src = "ministrat/core/framework/ministrat_debug_framework.js"></script>
     <script type = "text/javascript" src = "ministrat/core/framework/ministrat_elements_framework.js"></script>
     <script type = "text/javascript" src = "ministrat/core/framework/ministrat_load_framework.js"></script>
     <script type = "text/javascript" src = "ministrat/core/framework/ministrat_map_framework.js"></script>
     <script type = "text/javascript" src = "ministrat/core/ui/ministrat_topbar.js"></script>
+    <script type = "text/javascript" src = "ministrat/core/framework/ministrat_unit_framework.js"></script>
 
     <script type = "text/javascript" src = "ministrat/core/startup.js"></script>
   </body>

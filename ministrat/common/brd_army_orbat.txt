@@ -1,0 +1,182 @@
+Korpsartillerie: Flensburg
+600. Flugabwehrregiment: Rendsburg
+6. Flugabwehrregiment: Lütjenberg
+51. Heimatschutzbrigade: Eutin
+6. Panzerdivision: Neumünster
+18. Panzergrenadierbrigade: Neumünster
+17. Panzergrenadierbrigade: Hamburg
+16. Panzergrenadierbrigade: Wentorf
+6. Heeresfliegerregiment: Hohenlockstedt
+6. Artillerieregiment: Kellinghusen
+
+1. Panzerdivision: Hannover
+Panzergrenadierbrigade 1: Hildesheim
+Panzerbrigade 2: Braunschweig
+Panzerbrigade 3: Nienburg
+
+3. Panzerdivision: Buxtehude
+Panzergrenadierbrigade 7: Hamburg
+Panzerbrigade 8: Lüneburg
+Panzerlehrbrigade 9: Munster
+
+7. Panzerdivision: Unna
+Panzergrenadierbrigade 19: Ahlen
+Panzerbrigade 20: Iserlohn
+Panzerbrigade 21: Augustdorf
+
+6. Panzergrenadierdivision: Neumünster
+Panzergrenadierbrigade 16: Wentorf
+Panzergrenadierbrigade 17: Hamburg
+Panzerbrigade 18: Boostedt
+
+11. Panzergrenadierdivision: Oldenburg
+Panzergrenadierbrigade 31: Oldenburg
+Panzergrenadierbrigade 32: Schwanewede
+Panzerbrigade 33: Celle
+
+Luftlandebrigade 27: Lippstadt
+
+Artilleriekommando 1: Münster
+Raketenartilleriebataillon 150: Wesel
+Nachschubbataillon Sw 120: Werlte
+Sicherungsbataillon 100: Ahaus
+Drohnenbatterie 100: Coesfeld
+
+Heeresfliegerkommando 1: Handorf
+Flugabwehrkommando 1: Münster
+Pionierkommando 1: Münster
+Fernmeldekommando 1: Münster
+Nachschubkommando 1: Rheine
+Instandsetzungskommando 1: Bielefeld
+Sanitätskommando 1: Münster
+ABC-Abwehrbataillon: Emden
+Feldjägerbataillon: Emden
+
+4. Panzergrenadierdivision: Regensburg
+Panzergrenadierbrigade 10: Weiden
+Panzergrenadierbrigade 11: Bogen
+Panzerbrigade 12: Amberg
+
+1. Gebirgsdivision: Garmisch-Partenkirchen
+Panzergrenadierbrigade 22: Murnau
+Gebirgsjägerbrigade 23: Bad Reichenhall
+Panzerbrigade 24: Landshut
+Heimatschutzbrigade 56: München
+
+1. Luftlandedivision: Esslingen am Neckar
+Fallschirmjägerbrigade 25: Calw
+Fallschirmjägerbrigade 26: Saarlouis
+Fallschirmjägerbrigade 27: Lippstadt
+
+10. Panzerdivision: Sigmaringen
+Panzerbrigade 28: Dornstadt
+Panzerbrigade 29: Sigmaringen
+Panzergrenadierbrigade 30: Ellwangen
+
+Artilleriekommando 2
+Feldartilleriebataillon 210: Philippsburg
+Feldartilleriebataillon 220: Philippsburg
+Raketenartilleriebataillon 250: Großengstingen
+Nachschubbataillon 220 SW: Günzburg
+
+Flugabwehrkommando 2
+Panzerflugabwehrraketenregiment: München
+Flugabwehrbataillon: München
+Flugabwehrbataillon: München
+
+Heeresfliegerkommando 2
+Heeresfliegertransportregiment: München
+Heeresfliegertransportregiment: München
+Panzerabwehrhubschrauberregiment: München
+
+Pionierkommando 2
+Pionierbataillon: München
+Pionierbataillon: München
+Pionierbataillon: München
+Pionierbataillon: München
+Amphibisches Pionierbataillon 230: Ingolstadt
+Schwimmbrückenbataillon: München
+Schwimmbrückenbataillon: München
+ABC-Abwehrlehrbataillon 210: München
+
+Fernmeldekommando 2
+Fernmeldebetriebsbataillon 210: Dillingen
+Fernmeldeverbindungsbataillon 230: Dillingen
+Fernmeldebataillon Elektronischer Kampf 220: Donauwörth
+
+Nachschubkommando 2
+Nachschubbataillon: München
+Transportbataillon: München
+Transportbataillon: München
+
+Instandsetzungskommando 2
+Instandsetzungsbataillon Elektronik: München
+Instandsetzungsbataillon: München
+Instandsetzungsbataillon: München
+Kampfmittelbeseitigungszug: München
+
+Sanitätskommando 2
+Sanitätsbataillon: München
+Sanitätsbataillon: München
+Krankentransportbataillon: München
+
+2. Panzergrenadierdivision: Kassel
+Panzergrenadierbrigade 4: Göttingen
+Panzergrenadierbrigade 5: Homberg
+Panzerbrigade 6: Hofgeismar
+
+5. Panzerdivision: Diez
+Panzergrenadierbrigade 13: Wetzlar
+Panzerbrigade 14: Neustadt
+Panzerbrigade 15: Koblenz
+
+12. Panzerdivision: Veitshöchheim
+Panzerbrigade 34: Koblenz
+Panzergrenadierbrigade 35: Hammelburg
+Panzerbrigade 36: Bad Mergentheim
+
+Artilleriekommando 3
+Raketenartilleriebataillon Lance: Koblenz
+Nachschubbataillon Sonderwaffen: Koblenz
+Sicherungsbataillon: Koblenz
+Drohnenbatterie: Koblenz
+
+Flugabwehrkommando 3
+Panzerflugabwehrraketenregiment: Koblenz
+Flugabwehrbataillon: Koblenz
+Flugabwehrbataillon: Koblenz
+
+Heeresfliegerkommando 3
+Heeresfliegertransportregiment: Koblenz
+Heeresfliegertransportregiment: Koblenz
+Panzerabwehrhubschrauberregiment: Koblenz
+
+Pionierkommando 3
+Pionierbataillon: Koblenz
+Pionierbataillon: Koblenz
+Pionierbataillon: Koblenz
+Pionierbataillon: Koblenz
+Amphibisches Pionierbataillon 330: Speyer
+Schwimmbrückenbataillon: Koblenz
+Schwimmbrückenbataillon: Koblenz
+
+Fernmeldekommando 3
+Fernmeldebetriebsbataillon: Koblenz
+Fernmeldeverbindungsbataillon: Koblenz
+Fernmeldebataillon Elektronischer Kampf: Koblenz
+
+Nachschubkommando 3
+Nachschubbataillon: Koblenz
+Transportbataillon: Koblenz
+Transportbataillon: Koblenz
+
+Instandsetzungskommando 3
+Instandsetzungsbataillon Elektronik: Koblenz
+Instandsetzungsbataillon: Koblenz
+Instandsetzungsbataillon: Koblenz
+Kampfmittelbeseitigungszug: Koblenz
+
+Sanitätskommando 3
+Sanitätsbataillon: Koblenz
+Sanitätsbataillon: Koblenz
+Krankentransportbataillon: Koblenz
