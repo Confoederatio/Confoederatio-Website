@@ -26,8 +26,12 @@ class Ministrat_Country {
 
     this.money = returnSafeNumber(options.money, 0);
     
-    if (this.tag == "ddr")
-      this.loadHeatmap();
+    if (this.tag == "ddr") {
+      var local_instance = this;
+      setTimeout(function(){
+        local_instance.loadHeatmap();
+      }, 10000);
+    }
   }
 
   loadHeatmap () {
