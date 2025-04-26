@@ -111,7 +111,7 @@
     var adjusted_svg_y = svg_y;
     var screen_x = (adjusted_svg_x/1000)*svg_width_px;
     var screen_y = (adjusted_svg_y/1000)*svg_height_px;
-      screen_x += window.innerHeight*0.0107; //Nobody knows why these magic numbers are needed
+      screen_x += window.innerHeight*0.0107; //Nobody knows why these magic numbers are needed, except that there is some vh scaling
       screen_y += window.innerHeight*0.025;
     
     //Return statement
