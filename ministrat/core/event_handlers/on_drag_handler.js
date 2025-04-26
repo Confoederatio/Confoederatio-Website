@@ -15,6 +15,7 @@
     var map_overlay_el = ministrat.main.map_elements.map_overlay_el;
     var selection_box_el = map_overlay_el.querySelector(".selection-box");
 
+    //Create selection box if it doesn't exist
     if (!selection_box_el) {
       selection_box_el = document.createElement("div");
       selection_box_el.setAttribute("class", "selection-box");
@@ -26,11 +27,13 @@
       map_overlay_el.appendChild(selection_box_el);
     }
 
+    //Calculate selection box coordinates
     var height = Math.abs(ministrat.main.map.end_y - ministrat.main.map.start_y);
     var left = Math.min(ministrat.main.map.start_x, ministrat.main.map.end_x);
     var top = Math.min(ministrat.main.map.start_y, ministrat.main.map.end_y);
     var width = Math.abs(ministrat.main.map.end_x - ministrat.main.map.start_x);
 
+    //Update selection box coordinates
     selection_box_el.style.left = `${left}px`;
     selection_box_el.style.top = `${top}px`;
     selection_box_el.style.width = `${width}px`;
@@ -38,8 +41,8 @@
   }
 
   function loadMinistratPanHandler () {
+    //Declare local instance variables
     var map_el = ministrat.main.map_elements.main_map_el;
-    var map_overlay_el = ministrat.main.map_elements.map_overlay_el;
 
     //Computer support
     {
@@ -114,19 +117,16 @@
         if (!ministrat.game_open) return;
         if (e.touches.length != 1) return;
   
-        var rect = map_overlay_el.getBoundingClientRect();
         var touch = e.touches[0];
-        var relativeX = touch.clientX - rect.left;
-        var relativeY = touch.clientY - rect.top;
+        var actual_coords = getSVGCoords(touch.clientX, touch.clientY);
   
         ministrat.is_selecting = true;
-        ministrat.main.map.start_x = relativeX;
-        ministrat.main.map.start_y = relativeY;
-        ministrat.main.map.end_x = relativeX;
-        ministrat.main.map.end_y = relativeY;
+        ministrat.main.map.start_x = actual_coords[0];
+        ministrat.main.map.start_y = actual_coords[1];
+        ministrat.main.map.end_x = actual_coords[0];
+        ministrat.main.map.end_y = actual_coords[1];
   
         drawSelectionBox();
-  
         e.preventDefault();
       }, { passive: false });
   
@@ -134,16 +134,13 @@
         if (!ministrat.game_open) return;
         if (!ministrat.is_selecting || e.touches.length != 1) return;
   
-        var rect = map_overlay_el.getBoundingClientRect();
         var touch = e.touches[0];
-        var relativeX = touch.clientX - rect.left;
-        var relativeY = touch.clientY - rect.top;
+        var actual_coords = getSVGCoords(touch.clientX, touch.clientY);
   
-        ministrat.main.map.end_x = relativeX;
-        ministrat.main.map.end_y = relativeY;
+        ministrat.main.map.end_x = actual_coords[0];
+        ministrat.main.map.end_y = actual_coords[1];
   
         drawSelectionBox();
-  
         e.preventDefault();
       }, { passive: false });
   
