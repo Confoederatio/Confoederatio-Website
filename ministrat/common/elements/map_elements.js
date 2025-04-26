@@ -13,5 +13,6 @@ ministrat.config.map_elements = {
   west_german_border_els: `.west-german-province`,
 
   //Canvases
+  ministrat_canvas_selector: `#ministrat-map-overlay-canvases`,
   ministrat_terrain_canvas: `#ministrat-terrain-canvas`
 };
