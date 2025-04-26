@@ -2,7 +2,7 @@
 {
   function loadMinistratTerrain () {
     //Declare local instance variables
-    var canvas = document.querySelector(ministrat.config.map_elements.ministrat_terrain_canvas);
+    var canvas = document.querySelector(ministrat.config.elements.map.ministrat_terrain_canvas_selector);
     var ctx = canvas.getContext("2d");
     var terrain_image_path = `./ministrat/map/ministrat_terrain.png`;
 

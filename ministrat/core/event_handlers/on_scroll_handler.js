@@ -2,7 +2,7 @@
 {
   function loadMinistratScrollHandler () {
     ministrat.scroll_handler_loop = setInterval(function(){
-      if (ministrat.game_open) {
+      if (ministrat.main.game_open) {
         document.getElementById("ministrat-anchor").scrollIntoView({
           behavior: "instant"
         });
@@ -10,19 +10,19 @@
     }, 100);
     
     ministrat.main.map_elements.main_map_el.onwheel = function (e) {
-      if (!ministrat.game_open) return;
+      if (!ministrat.main.game_open) return;
       ministratMapWheelHandler(e);
     };
   }
 
   function ministratMapScrollHandler (e) {
     if (window.ministrat)
-      if (ministrat.ignore_scroll) {
-        ministrat.ignore_scroll = false;
+      if (ministrat.main.ignore_scroll) {
+        ministrat.main.ignore_scroll = false;
         return;
       }
 
-    if (ministrat.game_open) {
+    if (ministrat.main.game_open) {
       //Make sure Ministrat is non-scrollable
       document.getElementById("ministrat-anchor").scrollIntoView({
         behavior: "instant"

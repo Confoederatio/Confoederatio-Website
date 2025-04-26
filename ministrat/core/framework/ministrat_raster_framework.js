@@ -6,8 +6,8 @@ class Ministrat_Heatmap {
 
     //Declare local instance variables
     var map_defines = ministrat.config.defines.map;
-    var ministrat_canvas_overlay_el = document.querySelector(ministrat.config.map_elements.ministrat_canvas_selector);
-    var ministrat_terrain_canvas_el = document.querySelector(ministrat.config.map_elements.ministrat_terrain_canvas);
+    var ministrat_canvas_overlay_el = document.querySelector(ministrat.config.elements.map.ministrat_canvas_selector);
+    var ministrat_terrain_canvas_el = document.querySelector(ministrat.config.elements.map.ministrat_terrain_canvas_selector);
 
     
     this.heatmap_downscale_factor = Math.floor(map_defines.pathfind_downscale_factor*map_defines.px_per_km);
@@ -28,11 +28,14 @@ class Ministrat_Heatmap {
     setTimeout(function () {
       local_instance.draw();
     }, 1000);
+
+    //Set Ministrat_Heatmap in ministrat.gamestate.rasters
+    ministrat.gamestate.rasters[this.id] = this;
   }
 
   draw () {
     //Declare local instance variables
-    var terrain_canvas_el = document.querySelector(ministrat.config.map_elements.ministrat_terrain_canvas);
+    var terrain_canvas_el = document.querySelector(ministrat.config.elements.map.ministrat_terrain_canvas_selector);
     var terrain_obj = ministrat.config.terrain;
 
     //Populate terrain_cost map

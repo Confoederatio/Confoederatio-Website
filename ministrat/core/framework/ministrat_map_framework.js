@@ -23,7 +23,7 @@
         map_elements_obj.east_german_border_els[i].setAttribute("class", map_elements_obj.east_german_border_els[i].getAttribute("class") + " drawn");
     }, 4000);
 
-    ministrat.game_open = true;
+    ministrat.main.game_open = true;
   }
 
   function getSVGCoords (arg0_html_x, arg1_html_y) {
@@ -58,9 +58,9 @@
   function loadMapElements () {
     //Declare local reference variables
     var map_elements_obj = ministrat.main.map_elements;
-    var map_cities_svg = document.querySelector(ministrat.config.map_elements.map_cities_selector);
+    var map_cities_svg = document.querySelector(ministrat.config.elements.map.map_cities_selector);
 
-    map_elements_obj.all_map_elements = document.querySelectorAll(ministrat.config.map_elements.map_elements_selector);
+    map_elements_obj.all_map_elements = document.querySelectorAll(ministrat.config.elements.map.map_elements_selector);
     map_cities_svg.addEventListener("load", function () {
       map_elements_obj.cities_dom = map_cities_svg.contentDocument;
 
@@ -70,15 +70,15 @@
       }, 1000);
     });
 
-    map_elements_obj.berlin_border_el = document.querySelector(ministrat.config.map_elements.berlin_border_el);
-    map_elements_obj.east_german_border_els = document.querySelectorAll(ministrat.config.map_elements.east_german_border_els);
-    map_elements_obj.german_border_els = document.querySelectorAll(ministrat.config.map_elements.german_border_els);
-    map_elements_obj.inner_german_border_el = document.querySelector(ministrat.config.map_elements.inner_german_border_el);
-    map_elements_obj.main_map_el = document.querySelector(ministrat.config.map_elements.main_map_el);
-    map_elements_obj.map_overlay_el = document.querySelector(ministrat.config.map_elements.map_overlay_el);
-    map_elements_obj.ministrat_container_el = document.querySelector(ministrat.config.map_elements.ministrat_container_el);
-    map_elements_obj.ministrat_svg_map_el = document.querySelector(ministrat.config.map_elements.ministrat_svg_map_el);
-    map_elements_obj.west_german_border_els = document.querySelectorAll(ministrat.config.map_elements.west_german_border_els);
+    map_elements_obj.berlin_border_el = document.querySelector(ministrat.config.elements.map.berlin_border_selector);
+    map_elements_obj.east_german_border_els = document.querySelectorAll(ministrat.config.elements.map.east_german_border_selectors);
+    map_elements_obj.german_border_els = document.querySelectorAll(ministrat.config.elements.map.german_border_selectors);
+    map_elements_obj.inner_german_border_el = document.querySelector(ministrat.config.elements.map.inner_german_selector);
+    map_elements_obj.main_map_el = document.querySelector(ministrat.config.elements.map.main_map_selector);
+    map_elements_obj.map_overlay_el = document.querySelector(ministrat.config.elements.map.map_overlay_selector);
+    map_elements_obj.ministrat_container_el = document.querySelector(ministrat.config.elements.map.ministrat_container_selector);
+    map_elements_obj.ministrat_svg_map_el = document.querySelector(ministrat.config.elements.map.ministrat_svg_map_selector);
+    map_elements_obj.west_german_border_els = document.querySelectorAll(ministrat.config.elements.map.west_german_border_selectors);
   }
 
   function minimiseMap () {
@@ -93,7 +93,7 @@
     map_elements_obj.main_map_el.setAttribute("class", map_elements_obj.main_map_el.getAttribute("class").replace(" expanded", ""));
     map_elements_obj.ministrat_container_el.setAttribute("class", map_elements_obj.ministrat_container_el.getAttribute("class").replace(" expanded", ""));
 
-    ministrat.game_open = false;
+    ministrat.main.game_open = false;
   }
 
   function svgCoordsToHTMLCoords (arg0_svg_x, arg1_svg_y) {

@@ -40,7 +40,7 @@ class Ministrat_Country {
 
   loadHeatmap () {
     //Declare local instance variables
-    var ministrat_canvas_overlay_el = document.querySelector(ministrat.config.map_elements.ministrat_canvas_selector);
+    var ministrat_canvas_overlay_el = document.querySelector(ministrat.config.elements.map.ministrat_canvas_selector);
 
     //Create heatmap element
     if (!this.heatmap)

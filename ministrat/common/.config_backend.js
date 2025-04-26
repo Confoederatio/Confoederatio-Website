@@ -1,21 +1,11 @@
 window.ministrat = {
-  debug_geolocator: false,
-  drag_mode: undefined, //Either 'undefined', 'panning', or 'selection'
-  game_open: false,
-  ignore_scroll: false,
-  is_dragging: false,
-  is_selecting: false,
-
   config: {
     all_locations: [],
     defines: {},
+    elements: {},
     locations: {},
-    map_elements: {},
-    map_overlays: {},
     orbats: {},
     selectors: {},
-    topbar_elements: {},
-    ui: {},
     units: {},
     unique_locations: {}
   },
@@ -29,11 +19,21 @@ window.ministrat = {
 
     cities: {},
     countries: {},
+    rasters: {},
     units: {},
     player_tag: undefined
   },
-  main: {
+  main: { //Used for controls/saves
+    //Cache
+    map_elements: {},
+    unique_locations: {},
+
+    //Controls
+    game_open: false,
     game_speed: 0, //Game speeds are 0, 1, 3, 5
+    ignore_scroll: false,
+    is_dragging: false,
+    is_selecting: false,
     map: {
       start_x: 0,
       start_y: 0,
@@ -42,8 +42,9 @@ window.ministrat = {
       y: 0,
       zoom: 1,
     },
-    map_elements: {},
     selected_units: [],
-    unique_locations: {}
+
+    //Debug
+    debug_geolocator: false,
   }
 };

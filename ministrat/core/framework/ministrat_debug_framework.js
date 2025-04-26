@@ -1,7 +1,7 @@
 //Initialise functions
 {
   function ministratDebugGeolocatorClickHandler (e) {
-    if (!ministrat.debug_geolocator) return;
+    if (!ministrat.main.debug_geolocator) return;
 
     //Declare local instance variables
     var all_locations = ministrat.config.all_locations;
