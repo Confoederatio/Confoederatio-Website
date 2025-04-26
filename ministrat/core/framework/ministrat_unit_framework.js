@@ -97,6 +97,14 @@ class Ministrat_Unit {
     }
   }
 
+  isEnemyOf (arg0_tag) {
+    //Convert from parameters
+    var tag = (arg0_tag) ? arg0_tag : "";
+
+    //Declare local instance variables
+    
+  }
+
   select () {
     //Declare local instance variables
     var unit_el = document.getElementById(this.id);

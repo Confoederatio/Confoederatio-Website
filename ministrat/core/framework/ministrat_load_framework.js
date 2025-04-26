@@ -2,7 +2,7 @@
 {
   function hideMinistrat () {
     //Declare local instance variables
-    var non_ministrat_els = document.querySelectorAll(ministrat.config.non_ministrat_selector);
+    var non_ministrat_els = document.querySelectorAll(ministrat.config.ui.non_ministrat_selector);
 
     for (var i = 0; i < non_ministrat_els.length; i++)
       non_ministrat_els[i].classList.remove("display-none");
@@ -19,7 +19,7 @@
 
   function loadMinistrat () {
     //Declare local instance variables
-    var non_ministrat_els = document.querySelectorAll(ministrat.config.non_ministrat_selector);
+    var non_ministrat_els = document.querySelectorAll(ministrat.config.ui.non_ministrat_selector);
 
     for (var i = 0; i < non_ministrat_els.length; i++)
       non_ministrat_els[i].classList.add("display-none");

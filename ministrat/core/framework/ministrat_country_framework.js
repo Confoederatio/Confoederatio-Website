@@ -25,6 +25,10 @@ class Ministrat_Country {
       options.team : "nato";
 
     this.money = returnSafeNumber(options.money, 0);
+
+    //Player handler
+    if (options.is_default_player)
+      ministrat.gamestate.player_tag = this.tag;
     
     if (this.tag == "ddr") {
       var local_instance = this;
@@ -48,34 +52,16 @@ class Ministrat_Country {
 {
   function loadMinistratCountries () {
     //Declare local reference variables
+    var config_countries_obj = ministrat.config.countries;
     var countries_obj = ministrat.gamestate.countries;
 
-    //Load FRG
-    countries_obj.brd = new Ministrat_Country({
-      id: "brd",
-      name: "Bundesrepublik Deutschland",
-      colour: [114, 178, 140],
-      team: "nato",
-      money: 100
-    });
-    countries_obj.ddr = new Ministrat_Country({
-      id: "ddr",
-      name: "Deutsche Demokratische Republik",
-      colour: [240, 60, 60],
-      team: "wto",
-      money: 100
-    });
-    countries_obj.nato = new Ministrat_Country({
-      id: "nato",
-      name: "NATO",
-      colour: [60, 60, 240],
-      team: "nato",
-    });
-    countries_obj.wto = new Ministrat_Country({
-      id: "wto",
-      name: "WTO",
-      colour: [114, 40, 40],
-      team: "wto",
-    });
+    //Iterate over all_config_countries_keys
+    var all_config_countries_keys = Object.keys(config_countries_obj);
+
+    for (var i = 0; i < all_config_countries_keys.length; i++) {
+      var local_config_country_obj = config_countries_obj[all_config_countries_keys[i]];
+
+      countries_obj[all_config_countries_keys[i]] = new Ministrat_Country(local_config_country_obj);
+    }
   }
 }

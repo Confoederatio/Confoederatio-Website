@@ -5,9 +5,12 @@ class Ministrat_Heatmap {
     var type = (arg1_type) ? arg1_type : "infantry";
 
     //Declare local instance variables
+    var map_defines = ministrat.config.defines.map;
     var ministrat_canvas_overlay_el = document.querySelector(ministrat.config.map_elements.ministrat_canvas_selector);
     var ministrat_terrain_canvas_el = document.querySelector(ministrat.config.map_elements.ministrat_terrain_canvas);
 
+    
+    this.heatmap_downscale_factor = Math.floor(map_defines.pathfind_downscale_factor*map_defines.px_per_km);
     this.id = `${tag}-${type}-flowfield-heatmap`;
     this.type = type;
 
@@ -110,9 +113,6 @@ class Ministrat_Heatmap {
 
         var value_buffer = new Float32Array(downscaledWidth * downscaledHeight); // Initialized to 0
 
-        // --- Update Global Max Value (Original Logic) ---
-        // This part seems intended to update a global/instance max_value based on inputs.
-        // It doesn't directly relate to the heatmap values themselves yet.
         for (var i = 0; i < max_values.length; i++)
           max_value = Math.max(max_value, max_values[i]); // Assuming max_value is accessible in this scope
 
@@ -127,7 +127,6 @@ class Ministrat_Heatmap {
           downscaled_centre_x = Math.max(0, Math.min(downscaledWidth - 1, downscaled_centre_x));
           downscaled_centre_y = Math.max(0, Math.min(downscaledHeight - 1, downscaled_centre_y));
 
-          console.time(`Downscaled Calc ${i}`);
           // Iterate over the DOWNSCALED grid
           for (var dx = 0; dx < downscaledWidth; dx++) {
             for (var dy = 0; dy < downscaledHeight; dy++) {
@@ -146,11 +145,9 @@ class Ministrat_Heatmap {
               }
             }
           }
-          console.timeEnd(`Downscaled Calc ${i}`);
         }
 
         // --- Upscaling and Applying to Heatmap Data ---
-        console.time("Upscaling and Applying");
         const targetData = heatmap_data.data; // Direct reference for potential speedup
 
         for (let y = 0; y < originalHeight; y++) {
@@ -203,17 +200,16 @@ class Ministrat_Heatmap {
 
     for (var i = 0; i < all_units.length; i++) {
       var local_unit = ministrat.gamestate.units[all_units[i]];
-      console.log(local_unit);
 
       if (local_unit.country == "brd") {
-        unit_coordinates.push([local_unit.x + ministrat.config.canvas_offset[0], local_unit.y + ministrat.config.canvas_offset[1]]);
-        unit_values.push(20);
+          unit_coordinates.push([local_unit.x + ministrat.config.defines.map.canvas_offset[0], local_unit.y + ministrat.config.defines.map.canvas_offset[1]]);
+          unit_values.push(20);
       }
     }
 
     console.log(unit_coordinates, unit_values);
 
-    this.addMultipleBlockDropoffs(unit_coordinates, unit_values, ministrat.config.pathfind_downscaling);
+    this.addMultipleBlockDropoffs(unit_coordinates, unit_values, this.heatmap_downscale_factor);
 
     //Draw heatmap in Viridis
     var total_range = max_value - min_value;

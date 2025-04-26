@@ -5,20 +5,15 @@ window.ministrat = {
   ignore_scroll: false,
   is_dragging: false,
   is_selecting: false,
-  pathfind_downscaling: Math.floor(5*1.379352751),
-  pan_threshold: 8,
-  px_per_km: 1.379352751,
 
   config: {
     all_locations: [],
-    canvas_offset: [11, 27], //From Ministrat cities SVG viewport offsets
     defines: {},
     locations: {},
     map_elements: {},
     map_overlays: {},
-    non_ministrat_selector: `#homepage-banner, #gallery-section`,
     orbats: {},
-    rotate_animation_time: 5000,
+    selectors: {},
     topbar_elements: {},
     ui: {},
     units: {},
@@ -35,7 +30,7 @@ window.ministrat = {
     cities: {},
     countries: {},
     units: {},
-    player_tag: "brd"
+    player_tag: undefined
   },
   main: {
     game_speed: 0, //Game speeds are 0, 1, 3, 5

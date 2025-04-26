@@ -1,4 +1,4 @@
-ministrat.config.topbar_elements = {
+ministrat.config.selectors.topbar_elements = {
   clock_canvas_selector: `#ministrat-clock`,
   date_canvas_selector: `.ministrat-container #date-container`,
   topbar_container_selector: `#ministrat-topbar-container`,

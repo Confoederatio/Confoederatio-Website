@@ -5,7 +5,7 @@
     var hour = parseFloat(arg0_hour);
 
     //Declare local instance variables
-    var canvas = document.querySelector(ministrat.config.topbar_elements.clock_canvas_selector);
+    var canvas = document.querySelector(ministrat.config.selectors.topbar_elements.clock_canvas_selector);
     var ctx = canvas.getContext("2d");
 
     var clock_outline_width = 2.75;
@@ -52,7 +52,7 @@
     //Declare local instance variables
     var hour_string = Math.floor(ministrat.gamestate.date.hour)
       .toString().padStart(2, "0");
-    var ministrat_date_el = document.querySelector(ministrat.config.topbar_elements.date_canvas_selector);
+    var ministrat_date_el = document.querySelector(ministrat.config.selectors.topbar_elements.date_canvas_selector);
     var month_string = months[ministrat.gamestate.date.month - 1];
 
     //Draw date
@@ -61,7 +61,7 @@
 
   function initialiseMinistratDate () {
     //Declare local instance variables
-    var ministrat_date_el = document.querySelector(ministrat.config.topbar_elements.date_canvas_selector);
+    var ministrat_date_el = document.querySelector(ministrat.config.selectors.topbar_elements.date_canvas_selector);
 
     //Initialise date framework first
     initDateFramework();
@@ -107,15 +107,15 @@
 
   function loadMinistratTopbar () {
     //Declare local instance variables
-    var topbar_container_el = document.querySelector(ministrat.config.topbar_elements.topbar_container_selector);
+    var topbar_container_el = document.querySelector(ministrat.config.selectors.topbar_elements.topbar_container_selector);
 
     initialiseMinistratDate();
 
     //Time control button listeners
-    var pause_button_el = topbar_container_el.querySelector(ministrat.config.topbar_elements.pause_button_selector);
-    var speed_one_button_el = topbar_container_el.querySelector(ministrat.config.topbar_elements.speed_one_button_selector);
-    var speed_two_button_el = topbar_container_el.querySelector(ministrat.config.topbar_elements.speed_two_button_selector);
-    var speed_three_button_el = topbar_container_el.querySelector(ministrat.config.topbar_elements.speed_three_button_selector);
+    var pause_button_el = topbar_container_el.querySelector(ministrat.config.selectors.topbar_elements.pause_button_selector);
+    var speed_one_button_el = topbar_container_el.querySelector(ministrat.config.selectors.topbar_elements.speed_one_button_selector);
+    var speed_two_button_el = topbar_container_el.querySelector(ministrat.config.selectors.topbar_elements.speed_two_button_selector);
+    var speed_three_button_el = topbar_container_el.querySelector(ministrat.config.selectors.topbar_elements.speed_three_button_selector);
 
     pause_button_el.onclick = function (e) {
       setMinistratGameSpeed(0);
@@ -136,9 +136,9 @@
 
   function resetAllTimeControlButtons () {
     //Declare local instance variables
-    var topbar_container_el = document.querySelector(ministrat.config.topbar_elements.topbar_container_selector);
+    var topbar_container_el = document.querySelector(ministrat.config.selectors.topbar_elements.topbar_container_selector);
     
-    var time_controls_el = topbar_container_el.querySelector(ministrat.config.topbar_elements.time_controls_selector);
+    var time_controls_el = topbar_container_el.querySelector(ministrat.config.selectors.topbar_elements.time_controls_selector);
 
     //Iterate over all_time_control_buttons
     var all_time_control_buttons = time_controls_el.querySelectorAll(".time-icon");
@@ -152,12 +152,12 @@
     var speed = parseInt(arg0_speed);
 
     //Declare local instance variables
-    var topbar_container_el = document.querySelector(ministrat.config.topbar_elements.topbar_container_selector);
+    var topbar_container_el = document.querySelector(ministrat.config.selectors.topbar_elements.topbar_container_selector);
     
-    var pause_button_el = topbar_container_el.querySelector(ministrat.config.topbar_elements.pause_button_selector);
-    var speed_one_button_el = topbar_container_el.querySelector(ministrat.config.topbar_elements.speed_one_button_selector);
-    var speed_two_button_el = topbar_container_el.querySelector(ministrat.config.topbar_elements.speed_two_button_selector);
-    var speed_three_button_el = topbar_container_el.querySelector(ministrat.config.topbar_elements.speed_three_button_selector);
+    var pause_button_el = topbar_container_el.querySelector(ministrat.config.selectors.topbar_elements.pause_button_selector);
+    var speed_one_button_el = topbar_container_el.querySelector(ministrat.config.selectors.topbar_elements.speed_one_button_selector);
+    var speed_two_button_el = topbar_container_el.querySelector(ministrat.config.selectors.topbar_elements.speed_two_button_selector);
+    var speed_three_button_el = topbar_container_el.querySelector(ministrat.config.selectors.topbar_elements.speed_three_button_selector);
 
     //Set game speed
     resetAllTimeControlButtons();

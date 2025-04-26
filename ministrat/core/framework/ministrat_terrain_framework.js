@@ -12,8 +12,8 @@
 
     image.onload = function (e) {
       var actual_coords = svgCoordsToHTMLCoords(0, 0);
-      var x_offset = -window.innerHeight*0.0107;
-      var y_offset = -window.innerHeight*0.0107;
+      var x_offset = -window.innerHeight*ministrat.config.defines.map.svg_vh_offset[0];
+      var y_offset = -window.innerHeight*ministrat.config.defines.map.svg_vh_offset[1];
       
       ctx.drawImage(image, actual_coords[0], actual_coords[1], 1000 + x_offset, 1000 + y_offset);
     };

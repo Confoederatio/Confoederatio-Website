@@ -188,6 +188,6 @@
             y: ministrat_location[1],
           });
       }
-    }, ministrat.config.rotate_animation_time);
+    }, ministrat.config.defines.common.unit_load_delay);
   }
 }

@@ -17,6 +17,7 @@
   }
 
   > #ministrat-terrain-canvas {
+    display: none;
     opacity: 0;
   }
 }
