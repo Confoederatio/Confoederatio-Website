@@ -37,6 +37,16 @@ class Ministrat_Unit {
     this.draw();
   }
 
+  deselect () {
+    //Declare local instance variables
+    var unit_el = document.getElementById(this.id);
+
+    if (!unit_el) return; //Guard clause if unit doesn't exist
+
+    unit_el.style.filter = "";
+    removeElement(ministrat.main.selected_units, this.id);
+  }
+
   draw () {
     //Declare local instance variables
     var icon_name_dictionary = {
@@ -59,8 +69,12 @@ class Ministrat_Unit {
         unit_img.style.height = `${this.height}px`;
       unit_el.appendChild(unit_img);
       
+      var unit_instance = this;
       unit_el.onclick = function (e) {
-        console.log(`Unit ${this.id} clicked`);
+        deselectAllUnits();
+        unit_instance.select();
+
+        console.log(`Unit ${unit_instance.id} clicked`);
       };
 
       map_overlay_el.appendChild(unit_el);
@@ -68,13 +82,40 @@ class Ministrat_Unit {
 
     var actual_coords = svgCoordsToHTMLCoords(this.x, this.y);
 
+    this.display_x = actual_coords[0] - this.width/2;
+    this.display_y = actual_coords[1] - this.height/2;
+
     unit_el.style.position = "absolute";
-    unit_el.style.transform = `translate(${actual_coords[0] - this.width/2}px, ${actual_coords[1] - this.height/2}px)`;
+    unit_el.style.transform = `translate(${this.display_x}px, ${this.display_y}px)`;
+  }
+
+  select () {
+    //Declare local instance variables
+    var unit_el = document.getElementById(this.id);
+
+    if (!unit_el) return; //Guard clause if unit doesn't exist
+    if (this.country != ministrat.gamestate.player_tag) return; //Make sure player can only command their own units
+
+    unit_el.style.filter = "brightness(100)";
+    if (!ministrat.main.selected_units.includes(this.id))
+      ministrat.main.selected_units.push(this.id);
   }
 }
 
 //Initialise functions
 {
+  function deselectAllUnits () {
+    //Declare local instance variables
+    var all_units = Object.keys(ministrat.gamestate.units);
+
+    //Iterate over all units; deselect them
+    for (var i = 0; i < all_units.length; i++) {
+      var local_unit = ministrat.gamestate.units[all_units[i]];
+      
+      local_unit.deselect();
+    }
+  }
+
   function loadMinistratUnits () {
     //Declare local instance variables
     var units_obj = ministrat.gamestate.units;
@@ -98,5 +139,33 @@ class Ministrat_Unit {
         local_unit.draw();
       }
     }, 100);
+  }
+
+  function unitSelectionHandler (arg0_x, arg1_y, arg2_width, arg3_height) {
+    //Convert from parameters
+    var coord_x = returnSafeNumber(arg0_x, 0);
+    var coord_y = returnSafeNumber(arg1_y, 0);
+    var width = returnSafeNumber(arg2_width, 0);
+    var height = returnSafeNumber(arg3_height, 0);
+
+    //Declare local instance variables
+    var all_units = Object.keys(ministrat.gamestate.units);
+    var selected_units = [];
+
+    //Deselect all units first
+    deselectAllUnits();
+
+    //Iterate over all_units; check if each unit is within the selection box
+    for (var i = 0; i < all_units.length; i++) {
+      var local_unit = ministrat.gamestate.units[all_units[i]];
+
+      if (local_unit.display_x <= coord_x + width && local_unit.display_x + local_unit.width >= coord_x && local_unit.display_y <= coord_y + height && local_unit.display_y + local_unit.height >= coord_y)
+        local_unit.select();
+    }
+
+    console.log(ministrat.main.selected_units);
+
+    //Return statement
+    return selected_units;
   }
 }

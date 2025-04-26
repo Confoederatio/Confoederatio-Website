@@ -46,7 +46,7 @@
     return svg_coords;
   }
 
-  function htmlCoordsToSVGCoords(arg0_html_x, arg1_html_y) {
+  function htmlCoordsToSVGCoords (arg0_html_x, arg1_html_y) {
     //Convert from parameters
     var html_x = returnSafeNumber(arg0_html_x, 0);
     var html_y = returnSafeNumber(arg1_html_y, 0);

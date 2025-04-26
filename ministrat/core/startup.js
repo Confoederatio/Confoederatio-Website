@@ -6,6 +6,7 @@
     game_open: false,
     ignore_scroll: false,
     is_dragging: false,
+    is_selecting: false,
     pan_threshold: 8,
 
     config: {
@@ -54,7 +55,8 @@
 
       cities: {},
       countries: {},
-      units: {}
+      units: {},
+      player_tag: "brd"
     },
     main: {
       game_speed: 0, //Game speeds are 0, 1, 3, 5
@@ -67,6 +69,7 @@
         zoom: 1,
       },
       map_elements: {},
+      selected_units: [],
       unique_locations: {}
     }
   };

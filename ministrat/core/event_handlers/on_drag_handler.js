@@ -6,8 +6,16 @@
     var selection_box_el = map_overlay_el.querySelector(".selection-box");
 
     //Remove selection box
-    if (selection_box_el)
+    if (selection_box_el) {
+      unitSelectionHandler(
+        parseFloat(selection_box_el.style.left),
+        parseFloat(selection_box_el.style.top),
+        parseFloat(selection_box_el.style.width),
+        parseFloat(selection_box_el.style.height)
+      );
+      
       selection_box_el.remove();
+    }
   }
 
   function drawSelectionBox () {
@@ -101,6 +109,9 @@
           //Guard clauses
           if (!ministrat.game_open) return;
           ministrat.is_dragging = false;
+
+          //Deselect all units first
+          deselectAllUnits();
   
           //Selection logic
           if (ministrat.is_selecting) {
