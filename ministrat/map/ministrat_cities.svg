@@ -4,7 +4,7 @@
 <svg
    width="1000"
    height="1000"
-   viewBox="0 0 264.58332 264.58333"
+   viewBox="0 0 1000 1000"
    version="1.1"
    id="svg1"
    inkscape:version="1.4 (86a8ad7, 2024-10-11)"
@@ -43,7 +43,7 @@
        inkscape:groupmode="layer"
        id="layer2"
        inkscape:label="cities"
-       transform="matrix(0.26458333,0,0,0.26458333,-134.52316,-11.309911)">
+       transform="translate(-500, -16)">
       <image
          y="395.44586"
          x="1285.0499"

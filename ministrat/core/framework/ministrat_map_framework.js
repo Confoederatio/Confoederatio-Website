@@ -26,40 +26,33 @@
     ministrat.game_open = true;
   }
 
-  function HTMLCoordsToSVGCoords (arg0_html_x, arg1_html_y) {
+  function getSVGCoords (arg0_html_x, arg1_html_y) {
     //Convert from parameters
     var html_x = returnSafeNumber(arg0_html_x, 0);
     var html_y = returnSafeNumber(arg1_html_y, 0);
 
-    //Declare local reference variables
-    var map_elements_obj = ministrat.main.map_elements;
-    var map_svg = map_elements_obj.ministrat_svg_map_el;
+    //Declare local instance variables
+    var map_svg = ministrat.main.map_elements.ministrat_svg_map_el;
+    var reference_point = map_svg.createSVGPoint();
+    reference_point.x = html_x;
+    reference_point.y = html_y;
 
-    //Get SVG viewbox parameters
-    var view_box = map_svg.viewBox.baseVal;
+    var reference_point_in_map_coords = reference_point.matrixTransform(map_svg.getScreenCTM().inverse());
+    var svg_coords = svgCoordsToHTMLCoords(reference_point_in_map_coords.x, reference_point_in_map_coords.y);
+    svg_coords[0] -= window.innerHeight*0.0107;
+    svg_coords[1] -= window.innerHeight*0.025;
+    
+    //Return statement
+    return svg_coords;
+  }
 
-    //Calculate viewport height in pixels (1vh = 1% of viewport height)
-    var vh_in_pixels = window.innerHeight / 100;
-        
-    //Since SVG is 92vh × 92vh, calculate its dimensions in pixels
-    var svg_width_px = 92 * vh_in_pixels;
-    var svg_height_px = 92 * vh_in_pixels;
-
-    //Get SVG's actual position in the viewport
-    var map_bbox = map_svg.getBoundingClientRect();
-    var svg_left = map_bbox.left;
-    var svg_top = map_bbox.top;
-
-    //Calculate scaling factors between viewBox and actual rendered size
-    var scale_x = svg_width_px / view_box.width;
-    var scale_y = svg_height_px / view_box.height;
-
-    //Transform from HTML coordinates to SVG coordinates
-    var svg_x = (html_x - svg_left) / scale_x + view_box.x;
-    var svg_y = (html_y - svg_top) / scale_y + view_box.y;
+  function htmlCoordsToSVGCoords(arg0_html_x, arg1_html_y) {
+    //Convert from parameters
+    var html_x = returnSafeNumber(arg0_html_x, 0);
+    var html_y = returnSafeNumber(arg1_html_y, 0);
 
     //Return statement
-    return [svg_x, svg_y];
+    return getSVGCoords(html_x, html_y);
   }
 
   function loadMapElements () {
@@ -103,41 +96,23 @@
     ministrat.game_open = false;
   }
 
-  function svgCoordsToHTMLCoords(arg0_svg_x, arg1_svg_y) {
-    // Convert from parameters, ensuring they're numbers
+  function svgCoordsToHTMLCoords (arg0_svg_x, arg1_svg_y) {
+    // Convert from parameters
     var svg_x = returnSafeNumber(arg0_svg_x, 0);
     var svg_y = returnSafeNumber(arg1_svg_y, 0);
-    
+
     //Declare local reference variables
-    var map_elements_obj = ministrat.main.map_elements;
-    var map_svg = map_elements_obj.ministrat_svg_map_el;
-    
-    //Get SVG's viewBox parameters
-    var view_box = map_svg.viewBox.baseVal;
-    
-    //Calculate viewport height in pixels (1vh = 1% of viewport height)
-    var vh_in_pixels = window.innerHeight / 100;
-    
-    //Since SVG is 92vh × 92vh, calculate its dimensions in pixels
-    var svg_width_px = 92 * vh_in_pixels;
-    var svg_height_px = 92 * vh_in_pixels;
-    
-    //Get SVG's actual position in the viewport
-    var map_bbox = map_svg.getBoundingClientRect();
-    var svg_left = map_bbox.left;
-    var svg_top = map_bbox.top;
-    
-    //Calculate scaling factors between viewBox and actual rendered size
-    var scale_x = svg_width_px / view_box.width;
-    var scale_y = svg_height_px / view_box.height;
-    
-    //Transform from SVG viewBox coordinates to HTML coordinates
-    var screen_x = svg_left + (svg_x - view_box.x) * scale_x;
-    var screen_y = svg_top + (svg_y - view_box.y) * scale_y;
-    
-    //Round to integers for pixel precision
-    screen_x = Math.round(screen_x);
-    screen_y = Math.round(screen_y);
+    var vh = window.innerHeight/100;
+
+    var svg_width_px = 92*vh;
+    var svg_height_px = 92*vh;
+
+    var adjusted_svg_x = svg_x;
+    var adjusted_svg_y = svg_y;
+    var screen_x = (adjusted_svg_x/1000)*svg_width_px;
+    var screen_y = (adjusted_svg_y/1000)*svg_height_px;
+      screen_x += window.innerHeight*0.0107;
+      screen_y += window.innerHeight*0.025;
     
     //Return statement
     return [screen_x, screen_y];

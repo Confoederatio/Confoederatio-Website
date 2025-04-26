@@ -18,7 +18,7 @@
 
     var click_point_in_map_coords = click_point.matrixTransform(map_svg.getScreenCTM().inverse());
 
-    console.log(`SVG x: ${click_point_in_map_coords.x}, SVG y: ${click_point_in_map_coords.y}`);
+    console.log(getSVGCoords(e.clientX, e.clientY));
     ministratDebugGeolocatorClickHandler(e);
   }
 }

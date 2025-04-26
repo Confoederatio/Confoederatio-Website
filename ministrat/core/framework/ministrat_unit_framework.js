@@ -51,25 +51,25 @@ class Ministrat_Unit {
     if (!unit_el) {
       var unit_icon_path = `./ministrat/gfx/unit_icons/${icon_name_dictionary[this.type]}_${this.country.toUpperCase()}_colour.png`;
 
-      var unit_div = document.createElement("div");
-        unit_div.id = this.id;
+      unit_el = document.createElement("div");
+        unit_el.id = this.id;
       var unit_img = document.createElement("img");
         unit_img.src = unit_icon_path;
         unit_img.style.width = `${this.width}px`;
         unit_img.style.height = `${this.height}px`;
-      unit_div.appendChild(unit_img);
-
-      var actual_coords = svgCoordsToHTMLCoords(this.x, this.y);
-
-      unit_div.style.position = "absolute";
-      unit_div.style.transform = `translate(${actual_coords[0] + this.width/1.5}px, ${actual_coords[1] - this.height/2}px)`;
-
-      unit_div.onclick = function (e) {
+      unit_el.appendChild(unit_img);
+      
+      unit_el.onclick = function (e) {
         console.log(`Unit ${this.id} clicked`);
       };
 
-      map_overlay_el.appendChild(unit_div);
+      map_overlay_el.appendChild(unit_el);
     }
+
+    var actual_coords = svgCoordsToHTMLCoords(this.x, this.y);
+
+    unit_el.style.position = "absolute";
+    unit_el.style.transform = `translate(${actual_coords[0] - this.width/2}px, ${actual_coords[1] - this.height/2}px)`;
   }
 }
 
@@ -87,5 +87,16 @@ class Ministrat_Unit {
     loadWTOArmyORBAT();
 
     ministrat.config.all_locations = uniqueArray(ministrat.config.all_locations);
+
+    ministrat.draw_unit_loop = setInterval(function() {
+      var all_units = Object.keys(units_obj);
+
+      //Iterate over all units and draw them
+      for (var i = 0; i < all_units.length; i++) {
+        var local_unit = units_obj[all_units[i]];
+
+        local_unit.draw();
+      }
+    }, 100);
   }
 }
