@@ -15,6 +15,8 @@ class Ministrat_Country {
     
     //Declare local instance variables
     this.id = options.id;
+    this.tag = options.id;
+
     this.name = (options.name) ? 
       options.name : options.id;
     this.colour = (options.colour) ? 
@@ -23,6 +25,18 @@ class Ministrat_Country {
       options.team : "nato";
 
     this.money = returnSafeNumber(options.money, 0);
+    
+    if (this.tag == "ddr")
+      this.loadHeatmap();
+  }
+
+  loadHeatmap () {
+    //Declare local instance variables
+    var ministrat_canvas_overlay_el = document.querySelector(ministrat.config.map_elements.ministrat_canvas_selector);
+
+    //Create heatmap element
+    if (!this.heatmap)
+      this.heatmap = new Ministrat_Heatmap(this.tag);
   }
 }
 

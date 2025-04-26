@@ -11,6 +11,7 @@ window.ministrat = {
     all_locations: [],
     locations: {},
     map_elements: {},
+    map_overlays: {},
     non_ministrat_selector: `#homepage-banner, #gallery-section`,
     rotate_animation_time: 5000,
     topbar_elements: {},

@@ -5,15 +5,18 @@ ministrat.config.terrain = {
 
     modifiers: {
       armour: {
-        defence: -0.35
+        defence: -0.35,
+        movement: -0.40
       },
       artillery: {
         attack: -0.20,
-        defence: -0.50
+        defence: -0.50,
+        movement: -0.40
       },
       infantry: {
         attack: 0.15,
-        defence: 0.50
+        defence: 0.50,
+        movement: -0.10
       }
     }
   },
@@ -24,15 +27,18 @@ ministrat.config.terrain = {
     modifiers: {
       armour: {
         attack: -0.25,
-        defence: -0.50
+        defence: -0.50,
+        movement: -0.20
       },
       artillery: {
         attack: -0.25,
-        defence: 0.80
+        defence: 0.80,
+        movement: -0.25
       },
       infantry: {
         attack: 0.35,
-        defence: 0.75
+        defence: 0.75,
+        movement: -0.15
       }
     }
   },
@@ -43,15 +49,18 @@ ministrat.config.terrain = {
     modifiers: {
       armour: {
         attack: -0.50,
-        defence: -0.75
+        defence: -0.75,
+        movement: -0.50
       },
       artillery: {
         attack: -0.50,
-        defence: 0.75
+        defence: 0.75,
+        movement: -0.50
       },
       infantry: {
         attack: 0.50,
-        defence: 1.50
+        defence: 1.50,
+        movement: -0.40
       }
     }
   },
@@ -62,15 +71,18 @@ ministrat.config.terrain = {
     modifiers: {
       armour: {
         attack: -0.50,
-        defence: -0.75
+        defence: -0.75,
+        movement: 0.35
       },
       artillery: {
         attack: -0.50,
-        defence: 0.75
+        defence: 0.75,
+        movement: 0.20
       },
       infantry: {
         attack: 0.50,
-        defence: 1.50
+        defence: 1.50,
+        movement: 0.20
       }
     }
   }

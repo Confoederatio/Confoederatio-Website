@@ -23,8 +23,8 @@
     var b = rgba[2];
     var a = rgba[3];
 
-    //Return statement (rebuild 32-bit integer)
-    return ((r << 24) | (g << 16) | (b << 8) | a) >>> 0;
+    //Return statement; rebuild the 32-bit signed integer
+    return (r << 24) | (g << 16) | (b << 8) | a;
   };
 
   /*
@@ -94,10 +94,10 @@
     var number = returnSafeNumber(Math.round(arg0_number));
 
     //Declare local instance variables
-    var r = (number >> 24) & 0xFF; //Extract highest 8 bits
-    var g = (number >> 16) & 0xFF; //Extract next 8 bits
-    var b = (number >> 8) & 0xFF;  //Extract next 8 bits
-    var a = number & 0xFF;         //Extract lowest 8 bits
+    var r = (number >> 24) & 0xFF;
+    var g = (number >> 16) & 0xFF;
+    var b = (number >> 8) & 0xFF;
+    var a = number & 0xFF;
 
     //Return statement
     return [r, g, b, a];
