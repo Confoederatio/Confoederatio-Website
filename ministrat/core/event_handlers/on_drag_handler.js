@@ -61,7 +61,7 @@
         //Declare local instance variables
         var actual_coords = getSVGCoords(e.clientX, e.clientY);
   
-        if (e.shiftKey) { //Shift + Drag = Selection
+        if (e.shiftKey || e.ctrlKey) { //Shift + Drag = Selection
           ministrat.is_selecting = true;
           ministrat.main.map.start_x = actual_coords[0];
           ministrat.main.map.start_y = actual_coords[1];

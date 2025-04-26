@@ -1,0 +1,14 @@
+/* -- Initialise functions -- */
+#ministrat-map-overlay-canvases {
+  position: absolute;
+
+  > canvas {
+    height: 92vh;
+    width: 92vh;
+
+    opacity: 0.2; /* -- Temporary: debug attribute -- */
+  }
+  > img {
+    display: none;
+  }
+}

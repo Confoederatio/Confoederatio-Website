@@ -80,6 +80,7 @@ class Ministrat_Unit {
       map_overlay_el.appendChild(unit_el);
     }
 
+    //Coords handling
     var actual_coords = svgCoordsToHTMLCoords(this.x, this.y);
 
     this.display_x = actual_coords[0] - this.width/2;
@@ -87,6 +88,13 @@ class Ministrat_Unit {
 
     unit_el.style.position = "absolute";
     unit_el.style.transform = `translate(${this.display_x}px, ${this.display_y}px)`;
+
+    //Selection handling
+    if (ministrat.main.selected_units.includes(this.id)) {
+      unit_el.style.filter = "brightness(100)";
+    } else {
+      unit_el.style.filter = "";
+    }
   }
 
   select () {
@@ -96,7 +104,6 @@ class Ministrat_Unit {
     if (!unit_el) return; //Guard clause if unit doesn't exist
     if (this.country != ministrat.gamestate.player_tag) return; //Make sure player can only command their own units
 
-    unit_el.style.filter = "brightness(100)";
     if (!ministrat.main.selected_units.includes(this.id))
       ministrat.main.selected_units.push(this.id);
   }
@@ -128,17 +135,6 @@ class Ministrat_Unit {
     loadWTOArmyORBAT();
 
     ministrat.config.all_locations = uniqueArray(ministrat.config.all_locations);
-
-    ministrat.draw_unit_loop = setInterval(function() {
-      var all_units = Object.keys(units_obj);
-
-      //Iterate over all units and draw them
-      for (var i = 0; i < all_units.length; i++) {
-        var local_unit = units_obj[all_units[i]];
-
-        local_unit.draw();
-      }
-    }, 100);
   }
 
   function unitSelectionHandler (arg0_x, arg1_y, arg2_width, arg3_height) {
