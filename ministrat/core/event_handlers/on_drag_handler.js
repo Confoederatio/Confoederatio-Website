@@ -11,6 +11,7 @@
   }
 
   function drawSelectionBox () {
+    //Declare local instance variables
     var map_overlay_el = ministrat.main.map_elements.map_overlay_el;
     var selection_box_el = map_overlay_el.querySelector(".selection-box");
 
@@ -40,117 +41,119 @@
     var map_el = ministrat.main.map_elements.main_map_el;
     var map_overlay_el = ministrat.main.map_elements.map_overlay_el;
 
-    // Computer support
-    map_el.addEventListener("mousedown", function (e) {
-      if (!ministrat.game_open) return;
-
-      var rect = map_overlay_el.getBoundingClientRect();
-      var relativeX = e.clientX;
-      var relativeY = e.clientY;
-
-      var actual_coords = getSVGCoords(relativeX, relativeY);
-
-      if (e.shiftKey) {
-        ministrat.is_selecting = true;
-        ministrat.main.map.start_x = actual_coords[0];
-        ministrat.main.map.start_y = actual_coords[1];
-        ministrat.main.map.end_x = actual_coords[0];
-        ministrat.main.map.end_y = actual_coords[1];
-
-        drawSelectionBox();
-      } else {
-        ministrat.is_dragging = true;
-        ministrat.main.map.start_x = e.clientX;
-        ministrat.main.map.start_y = e.clientY;
-      }
-
-      e.preventDefault();
-    });
-
-    map_el.addEventListener("mousemove", function (e) {
-      if (!ministrat.game_open) return;
-      if (!ministrat.is_dragging && !ministrat.is_selecting) return;
-
-      var rect = map_overlay_el.getBoundingClientRect();
-      var relativeX = e.clientX;
-      var relativeY = e.clientY;
-
-      var actual_coords = getSVGCoords(relativeX, relativeY);
-
-      if (ministrat.is_selecting) {
-        ministrat.main.map.end_x = actual_coords[0];
-        ministrat.main.map.end_y = actual_coords[1];
-
-        drawSelectionBox();
-      } else if (ministrat.is_dragging) {
-        var delta_x = e.clientX - ministrat.main.map.start_x;
-        var delta_y = e.clientY - ministrat.main.map.start_y;
-
-        ministrat.main.map.x += delta_x;
-        ministrat.main.map.y += delta_y;
-        ministrat.main.map.start_x = e.clientX;
-        ministrat.main.map.start_y = e.clientY;
-
-        updateMapCoords();
-      }
-    });
-
-    ["mouseup", "mouseleave"].forEach((eventName) => {
-      map_el.addEventListener(eventName, () => {
+    //Computer support
+    {
+      map_el.addEventListener("mousedown", function (e) {
+        //Guard clauses
         if (!ministrat.game_open) return;
-        ministrat.is_dragging = false;
+  
+        //Declare local instance variables
+        var actual_coords = getSVGCoords(e.clientX, e.clientY);
+  
+        if (e.shiftKey) { //Shift + Drag = Selection
+          ministrat.is_selecting = true;
+          ministrat.main.map.start_x = actual_coords[0];
+          ministrat.main.map.start_y = actual_coords[1];
+          ministrat.main.map.end_x = actual_coords[0];
+          ministrat.main.map.end_y = actual_coords[1];
+  
+          drawSelectionBox();
+        } else { //Drag = Pan
+          ministrat.is_dragging = true;
+          ministrat.main.map.start_x = e.clientX;
+          ministrat.main.map.start_y = e.clientY;
+        }
+  
+        e.preventDefault();
+      });
+  
+      map_el.addEventListener("mousemove", function (e) {
+        //Guard clauses
+        if (!ministrat.game_open) return;
+        if (!ministrat.is_dragging && !ministrat.is_selecting) return;
+  
+        //Declare local instance variables
+        var actual_coords = getSVGCoords(e.clientX, e.clientY);
+  
+        if (ministrat.is_selecting) { //Selection
+          ministrat.main.map.end_x = actual_coords[0];
+          ministrat.main.map.end_y = actual_coords[1];
+  
+          drawSelectionBox();
+        } else if (ministrat.is_dragging) { //Pan
+          var delta_x = e.clientX - ministrat.main.map.start_x;
+          var delta_y = e.clientY - ministrat.main.map.start_y;
+  
+          ministrat.main.map.x += delta_x;
+          ministrat.main.map.y += delta_y;
+          ministrat.main.map.start_x = e.clientX;
+          ministrat.main.map.start_y = e.clientY;
+  
+          updateMapCoords();
+        }
+      });
+  
+      ["mouseup", "mouseleave"].forEach((eventName) => {
+        map_el.addEventListener(eventName, () => {
+          //Guard clauses
+          if (!ministrat.game_open) return;
+          ministrat.is_dragging = false;
+  
+          //Selection logic
+          if (ministrat.is_selecting) {
+            ministrat.is_selecting = false;
+            clearSelectionBox();
+          }
+        });
+      });
+    }
 
+    //Mobile support
+    {
+      map_el.addEventListener("touchstart", function (e) {
+        if (!ministrat.game_open) return;
+        if (e.touches.length != 1) return;
+  
+        var rect = map_overlay_el.getBoundingClientRect();
+        var touch = e.touches[0];
+        var relativeX = touch.clientX - rect.left;
+        var relativeY = touch.clientY - rect.top;
+  
+        ministrat.is_selecting = true;
+        ministrat.main.map.start_x = relativeX;
+        ministrat.main.map.start_y = relativeY;
+        ministrat.main.map.end_x = relativeX;
+        ministrat.main.map.end_y = relativeY;
+  
+        drawSelectionBox();
+  
+        e.preventDefault();
+      }, { passive: false });
+  
+      map_el.addEventListener("touchmove", function (e) {
+        if (!ministrat.game_open) return;
+        if (!ministrat.is_selecting || e.touches.length != 1) return;
+  
+        var rect = map_overlay_el.getBoundingClientRect();
+        var touch = e.touches[0];
+        var relativeX = touch.clientX - rect.left;
+        var relativeY = touch.clientY - rect.top;
+  
+        ministrat.main.map.end_x = relativeX;
+        ministrat.main.map.end_y = relativeY;
+  
+        drawSelectionBox();
+  
+        e.preventDefault();
+      }, { passive: false });
+  
+      map_el.addEventListener("touchend", function (e) {
+        if (!ministrat.game_open) return;
         if (ministrat.is_selecting) {
           ministrat.is_selecting = false;
           clearSelectionBox();
         }
       });
-    });
-
-    // Mobile support
-    map_el.addEventListener("touchstart", function (e) {
-      if (!ministrat.game_open) return;
-      if (e.touches.length != 1) return;
-
-      var rect = map_overlay_el.getBoundingClientRect();
-      var touch = e.touches[0];
-      var relativeX = touch.clientX - rect.left;
-      var relativeY = touch.clientY - rect.top;
-
-      ministrat.is_selecting = true;
-      ministrat.main.map.start_x = relativeX;
-      ministrat.main.map.start_y = relativeY;
-      ministrat.main.map.end_x = relativeX;
-      ministrat.main.map.end_y = relativeY;
-
-      drawSelectionBox();
-
-      e.preventDefault();
-    }, { passive: false });
-
-    map_el.addEventListener("touchmove", function (e) {
-      if (!ministrat.game_open) return;
-      if (!ministrat.is_selecting || e.touches.length != 1) return;
-
-      var rect = map_overlay_el.getBoundingClientRect();
-      var touch = e.touches[0];
-      var relativeX = touch.clientX - rect.left;
-      var relativeY = touch.clientY - rect.top;
-
-      ministrat.main.map.end_x = relativeX;
-      ministrat.main.map.end_y = relativeY;
-
-      drawSelectionBox();
-
-      e.preventDefault();
-    }, { passive: false });
-
-    map_el.addEventListener("touchend", function (e) {
-      if (!ministrat.game_open) return;
-      if (ministrat.is_selecting) {
-        ministrat.is_selecting = false;
-        clearSelectionBox();
-      }
-    });
+    }
   }
 }
