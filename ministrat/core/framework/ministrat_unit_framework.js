@@ -30,6 +30,12 @@ class Ministrat_Unit {
     this.x = returnSafeNumber(options.x, 0);
     this.y = returnSafeNumber(options.y, 0);
 
+    //Statistics - Can be modified by individual units
+    this.unit_attack_modifier = 1;
+    this.unit_defence_modifier = 1;
+    this.unit_movement_modifier = 1;
+    this.unit_range_modifier = 1;
+
     if (has_name && has_no_id)
       this.id = this.name;
 
@@ -97,6 +103,22 @@ class Ministrat_Unit {
     }
   }
 
+  select () {
+    //Declare local instance variables
+    var unit_el = document.getElementById(this.id);
+
+    if (!unit_el) return; //Guard clause if unit doesn't exist
+    if (this.country != ministrat.gamestate.player_tag) return; //Make sure player can only command their own units
+
+    if (!ministrat.main.selected_units.includes(this.id))
+      ministrat.main.selected_units.push(this.id);
+  }
+
+  //Conditionals
+  getCurrentTerrain (arg0_options) {
+
+  }
+  
   isEnemyOf (arg0_tag) {
     //Convert from parameters
     var tag = (arg0_tag) ? arg0_tag : "";
@@ -110,15 +132,34 @@ class Ministrat_Unit {
       return true;
   }
 
-  select () {
+  //Effects
+  applyModifiers () {
+
+  }
+
+  //Statistics
+  getAttackModifier (arg0_unit_type) {
+    //Convert from parameters
+    var unit_type = (arg0_unit_type) ? arg0_unit_type : "";
+
     //Declare local instance variables
-    var unit_el = document.getElementById(this.id);
+    var country_obj = ministrat.gamestate.countries[this.country];
+    var team_obj = ministrat.config.history.teams[country_obj.team];
 
-    if (!unit_el) return; //Guard clause if unit doesn't exist
-    if (this.country != ministrat.gamestate.player_tag) return; //Make sure player can only command their own units
+    
+    
+  }
 
-    if (!ministrat.main.selected_units.includes(this.id))
-      ministrat.main.selected_units.push(this.id);
+  getDefenceModifier (arg0_unit_type) {
+
+  }
+
+  getMovementModifier (arg0_unit_type) {
+    
+  }
+
+  getRangeModifier (arg0_unit_type) {
+
   }
 }
 

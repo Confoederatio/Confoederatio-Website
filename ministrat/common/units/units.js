@@ -8,6 +8,7 @@ ministrat.config.units = {
     movement: 2200,
     range: 100,
 
+    cost: 500,
     modifiers: {
       can_only_attack: ["air"],
       can_only_be_attacked_by: ["air"],
@@ -26,6 +27,7 @@ ministrat.config.units = {
     movement: 55,
     range: 8,
 
+    cost: 200,
     modifiers: {
       in_urban_range: {
         distance: 45,
@@ -51,6 +53,7 @@ ministrat.config.units = {
     movement: 10,
     range: 30,
 
+    cost: 150,
     modifiers: {
       when_attacking_armour: {
         attack_modifier: 1.35
@@ -65,6 +68,7 @@ ministrat.config.units = {
     image: `./ministrat/gfx/unit_icons/infantry`,
     can_capture_cities: true,
 
+    cost: 100,
     modifiers: {
       in_urban_range: {
         distance: 10,

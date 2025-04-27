@@ -9,7 +9,7 @@ class Ministrat_Heatmap {
     var ministrat_canvas_overlay_el = document.querySelector(ministrat.config.elements.map.ministrat_canvas_selector);
     var ministrat_terrain_canvas_el = document.querySelector(ministrat.config.elements.map.ministrat_terrain_canvas_selector);
 
-    
+    this.debug_heatmap = true;
     this.heatmap_downscale_factor = Math.floor(map_defines.pathfind_downscale_factor*map_defines.px_per_km);
     this.id = `${tag}-${type}-flowfield-heatmap`;
     this.tag = tag;
@@ -24,10 +24,16 @@ class Ministrat_Heatmap {
     //Create context
     this.ctx = this.canvas.getContext("2d");
     
+    if (!this.debug_heatmap)
+      this.canvas.style.opacity = 0;
     ministrat_canvas_overlay_el.appendChild(this.canvas);
     var local_instance = this;
     setTimeout(function () {
+      if (local_instance.debug_heatmap)
+        console.time(`${local_instance.id} calculation time:`);
       local_instance.draw();
+      if (local_instance.debug_heatmap)
+        console.timeEnd(`${local_instance.id} calculation time:`);
     }, 1000);
 
     //Set Ministrat_Heatmap in ministrat.gamestate.rasters
@@ -259,29 +265,54 @@ class Ministrat_Heatmap {
     var total_range = max_value - min_value;
     console.log(total_range, max_value, min_value);
 
-    for (var i = 0; i < this.canvas.height; i++)
-      for (var x = 0; x < this.canvas.width; x++) {
-        var local_index = (i*this.canvas.width + x)*4;
-        var local_value = decodeRGBAAsNumber([
-          heatmap_data.data[local_index],
-          heatmap_data.data[local_index + 1],
-          heatmap_data.data[local_index + 2],
-          heatmap_data.data[local_index + 3]
-        ]);
+    if (this.debug_heatmap)
+      for (var i = 0; i < this.canvas.height; i++)
+        for (var x = 0; x < this.canvas.width; x++) {
+          var local_index = (i*this.canvas.width + x)*4;
+          var local_value = decodeRGBAAsNumber([
+            heatmap_data.data[local_index],
+            heatmap_data.data[local_index + 1],
+            heatmap_data.data[local_index + 2],
+            heatmap_data.data[local_index + 3]
+          ]);
 
-        var local_fraction = (local_value - min_value)/total_range;
+          var local_fraction = (local_value - min_value)/total_range;
 
-        var local_colour = hexToRGB(d3.interpolateMagma(local_fraction));
+          var local_colour = hexToRGB(d3.interpolateMagma(local_fraction));
 
-        //Check if local_value is valid; or if it is non-traversable
-        if (local_value != 9999) {
-          heatmap_data.data[local_index] = local_colour[0];
-          heatmap_data.data[local_index + 1] = local_colour[1];
-          heatmap_data.data[local_index + 2] = local_colour[2];
-          heatmap_data.data[local_index + 3] = 255;
+          //Check if local_value is valid; or if it is non-traversable
+          if (local_value != 9999) {
+            heatmap_data.data[local_index] = local_colour[0];
+            heatmap_data.data[local_index + 1] = local_colour[1];
+            heatmap_data.data[local_index + 2] = local_colour[2];
+            heatmap_data.data[local_index + 3] = 255;
+          }
         }
-      }
     
     this.ctx.putImageData(heatmap_data, 0, 0);
+  }
+}
+
+//Initialise functions
+{
+  /**
+   * updateRandomFlowfield() - Updates a random AI flowfield.
+   */
+  function updateRandomFlowfield () {
+    //Declare local instance variables
+    var all_flowfields = [];
+    var all_heatmaps = Object.keys(ministrat.gamestate.rasters);
+
+    //Iterate over all_heatmaps
+    for (var i = 0; i < all_heatmaps.length; i++) {
+      var local_heatmap = ministrat.gamestate.rasters[all_heatmaps[i]];
+
+      if (local_heatmap.tag != ministrat.gamestate.player_tag)
+        all_flowfields.push(local_heatmap);
+    }
+
+    //Draw random flowfield
+    if (all_flowfields.length > 0)
+      randomElement(all_flowfields).draw();
   }
 }

@@ -1,4 +1,14 @@
 /* -- Initialise functions -- */
+.ministrat-map-image {
+  position: absolute;
+  top: 2vh;
+  left: 1vh;
+
+  height: 92vh;
+  width: 92vh;
+
+  opacity: 0.2;
+}
 #ministrat-map-overlay-canvases {
   position: absolute;
 
