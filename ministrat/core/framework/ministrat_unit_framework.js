@@ -135,9 +135,6 @@ class Ministrat_Unit {
     //Declare local instance variables
     var units_obj = ministrat.gamestate.units;
 
-    //Load unit locations first
-    loadMinistratUnitLocations();
-
     //Load units once starting animation has finished
     setTimeout(function(){
       //Iterate over all_countries
