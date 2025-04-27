@@ -86,5 +86,18 @@ class Ministrat_City {
 
 //Initialise functions
 {
-  
+  function loadMinistratCities () {
+    //Declare local instance variables
+    var config_cities_obj = ministrat.config.cities;
+
+    //Iterate over all_config_cities_keys
+    var all_config_cities_keys = Object.keys(config_cities_obj);
+
+    for (var i = 0; i < all_config_cities_keys.length; i++) {
+      var local_config_city = config_cities_obj[all_config_cities_keys[i]];
+
+      //Create new Ministrat_City instance
+      ministrat.gamestate.cities[all_config_cities_keys[i]] = new Ministrat_City(local_config_city);
+    }
+  }
 }
