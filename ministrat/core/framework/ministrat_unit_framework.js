@@ -143,7 +143,7 @@ class Ministrat_Unit {
     //Load units once starting animation has finished
     setTimeout(function(){
       //Iterate over all_countries
-      var all_countries = Object.keys(ministrat.config.countries);
+      var all_countries = Object.keys(ministrat.config.history.countries);
 
       for (var i = 0; i < all_countries.length; i++) {
         var local_orbat = ministrat.config.orbats[all_countries[i]];

@@ -3,6 +3,7 @@ window.ministrat = {
     all_locations: [],
     defines: {},
     elements: {},
+    history: {},
     locations: {},
     orbats: {},
     selectors: {},

@@ -74,7 +74,7 @@ class Ministrat_Country {
 
   function loadMinistratCountries () {
     //Declare local reference variables
-    var config_countries_obj = ministrat.config.countries;
+    var config_countries_obj = ministrat.config.history.countries;
     var countries_obj = ministrat.gamestate.countries;
 
     //Iterate over all_config_countries_keys
