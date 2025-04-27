@@ -1,3 +1,32 @@
+/* -- Topbar close button -- */
+#ministrat-close-button {
+  position: fixed;
+
+  height: 2rem;
+  left: 1rem;
+  top: 1rem;
+  width: 2rem;
+
+  padding: 0.75rem;
+
+  border-radius: 50%;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 2s ease, background-color 0.5s ease;
+  user-select: none;
+  z-index: 3;
+}
+#ministrat-close-button:hover {
+  cursor: pointer;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.ministrat-container:not(.expanded) #ministrat-close-button {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
 /* -- Topbar layout -- */
 .ministrat-container:not(.expanded) #ministrat-topbar-container {
   display: none;

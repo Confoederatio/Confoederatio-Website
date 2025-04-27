@@ -3,7 +3,17 @@
   <head>
     <base href = "../"></base>
     <meta charset = "utf-8">
-    <title>CONFOEDERATIO</title>
+    <title>CONFOEDERATIO_</title>
+
+    <!-- Favicon -->
+    <link rel = "icon" type = "image/png" sizes = "16x16" href = "gfx/interface/logos/confoederatio_icon_16x16.png">
+    <link rel = "icon" type = "image/png" sizes = "32x32" href = "gfx/interface/logos/confoederatio_icon_32x32.png">
+    <link rel = "icon" type = "image/png" sizes = "48x48" href = "gfx/interface/logos/confoederatio_icon_48x48.png">
+    <link rel = "icon" type = "image/png" sizes = "64x64" href = "gfx/interface/logos/confoederatio_icon_64x64.png">
+    <link rel = "icon" type = "image/png" sizes = "96x96" href = "gfx/interface/logos/confoederatio_icon_96x96.png">
+    <link rel = "icon" type = "image/png" sizes = "128x128" href = "gfx/interface/logos/confoederatio_icon_128x128.png">
+    <link rel = "icon" type = "image/png" sizes = "256x256" href = "gfx/interface/logos/confoederatio_icon_256x256.png">
+    <link rel = "icon" type = "image/png" sizes = "512x512" href = "gfx/interface/logos/confoederatio_icon_512x512.png">
 
     <!-- REFACTOR CODE -->
     <link rel = "stylesheet" href = "css/global/global.css">
@@ -37,6 +47,7 @@
       <link rel = "stylesheet" href = "ministrat/css/ui_load_animations.css">
 
     <!--Import JS libraries-->
+    <script type = "text/javascript" src = "js/libraries/d3.min.js"></script>
     <link rel = "stylesheet" href = "js/libraries/fstdropdown.min.css">
     <script type = "text/javascript" src = "js/libraries/fstdropdown.min.js"></script>
     <script type = "text/javascript" src = "js/libraries/jQuery.min.js"></script>
@@ -46,8 +57,6 @@
     <script type = "text/javascript" src = "js/libraries/SlimSelect.min.js"></script>
     <script type = "text/javascript" src = "js/libraries/Tippy.min.js"></script>
     <script type = "text/javascript" src = "js/libraries/TweenMax.min.js"></script>
-
-    <script src = "https://d3js.org/d3.v7.min.js"></script> <!-- Manually embed later -->
 
     <!--Import core framework scripts-->
     <script type = "text/javascript" src = "js/UF/ABRS/ABRS.js"></script>
@@ -80,7 +89,6 @@
     <script type = "text/javascript" src = "js/UF/strings/split_strings.js"></script>
 
     <!--Ministrat-->
-    <link rel = "stylesheet" href = "ministrat/anim/map_anim.css">
     <link rel = "stylesheet" href = "ministrat/css/map_ui.css">
     <link rel = "stylesheet" href = "ministrat/css/topbar_ui.css">
   </head>
@@ -326,20 +334,40 @@
           Sedag. Vetsonne.
         </div>
         <div id = "about-me-body-text" class = "about-me-body-text">
-          ABOUT PAGE IS UNDER CONSTRUCTION
+          Hello. We are <b>Confoederatio</b>. We are a hybrid R&D/grand-strategy collective that works on a wide range of projects, most notably historical databases, geospatial statistics, game engines, and other associated projects. We only have two active members, <i>Australis</i> (Aust Kätzchen), and <i>Vis</i> (Vis Tacitus), so we may be often overstretched at times.
+          <br><br>
+          This website is still under construction, although we have decided to make it currently operable due to present time constraints. As such, you may find this website relatively janky at times. We are working on addressing these issues as soon as possible.
+          <br><br>
+          You can contact us at <a href = "mailto:vf.confoederatio@gmail.com">vf.confoederatio@gmail.com</a>, as well as our Discord, <a href = "https://discord.gg/4DcuaBKpuS">Midnight</a>.
+          <ul>
+            <li>Documentation: <a href = "https://confoederatiodocs.info/">https://confoederatiodocs.info/</a></li>
+            <li>GitHub: <a href = "https://github.com/Confoederatio">@Confoederatio</a></li>
+            <li>YouTube: <a href = "https://www.youtube.com/@Confoederatio">@Confoederatio</a></li>
+          </ul>
 
           <hr class = "about-me-divider">
 
-          <b>Triumph & Tragedy 2</b> is easily the largest project that I’m currently working on at the moment. Built on top of the experience and framework provided by Triumph & Tragedy I, its successor aims to morph the strategy experience into a ‘sandbox-simulation of everything’ where players can choose what they want to play with, and customise anything - from the buildings in their cities to the management of embassies in other countries and the type of crops planted and cultivated every month - all in a Discord bot.<br>
-          <br>
-          Make sure to get ready for an experience you’re not quite ready for by playing its predecessor, Triumph & Tragedy 1!
+          <b>Naissance</b>, and its associated databases, <b>Eoscala</b>, <b>Velkscala</b>, and <b>Stadestér</b> are our largest research projects at the moment, with Naissance being the GIS that ties everything together.
+          <br><br>
+          All of these datasets are provided at 5-arcminute or finer resolution from 10000BC - Present.
+
+          <hr class = "about-me-divider">
+          <img src = "gfx/interface/logos/confoederatio_icon.png" class = "confoederatio-icon" draggable = "false" height = "128" width = "128"></img>
         </div>
 
         <div id = "biography-overlay-subtitle" class = "biography-overlay-subtitle">
           Biography-
         </div>
         <div id = "biography-body-text" class = "biography-body-text">
-          Blah blah blah
+          Confoederatio's underpinnings mainly go back to the Cold War modding community from 2019-2020, particular amongst <b>11:59</b> and AOC2/AOC3 with Midnight. As these projects no longer became viable, much of the community's work was forked to independent grand-strategy projects such as Triumph & Tragedy, as well as applied modelling and geospatial statistics.
+          <br><br>
+          Confoederatio was formed mainly as a single merger of a bunch of disparate projects within Midnight between similar members in 2023, and can be split into three or four main branches, namely: 
+          <ul>
+            <li><b>CAD</b> (Confoederatio, Aristic Division)</li>
+            <li><b>CRD</b> (Confoederatio, Research Division)</li>
+            <li><b>CTD</b> (Confoederatio, Technical Division)</li>
+          </ul>
+          This in addition to the <b>Preservés</b> des Confoederatio, which operates our physical/digital archives that we are currently working on migrating.
         </div>
 
         <!--Preview Map and Signature-->
@@ -755,6 +783,8 @@
               </div>
             </div>
           </div>
+          
+          <img id = "ministrat-close-button" src = "./gfx/interface/icons/close_no_bounds.png" draggable = "false" onclick = "closeMinistrat();">
           <div id = "ministrat-topbar-container">
             <div id = "ministrat-topbar-time-controls">
               <div id = "date-container">

@@ -1,6 +1,6 @@
 //Initialise functions
 {
-  function hideMinistrat () {
+  function closeMinistrat () {
     //Declare local instance variables
     var non_ministrat_els = document.querySelectorAll(ministrat.config.elements.ui.non_ministrat_selector);
 
@@ -13,8 +13,11 @@
     //Remove class from about me section
     document.querySelector(".about-me-section-container").classList.remove("ministrat-open");
 
-    //Pause game
+    //Pause game; scroll down to about page
     setMinistratGameSpeed(0);
+    document.getElementById("ministrat-anchor").scrollIntoView({
+      behavior: "instant"
+    });
   }
 
   function loadMinistrat () {

@@ -9,7 +9,7 @@ class Ministrat_Heatmap {
     var ministrat_canvas_overlay_el = document.querySelector(ministrat.config.elements.map.ministrat_canvas_selector);
     var ministrat_terrain_canvas_el = document.querySelector(ministrat.config.elements.map.ministrat_terrain_canvas_selector);
 
-    this.debug_heatmap = true;
+    this.debug_heatmap = false;
     this.heatmap_downscale_factor = Math.floor(map_defines.pathfind_downscale_factor*map_defines.px_per_km);
     this.id = `${tag}-${type}-flowfield-heatmap`;
     this.tag = tag;

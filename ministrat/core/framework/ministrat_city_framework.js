@@ -39,6 +39,11 @@ class Ministrat_City {
     this.draw();
   }
 
+  getCanvasCoords () {
+    //Return statement
+    return [this.x, this.y];
+  }
+
   draw () {
     //Declare local instance variables
     var country_obj = ministrat.gamestate.countries[this.owner];

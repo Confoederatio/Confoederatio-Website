@@ -178,6 +178,17 @@
     return Math.pow(product, 1/values.length);
   };
 
+  window.getDistance = function (arg0_x, arg1_y, arg2_x, arg3_y) {
+    //Convert from parameters
+    var x = arg0_x;
+    var y = arg1_y;
+    var x2 = arg2_x;
+    var y2 = arg3_y;
+
+    //Return statement
+    return Math.sqrt(Math.pow(x2 - x, 2) + Math.pow(y2 - y, 2));
+  }
+
   /*
     logarithm() - Calculates log/natural log
     arg0_x: (Number) - The x to calculate the log for.

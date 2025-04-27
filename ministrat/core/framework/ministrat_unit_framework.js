@@ -81,6 +81,8 @@ class Ministrat_Unit {
         unit_instance.select();
 
         console.log(`Unit ${unit_instance.id} clicked`);
+        console.log(unit_instance.getCurrentTerrain());
+        console.log(`Closest city: ${unit_instance.getClosestCity().name}, distance: ${unit_instance.getClosestCityDistance()}km`);
       };
 
       map_overlay_el.appendChild(unit_el);
@@ -115,8 +117,70 @@ class Ministrat_Unit {
   }
 
   //Conditionals
-  getCurrentTerrain (arg0_options) {
+  getCanvasCoords () {
+    //Declare local instance variables
+    var actual_coords = [
+      this.x + ministrat.config.defines.map.canvas_offset[0] - this.width/2, 
+      this.y + ministrat.config.defines.map.canvas_offset[1] - this.height/2
+    ];
 
+    //Return statement
+    return actual_coords;
+  }
+
+  getClosestCity (arg0_options) {
+    //Convert from parameters
+    var options = (arg0_options) ? arg0_options : {};
+
+    //Declare local instance variables
+    var actual_coords = this.getCanvasCoords();
+    var cities_obj = ministrat.gamestate.cities;
+
+    //Iterate over all_cities
+    var all_cities = Object.keys(cities_obj);
+    var closest_city = ["", Infinity];
+
+    for (var i = 0; i < all_cities.length; i++) {
+      var local_city = cities_obj[all_cities[i]];
+      var local_city_coords = local_city.getCanvasCoords();
+      
+      var local_city_distance = getDistance(actual_coords[0], actual_coords[1], local_city_coords[0], local_city_coords[1]);
+
+      if (local_city_distance < closest_city[1]) {
+        closest_city[0] = all_cities[i];
+        closest_city[1] = local_city_distance;
+      }
+    }
+
+    //Return statement
+    return (!options.return_key) ? cities_obj[closest_city[0]] : closest_city;
+  }
+
+  getClosestCityDistance () {
+    //Declare local instance variables
+    var actual_coords = this.getCanvasCoords();
+    var closest_city = this.getClosestCity();
+    var closest_city_coords = closest_city.getCanvasCoords();
+    var raw_distance = getDistance(actual_coords[0], actual_coords[1], closest_city_coords[0], closest_city_coords[1]);
+
+    //Return statement
+    return raw_distance/ministrat.config.defines.map.px_per_km;
+  }
+
+  /**
+   * getCurrentTerrain() - Returns the current terrain the unit is located in.
+   * @param {*} [arg0_options]
+   *  @param {boolean} [arg0_options.return_key=false] - Whether to return the key instead of the terrain_obj.
+   */
+  getCurrentTerrain (arg0_options) {
+    //Convert from parameters
+    var options = (arg0_options) ? arg0_options : {};
+
+    //Declare local instance variables
+    var actual_coords = this.getCanvasCoords();
+
+    //Return statement
+    return getTerrainAtCoords(actual_coords[0], actual_coords[1], options);
   }
   
   isEnemyOf (arg0_tag) {
@@ -132,6 +196,14 @@ class Ministrat_Unit {
       return true;
   }
 
+  isWithinUrbanRange (arg0_distance) {
+    //Convert from parameters
+    var distance = (arg0_distance) ? arg0_distance : 0;
+
+    //Return statement
+    return (this.getClosestCityDistance() <= distance);
+  }
+
   //Effects
   applyModifiers () {
 
@@ -145,9 +217,14 @@ class Ministrat_Unit {
     //Declare local instance variables
     var country_obj = ministrat.gamestate.countries[this.country];
     var team_obj = ministrat.config.history.teams[country_obj.team];
+    var unit_attack_modifier = 1;
 
+    //General modifier calculation
     
-    
+
+    //Country modifier calculation
+
+    //Unit-specific modifier addition
   }
 
   getDefenceModifier (arg0_unit_type) {

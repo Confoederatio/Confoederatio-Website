@@ -1,6 +1,8 @@
 ministrat.config.cities = {
   //East Germany - Major Cities
   cottbus: {
+    name: "Cottbus",
+
     controller: "ddr",
     owner: "ddr",
     size: 2,
@@ -8,6 +10,8 @@ ministrat.config.cities = {
     marker_selector: "#cottbus-marker",
   },
   dresden: {
+    name: "Dresden",
+
     controller: "ddr",
     owner: "ddr",
     size: 2,
@@ -15,6 +19,8 @@ ministrat.config.cities = {
     marker_selector: "#dresden-marker",
   },
   erfurt: {
+    name: "Erfurt",
+
     controller: "ddr",
     owner: "ddr",
     size: 2,
