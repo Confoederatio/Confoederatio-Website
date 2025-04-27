@@ -82,8 +82,8 @@
     var w = magnifier.offsetWidth;
 
     // Calculate magnifier position to center the DIV on cursor
-    var offset_x = pan_x - (w/2);
-    var offset_y = pan_y + (h/2);
+    var offset_x = pan_x - w/2;
+    var offset_y = pan_y + h/2;
 
     //Maximisation adjustments
     if (isMagnifierMaximised(element_id)) {

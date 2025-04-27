@@ -39,6 +39,9 @@
 
   transition: opacity 0.5s ease, width 2s ease, height 2s ease;
 }
+.parallax-item-content-panel.maximised .preview-image-container {
+  width: 80vh;
+}
 .parallax-item-content-panel.maximised .image-magnifier-glass {
   height: 24vh;
   width: 36vh;
