@@ -102,7 +102,12 @@ class Ministrat_Unit {
     var tag = (arg0_tag) ? arg0_tag : "";
 
     //Declare local instance variables
-    
+    var country_obj = ministrat.gamestate.countries[this.country];
+    var ot_country_obj = ministrat.gamestate.countries[tag];
+
+    //Return statement
+    if (country_obj.team != ot_country_obj.team)
+      return true;
   }
 
   select () {

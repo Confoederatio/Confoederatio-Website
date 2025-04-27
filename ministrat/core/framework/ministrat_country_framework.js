@@ -50,6 +50,28 @@ class Ministrat_Country {
 
 //Initialise functions
 {
+  function getMinistratFactions () {
+    //Declare local reference variables
+    var countries_obj = ministrat.gamestate.countries;
+    var return_obj = {};
+
+    //Iterate over all_countries
+    var all_countries = Object.keys(countries_obj);
+
+    for (var i = 0; i < all_countries.length; i++) {
+      var local_country = countries_obj[all_countries[i]];
+      
+      if (local_country.team) {
+        if (!return_obj[local_country.team])
+          return_obj[local_country.team] = [];
+        return_obj[local_country.team].push(all_countries[i]);
+      }
+
+      //Return statement
+      return return_obj;
+    }
+  }
+
   function loadMinistratCountries () {
     //Declare local reference variables
     var config_countries_obj = ministrat.config.countries;
