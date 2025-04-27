@@ -20,6 +20,17 @@ class Ministrat_City {
     this.label_el = cities_dom.querySelector(this.label_selector);
     this.marker_el = cities_dom.querySelector(this.marker_selector);
 
+    //1.1. Set city coordinates
+    this.x = parseFloat(this.marker_el.getAttribute('x'));
+    this.y = parseFloat(this.marker_el.getAttribute('y'));
+    if (isNaN(this.x) || isNaN(this.y)) {
+      this.x = parseFloat(this.marker_el.getAttribute('cx'));
+      this.y = parseFloat(this.marker_el.getAttribute('cy'));
+    }
+
+    this.x -= 500;
+    this.y -= 16;
+
     //2. Fetch .name field from label_selector
     this.name = (!options.name) ? 
       this.label_el.textContent : options.name;
@@ -81,6 +92,21 @@ class Ministrat_City {
           interior_label_els[i].style.textDecoration = "underline";
         }
     }
+  }
+
+  isEnemyCityOf (arg0_tag) {
+    //Convert from parameters
+    var tag = arg0_tag;
+
+    //Guard clause if tag and .controller are the same
+    if (tag == this.controller) return false;
+
+    //Declare local instance variables
+    var country_obj = ministrat.gamestate.countries[tag];
+    var ot_country_obj = ministrat.gamestate.countries[this.controller];
+
+    //Return true if country_obj.team is not the same as ot_country_obj.team
+    return (country_obj.team != ot_country_obj.team);
   }
 }
 

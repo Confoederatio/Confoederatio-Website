@@ -5,6 +5,6 @@ ministrat.config.defines.ai = {
 
   enemy_unit_base_value: 10,
   enemy_unit_per_depleted_defence: 1, //Score per 1% depleted defence
-  enemy_unit_per_less_attack_modifier: 1, //Score per 1% greater attack_modifier
-  enemy_unit_per_less_defence_modifier: 1 //Score per 1% greater defence_modifier
+  enemy_unit_per_less_attack_modifier: 1, //Score per 1% greater friendly attack_modifier
+  enemy_unit_per_less_defence_modifier: 1 //Score per 1% greater friendly defence_modifier
 };

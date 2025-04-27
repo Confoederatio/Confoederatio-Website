@@ -12,6 +12,7 @@ class Ministrat_Heatmap {
     
     this.heatmap_downscale_factor = Math.floor(map_defines.pathfind_downscale_factor*map_defines.px_per_km);
     this.id = `${tag}-${type}-flowfield-heatmap`;
+    this.tag = tag;
     this.type = type;
 
     //Create canvas element
@@ -35,6 +36,7 @@ class Ministrat_Heatmap {
 
   draw () {
     //Declare local instance variables
+    var ai_defines = ministrat.config.defines.ai;
     var terrain_canvas_el = document.querySelector(ministrat.config.elements.map.ministrat_terrain_canvas_selector);
     var terrain_obj = ministrat.config.terrain;
 
@@ -53,7 +55,7 @@ class Ministrat_Heatmap {
       var local_terrain = terrain_obj[all_terrains[i]];
 
       if (local_terrain.colour)
-        terrain_cost_map[local_terrain.colour.join(",")] = returnSafeNumber(local_terrain.modifiers[this.type].movement*100, 0);
+        terrain_cost_map[local_terrain.colour.join(",")] = returnSafeNumber(local_terrain.modifiers[this.type].movement*10, 0);
     }
 
     //Draw terrain cost first
@@ -95,124 +97,163 @@ class Ministrat_Heatmap {
     //Define internal helper functions
     {
       var local_instance = this;
-      this.addMultipleBlockDropoffs = function (arg0_centres, arg1_max_values, arg2_downscaleFactor) {
+      /**
+       * addMultipleBlockDropoffs() - Adds Manhattan centres of gravity to the current heatmap.
+       * @param {Array<Array<number, number>>} arg0_centres - The [x, y] centres of gravity to add to the heatmap.
+       * @param {Array<number>} arg1_max_values - The maximum values at each centre.
+       * @param {number} [arg2_downscale_factor=4] - The downscale factor to apply to the heatmap.
+       */
+      this.addMultipleBlockDropoffs = function (arg0_centres, arg1_max_values, arg2_downscale_factor) {
         //Convert from parameters
         var centres = getList(arg0_centres);
         var max_values = getList(arg1_max_values);
-        var downscaleFactor = arg2_downscaleFactor || 4; // Default downscale factor
+        var downscale_factor = returnSafeNumber(arg2_downscale_factor, 4);
 
-        if (downscaleFactor < 1) {
+        //Guard clause if downscale_factor actually upscales
+        if (downscale_factor < 1) {
           console.warn("Downscale factor must be 1 or greater. Setting to 1.");
-          downscaleFactor = 1;
+          downscale_factor = 1;
         }
-        // Ensure integer factor for simplicity, floor avoids potential issues
-        downscaleFactor = Math.max(1, Math.floor(downscaleFactor)); 
 
-        //Calculate downscaled dimensions
-        const originalWidth = local_instance.canvas.width;
-        const originalHeight = local_instance.canvas.height;
-        const downscaledWidth = Math.floor(originalWidth/downscaleFactor);
-        const downscaledHeight = Math.floor(originalHeight/downscaleFactor);
+        //Ensure integer factor for simplicity, floor avoids potential issues
+        downscale_factor = Math.max(1, Math.floor(downscale_factor)); 
 
-        var value_buffer = new Float32Array(downscaledWidth * downscaledHeight); // Initialized to 0
+        //Declare local instance variables
+        var original_width = local_instance.canvas.width;
+        var original_height = local_instance.canvas.height;
 
+        var downscaled_width = Math.floor(original_width/downscale_factor);
+        var downscaled_height = Math.floor(original_height/downscale_factor);
+        var value_buffer = new Float32Array(downscaled_width*downscaled_height); //value_buffer for storing addditive heatmap values
+
+        //Iterate over all max_values and update max_value
         for (var i = 0; i < max_values.length; i++)
-          max_value = Math.max(max_value, max_values[i]); // Assuming max_value is accessible in this scope
+          max_value = Math.max(max_value, max_values[i]);
 
-        // --- Core Logic on Downscaled Grid ---
+        //Iterate over all centres
         for (var i = 0; i < centres.length; i++) {
-          // Map centre coordinates to the downscaled grid
-          var downscaled_centre_x = Math.floor(centres[i][0] / downscaleFactor);
-          var downscaled_centre_y = Math.floor(centres[i][1] / downscaleFactor);
+          //Map centre coordinates to the downscaled grid
+          var local_downscaled_centre_x = Math.floor(centres[i][0]/downscale_factor);
+          var local_downscaled_centre_y = Math.floor(centres[i][1]/downscale_factor);
           var local_max_value = max_values[i];
 
-          // Clamp coordinates to be within the downscaled bounds
-          downscaled_centre_x = Math.max(0, Math.min(downscaledWidth - 1, downscaled_centre_x));
-          downscaled_centre_y = Math.max(0, Math.min(downscaledHeight - 1, downscaled_centre_y));
+          //Clamp coordinates within the downscaled bounds
+          local_downscaled_centre_x = Math.max(0, Math.min(downscaled_width - 1, local_downscaled_centre_x));
+          local_downscaled_centre_y = Math.max(0, Math.min(downscaled_height - 1, local_downscaled_centre_y));
 
-          // Iterate over the DOWNSCALED grid
-          for (var dx = 0; dx < downscaledWidth; dx++) {
-            for (var dy = 0; dy < downscaledHeight; dy++) {
-              var local_distance = Math.abs(dx - downscaled_centre_x) + Math.abs(dy - downscaled_centre_y);
+          //Iterate over the downscaled grid
+          for (var x = 0; x < downscaled_width; x++)
+            for (var y = 0; y < downscaled_height; y++) {
+              var buffer_index = y*downscaled_width + x;
+              var local_distance = Math.abs(x - local_downscaled_centre_x) + Math.abs(y - local_downscaled_centre_y);
               var local_value = local_max_value - local_distance;
-              var buffer_index = dy * downscaledWidth + dx;
 
-              // Check if the new value is greater OR if the buffer spot is still the initial zero
-              if (local_value > value_buffer[buffer_index] || i == 0) { // The == 0 check is redundant if buffer initializes to 0 and local_value > 0
+              //If the new value is greater than the existing value, or if it remains uninitialised, update the buffer value
+              if (local_value > value_buffer[buffer_index] || i == 0) {
                   value_buffer[buffer_index] = local_value;
 
-                  // Update min_value (Assuming min_value is accessible in this scope)
-                  // This min_value now reflects the minimum calculated on the downscaled grid
+                  //Update min_value if appropriate
                   if (local_value < min_value)
                     min_value = local_value;
               }
             }
-          }
         }
 
-        // --- Upscaling and Applying to Heatmap Data ---
-        const targetData = heatmap_data.data; // Direct reference for potential speedup
+        //Upscale and apply downscaled heatmap buffer to full resolution heatmap data
 
-        for (let y = 0; y < originalHeight; y++) {
-          for (let x = 0; x < originalWidth; x++) {
-            // Find the corresponding pixel in the DOWNSCALED buffer (Nearest Neighbor)
-            const dx = Math.min(downscaledWidth - 1, Math.floor(x / downscaleFactor));
-            const dy = Math.min(downscaledHeight - 1, Math.floor(y / downscaleFactor));
-            const buffer_index = dy * downscaledWidth + dx;
+        for (let x = 0; x < original_width; x++)
+          for (let y = 0; y < original_height; y++) {
+            //Find the corresponding pixel in the downscaled buffer (Nearest Neighbor)
+            var dx = Math.min(downscaled_width - 1, Math.floor(x/downscale_factor));
+            var dy = Math.min(downscaled_height - 1, Math.floor(y/downscale_factor));
 
-            const value_from_buffer = value_buffer[buffer_index];
+            var buffer_index = dy*downscaled_width + dx;
+            var value_from_buffer = value_buffer[buffer_index];
 
-            // Only proceed if there's a value contribution from the buffer
-            if (true) {
-              const pixelIndex = (y * originalWidth + x) * 4;
+            //Only proceed if there's a value contribution from the buffer
+            if (value_from_buffer != 0) {
+              var local_index = (y * original_width + x) * 4;
 
-              // Get current value from heatmap_data if it exists (alpha > 0)
-              let currentValue = 0;
-              currentValue = decodeRGBAAsNumber([
-                targetData[pixelIndex],
-                targetData[pixelIndex + 1],
-                targetData[pixelIndex + 2],
-                targetData[pixelIndex + 3]
+              //Get current value from heatmap_data if it exists (alpha > 0)
+              var current_value = 0;
+              current_value = decodeRGBAAsNumber([
+                heatmap_data.data[local_index],
+                heatmap_data.data[local_index + 1],
+                heatmap_data.data[local_index + 2],
+                heatmap_data.data[local_index + 3]
               ]);
 
-              // Add the buffer value to the existing value
-              const newValue = currentValue + value_from_buffer;
+              //Add the buffer value to the existing value
+              var new_value = current_value + value_from_buffer;
 
-              // Encode the new value back into RGBA
-              const rgba = encodeNumberAsRGBA(newValue);
+              //Encode the new value back into RGBA
+              var rgba = encodeNumberAsRGBA(new_value);
 
-              // Update the actual heatmap pixel data
-              if (currentValue != -9999) {
-                targetData[pixelIndex] += rgba[0];
-                targetData[pixelIndex + 1] += rgba[1];
-                targetData[pixelIndex + 2] += rgba[2];
-                targetData[pixelIndex + 3] += rgba[3];
+              //Update the actual heatmap pixel data
+              if (current_value != -9999) {
+                heatmap_data.data[local_index] += rgba[0];
+                heatmap_data.data[local_index + 1] += rgba[1];
+                heatmap_data.data[local_index + 2] += rgba[2];
+                heatmap_data.data[local_index + 3] += rgba[3];
               }
             }
           }
-        }
       };
     }
 
-    //Set per unit dropoffs
-    var unit_coordinates = [];
-    var unit_values = [];
+    //AI flowfield processing doesn't apply to player
+    if (this.tag != ministrat.gamestate.player_tag) {
+      //1. City processing
+      {
+        //Get all cities
+        var all_cities = Object.keys(ministrat.gamestate.cities);
+        var heatmap_coordinates = [];
+        var heatmap_values = [];
 
-    //Iterate over all_units
-    var all_units = Object.keys(ministrat.gamestate.units);
+        //Iterate over all_cities
+        for (var i = 0; i < all_cities.length; i++) {
+          var local_city = ministrat.gamestate.cities[all_cities[i]];
+          var local_value = 0;
 
-    for (var i = 0; i < all_units.length; i++) {
-      var local_unit = ministrat.gamestate.units[all_units[i]];
+          if (local_city.isEnemyCityOf(this.tag)) {
+            //Enemy capital check
+            if (local_city.is_capital)
+              local_value += returnSafeNumber(ai_defines.enemy_capital_base_value, 0);
 
-      if (local_unit.country == "brd") {
-          unit_coordinates.push([local_unit.x + ministrat.config.defines.map.canvas_offset[0], local_unit.y + ministrat.config.defines.map.canvas_offset[1]]);
-          unit_values.push(20);
+            //Enemy city check
+            local_value += returnSafeNumber(ai_defines.enemy_city_base_value, 0);
+
+            //Enemy city size check
+            var local_city_size = local_city.size - 1;
+
+            local_value += returnSafeNumber(local_city_size*ai_defines.enemy_city_value_per_size, 0);
+
+            //Add to heatmap
+            var local_city_coords = [local_city.x, local_city.y];
+            heatmap_coordinates.push(local_city_coords);
+            heatmap_values.push(local_value);
+          }
+        }
       }
+
+      //2. Unit processing
+      {
+        //Iterate over all_units
+        var all_units = Object.keys(ministrat.gamestate.units);
+
+        for (var i = 0; i < all_units.length; i++) {
+          var local_unit = ministrat.gamestate.units[all_units[i]];
+
+          if (local_unit.isEnemyOf(this.tag)) {
+            heatmap_coordinates.push([local_unit.x + ministrat.config.defines.map.canvas_offset[0], local_unit.y + ministrat.config.defines.map.canvas_offset[1]]);
+            heatmap_values.push(ai_defines.enemy_unit_base_value);
+          }
+        }
+      }
+
+      console.log(heatmap_coordinates, heatmap_values);
+      this.addMultipleBlockDropoffs(heatmap_coordinates, heatmap_values, this.heatmap_downscale_factor);
     }
-
-    console.log(unit_coordinates, unit_values);
-
-    this.addMultipleBlockDropoffs(unit_coordinates, unit_values, this.heatmap_downscale_factor);
 
     //Draw heatmap in Viridis
     var total_range = max_value - min_value;
@@ -221,27 +262,23 @@ class Ministrat_Heatmap {
     for (var i = 0; i < this.canvas.height; i++)
       for (var x = 0; x < this.canvas.width; x++) {
         var local_index = (i*this.canvas.width + x)*4;
+        var local_value = decodeRGBAAsNumber([
+          heatmap_data.data[local_index],
+          heatmap_data.data[local_index + 1],
+          heatmap_data.data[local_index + 2],
+          heatmap_data.data[local_index + 3]
+        ]);
 
-        //[WIP] - Make sure pixel is valid
-        {
-          var local_value = decodeRGBAAsNumber([
-            heatmap_data.data[local_index],
-            heatmap_data.data[local_index + 1],
-            heatmap_data.data[local_index + 2],
-            heatmap_data.data[local_index + 3]
-          ]);
-  
-          var local_fraction = (local_value - min_value)/total_range;
-  
-          //console.log(local_fraction);
-          var local_colour = hexToRGB(d3.interpolateMagma(local_fraction));
-  
-          if (local_value != 9999) {
-            heatmap_data.data[local_index] = local_colour[0];
-            heatmap_data.data[local_index + 1] = local_colour[1];
-            heatmap_data.data[local_index + 2] = local_colour[2];
-            heatmap_data.data[local_index + 3] = 255;
-          }
+        var local_fraction = (local_value - min_value)/total_range;
+
+        var local_colour = hexToRGB(d3.interpolateMagma(local_fraction));
+
+        //Check if local_value is valid; or if it is non-traversable
+        if (local_value != 9999) {
+          heatmap_data.data[local_index] = local_colour[0];
+          heatmap_data.data[local_index + 1] = local_colour[1];
+          heatmap_data.data[local_index + 2] = local_colour[2];
+          heatmap_data.data[local_index + 3] = 255;
         }
       }
     
