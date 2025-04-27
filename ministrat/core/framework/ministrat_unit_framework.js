@@ -175,7 +175,7 @@ class Ministrat_Unit {
 
             if (local_location != "" && local_location != "(location not specified)")
               if (local_location[0] > 0 && local_location[1] > 0)
-                ministrat.gamestate.units[local_orbat_unit.id] = new Ministrat_Unit({
+                ministrat.gamestate.units[local_orbat_unit.name] = new Ministrat_Unit({
                   country: all_countries[i],
                   name: local_orbat_unit.name,
                   type: local_orbat_unit.type,
