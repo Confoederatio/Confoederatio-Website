@@ -92,7 +92,7 @@
       var container_bounds = container.getBoundingClientRect();
       
       offset_x = pan_x - (w/2) + container_bounds.left;
-      offset_y = pan_y + h + local_bounds.top - container_bounds.top;
+      offset_y = pan_y - (h/2) + container_bounds.top;
     }
 
     //Prevent magnifier from going outside of image

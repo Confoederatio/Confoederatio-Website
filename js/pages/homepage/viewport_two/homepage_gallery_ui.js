@@ -66,10 +66,10 @@
             .replace("-content-panel", "")
             .replace("-content-wrapper", "");
 
-          local_content_title.innerHTML += `
+          local_content_title.innerHTML = `${local_content_title.textContent}
             <img id = "${local_id}-close-btn" class = "content-panel-close-btn" src = "gfx/interface/icons/close_btn.png" draggable = "false" onclick = "closeContentPanel('${local_id}');">
             <img id = "${local_id}-maximise-btn" class = "content-panel-maximise-btn" src = "gfx/interface/icons/maximise_icon.png" draggable = "false" onclick = "maximiseContentPanel('${local_id}');">
-            ${(document.getElementById(local_id + "-preview") ) ? `<img id = "${local_id}-preview-btn" class = "content-panel-preview-btn active" src = "gfx/interface/icons/preview_icon.png" draggable = "false" onclick = "togglePreview('${local_id}');">` : ""}
+            ${(document.getElementById(local_id + "-preview") ) ? `<img id = "${local_id}-preview-btn" class = "content-panel-preview-btn active" src = "gfx/interface/icons/preview_icon.png" draggable = "false" onclick = "togglePreview('${local_id}', this);">` : ""}
           `;
         }
       }, 500);

@@ -356,8 +356,10 @@
 
 /* -- Buttons -- */
 .parallax-item-content-panel:not(.maximised) .content-panel-close-btn:hover, .parallax-item-content-panel:not(.maximised) .content-panel-maximise-btn:hover, .parallax-item-content-panel:not(.maximised) .content-panel-preview-btn:hover, .content-panel-preview-btn.active {
-  cursor: pointer;
+  box-shadow: 0px 0px 2vh rgba(0, 0, 0, 0.35);
   filter: invert(0.95);
+
+  cursor: pointer;
 }
 .content-panel-close-btn {
   position: absolute;
@@ -380,7 +382,6 @@
   width: 3vh;
 
   background-color: rgb(15, 15, 15);
-  box-shadow: 0px 0px 2vh rgba(0, 0, 0, 0.35);
   padding: 1vh;
 
   transition: all 0.5s ease;
@@ -393,7 +394,6 @@
   width: 3vh;
 
   background-color: rgb(15, 15, 15);
-  box-shadow: 0px 0px 2vh rgba(0, 0, 0, 0.35);
   padding: 1vh;
 
   transition: all 0.5s ease;

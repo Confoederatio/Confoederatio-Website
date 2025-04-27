@@ -364,11 +364,6 @@
     var maximise_btn = document.getElementById(`${arg0_element_id}-maximise-btn`);
     var gallery_obj = main.gallery;
 
-    if (local_element.getAttribute("class").includes("maximised")) {
-      minimiseContentPanel(local_id);
-      return;
-    }
-
     //Reset container styling
     try {
       gallery_obj.content_panel_update_paused = true;
@@ -457,7 +452,8 @@
     //Increment hover argument to determine how long the element has been hovered over
     try {
       var invalid_id = false;
-      for (var i = 0; i < gallery_obj.exempt_id_patterns.length; i++) invalid_id =  (current_element.id.includes(gallery_obj.exempt_id_patterns[i])) ? true : invalid_id;
+      for (var i = 0; i < gallery_obj.exempt_id_patterns.length; i++) 
+        invalid_id = (current_element.id.includes(gallery_obj.exempt_id_patterns[i])) ? true : invalid_id;
       if (!invalid_id) {
         //Set hover time attribute
         var hover_time = (current_element.getAttribute("hover-time")) ? parseInt(current_element.getAttribute("hover-time")) : 0;

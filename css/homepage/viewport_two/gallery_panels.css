@@ -11,6 +11,9 @@
 .parallax-item-content-panel {
   pointer-events: all;
 }
+.parallax-item-content-panel:not(.shown) {
+  pointer-events: none;
+}
 
 /* -- Artistic image styling -- */
 .preview-image-container {
