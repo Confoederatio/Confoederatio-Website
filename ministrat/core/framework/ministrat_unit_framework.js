@@ -135,14 +135,59 @@ class Ministrat_Unit {
     //Declare local instance variables
     var units_obj = ministrat.gamestate.units;
 
+    //Load unit locations first
     loadMinistratUnitLocations();
 
-    loadBRDArmyORBAT();
-    loadDDRArmyORBAT();
-    loadNATOArmyORBAT();
-    loadWTOArmyORBAT();
+    //Load units once starting animation has finished
+    setTimeout(function(){
+      //Iterate over all_countries
+      var all_countries = Object.keys(ministrat.config.countries);
 
-    ministrat.config.all_locations = uniqueArray(ministrat.config.all_locations);
+      for (var i = 0; i < all_countries.length; i++) {
+        var local_orbat = ministrat.config.orbats[all_countries[i]];
+
+        //Populate ministrat.main.unique_locations[all_countries[i]] first
+        ministrat.main.unique_locations[all_countries[i]] = [];
+        var local_unique_locations = ministrat.main.unique_locations[all_countries[i]];
+
+        //Make sure local_orbat exists
+        if (local_orbat) {
+          var all_orbat_units = Object.keys(local_orbat);
+          
+          //Iterate over all_orbat_units, populate local_unique_locations
+          for (var x = 0; x < all_orbat_units.length; x++) {
+            var local_orbat_unit = local_orbat[all_orbat_units[x]];
+
+            if (local_orbat_unit.location)
+              if (!local_unique_locations.includes(local_orbat_unit.location))
+                if (!ministrat.config.locations[local_orbat_unit.location])
+                  if (!ministrat.config.all_locations.includes(local_orbat_unit.location))
+                    local_unique_locations.push(local_orbat_unit.location);
+          }
+
+          //Add to unique_locations
+          ministrat.config.all_locations = ministrat.config.all_locations.concat(local_unique_locations);
+
+          //Iterate over all_orbat_units, load all ORBAT units
+          for (var x = 0; x < all_orbat_units.length; x++) {
+            var local_orbat_unit = local_orbat[all_orbat_units[x]];
+            var local_location = ministrat.config.locations[local_orbat_unit.location];
+
+            if (local_location != "" && local_location != "(location not specified)")
+              if (local_location[0] > 0 && local_location[1] > 0)
+                ministrat.gamestate.units[local_orbat_unit.id] = new Ministrat_Unit({
+                  country: all_countries[i],
+                  name: local_orbat_unit.name,
+                  type: local_orbat_unit.type,
+                  x: local_location[0],
+                  y: local_location[1]
+                });
+          }
+        }
+      }
+
+      ministrat.config.all_locations = uniqueArray(ministrat.config.all_locations);
+    }, ministrat.config.defines.common.unit_load_delay);
   }
 
   function unitSelectionHandler (arg0_x, arg1_y, arg2_width, arg3_height) {
