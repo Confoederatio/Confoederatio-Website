@@ -28,8 +28,8 @@ class Ministrat_City {
       this.y = parseFloat(this.marker_el.getAttribute('cy'));
     }
 
-    this.x -= 500;
-    this.y -= 16;
+    this.x -= 500; //Viewport SVG offset
+    this.y -= 16; //Viewport SVG offset
 
     //2. Fetch .name field from label_selector
     this.name = (!options.name) ? 

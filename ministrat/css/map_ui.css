@@ -14,10 +14,8 @@
 
   > canvas {
     position: absolute;
-    top: 0px;
-    left: 0px;
 
-    height: 92vh;
+    height: 94vh;
     width: 92vh;
 
     opacity: 0.2; /* -- Temporary: debug attribute -- */
