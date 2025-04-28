@@ -136,6 +136,11 @@
     return [aX, aY];
   }
 
+  window.fixMobileVh = function () {
+    var vh = window.innerHeight*0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+
   /*
     hideElement() - Hides an HTML element. Appends a 'hidden' class.
     arg0_element: (HTMLElement) - The HTML element to pass.
@@ -305,6 +310,11 @@
       local_bounds.top < (window.innerHeight || document.documentElement.clientHeight) &&
       local_bounds.left < (window.innerWidth || document.documentElement.clientWidth)
     );
+  }
+
+  window.isMobileDevice = function () {
+    //Return statement
+    return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
   }
 
   /*
