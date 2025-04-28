@@ -2,16 +2,16 @@
 {
   function addBookmarkItem (arg0_element_id, arg1_no_animation) {
     //Convert from parameters
-    var local_element = document.getElementById(arg0_element_id);
     var local_id = arg0_element_id;
     var no_animation = arg1_no_animation;
-    var gallery_obj = main.gallery;
-    
-    //Make sure local_element exists
-    if (!local_element) return;
 
     //Declare local instance variables
     var bookmark_btn = document.getElementById(`bookmark-btn-${local_id}`);
+    var local_element = document.getElementById(local_id);
+    var gallery_obj = main.gallery;
+    
+    //Guard clause if local_element does not exist
+    if (!local_element) return;
 
     //Change ID temporarily
     local_element.setAttribute("id", `preview-${local_id}`);
