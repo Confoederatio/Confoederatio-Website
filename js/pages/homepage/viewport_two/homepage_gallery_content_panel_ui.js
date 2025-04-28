@@ -13,6 +13,14 @@
     gallery_obj.parallax_scroll_indicator.style.opacity = 1;
   }
 
+  function getMaximisedContentPanel () {
+    //Declare local instance variables
+    var maximised_content_panel = document.querySelector(".parallax-item-content-panel.shown.maximised");
+
+    //Return statement
+    return (maximised_content_panel) ? maximised_content_panel.id.replace("-content-panel", "") : undefined;
+  }
+
   function hideAllContentPanels () {
     //Declare local instance variables
     var all_shown_content_panels = document.querySelectorAll(".parallax-item-content-panel.shown");
@@ -21,6 +29,14 @@
     for (var i = 0; i < all_shown_content_panels.length; i++) all_shown_content_panels[i].setAttribute("class",
       all_shown_content_panels[i].getAttribute("class").replace(" shown", "")
     );
+  }
+
+  function getMaximisedContentPanel () {
+    //Declare local instance variables
+    var maximised_content_panel = document.querySelector(".parallax-item-content-panel.shown.maximised");
+
+    //Return statement
+    return (maximised_content_panel) ? maximised_content_panel.id.replace("-content-panel", "") : undefined;
   }
 
   function maximiseContentPanel (arg0_element_id) {
