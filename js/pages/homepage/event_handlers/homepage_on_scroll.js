@@ -10,6 +10,7 @@ function initGlobalScrollEventHandler (e) {
   var vh_scroll = (window.scrollY/window.innerHeight)*100;
 
   //Event handler functions
+  fixMobileVh();
   parallaxLabelOnScroll();
   triumphAndTragedyOnScroll();
 
@@ -33,17 +34,13 @@ function initGlobalScrollEventHandler (e) {
   if (vh_scroll > 100)
     if (parallax_scroll_progress <= 5)
       if (scroll_direction == "down")
-        document.getElementById("project-parallax-anchor").scrollIntoView({
-          behavior: "instant"
-        });
+        scrollGalleryIntoView();
 
   //Viewport 2 to Viewport 3 scroll handling
   if (vh_scroll < 100)
     if (parallax_scroll_progress >= 95)
       if (scroll_direction == "up")
-        document.getElementById("project-parallax-anchor").scrollIntoView({
-          behavior: "instant"
-        });
+        scrollGalleryIntoView();
 }
 
 window.onscroll = function (e) {
