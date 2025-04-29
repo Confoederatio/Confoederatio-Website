@@ -74,7 +74,7 @@ for (var i = 0; i < all_viewport_two_selectors.length; i++)
 var all_bodies = document.querySelectorAll("body");
 all_bodies[0].remove();
 
-//Mobile temporary fix
+//[WIP] - Mobile temporary fix
 if (isMobileDevice()) {
   window.alert(`You are on a mobile device.\n\nThis website is currently unoptimised for mobile devices. Please use a desktop computer to view this website. Experimental Patch: 016`);
 
