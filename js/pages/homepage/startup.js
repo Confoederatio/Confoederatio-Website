@@ -75,13 +75,13 @@ var all_bodies = document.querySelectorAll("body");
 all_bodies[0].remove();
 
 //[WIP] - Mobile temporary fix
-if (isMobileDevice()) {
+/*if (isMobileDevice()) {
   window.alert(`You are on a mobile device.\n\nThis website is currently unoptimised for mobile devices. Please use a desktop computer to view this website. Experimental Patch: 016`);
 
   document.getElementById("about-me-section").setAttribute("class",
     document.getElementById("about-me-section").getAttribute("class") + " display-none"
   );
-}
+}*/
 
 //Hack fix for glitched elements
 setTimeout(function(){
